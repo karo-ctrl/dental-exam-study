@@ -1,6 +1,10 @@
 // ===== 状態管理 =====
 const state = {
-  // モード
+  // タブとビュー
+  currentTab: 'kakomon', // 'kakomon', 'original', 'summary'
+  currentView: 'home', // 'home', 'quiz'
+
+  // レガシー（後で整理）
   mode: 'quiz', // 'quiz' or 'summary'
 
   // 演習モード用データ
@@ -39,11 +43,32 @@ const elements = {};
 function initElements() {
   // ヘッダー
   elements.headerTitle = document.getElementById('headerTitle');
+  elements.backBtn = document.getElementById('backBtn');
   elements.menuBtn = document.getElementById('menuBtn');
   elements.themeBtn = document.getElementById('themeBtn');
   elements.settingsBtn = document.getElementById('settingsBtn');
 
-  // モードタブ
+  // 下部ナビゲーション
+  elements.bottomNav = document.getElementById('bottomNav');
+  elements.bottomNavItems = document.querySelectorAll('.bottom-nav-item');
+
+  // ホーム画面
+  elements.kakomonHome = document.getElementById('kakomonHome');
+  elements.originalHome = document.getElementById('originalHome');
+  elements.summaryHome = document.getElementById('summaryHome');
+  elements.quizScreen = document.getElementById('quizScreen');
+
+  // 過去問ホームのボタン
+  elements.dailyHisshuBtn = document.getElementById('dailyHisshuBtn');
+  elements.dailyIppanBtn = document.getElementById('dailyIppanBtn');
+  elements.dailyRinjitsuBtn = document.getElementById('dailyRinjitsuBtn');
+  elements.settingsMenuBtn = document.getElementById('settingsMenuBtn');
+  elements.examSelectBtn = document.getElementById('examSelectBtn');
+
+  // 問題ナビゲーション
+  elements.questionNav = document.getElementById('questionNav');
+
+  // レガシー（後で削除）
   elements.modeTabs = document.querySelectorAll('.mode-tab');
 
   // サイドバー
@@ -123,10 +148,113 @@ async function init() {
   applyTheme(state.theme);
   applyFontSize();
   setupEventListeners();
-  setMode(state.mode);
+
+  // 過去問データを事前読み込み
+  await loadQuestionData();
+
+  // 初期タブ表示
+  switchTab(state.currentTab);
 }
 
-// ===== モード切替 =====
+// ===== タブ切替 =====
+function switchTab(tab) {
+  state.currentTab = tab;
+  state.currentView = 'home';
+
+  // 下部ナビのアクティブ状態更新
+  elements.bottomNavItems.forEach(item => {
+    item.classList.toggle('active', item.dataset.tab === tab);
+  });
+
+  // 全画面を非表示
+  elements.kakomonHome.style.display = 'none';
+  elements.originalHome.style.display = 'none';
+  elements.summaryHome.style.display = 'none';
+  elements.quizScreen.style.display = 'none';
+  elements.questionNav.style.display = 'none';
+
+  // 選択したタブのホーム画面を表示
+  switch (tab) {
+    case 'kakomon':
+      elements.kakomonHome.style.display = 'block';
+      elements.headerTitle.textContent = '過去問';
+      break;
+    case 'original':
+      elements.originalHome.style.display = 'block';
+      elements.headerTitle.textContent = 'オリジナル';
+      break;
+    case 'summary':
+      elements.summaryHome.style.display = 'block';
+      elements.headerTitle.textContent = 'まとめ';
+      break;
+  }
+
+  saveState();
+}
+
+// ===== 問題画面表示 =====
+function showQuizScreen() {
+  state.currentView = 'quiz';
+
+  // ホーム画面を非表示
+  elements.kakomonHome.style.display = 'none';
+  elements.originalHome.style.display = 'none';
+  elements.summaryHome.style.display = 'none';
+
+  // 問題画面を表示
+  elements.quizScreen.style.display = 'block';
+  elements.questionNav.style.display = 'flex';
+  elements.loadingState.style.display = 'none';
+  elements.quizCard.style.display = 'block';
+
+  // ヘッダー更新
+  elements.backBtn.style.display = 'flex';
+  elements.menuBtn.style.display = 'none';
+}
+
+// ===== ホーム画面に戻る =====
+function backToHome() {
+  // ヘッダー更新
+  elements.backBtn.style.display = 'none';
+  elements.menuBtn.style.display = 'flex';
+
+  switchTab(state.currentTab);
+}
+
+// ===== 今日の問題（ランダム出題） =====
+function startDailyQuiz(type) {
+  if (!state.allData) return;
+
+  let questions = [];
+
+  // 全試験から問題を収集
+  state.allData.exams.forEach(exam => {
+    exam.questions.forEach(q => {
+      if (type === 'hisshu' && q.section === 'A') {
+        questions.push({ ...q, examId: exam.examId });
+      } else if (type === 'ippan' && (q.section === 'B' || q.section === 'C')) {
+        questions.push({ ...q, examId: exam.examId });
+      } else if (type === 'rinjitsu' && q.section === 'D') {
+        questions.push({ ...q, examId: exam.examId });
+      }
+    });
+  });
+
+  // シャッフルして指定数を取得
+  const count = type === 'hisshu' ? 20 : 10;
+  const shuffled = questions.sort(() => Math.random() - 0.5);
+  state.filteredQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
+  state.currentIndex = 0;
+  state.showingAnswer = false;
+  state.selectedChoices.clear();
+
+  // 問題画面を表示
+  showQuizScreen();
+  renderQuestion();
+  updateNavButtons();
+}
+
+// ===== レガシー: モード切替（後で整理） =====
 function setMode(mode) {
   state.mode = mode;
   state.currentIndex = 0;
@@ -158,13 +286,7 @@ function setMode(mode) {
 async function loadQuestionData() {
   try {
     if (state.allData) {
-      elements.loadingState.style.display = 'none';
-      elements.quizCard.style.display = 'block';
       renderExamList();
-      if (state.currentExam) {
-        filterQuestions();
-        renderQuestion();
-      }
       return;
     }
 
@@ -176,17 +298,11 @@ async function loadQuestionData() {
 
     renderExamList();
 
-    if (state.allData.exams.length > 0) {
-      const latestExam = state.allData.exams[state.allData.exams.length - 1];
-      selectExam(latestExam.examId);
-    }
-
-    elements.loadingState.style.display = 'none';
-    elements.quizCard.style.display = 'block';
-
   } catch (error) {
     console.error('データ読み込みエラー:', error);
-    elements.loadingState.innerHTML = `<p>エラー: ${error.message}</p>`;
+    if (elements.loadingState) {
+      elements.loadingState.innerHTML = `<p>エラー: ${error.message}</p>`;
+    }
   }
 }
 
@@ -222,6 +338,9 @@ function selectExam(examId) {
   });
 
   filterQuestions();
+
+  // 問題画面を表示
+  showQuizScreen();
   renderQuestion();
   updateProgress();
 }
@@ -972,12 +1091,25 @@ function closeSettings() {
 
 // ===== イベントリスナー =====
 function setupEventListeners() {
-  // モードタブ
+  // 下部ナビゲーション
+  elements.bottomNavItems.forEach(item => {
+    item.addEventListener('click', () => switchTab(item.dataset.tab));
+  });
+
+  // 過去問ホームのボタン
+  elements.dailyHisshuBtn?.addEventListener('click', () => startDailyQuiz('hisshu'));
+  elements.dailyIppanBtn?.addEventListener('click', () => startDailyQuiz('ippan'));
+  elements.dailyRinjitsuBtn?.addEventListener('click', () => startDailyQuiz('rinjitsu'));
+  elements.settingsMenuBtn?.addEventListener('click', openSettings);
+  elements.examSelectBtn?.addEventListener('click', openSidebar);
+
+  // レガシー: モードタブ
   elements.modeTabs.forEach(tab => {
     tab.addEventListener('click', () => setMode(tab.dataset.mode));
   });
 
   // ヘッダーボタン
+  elements.backBtn?.addEventListener('click', backToHome);
   elements.menuBtn.addEventListener('click', openSidebar);
   elements.themeBtn.addEventListener('click', cycleTheme);
   elements.settingsBtn.addEventListener('click', openSettings);
