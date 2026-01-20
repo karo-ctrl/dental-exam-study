@@ -42,7 +42,10 @@ const state = {
   touchStartX: 0,
   touchStartY: 0,
   touchEndX: 0,
-  touchEndY: 0
+  touchEndY: 0,
+
+  // 日次統計
+  dailyStats: {} // { "2024-01-20": 5, "2024-01-19": 10, ... }
 };
 
 // ===== DOM要素 =====
@@ -93,12 +96,12 @@ function initElements() {
   elements.settingsOverlay = document.getElementById('settingsOverlay');
   elements.closeSettingsBtn = document.getElementById('closeSettingsBtn');
   elements.themeOptions = document.querySelectorAll('.theme-option');
-  elements.filterOptions = document.querySelectorAll('.filter-option');
   elements.fontDecrease = document.getElementById('fontDecrease');
   elements.fontIncrease = document.getElementById('fontIncrease');
   elements.fontSizeDisplay = document.getElementById('fontSizeDisplay');
-  elements.resetProgress = document.getElementById('resetProgress');
-  elements.progressText = document.getElementById('progressText');
+  elements.todayCount = document.getElementById('todayCount');
+  elements.todayDiff = document.getElementById('todayDiff');
+  elements.loginBtn = document.getElementById('loginBtn');
 
   // カード共通
   elements.loadingState = document.getElementById('loadingState');
@@ -153,6 +156,7 @@ function initElements() {
 async function init() {
   initElements();
   loadState();
+  loadDailyStats();
   applyTheme(state.theme);
   applyFontSize();
   setupEventListeners();
@@ -367,7 +371,6 @@ function selectExam(examId) {
   // 問題画面を表示
   showQuizScreen();
   renderQuestion();
-  updateProgress();
 }
 
 function filterQuestions() {
@@ -385,22 +388,6 @@ function filterQuestions() {
   if (state.currentIndex >= state.filteredQuestions.length) {
     state.currentIndex = Math.max(0, state.filteredQuestions.length - 1);
   }
-}
-
-function setFilter(filter) {
-  state.filter = filter;
-  state.currentIndex = 0;
-  state.showingAnswer = false;
-  state.selectedChoices.clear();
-
-  elements.filterOptions.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.filter === filter);
-  });
-
-  filterQuestions();
-  renderQuestion();
-  updateProgress();
-  saveState();
 }
 
 function renderQuestion() {
@@ -498,6 +485,7 @@ function toggleChoice(label) {
 
 function showAnswer() {
   const question = state.filteredQuestions[state.currentIndex];
+  const wasAlreadyAnswered = state.answeredCards.has(question.id);
   state.showingAnswer = true;
 
   const correctLabels = question.correctAnswers;
@@ -524,6 +512,11 @@ function showAnswer() {
     selected: Array.from(state.selectedChoices),
     correct: allCorrect
   });
+
+  // 初めて回答した問題のみカウント
+  if (!wasAlreadyAnswered) {
+    incrementTodayCount();
+  }
 
   saveState();
 }
@@ -894,7 +887,6 @@ async function loadCategoryData(categoryId) {
 
     renderTopicList();
     renderSummaryCard();
-    updateProgress();
 
   } catch (error) {
     console.error('カテゴリデータ読み込みエラー:', error);
@@ -1118,7 +1110,6 @@ function jumpToQuestion(index) {
   } else {
     renderSummaryCard();
   }
-  updateProgress();
 }
 
 function goToPrev() {
@@ -1131,7 +1122,6 @@ function goToPrev() {
     } else {
       renderSummaryCard();
     }
-    updateProgress();
   }
 }
 
@@ -1146,7 +1136,6 @@ function goToNext() {
     } else {
       renderSummaryCard();
     }
-    updateProgress();
   }
 }
 
@@ -1243,34 +1232,82 @@ function toggleFavorite() {
   saveState();
 }
 
-// ===== 進捗管理 =====
-function updateProgress() {
-  let total, viewed;
-  if (state.mode === 'quiz') {
-    total = state.filteredQuestions.length;
-    viewed = state.filteredQuestions.filter(q => state.answeredCards.has(q.id)).length;
-  } else {
-    total = state.flattenedCards.length;
-    viewed = state.flattenedCards.filter(c => state.viewedCards.has(c.id)).length;
-  }
-  elements.progressText.textContent = `${viewed} / ${total}`;
+// ===== 日次統計 =====
+function getTodayKey() {
+  const today = new Date();
+  return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
 }
 
-function resetProgress() {
-  const message = state.mode === 'quiz'
-    ? '進捗をリセットしますか？\n回答履歴がすべて削除されます。'
-    : '閲覧履歴をリセットしますか？';
+function incrementTodayCount() {
+  const todayKey = getTodayKey();
+  state.dailyStats[todayKey] = (state.dailyStats[todayKey] || 0) + 1;
+  saveDailyStats();
+}
 
-  if (confirm(message)) {
-    if (state.mode === 'quiz') {
-      state.answeredCards.clear();
-      state.showingAnswer = false;
-      state.selectedChoices.clear();
-      renderQuestion();
+function getTodayCount() {
+  return state.dailyStats[getTodayKey()] || 0;
+}
+
+function getWeeklyAverage() {
+  const today = new Date();
+  let total = 0;
+  let days = 0;
+
+  // 過去7日間（今日を除く）の平均を計算
+  for (let i = 1; i <= 7; i++) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    if (state.dailyStats[key] !== undefined) {
+      total += state.dailyStats[key];
+      days++;
     }
-    state.viewedCards.clear();
-    updateProgress();
-    saveState();
+  }
+
+  return days > 0 ? Math.round(total / days) : 0;
+}
+
+function updateTodayStatsDisplay() {
+  const todayCount = getTodayCount();
+  const weeklyAvg = getWeeklyAverage();
+  const diff = todayCount - weeklyAvg;
+
+  if (elements.todayCount) {
+    elements.todayCount.textContent = todayCount;
+  }
+
+  if (elements.todayDiff) {
+    if (weeklyAvg > 0 || todayCount > 0) {
+      const sign = diff >= 0 ? '+' : '';
+      elements.todayDiff.textContent = `(${sign}${diff})`;
+      elements.todayDiff.className = 'today-diff ' + (diff >= 0 ? 'positive' : 'negative');
+    } else {
+      elements.todayDiff.textContent = '';
+    }
+  }
+}
+
+function saveDailyStats() {
+  // 30日以上古いデータを削除
+  const cutoffDate = new Date();
+  cutoffDate.setDate(cutoffDate.getDate() - 30);
+
+  const cleaned = {};
+  Object.keys(state.dailyStats).forEach(key => {
+    const date = new Date(key);
+    if (date >= cutoffDate) {
+      cleaned[key] = state.dailyStats[key];
+    }
+  });
+  state.dailyStats = cleaned;
+
+  localStorage.setItem('dentalExamDailyStats', JSON.stringify(state.dailyStats));
+}
+
+function loadDailyStats() {
+  const saved = localStorage.getItem('dentalExamDailyStats');
+  if (saved) {
+    state.dailyStats = JSON.parse(saved);
   }
 }
 
@@ -1286,6 +1323,7 @@ function closeSidebar() {
 }
 
 function openSettings() {
+  updateTodayStatsDisplay();
   elements.settingsPanel.classList.add('open');
   elements.settingsOverlay.classList.add('open');
 }
@@ -1333,17 +1371,15 @@ function setupEventListeners() {
     btn.addEventListener('click', () => applyTheme(btn.dataset.theme));
   });
 
-  // フィルター選択
-  elements.filterOptions.forEach(btn => {
-    btn.addEventListener('click', () => setFilter(btn.dataset.filter));
-  });
-
   // フォントサイズ
   elements.fontDecrease.addEventListener('click', () => changeFontSize(-10));
   elements.fontIncrease.addEventListener('click', () => changeFontSize(10));
 
-  // 進捗リセット
-  elements.resetProgress.addEventListener('click', resetProgress);
+  // ログインボタン（仮）
+  elements.loginBtn?.addEventListener('click', () => {
+    // TODO: ログイン機能を実装
+    console.log('ログインボタンがクリックされました');
+  });
 
   // ナビゲーション
   elements.prevBtn.addEventListener('click', goToPrev);

@@ -99,16 +99,6 @@
           <button class="theme-option" data-theme="auto">自動</button>
         </div>
       </div>
-      <div class="setting-item quiz-only">
-        <label>セクション</label>
-        <div class="filter-options">
-          <button class="filter-option active" data-filter="all">全て</button>
-          <button class="filter-option" data-filter="A">A問題</button>
-          <button class="filter-option" data-filter="B">B問題</button>
-          <button class="filter-option" data-filter="C">C問題</button>
-          <button class="filter-option" data-filter="D">D問題</button>
-        </div>
-      </div>
       <div class="setting-item">
         <label>文字サイズ</label>
         <div class="font-size-control">
@@ -118,11 +108,21 @@
         </div>
       </div>
       <div class="setting-item">
-        <label>進捗</label>
-        <div class="progress-info">
-          <span id="progressText">0 / 0</span>
-          <button class="btn-small" id="resetProgress">リセット</button>
+        <label>今日の問題数</label>
+        <div class="today-stats">
+          <span class="today-count" id="todayCount">0</span>
+          <span class="today-diff" id="todayDiff"></span>
         </div>
+      </div>
+      <div class="setting-item setting-item-login">
+        <button class="btn-login" id="loginBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          ログイン
+        </button>
       </div>
     </div>
   </aside>

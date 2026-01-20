@@ -336,14 +336,63 @@ body {
   font-weight: 500;
 }
 
-.progress-info {
+/* 今日の問題数 */
+.today-stats {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  align-items: baseline;
+  gap: 8px;
 }
 
-#progressText {
+.today-count {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+}
+
+.today-diff {
+  font-size: 0.9rem;
   font-weight: 500;
+}
+
+.today-diff.positive {
+  color: #22c55e;
+}
+
+.today-diff.negative {
+  color: #ef4444;
+}
+
+/* ログインボタン */
+.setting-item-login {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-login:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-login:active {
+  transform: scale(0.98);
 }
 
 .settings-overlay {
