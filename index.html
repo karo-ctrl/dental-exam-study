@@ -532,6 +532,135 @@
     </button>
   </nav>
 
+  <!-- 科目・回数別検索ポップアップ -->
+  <div class="search-modal" id="searchModal">
+    <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <h2>科目・回数別検索</h2>
+        <button class="btn-icon" id="closeSearchModalBtn" aria-label="閉じる">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="search-modal-body">
+        <!-- キーワード検索 -->
+        <div class="search-section">
+          <label>問題番号・キーワード検索</label>
+          <div class="search-input-row">
+            <input type="text" id="searchKeyword" class="search-input" placeholder="例: 117-A001, 歯周病">
+            <button class="btn-search" id="searchBtn">検索</button>
+          </div>
+        </div>
+
+        <!-- 詳細設定（折りたたみ） -->
+        <div class="search-details-section">
+          <button class="search-details-toggle" id="searchDetailsToggle">
+            <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            詳細設定
+          </button>
+          <div class="search-details-body collapsed" id="searchDetailsBody">
+            <!-- 演習状態 -->
+            <div class="search-filter-group">
+              <label>演習状態</label>
+              <div class="filter-buttons" id="practiceStatusFilter">
+                <button class="filter-btn active" data-value="unanswered">未演習</button>
+                <button class="filter-btn active" data-value="correct">直近○</button>
+                <button class="filter-btn active" data-value="incorrect">直近×</button>
+              </div>
+            </div>
+
+            <!-- 問題区分 -->
+            <div class="search-filter-group">
+              <label>問題区分</label>
+              <div class="filter-buttons" id="questionTypeFilter">
+                <button class="filter-btn active" data-value="hisshu">必修</button>
+                <button class="filter-btn active" data-value="ippan">一般</button>
+                <button class="filter-btn active" data-value="rinjitsu">臨実</button>
+              </div>
+            </div>
+
+            <!-- 回数選択 -->
+            <div class="search-filter-group">
+              <div class="filter-label-row">
+                <label>回数選択</label>
+                <div class="filter-actions">
+                  <button class="filter-action-btn" data-action="selectAll" data-target="examFilter">全選択</button>
+                  <button class="filter-action-btn" data-action="clearAll" data-target="examFilter">全解除</button>
+                </div>
+              </div>
+              <div class="filter-buttons exam-buttons" id="examFilter">
+                <button class="filter-btn active" data-value="118">118</button>
+                <button class="filter-btn active" data-value="117">117</button>
+                <button class="filter-btn active" data-value="116">116</button>
+                <button class="filter-btn active" data-value="115">115</button>
+                <button class="filter-btn active" data-value="114">114</button>
+                <button class="filter-btn active" data-value="113">113</button>
+                <button class="filter-btn active" data-value="112">112</button>
+                <button class="filter-btn active" data-value="111">111</button>
+                <button class="filter-btn active" data-value="110">110</button>
+                <button class="filter-btn active" data-value="109">109</button>
+                <button class="filter-btn active" data-value="108">108</button>
+                <button class="filter-btn active" data-value="107">107</button>
+                <button class="filter-btn active" data-value="106">106</button>
+                <button class="filter-btn active" data-value="105">105</button>
+                <button class="filter-btn active" data-value="104">104</button>
+                <button class="filter-btn active" data-value="103">103</button>
+                <button class="filter-btn active" data-value="102">102</button>
+                <button class="filter-btn active" data-value="101">101</button>
+                <button class="filter-btn active" data-value="100">100</button>
+              </div>
+            </div>
+
+            <!-- 科目選択 -->
+            <div class="search-filter-group">
+              <div class="filter-label-row">
+                <label>科目選択</label>
+                <div class="filter-actions">
+                  <button class="filter-action-btn" data-action="selectAll" data-target="subjectFilter">全選択</button>
+                  <button class="filter-action-btn" data-action="clearAll" data-target="subjectFilter">全解除</button>
+                </div>
+              </div>
+              <div class="filter-buttons subject-filter-buttons" id="subjectFilter">
+                <button class="filter-btn active" data-value="解剖学">解剖学</button>
+                <button class="filter-btn active" data-value="組織学">組織学</button>
+                <button class="filter-btn active" data-value="病理学">病理学</button>
+                <button class="filter-btn active" data-value="生理学">生理学</button>
+                <button class="filter-btn active" data-value="生化学">生化学</button>
+                <button class="filter-btn active" data-value="微生物学">微生物学</button>
+                <button class="filter-btn active" data-value="薬理学">薬理学</button>
+                <button class="filter-btn active" data-value="歯科理工学">歯科理工学</button>
+                <button class="filter-btn active" data-value="衛生">衛生</button>
+                <button class="filter-btn active" data-value="保存修復学">保存修復学</button>
+                <button class="filter-btn active" data-value="歯内療法学">歯内療法学</button>
+                <button class="filter-btn active" data-value="歯周病学">歯周病学</button>
+                <button class="filter-btn active" data-value="有床義歯補綴学">有床義歯</button>
+                <button class="filter-btn active" data-value="冠橋補綴学">冠橋補綴</button>
+                <button class="filter-btn active" data-value="インプラント">インプラント</button>
+                <button class="filter-btn active" data-value="口腔外科学">口腔外科</button>
+                <button class="filter-btn active" data-value="矯正歯科学">矯正</button>
+                <button class="filter-btn active" data-value="小児歯科学">小児</button>
+                <button class="filter-btn active" data-value="高齢者歯科学">高齢者</button>
+                <button class="filter-btn active" data-value="障害者歯科学">障害者</button>
+                <button class="filter-btn active" data-value="放射線学">放射線</button>
+                <button class="filter-btn active" data-value="麻酔学">麻酔</button>
+                <button class="filter-btn active" data-value="総合医学">総合医学</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-modal-footer">
+        <button class="btn-start-quiz" id="startFilteredQuizBtn">この条件で出題</button>
+      </div>
+    </div>
+  </div>
+
   <!-- 画像モーダル -->
   <div class="image-modal" id="imageModal">
     <div class="image-modal-backdrop" id="imageModalBackdrop"></div>

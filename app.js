@@ -140,6 +140,20 @@ function initElements() {
   elements.rinjitsuRange = document.getElementById('rinjitsuRange');
   elements.rinjitsuCondition = document.getElementById('rinjitsuCondition');
 
+  // 検索モーダル
+  elements.searchModal = document.getElementById('searchModal');
+  elements.searchModalBackdrop = document.getElementById('searchModalBackdrop');
+  elements.closeSearchModalBtn = document.getElementById('closeSearchModalBtn');
+  elements.searchKeyword = document.getElementById('searchKeyword');
+  elements.searchBtn = document.getElementById('searchBtn');
+  elements.searchDetailsToggle = document.getElementById('searchDetailsToggle');
+  elements.searchDetailsBody = document.getElementById('searchDetailsBody');
+  elements.practiceStatusFilter = document.getElementById('practiceStatusFilter');
+  elements.questionTypeFilter = document.getElementById('questionTypeFilter');
+  elements.examFilter = document.getElementById('examFilter');
+  elements.subjectFilter = document.getElementById('subjectFilter');
+  elements.startFilteredQuizBtn = document.getElementById('startFilteredQuizBtn');
+
   // カード共通
   elements.loadingState = document.getElementById('loadingState');
 
@@ -1617,6 +1631,162 @@ function saveAndCloseQuizSettings() {
   closeQuizSettings();
 }
 
+// ===== 検索モーダル =====
+function openSearchModal() {
+  elements.searchModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSearchModal() {
+  elements.searchModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function toggleSearchDetails() {
+  const body = elements.searchDetailsBody;
+  const toggle = elements.searchDetailsToggle;
+
+  body.classList.toggle('collapsed');
+  toggle.classList.toggle('expanded');
+}
+
+function toggleFilterButton(btn) {
+  btn.classList.toggle('active');
+}
+
+function selectAllFilters(targetId) {
+  const container = document.getElementById(targetId);
+  if (!container) return;
+
+  container.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.add('active');
+  });
+}
+
+function clearAllFilters(targetId) {
+  const container = document.getElementById(targetId);
+  if (!container) return;
+
+  container.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+}
+
+function getActiveFilterValues(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return [];
+
+  return Array.from(container.querySelectorAll('.filter-btn.active')).map(btn => btn.dataset.value);
+}
+
+function startFilteredQuiz() {
+  if (!state.allData) return;
+
+  const keyword = elements.searchKeyword?.value.trim() || '';
+  const practiceStatus = getActiveFilterValues('practiceStatusFilter');
+  const questionTypes = getActiveFilterValues('questionTypeFilter');
+  const examNumbers = getActiveFilterValues('examFilter');
+
+  let questions = [];
+
+  // 選択した回数の問題を収集
+  state.allData.exams.forEach(exam => {
+    if (!examNumbers.includes(exam.examId)) return;
+
+    exam.questions.forEach(q => {
+      // 問題区分でフィルタ
+      const section = q.section;
+      if (section === 'A' && !questionTypes.includes('hisshu')) return;
+      if ((section === 'B' || section === 'C') && !questionTypes.includes('ippan')) return;
+      if (section === 'D' && !questionTypes.includes('rinjitsu')) return;
+
+      questions.push({ ...q, examId: exam.examId });
+    });
+  });
+
+  // 演習状態でフィルタ
+  questions = filterByPracticeStatus(questions, practiceStatus);
+
+  // キーワード検索
+  if (keyword) {
+    questions = filterByKeyword(questions, keyword);
+  }
+
+  if (questions.length === 0) {
+    alert('条件に合う問題がありませんでした');
+    return;
+  }
+
+  // シャッフル
+  const shuffled = questions.sort(() => Math.random() - 0.5);
+  state.filteredQuestions = shuffled;
+  state.currentIndex = 0;
+  state.showingAnswer = false;
+  state.selectedChoices.clear();
+
+  // モーダルを閉じて問題画面を表示
+  closeSearchModal();
+  showQuizScreen();
+  renderQuestion();
+  updateNavButtons();
+}
+
+function filterByPracticeStatus(questions, statuses) {
+  if (!statuses || statuses.length === 0) return questions;
+
+  // 全て選択されている場合はフィルタなし
+  if (statuses.includes('unanswered') && statuses.includes('correct') && statuses.includes('incorrect')) {
+    return questions;
+  }
+
+  return questions.filter(q => {
+    const history = state.questionHistory[q.id];
+
+    // 未演習
+    if (statuses.includes('unanswered') && !history) {
+      return true;
+    }
+
+    if (history && history.history && history.history.length > 0) {
+      const lastAttempt = history.history[history.history.length - 1];
+      // 直近○
+      if (statuses.includes('correct') && lastAttempt.correct) {
+        return true;
+      }
+      // 直近×
+      if (statuses.includes('incorrect') && !lastAttempt.correct) {
+        return true;
+      }
+    }
+
+    return false;
+  });
+}
+
+function filterByKeyword(questions, keyword) {
+  const lowerKeyword = keyword.toLowerCase();
+
+  return questions.filter(q => {
+    // 問題IDで検索
+    if (q.id.toLowerCase().includes(lowerKeyword)) {
+      return true;
+    }
+    // 問題文で検索
+    if (q.questionText && q.questionText.toLowerCase().includes(lowerKeyword)) {
+      return true;
+    }
+    // 選択肢で検索
+    if (q.choices && q.choices.some(c => c.text.toLowerCase().includes(lowerKeyword))) {
+      return true;
+    }
+    return false;
+  });
+}
+
+function executeSearch() {
+  startFilteredQuiz();
+}
+
 // ===== サイドバー/設定パネル =====
 function openSidebar() {
   elements.sidebar.classList.add('open');
@@ -1651,7 +1821,7 @@ function setupEventListeners() {
   elements.dailyIppanBtn?.addEventListener('click', () => startDailyQuiz('ippan'));
   elements.dailyRinjitsuBtn?.addEventListener('click', () => startDailyQuiz('rinjitsu'));
   elements.settingsMenuBtn?.addEventListener('click', openQuizSettings);
-  elements.examSelectBtn?.addEventListener('click', openSidebar);
+  elements.examSelectBtn?.addEventListener('click', openSearchModal);
 
   // レガシー: モードタブ
   elements.modeTabs.forEach(tab => {
@@ -1700,6 +1870,40 @@ function setupEventListeners() {
         handleConditionButtonClick(container.id, btn);
       });
     });
+  });
+
+  // 検索モーダル
+  elements.closeSearchModalBtn?.addEventListener('click', closeSearchModal);
+  elements.searchModalBackdrop?.addEventListener('click', closeSearchModal);
+  elements.searchDetailsToggle?.addEventListener('click', toggleSearchDetails);
+  elements.startFilteredQuizBtn?.addEventListener('click', startFilteredQuiz);
+  elements.searchBtn?.addEventListener('click', executeSearch);
+
+  // 検索モーダル内のフィルターボタン
+  document.querySelectorAll('#searchModal .filter-buttons').forEach(container => {
+    container.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => toggleFilterButton(btn));
+    });
+  });
+
+  // 全選択/全解除ボタン
+  document.querySelectorAll('.filter-action-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const action = btn.dataset.action;
+      const target = btn.dataset.target;
+      if (action === 'selectAll') {
+        selectAllFilters(target);
+      } else if (action === 'clearAll') {
+        clearAllFilters(target);
+      }
+    });
+  });
+
+  // Enterキーで検索
+  elements.searchKeyword?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      executeSearch();
+    }
   });
 
   // テーマ選択
