@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light" data-mode="quiz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歯科国試 学習</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      var saved = localStorage.getItem("dentalExamState");
+      if (saved) {
+        var data = JSON.parse(saved);
+        if (data.theme === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+        if (data.mode) {
+          document.documentElement.setAttribute("data-mode", data.mode);
+        }
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <button class="btn-icon" id="menuBtn" aria-label="メニュー">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <h1 class="header-title" id="headerTitle">歯科国試 学習</h1>
+    <div class="header-actions">
+      <button class="btn-icon" id="themeBtn" aria-label="テーマ切替">
+        <svg class="icon-sun" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      <button class="btn-icon" id="settingsBtn" aria-label="設定">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mode-tabs">
+    <button class="mode-tab active" data-mode="quiz">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+      </svg>
+      演習
+    </button>
+    <button class="mode-tab" data-mode="summary">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      まとめ
+    </button>
+  </nav>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2 id="sidebarTitle">試験選択</h2>
+      <button class="btn-icon" id="closeSidebarBtn" aria-label="閉じる">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="sidebar-nav">
+      <div id="examList" class="exam-list"></div>
+      <div id="categoryList" class="category-list" style="display: none;"></div>
+      <div id="topicList" class="topic-list" style="display: none;"></div>
+    </nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="settings-panel" id="settingsPanel">
+    <div class="settings-header">
+      <h2>設定</h2>
+      <button class="btn-icon" id="closeSettingsBtn" aria-label="閉じる">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="settings-content">
+      <div class="setting-item">
+        <label>テーマ</label>
+        <div class="theme-options">
+          <button class="theme-option active" data-theme="light">ライト</button>
+          <button class="theme-option" data-theme="dark">ダーク</button>
+          <button class="theme-option" data-theme="auto">自動</button>
+        </div>
+      </div>
+      <div class="setting-item quiz-only">
+        <label>セクション</label>
+        <div class="filter-options">
+          <button class="filter-option active" data-filter="all">全て</button>
+          <button class="filter-option" data-filter="A">A問題</button>
+          <button class="filter-option" data-filter="B">B問題</button>
+          <button class="filter-option" data-filter="C">C問題</button>
+          <button class="filter-option" data-filter="D">D問題</button>
+        </div>
+      </div>
+      <div class="setting-item">
+        <label>文字サイズ</label>
+        <div class="font-size-control">
+          <button class="btn-small" id="fontDecrease">A-</button>
+          <span id="fontSizeDisplay">100%</span>
+          <button class="btn-small" id="fontIncrease">A+</button>
+        </div>
+      </div>
+      <div class="setting-item">
+        <label>進捗</label>
+        <div class="progress-info">
+          <span id="progressText">0 / 0</span>
+          <button class="btn-small" id="resetProgress">リセット</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="settings-overlay" id="settingsOverlay"></div>
+
+  <main class="main">
+    <div class="card-container">
+      <div id="loadingState" class="loading-state">
+        <p>データ読み込み中...</p>
+      </div>
+
+      <article id="quizCard" class="card quiz-card" style="display: none;">
+        <div class="card-header">
+          <span id="cardCategory" class="card-category">A問題</span>
+          <button id="quizFavoriteBtn" class="btn-icon btn-favorite" aria-label="お気に入り">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div id="questionId" class="question-id">117-A001</div>
+        <h2 id="cardTitle" class="card-title">問題文がここに表示されます</h2>
+        <div id="imageRef" class="image-ref" style="display: none;">
+          <div class="image-ref-header">
+            <span class="image-badge">画像</span>
+            <span id="imageRefText"></span>
+          </div>
+          <div id="imageThumbnails" class="image-thumbnails"></div>
+        </div>
+        <div id="choicesContainer" class="choices-container"></div>
+        <div id="answerArea" class="answer-area" style="display: none;">
+          <div class="answer-label">正解</div>
+          <div id="correctAnswer" class="correct-answer"></div>
+        </div>
+        <div class="card-actions">
+          <button id="showAnswerBtn" class="btn-answer">解答を見る</button>
+          <button id="nextQuestionBtn" class="btn-next" style="display: none;">次の問題</button>
+        </div>
+      </article>
+
+      <article id="summaryCard" class="card summary-card" style="display: none;">
+        <div class="card-header">
+          <div class="summary-breadcrumb">
+            <span id="summaryCategory" class="breadcrumb-item">解剖学</span>
+            <span class="breadcrumb-sep">/</span>
+            <span id="summaryTopic" class="breadcrumb-item">頭蓋骨</span>
+          </div>
+          <button id="summaryFavoriteBtn" class="btn-icon btn-favorite" aria-label="お気に入り">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <h2 id="summaryTitle" class="card-title">カードタイトル</h2>
+        <div id="summaryContent" class="summary-content">
+          <p>まとめ内容がここに表示されます。</p>
+        </div>
+        <div id="keyPoints" class="key-points" style="display: none;">
+          <div class="key-points-label">ポイント</div>
+          <ul id="keyPointsList"></ul>
+        </div>
+        <div id="textbookRefs" class="textbook-refs" style="display: none;">
+          <div class="refs-label">参照ページ</div>
+          <div id="textbookRefsList" class="refs-list"></div>
+        </div>
+        <div id="relatedExams" class="related-exams" style="display: none;">
+          <div class="refs-label">関連問題</div>
+          <div id="relatedExamsList" class="refs-list"></div>
+        </div>
+        <div id="summaryTags" class="summary-tags"></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button id="prevBtn" class="btn-nav" disabled>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+      前へ
+    </button>
+    <span class="card-counter">
+      <span id="currentIndex">0</span> / <span id="totalCards">0</span>
+    </span>
+    <button id="nextBtn" class="btn-nav">
+      次へ
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </footer>
+
+  <!-- 画像モーダル -->
+  <div class="image-modal" id="imageModal">
+    <div class="image-modal-backdrop" id="imageModalBackdrop"></div>
+    <div class="image-modal-content">
+      <button class="image-modal-close" id="imageModalClose" aria-label="閉じる">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="image-modal-nav">
+        <button class="image-modal-prev" id="imageModalPrev" aria-label="前の画像">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="image-modal-next" id="imageModalNext" aria-label="次の画像">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <img id="imageModalImg" class="image-modal-img" src="" alt="問題画像">
+      <div class="image-modal-counter" id="imageModalCounter"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

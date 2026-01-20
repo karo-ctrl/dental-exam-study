@@ -1,0 +1,7078 @@
+{
+  "examId": "103",
+  "examName": "第103回歯科医師国家試験",
+  "totalQuestions": 288,
+  "questions": [
+    {
+      "id": "A-1",
+      "section": "A",
+      "number": 1,
+      "questionText": "つ 選 べ 。 國 ~",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "笑 筋"
+        },
+        {
+          "label": "b",
+          "text": "願 筋 '"
+        },
+        {
+          "label": "c",
+          "text": "広 顔 筋"
+        },
+        {
+          "label": "d",
+          "text": "口 輪 筋 _"
+        },
+        {
+          "label": "e",
+          "text": "口 角 挙 策"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-2",
+      "section": "A",
+      "number": 2,
+      "questionText": "基 心 | 43 _ | そ o | 23",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [
+        "a"
+      ],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-3",
+      "section": "A",
+      "number": 3,
+      "questionText": "エ ス ト ロ ゲ ン",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "_ ソ マ ト ス タ チ ン"
+        },
+        {
+          "label": "c",
+          "text": "テ ス ト ス テ ロ ン ."
+        },
+        {
+          "label": "d",
+          "text": "パ ゾ プ レ ッ シ ン"
+        },
+        {
+          "label": "e",
+          "text": "プ ロ ゲ ス テ ロ ン ′ '"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-4",
+      "section": "A",
+      "number": 4,
+      "questionText": "ア で 2008 \" イ マ - ー 闘 ゥ メ ー 一 _ 2000 S 40 に ー ェ っ ユ 談 謀 1980 2003 埋 _ オ っ こ _ ′ ー /2000 病 35 ニ 界 賽 | ー 飲 30 謀 1980 ' 疆 1990 2003 立 2000 _ 壷 25 2003 堀 ` 1980",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-5",
+      "section": "A",
+      "number": 5,
+      "questionText": "ー 34 一 み MtC782 一 36)",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-6",
+      "section": "A",
+      "number": 6,
+      "questionText": "Melkkersson - Rosenthal 症ィ侯群 _ ー 17 一 る M1782 一 9",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [
+        "a"
+      ],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-7",
+      "section": "A",
+      "number": 7,
+      "questionText": "幼 児 へ の 願 蝕 原 因 菌 の 定 着 を 抑 制 す る の に 適 切 な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "離 乳 を 早 く 終 了 す る 。"
+        },
+        {
+          "label": "b",
+          "text": "子 ど も 一 人 で 間 食 を と る 。 ' c 保 護 者 の 願 蝕 原 因 菌 を 減 ら す 。 ~"
+        },
+        {
+          "label": "d",
+          "text": "消 毒 薬 で 子 ど も に 口 を ゆ す が せ る 。"
+        },
+        {
+          "label": "e",
+          "text": "保 護 者 が マ ス ク を つ け て 仕 上 げ 磨 き を 行 う 。 '"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-8",
+      "section": "A",
+      "number": 8,
+      "questionText": "医 療 法 `",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "地 域 保 健 法"
+        },
+        {
+          "label": "c",
+          "text": "健 康 増 進 法"
+        },
+        {
+          "label": "d",
+          "text": "国 民 健 康 保 険 法"
+        },
+        {
+          "label": "e",
+          "text": "高 齢 者 の 医 療 の 確 保 に 関 す る 法 律"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-10",
+      "section": "A",
+      "number": 10,
+      "questionText": "口 内 法 エ ッ ク ス 線 装 置 の 管 電 流 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "10 zA ー"
+        },
+        {
+          "label": "b",
+          "text": "100 zA . C 1 mA ."
+        },
+        {
+          "label": "d",
+          "text": "10 mA ′"
+        },
+        {
+          "label": "e",
+          "text": "100 mA"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-11",
+      "section": "A",
+      "number": 11,
+      "questionText": "介 護 老 人 福 祉 施 設 は ど れ か 。 1 つ 選 べ 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "グ ル ー プ ホ ー ム"
+        },
+        {
+          "label": "b",
+          "text": "_ デ イ ケ ア セ ン タ ー"
+        },
+        {
+          "label": "c",
+          "text": "介 護 療 養 型 病 院"
+        },
+        {
+          "label": "d",
+          "text": "介 護 老 人 保 健 施 設"
+        },
+        {
+          "label": "e",
+          "text": "特 別 養 護 老 人 ホ ー ム"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-12",
+      "section": "A",
+      "number": 12,
+      "questionText": "成 人 の 心 肺 蘇 生 法 で 1 分 間 の 胸 骨 圧 迫 の 回 数 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "40"
+        },
+        {
+          "label": "b",
+          "text": "60 ` `"
+        },
+        {
+          "label": "c",
+          "text": "80"
+        },
+        {
+          "label": "d",
+          "text": "100 ' ` ・ ."
+        },
+        {
+          "label": "e",
+          "text": "120 . ー 4 一 る M1(782 一 6"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-13",
+      "section": "A",
+      "number": 13,
+      "questionText": "朝 食 を 摂 ら ず に 受 診 し た 糖 尿 病 の 患 者 が 歯 科 治 療 中 に 顔 面 蒼 白 に な り 、 動 悸 と 冷 汗 と が み ら れ た 。 祷 給 す べ き な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "塩 分 ."
+        },
+        {
+          "label": "b",
+          "text": "水 分 ' ”"
+        },
+        {
+          "label": "c",
+          "text": "脂 質"
+        },
+        {
+          "label": "d",
+          "text": "糖 質"
+        },
+        {
+          "label": "e",
+          "text": "タ ン パ ク 質"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-14",
+      "section": "A",
+      "number": 14,
+      "questionText": "市 町 村 が 実 施 し て い ぃ る 歯 周 疾 患 検 診 の 根 拠 法 は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-15",
+      "section": "A",
+      "number": 15,
+      "questionText": "ア デ ノ フ イ ド 肥 大 で み ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "鼻 岳 吸"
+        },
+        {
+          "label": "b",
+          "text": "過 蓋 咬 合 _"
+        },
+        {
+          "label": "c",
+          "text": "口 輪 筋 の 緊 張 ー"
+        },
+        {
+          "label": "d",
+          "text": "上 顎 歯 列 の 狭 窄"
+        },
+        {
+          "label": "e",
+          "text": "上 顎 切 歯 の 舌 側 傾 斜 ー 5 一 る M1(782 一 の ` ' 16 ヒ ト 染 色 体 で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。 ) `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-17",
+      "section": "A",
+      "number": 17,
+      "questionText": "患 者 の 放 射 線 防 護 に お け る ` 行 為 の 正 当 化 」 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "適 切 な 遮 蔽 を 行 う 。"
+        },
+        {
+          "label": "b",
+          "text": "装 置 の 保 守 管 理 を 行 う 。"
+        },
+        {
+          "label": "c",
+          "text": "検 査 の 利 益 が 損 失 を 上 回 る 。"
+        },
+        {
+          "label": "d",
+          "text": "線 量 拘 束 値 以 下 で 検 査 す る 。 '"
+        },
+        {
+          "label": "e",
+          "text": "公 衆 被 曝 の 線 量 限 序 を 守 る 。 ・"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-18",
+      "section": "A",
+      "number": 18,
+      "questionText": "永 久 細 胞 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "肝 細 胞"
+        },
+        {
+          "label": "b",
+          "text": "骨 芽 細 胞"
+        },
+        {
+          "label": "c",
+          "text": "心 筋 細 胞 _ d 線 維 芽 細 胞"
+        },
+        {
+          "label": "e",
+          "text": "血 管 内 皮 細 胞 國 ' ー 6 一 る ぐ KM1(782 一 9"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-19",
+      "section": "A",
+      "number": 19,
+      "questionText": "歯 科 医 師 免 許 の 絶 対 的 欠 格 事 由 は ど れ か 。 1 つ 選 べ 。 ) ' .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "麻 薬 中 毒 者 ~ ."
+        },
+        {
+          "label": "b",
+          "text": "成 年 被 後 見 人 ー ー 圃 c 心 身 に 障 害 が あ る 者 ' ー 着"
+        },
+        {
+          "label": "d",
+          "text": "医 事 に 関 し て 不 正 の あ っ た 者 談 國 闇 談 訣 副 謀 ・ e 罰 金 以 上 の 刑 に 処 せ ら れ た 者 ー `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-20",
+      "section": "A",
+      "number": 20,
+      "questionText": "ヒ ト 骨 格 筋 の 発 達 を 促 す の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-21",
+      "section": "A",
+      "number": 21,
+      "questionText": "隣 接 す る 骨 と 軟 骨 結 合 す る の は ど れ か 。 1 つ 選 べ 。 ー `",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-22",
+      "section": "A",
+      "number": 22,
+      "questionText": "エ ッ ク ス 線 を 発 見 し た の は 誰 か 。 1 つ 選 べ 。 ー ・",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-23",
+      "section": "A",
+      "number": 23,
+      "questionText": "上 顎 中 切 歯 で み ら れ る の は ど れ か 。 1 つ 選 べ 。 ~ 3 尖 顔 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "中 心 溝"
+        },
+        {
+          "label": "c",
+          "text": "介 在 結 節 ・"
+        },
+        {
+          "label": "d",
+          "text": "辺 縁 隆 線 ' ."
+        },
+        {
+          "label": "e",
+          "text": "エ ナ メ ル 突 起 }"
+        }
+      ],
+      "correctAnswers": [
+        "a"
+      ],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-24",
+      "section": "A",
+      "number": 24,
+      "questionText": "ピ ラ ゾ ブ ロ ン 系 薬 過 敏 症 の 原 因 と な る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-25",
+      "section": "A",
+      "number": 25,
+      "questionText": "第 一 大 臼 歯 の 1 歯 欠 損 で ブ リ ッ ジ 治 瘻 が イ ン プ ラ ン ト 治 療 よ り も 有 利 な の は ど れ } か 。 1 つ 選 べ 。 _ _ ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "清 掃 性 に 優 れ る 。"
+        },
+        {
+          "label": "b",
+          "text": "治療期間が短い。 ー ー ー c 修 理 が 容 易 で あ る 。 _"
+        },
+        {
+          "label": "d",
+          "text": "口 蓋 平 面 _"
+        },
+        {
+          "label": "e",
+          "text": "Camper 平 面"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-27",
+      "section": "A",
+      "number": 27,
+      "questionText": "組 合 せ で 誤 っ て い る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-28",
+      "section": "A",
+      "number": 28,
+      "questionText": "医 療 に も け る ヒ ヤ リ ハ ッ ト レ ポ ー ト の 目 的 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "裁 判 の 資 料 ー"
+        },
+        {
+          "label": "b",
+          "text": "事 故 の 防 止 ・"
+        },
+        {
+          "label": "c",
+          "text": "治 療 法 の 標 準 化 ー ー"
+        },
+        {
+          "label": "d",
+          "text": "多 職 種 間 の 相 互 理 解"
+        },
+        {
+          "label": "e",
+          "text": "医 療 従 事 者 の 能 力 判 定"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-29",
+      "section": "A",
+      "number": 29,
+      "questionText": "医 療 に 関 す る 患 者 の 権 利 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "病 名 の 変 更 を 求 め る 権 利"
+        },
+        {
+          "label": "b",
+          "text": "入 院 中 の 所 得 保 障 を 求 め る 権 利"
+        },
+        {
+          "label": "c",
+          "text": "自 己 診 断 に 基 づ い た 治 療 を 求 め る 権 利"
+        },
+        {
+          "label": "d",
+          "text": "保 険 診 療 の 医 療 費 の 減 額 を 求 め る 権 利 _ _"
+        },
+        {
+          "label": "e",
+          "text": "治 療 に つ い て 他 の 医 師 の 見 解 を 求 め る 権 利"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-30",
+      "section": "A",
+      "number": 30,
+      "questionText": "一 遇 性 の 冷 水 痛 が あ る 歯 で 最 も 生 じ や す い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "酸 味 痛 國 ・"
+        },
+        {
+          "label": "b",
+          "text": "温 熱 痛"
+        },
+        {
+          "label": "c",
+          "text": "自 発 痛"
+        },
+        {
+          "label": "d",
+          "text": "咲 合 痛 ー"
+        },
+        {
+          "label": "e",
+          "text": "打 診 痛 ' ' ー 10 一 る M1(782 一 12"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-31",
+      "section": "A",
+      "number": 31,
+      "questionText": "診 療 録 で 正 し ぃ の は ど れ か 。 1 つ 選 べ 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "保 存 は 初 診 時 か ら 5 年 間 で あ る 。"
+        },
+        {
+          "label": "b",
+          "text": "_ 記 載 の 修 正 時 に は 修 正 液 を 用 い る 。 ・ “"
+        },
+        {
+          "label": "c",
+          "text": "診 療 内 容 ご と に 行 を 空 け て 記 載 す る 。 國 誠 誌 '"
+        },
+        {
+          "label": "d",
+          "text": "電 子 媒 体 で の 保 存 が 認 め ら れ て い る 。 ”"
+        },
+        {
+          "label": "e",
+          "text": "医 療 機 関 内 に 保 存 し な け れ ば な ら な い 。 '"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-32",
+      "section": "A",
+      "number": 32,
+      "questionText": "乳 児 型 嚥 下 で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "嘔 呆"
+        },
+        {
+          "label": "b",
+          "text": "下 痢"
+        },
+        {
+          "label": "c",
+          "text": "貧 血"
+        },
+        {
+          "label": "d",
+          "text": "め ま い _"
+        },
+        {
+          "label": "e",
+          "text": "口 腔 乾 燥 } 一 11 一 る ぐ Mt(782 一 19"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-34",
+      "section": "A",
+      "number": 34,
+      "questionText": "咀 嚼 時 に 食 物 が 口 腔 外 に こ ぼ れ る の を 防 ぐ で の に 最 も 関 与 す る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-35",
+      "section": "A",
+      "number": 35,
+      "questionText": "咀 嚼 能 力 の 低 下 を 評 価 で き る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "生 化 学 検 栄"
+        },
+        {
+          "label": "b",
+          "text": "咬 合 カ 検 査 閻"
+        },
+        {
+          "label": "c",
+          "text": "哀 合 音 検 査 ~"
+        },
+        {
+          "label": "d",
+          "text": "エ ッ ク ス 線 画 像 検 実"
+        },
+        {
+          "label": "e",
+          "text": "下 顎 限 界 運 動 路 検 査 一 12 一 み M1(782 一 14"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-36",
+      "section": "A",
+      "number": 36,
+      "questionText": "平 成 19 年 度 国 民 生 活 基 礎 調 査 に よ る ` 介 護 が 必 要 と な っ た 原 因 」 を 表 に 示 す 。 ー る ド 89 大 愚 に よ る 媒 唇 | 16 | 啓 哉 心 | 12 耽 年 国 | 93 _",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-37",
+      "section": "A",
+      "number": 37,
+      "questionText": "療 選 伝 子 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "恒"
+        },
+        {
+          "label": "b",
+          "text": "ヵ 76"
+        },
+        {
+          "label": "c",
+          "text": "ヵ 59"
+        },
+        {
+          "label": "d",
+          "text": "c が yc ら 月 - ヶ ws 一 13 一 み Mt(782 一 15 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-38",
+      "section": "A",
+      "number": 38,
+      "questionText": "染 色 体 異 常 に よ る 疾 患 は ど れ か 。 2 つ 選 べ 。 ー",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-39",
+      "section": "A",
+      "number": 39,
+      "questionText": "医 薙 品 開 発 の 臨 床 試 験 で 健 常 人 を 対 象 と し て 行 う の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "第 I 相 試 騎 ` b 第 T 相 試 験 前 期 “"
+        },
+        {
+          "label": "c",
+          "text": "第 T 相 試 験 後 期"
+        },
+        {
+          "label": "d",
+          "text": "第 皿 相 試 験"
+        },
+        {
+          "label": "e",
+          "text": "第 TWV 相 試 験 ・"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-40",
+      "section": "A",
+      "number": 40,
+      "questionText": "口 腔 内 写 真 ( 別 冊 No. 1) を 別 に 示 す 。 下 顎 左 側 臼 歯 部 の 骨 膜 下 膿 瘍 の 切 開 排 腿 術 を 行 う 患 者 に 事 前 に 説 明 す べ き 事 項 は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "開 口 障 害 ."
+        },
+        {
+          "label": "b",
+          "text": "嚥 下 障 害"
+        },
+        {
+          "label": "c",
+          "text": "下 晩 の 知 覚 麻 癌 ・"
+        },
+        {
+          "label": "d",
+          "text": "下 晩 の 運 動 麻 痺"
+        },
+        {
+          "label": "e",
+          "text": "頬 脂 肪 体 へ の 感 染 拡 大 別 再 ` 一 14 一 み M1(782 一 16)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-41",
+      "section": "A",
+      "number": 41,
+      "questionText": "産 業 医 が 作 業 場 で の 有 害 発 生 の 危 険 性 を 勧 告 す る 対 象 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "事 業 者 閻"
+        },
+        {
+          "label": "b",
+          "text": "従 業 員 ・"
+        },
+        {
+          "label": "c",
+          "text": "衝 生 委 員 会 國"
+        },
+        {
+          "label": "d",
+          "text": "衛 生 管 理 者"
+        },
+        {
+          "label": "e",
+          "text": "衝 生 推 進 者 ′"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-42",
+      "section": "A",
+      "number": 42,
+      "questionText": "全 身 の が ん の 発 生 率 を 推 定 で き る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "照 射 線 量"
+        },
+        {
+          "label": "b",
+          "text": "実 効 線 量"
+        },
+        {
+          "label": "c",
+          "text": "妖 収 線 量 ."
+        },
+        {
+          "label": "d",
+          "text": "等 価 線 量"
+        },
+        {
+          "label": "e",
+          "text": "線 量 限 度"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-43",
+      "section": "A",
+      "number": 43,
+      "questionText": "細 胞 外 マ ト リ ッ ク ス の 分 解 に 関 与 す る の は ど れ か 。 1 つ 選 べ 。 a8 ア ミ ラ ー ゼ ー ` b _ コ ラ ゲ ナ ー ゼ _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "c",
+          "text": "ホ ス ホ リ パ ー ゼ"
+        },
+        {
+          "label": "d",
+          "text": "リ ボ ポ ヌ ク レ ア ー ゼ"
+        },
+        {
+          "label": "e",
+          "text": "_ ア デ ニ レ ー ト シ ク ラ ー ゼ ー 15 一 る M1(782 一 7"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-44",
+      "section": "A",
+      "number": 44,
+      "questionText": "エ ッ ク ス 線 画 像 で 歯 根 膜 腔 が 明 瞭 に 描 出 さ れ る 理 由 は ど れ か 。 2 つ 選 べ 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "接 線 勁 果 ー"
+        },
+        {
+          "label": "b",
+          "text": "光 電 効 果 `・"
+        },
+        {
+          "label": "c",
+          "text": "重 積 効 果 ・ ー ー"
+        },
+        {
+          "label": "d",
+          "text": "_ ヒ ー ル 効 果 ~ 閘"
+        },
+        {
+          "label": "e",
+          "text": "コ ン プ ト ン 効 果"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-45",
+      "section": "A",
+      "number": 45,
+      "questionText": "全 部 床 義 歯 の 臼 歯 部 人 工 歯 が 、 筋 圧 中 立 帯 よ り も 舌 側 に 排 列 さ れ て い た 。 _ 考 え ら れ る 障 害 は ど れ か 。 2 つ 選 べ 。 ~",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "構 音 障 害"
+        },
+        {
+          "label": "b",
+          "text": "舌 の 誤 咬 ~ -"
+        },
+        {
+          "label": "c",
+          "text": "頬 粘 膜 の 誤 哀 ` ~"
+        },
+        {
+          "label": "d",
+          "text": "平 衡 側 の 咬 合 干 滝"
+        },
+        {
+          "label": "e",
+          "text": "食 片 介 在 時 の 義 歯 転 覆"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-46",
+      "section": "A",
+      "number": 46,
+      "questionText": "上 顎 の 小 臼 歯 抜 去 に よ る マ ル チ ブ ラ ケ ッ ト 治 療 を 計 画 し た 。 初 診 時 の 口 腔 模 型 の 写 真 ( 別 冊 No。 2A) と 片 側 の 歯 を 排 列 し た 診 断 用 予 測 模 型 の 写 真 ( 別 冊 No。 2B) と を 〟 別 に 示 す 。 鱒 國 謀 謀 諸 矢 印 の 空 際 か ら 判 定 す る の は ど れ か 。 1 つ 選 べ 。 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "固 定 の 強 さ _~ ー"
+        },
+        {
+          "label": "b",
+          "text": "燕 正 力 の 大 き き"
+        },
+        {
+          "label": "c",
+          "text": "矯 正 力 の 作 用 様 式"
+        },
+        {
+          "label": "d",
+          "text": "動 的 治 療 期 間"
+        },
+        {
+          "label": "e",
+          "text": "保 定 期 間 '・ ~ 別 冊 ` 一 16 一 み M1(782 一 18)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-47",
+      "section": "A",
+      "number": 47,
+      "questionText": "成 人 と 比 較 し た 小 児 の 歯 周 組 織 の 特 徴 は ど れ か 。 1 つ 選 べ 。 。 一 ー ト",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-48",
+      "section": "A",
+      "number": 48,
+      "questionText": "唾 液 腺 で Na`f の 再 吾 収 に 最 も 関 与 す る の は ど れ か 。 1 つ 選 べ 。 . ー",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-49",
+      "section": "A",
+      "number": 49,
+      "questionText": "あ る 疾 患 の 処 方 薬 を 表 に 示 す 。 プ レ ド ニ ブ ロ ン | _ ' ) ァ ン ク ロ ビ ル | ー 談 談 _ ビ タ ミ ン B _ _~ 考 え ら れ る の は ど れ か 。 1 つ 選 べ 。 ー",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-50",
+      "section": "A",
+      "number": 50,
+      "questionText": "疾 患 名 と エ ッ ク ス 線 写 真 所 見 と の 組 合 せ で 正 し ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "優 性 骨 髄 炎 ーー 一 一 一 一 一 タ マ ネ ギ の 皮 志 ."
+        },
+        {
+          "label": "b",
+          "text": "歴 原 性 粘 液 腫 ー 一 一 一 一 一 す り ガ ラ ス 狂"
+        },
+        {
+          "label": "c",
+          "text": "単 純 性 骨 嚢 胞 ー 一 一 一 一 一 石 け ん 泡 状 - ・"
+        },
+        {
+          "label": "d",
+          "text": "エ ナ メ ル 上 皮 腫 一 一 一 一 一 針 江"
+        },
+        {
+          "label": "e",
+          "text": "膜 腫 様 歯 原 性 腫 瘍 一 一 一 - テ ニ ス ラ ケ ッ ト 状"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-51",
+      "section": "A",
+      "number": 51,
+      "questionText": "通 常 の コ ン ポ ジ ッ ト レ ジ ン と 比 べ て フ ロ ア ブ ル レ ジ ン が 優 れ て い る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-52",
+      "section": "A",
+      "number": 52,
+      "questionText": "疾 病 発 生 要 因 の 解 明 で 症 例 対 照 研 究 が 前 向 き コ ホ ー ト 研 究 に 比 べ て バ イ ア ス を 生 じ や す い 理 由 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "調 査 期 間 が 短 い 。"
+        },
+        {
+          "label": "b",
+          "text": "情 報 の 信 頼 性 が 低 い 。"
+        },
+        {
+          "label": "c",
+          "text": "罹 患 率 を 算 出 で き な い 。 ・"
+        },
+        {
+          "label": "d",
+          "text": "相 対 危 険 度 を 直 接 計 算 で き な い 。 '"
+        },
+        {
+          "label": "e",
+          "text": "発 病 率 の 低 い 疾 患 を 対 象 と す る こ と が 多 い 。 一 18 一 ぐ M1(782 一 20"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-53",
+      "section": "A",
+      "number": 53,
+      "questionText": "耐 火 模 型 の 製 作 に あ た り 作 業 用 模 型 上 で 行 う の は ど れ か 。 2 つ 選 べ 。 〝 a 骨 隆 起 の リ リ ー フ ′",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "ビ ー デ ィ ン グ の 付 与"
+        },
+        {
+          "label": "c",
+          "text": "ガ イ ド プ レ ー ン の 形 成 ` ′"
+        },
+        {
+          "label": "d",
+          "text": "綱 持 脹 の ワ ッ ク ス ア ッ プ ~"
+        },
+        {
+          "label": "e",
+          "text": "テ ィ ッ シ ュ ス ト ッ プ の 付 与 . _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-54",
+      "section": "A",
+      "number": 54,
+      "questionText": "Kiittner 腫 瘍 で み ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "腰 房 の 増 生"
+        },
+        {
+          "label": "b",
+          "text": "肉 芽 腫 の 形 成 〝"
+        },
+        {
+          "label": "c",
+          "text": "好 中 球 の 浪 潤 ・"
+        },
+        {
+          "label": "d",
+          "text": "綺 綺 組 織 の 増 生"
+        },
+        {
+          "label": "e",
+          "text": "核 内 封 入 体 の 出 現"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-55",
+      "section": "A",
+      "number": 55,
+      "questionText": "国 民 医 療 貴 に 吊 ま れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "咬 合 誕 導"
+        },
+        {
+          "label": "b",
+          "text": "正 常 分 娼 ー"
+        },
+        {
+          "label": "c",
+          "text": "健 康 診 断"
+        },
+        {
+          "label": "d",
+          "text": "予 防 接 種"
+        },
+        {
+          "label": "e",
+          "text": "訪 問 診 療 ・ 一 19 一 み MI(782 一 2D"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-56",
+      "section": "A",
+      "number": 56,
+      "questionText": "上 皮 が み ら れ る の は ど れ か 。 2 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 根 嚢 胞"
+        },
+        {
+          "label": "b",
+          "text": "急 性 化 膿 佐 歯 髄 炎 ) )"
+        },
+        {
+          "label": "c",
+          "text": "慶 性 潰 瘍 性 歯 髄 炎 ー }"
+        },
+        {
+          "label": "d",
+          "text": "愚 性 増 殖 性 歯 髄 炎 _"
+        },
+        {
+          "label": "e",
+          "text": "根 尖 性 骨 異 形 成 症 ' /"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-57",
+      "section": "A",
+      "number": 57,
+      "questionText": "後 天 性 免 疫 不 全 症 候 莉 患 者 に 発 生 し や す い 口 脚 疾 患 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "天 疱 瘡 ・"
+        },
+        {
+          "label": "b",
+          "text": "毛 様 白 板 症"
+        },
+        {
+          "label": "c",
+          "text": "カ ボ ジ 肉 腫"
+        },
+        {
+          "label": "d",
+          "text": "口 腔 扁 平 苔 癖 '"
+        },
+        {
+          "label": "e",
+          "text": "口 腔 カ ン ジ ダ 症 ー 20 一 る み M1782 一 22"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-58",
+      "section": "A",
+      "number": 58,
+      "questionText": "英 国 と タ イ の 成 人 (3544 歳 ) の 一 人 平 均 DMF 歯 数 を 図 に 示 す 。 ` ( 歯 数 )",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-59",
+      "section": "A",
+      "number": 59,
+      "questionText": "歯 根 膜 の 機 能 と 関 係 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-60",
+      "section": "A",
+      "number": 60,
+      "questionText": "鋳 造 体 の 精 度 に 影 響 す る 因 子 は ど れ か 。 す べ て 選 べ 。 , '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "鋳 型 の 温 度"
+        },
+        {
+          "label": "b",
+          "text": "埋 没 材 の 混 水 比 }"
+        },
+        {
+          "label": "c",
+          "text": "合 金 の 融 解 温 度 ~ ~ d 合 金 の 熱 膨 張 率 _"
+        },
+        {
+          "label": "e",
+          "text": "埋 没 材 の 熱 膨 張 率"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-61",
+      "section": "A",
+      "number": 61,
+      "questionText": "口 内 法 エ ッ ク ス 線 検 査 で 、 フ イ ル ム を 使 用 す る 方 法 と 比 較 し て デ ジ タ ル エ ッ ク ス 線 画 像 シ ス テ ム が 優 れ て い る の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "解 像 力 が 高 い 。"
+        },
+        {
+          "label": "b",
+          "text": "廃 注 が 出 な い 。 '"
+        },
+        {
+          "label": "c",
+          "text": "画 像 処 理 が で き る 。 _ d 被 曝 線 量 を 低 減 で き る 。"
+        },
+        {
+          "label": "e",
+          "text": "撮 影 時 の 画 質 を 維 持 で き る 。 '"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-62",
+      "section": "A",
+      "number": 62,
+      "questionText": "顕 下 腺 摘 出 術 で 広 頚 筋 を 切 離 し て 顎 下 腺 被 膜 を 明 示 す る 際 に 、 注 意 す べ き な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "舌 神 経"
+        },
+        {
+          "label": "b",
+          "text": "顔 面 神 経 ・ 〕"
+        },
+        {
+          "label": "c",
+          "text": "舌 下 神 経"
+        },
+        {
+          "label": "d",
+          "text": "反 回 神 経 '"
+        },
+        {
+          "label": "e",
+          "text": "オ ト ガ イ 神 経 一 22 一 み M1(782 一 24"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-63",
+      "section": "A",
+      "number": 63,
+      "questionText": "咀 嚼 筋 筋 電 図 で 測 定 で き る の は ど れ か 。 1 つ 選 べ 。 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "咬 合 圧"
+        },
+        {
+          "label": "b",
+          "text": "咀 嚼 能 率"
+        },
+        {
+          "label": "c",
+          "text": "咀 嚼 筋 量"
+        },
+        {
+          "label": "d",
+          "text": "咀 嚼 周 期 ' _"
+        },
+        {
+          "label": "e",
+          "text": "安 静 空 隙"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-64",
+      "section": "A",
+      "number": 64,
+      "questionText": "6 か 月 の 乳 児 の 口 腔 内 写 真 ( 別 冊 No. 3 を 別 に 示 す 。 疑 わ れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "乳 頭 腫"
+        },
+        {
+          "label": "b",
+          "text": "白 板 症 _"
+        },
+        {
+          "label": "c",
+          "text": "鷹 口 瘡"
+        },
+        {
+          "label": "d",
+          "text": "歯 肉 嚢 胞 '"
+        },
+        {
+          "label": "e",
+          "text": "先 天 性 エ プ ー リ ス _ 別 冊 _ 一 23 一 み る み NM1782 一 25"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-65",
+      "section": "A",
+      "number": 65,
+      "questionText": "肺 気 量 分 画 を 図 に 示 す 。 ・ ~ ・ ・ 最 大 吸 気 位 . 〉 ー動酬 ・ ′ * 〉 安 静 吸 気 位 , ー U a ト “ ー`回換気量はどれか。 ー“つ選べ。 ` `こ",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア _"
+        },
+        {
+          "label": "b",
+          "text": "イ “"
+        },
+        {
+          "label": "c",
+          "text": "ウ ー"
+        },
+        {
+          "label": "d",
+          "text": "エ _ `"
+        },
+        {
+          "label": "e",
+          "text": "オ ` ー 24 一 み M1782 一 26)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-66",
+      "section": "A",
+      "number": 66,
+      "questionText": "1980~2003 年 に お け る 日 本 、 ア メ リ カ 、 イ ギ リ ス 、 ド イ ツ 、 ス ウ ェ ー デ ン の 国 民 所 得 に 占 め る 社 会 保 障 給 付 費 の 割 合 と 高 齢 化 率 の 推 移 と を 図 に 示 す 。 ' ・ ` ` 1990",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-67",
+      "section": "A",
+      "number": 67,
+      "questionText": "通 常 の 酸 化 亜 鉢 ユ ー ジ ノ ー ル セ メ ン ト に 対 す る 根 管 充 堪 用 の 酸 化 亜 鉛 ユ ー ジ ノ ー ル セ メ ン ト の 特 徴 は ど れ か 。 2 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "硬 化 時 に 膨 張 す る 。 〝 b 粉 末 の 粒 子 が 細 か い 。"
+        },
+        {
+          "label": "c",
+          "text": "エ ッ ク ス 線 透 過 性 で あ る 。 }"
+        },
+        {
+          "label": "d",
+          "text": "硬 化 時 間 が 長 め に 調 整 さ れ て い る 。"
+        },
+        {
+          "label": "e",
+          "text": "根 尖 歯 周 組 織 に 対 し て 非 刺 激 性 で あ る 。 ."
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-68",
+      "section": "A",
+      "number": 68,
+      "questionText": "筋 機 能 瘻 法 の 目 的 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-69",
+      "section": "A",
+      "number": 69,
+      "questionText": "味 覚 で 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "軟 口 蓋 に 味 蕾 は 存 在 し な い 。"
+        },
+        {
+          "label": "b",
+          "text": "舌 下 神 経 は 味 覚 情 報 を 伝 え る 。 ."
+        },
+        {
+          "label": "c",
+          "text": "味 細 胞 の 寿 命 は 約 { か 月 で あ る 。 ‥"
+        },
+        {
+          "label": "d",
+          "text": "認知閾値は塩酸ょりも食塩の方が高い。"
+        },
+        {
+          "label": "e",
+          "text": "グ ル タ ミ ン 酸 ナ ト リ ウ ム は 味 細 胞 に 受 容 器 電 位 を 引 き 起 こ す 。 ー 26 一 る M1(782 一 28"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-70",
+      "section": "A",
+      "number": 70,
+      "questionText": "歯 科 用 白 金 加 金 線 の 特 徴 は ど れ か 。 2 つ 選 べ 。 }",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "高 靭 性 ` ,"
+        },
+        {
+          "label": "b",
+          "text": "超 弾 性"
+        },
+        {
+          "label": "c",
+          "text": "不 動 態 化"
+        },
+        {
+          "label": "d",
+          "text": "時 効 硬 化 _ ) `"
+        },
+        {
+          "label": "e",
+          "text": "形 状 記 憶"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-71",
+      "section": "A",
+      "number": 71,
+      "questionText": "顕 骨 へ の 自 家 骨 移 植 の 際 に 注 意 す べ き 常 用 薬 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-74",
+      "section": "A",
+      "number": 74,
+      "questionText": "オ ー ル セ ラ ミ ッ ク ク ラ ウ ン が レ ジ ン ジ ャ ケ ッ ト ク ラ ウ ン よ り も 優 れ て い る の は ど ~ れ か 。 す べ て 選 べ 。 _ _ ー a _ 成 形 性",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "耐 衝 撃 性"
+        },
+        {
+          "label": "c",
+          "text": "耐 吸 水 性 _ ・ _"
+        },
+        {
+          "label": "d",
+          "text": "耐 摩 耗 性"
+        },
+        {
+          "label": "e",
+          "text": "耐 変 色 性 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-75",
+      "section": "A",
+      "number": 75,
+      "questionText": "薬 物 と 副 作 用 と の 組 合 せ で 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "点 字 ・ ー コ"
+        },
+        {
+          "label": "b",
+          "text": "記 号 ー"
+        },
+        {
+          "label": "c",
+          "text": "手 話 ー"
+        },
+        {
+          "label": "d",
+          "text": "身 振 り )"
+        },
+        {
+          "label": "e",
+          "text": "タ ッ チ ン グ"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-78",
+      "section": "A",
+      "number": 78,
+      "questionText": "舌 で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "毎 朝 の 検 温"
+        },
+        {
+          "label": "b",
+          "text": "手 洗 い の 励 行 ' _~"
+        },
+        {
+          "label": "c",
+          "text": "発 熱 外 来 の 受 診"
+        },
+        {
+          "label": "d",
+          "text": "予 防 ワ ク チ ン の 接 種 }"
+        },
+        {
+          "label": "e",
+          "text": "流 行 地 へ の 移 動 中 止"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-80",
+      "section": "A",
+      "number": 80,
+      "questionText": "光 硬 化 型 コ ン ポ ジ ッ ト レ ジ ン に 用 い ら れ る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "BPO ' 葺"
+        },
+        {
+          "label": "b",
+          "text": "MMA ."
+        },
+        {
+          "label": "c",
+          "text": "DMFPT _ / 〝"
+        },
+        {
+          "label": "d",
+          "text": "Bis - GMA"
+        },
+        {
+          "label": "e",
+          "text": "Camphorqduinone"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-81",
+      "section": "A",
+      "number": 81,
+      "questionText": "口 内 法 エ ッ ク ス 線 撮 影 で 無 射 野 を 小 さ く し た と き に 得 ら れ る 効 果 は ど れ か 。 す べ て 選 べ 。 ・ ` a 散 乱 線 の 減 少 國 謀",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "鮮 錫 度 の 向 上 ~"
+        },
+        {
+          "label": "c",
+          "text": "被 曝 線 量 の 低 減 國 謀"
+        },
+        {
+          "label": "d",
+          "text": "コ ー ン カ ッ ト の 減 少 ・"
+        },
+        {
+          "label": "e",
+          "text": "被 写 体 コ ン ト ラ ス ト の 上 昇 ` 一 30 一 ぐ M1(782 一 32"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-82",
+      "section": "A",
+      "number": 82,
+      "questionText": "口 内 法 エ ッ ク ス 線 検 査 に 比 べ て 止 科 用 コ ー ン ビ ー ム CT が 優 れ て ぃ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-83",
+      "section": "A",
+      "number": 83,
+      "questionText": "顔 面 の 縺 合 と 主 な 成 長 方 向 と の 組 合 せ で 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-84",
+      "section": "A",
+      "number": 84,
+      "questionText": "保 健 所 を 設 置 す る 自 治 体 は ど れ か 。 す べ て 選 べ 。 -",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "貞 材"
+        },
+        {
+          "label": "b",
+          "text": "中 核 市"
+        },
+        {
+          "label": "c",
+          "text": "特 別 区"
+        },
+        {
+          "label": "d",
+          "text": "都 道 府 県 `"
+        },
+        {
+          "label": "e",
+          "text": "政 令 指 定 都 市 ` ー 31 一 ぐ M1(782 一 3 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-85",
+      "section": "A",
+      "number": 85,
+      "questionText": "感 染 性 心 内 膜 炎 の 予 防 の た め に 抗 菌 薬 投 与 が 必 要 な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "無 歯 症 ~"
+        },
+        {
+          "label": "b",
+          "text": "矮 小 歪"
+        },
+        {
+          "label": "c",
+          "text": "先 天 性 欠 如"
+        },
+        {
+          "label": "d",
+          "text": "象 牙 質 形 成 不 全"
+        },
+        {
+          "label": "e",
+          "text": "エ ナ メ ル 質 形 成 不 全"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-87",
+      "section": "A",
+      "number": 87,
+      "questionText": "GVHD で 副 腎 皮 質 ス テ ロ イ ド を 服 用 し て い る 患 者 の 抜 歯 後 に 留 意 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "感 染 ・"
+        },
+        {
+          "label": "b",
+          "text": "出 血 . _ _"
+        },
+        {
+          "label": "c",
+          "text": "歯 肉 増 殖 ー"
+        },
+        {
+          "label": "d",
+          "text": "治 癒 遅 延 ー ー"
+        },
+        {
+          "label": "e",
+          "text": "知 覚 神 経 麻 痺 ー 32 一 る ぐ NM1(782 一 34 ・ 88。 ク ロ ム ア レ ル ギ ー 患 者 で 使 用 可 能 な 床 用 材 料 は ど れ か 。 す べ て 選 べ 。 謀 闇 謀 訣 訣"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-90",
+      "section": "A",
+      "number": 90,
+      "questionText": "ク オ ラ ム セ ン シ ン グ で 感 知 さ れ る の は ど れ か 。 1 つ 選 べ 。 ~",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "走 化 性 因 子 _"
+        },
+        {
+          "label": "b",
+          "text": "外 来 性 DNA . ___ c 6 ラ ク タ ム 薬 談 '"
+        },
+        {
+          "label": "d",
+          "text": "菌 体 内 酸 化 物 質 '"
+        },
+        {
+          "label": "e",
+          "text": "オ ー ト イ ン デ ュ ー サ ー ` ー 33 一 る Mi1(782 一 5"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-91",
+      "section": "A",
+      "number": 91,
+      "questionText": "ニ ア ゾ ー ン の ア ン ダ ー カ ッ ト を 利 用 す る 環 状 型 の ク ラ ス プ は ど れ か 。 2 つ 選 べ 。 ` ・8 _ リ ン グ ク ラ ス プ 閻",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "エ パ バ ー ク ラ ス プ"
+        },
+        {
+          "label": "c",
+          "text": "ヘ ア ピ ン ク ラ ス プ _"
+        },
+        {
+          "label": "d",
+          "text": "エ ー カ ー ス ク ラ ス プ ' _ . e バ ッ ク ア ク シ ョ ン ク ラ ス プ"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-92",
+      "section": "A",
+      "number": 92,
+      "questionText": "小 児 期 に み ら れ る 侵 襲 性 歯 周 炎 の 特 徴 は ど れ か 。 2 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "成 長 と と も に 改 善 す る 。 '"
+        },
+        {
+          "label": "b",
+          "text": "乳 歯 列 期 か ら 発 症 す る 。"
+        },
+        {
+          "label": "c",
+          "text": "口 呼 吸 に よ っ て 誘 発 さ れ る 。"
+        },
+        {
+          "label": "d",
+          "text": "止 周 組 織 の 破 壊 が 急 速 で あ る 。"
+        },
+        {
+          "label": "e",
+          "text": "切 歯 や 第 一 大 臼 歯 に 生 じ ゃ す い 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-93",
+      "section": "A",
+      "number": 93,
+      "questionText": "フ ァ ル カ プ ラ ス テ ィ で 除 去 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "口 蓋 裂 滝"
+        },
+        {
+          "label": "b",
+          "text": "臼 傍 総 節"
+        },
+        {
+          "label": "c",
+          "text": "エ ナ メ ル 漢"
+        },
+        {
+          "label": "d",
+          "text": "_ エ ナ メ ル 突 起 `"
+        },
+        {
+          "label": "e",
+          "text": "カ ラ ベ リ ー 結 飾"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-94",
+      "section": "A",
+      "number": 94,
+      "questionText": "響 蝕 予 防 を 目 的 と し た フ ッ 化 物 応 用 法 と フ ッ 化 物 濃 度 と の 組 合 せ で 正 し い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-95",
+      "section": "A",
+      "number": 95,
+      "questionText": "歯 ブ ラ シ の 毛 先 を 用 い る 方 法 は ど れ か 。 す べ て 選 べ 。 ”",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "バ ス 法 `"
+        },
+        {
+          "label": "b",
+          "text": "_ フ ォ ー ン ズ 法 ' “ c ス テ ィ ル マ ン 法 '"
+        },
+        {
+          "label": "d",
+          "text": "ス ク ラ ビ ン グ 法 〝"
+        },
+        {
+          "label": "e",
+          "text": "チ ャ ー タ ー ズ 法"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-96",
+      "section": "A",
+      "number": 96,
+      "questionText": "CAD/CAM を 用 い た ブ リ ッ ジ の フ レ ー ム ワ ー ク タ 製 作 で 正 し ぃ の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-97",
+      "section": "A",
+      "number": 97,
+      "questionText": "器 具 の 写 真 ( 別 冊 No. 4 を 別 に 示 す 。 國 謀 . ダ イ レ ク ト ポ ン デ ィ ン グ 法 に よ る ブ ラ ケ ッ ト 装 着 の 際 に 用 い る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-98",
+      "section": "A",
+      "number": 98,
+      "questionText": "日 本 人 の 食 事 摂 取 基 準 で 、 生 活 の 大 部 分 が 坐 位 で 静 的 な 活 動 が 中 心 の 30'歳代男 性 の 推 定 エ ネ ル ギ ー 必 要 量 ( 1 日 あ た り ) は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "1, 250 kcal"
+        },
+        {
+          "label": "b",
+          "text": "2,250 kcal"
+        },
+        {
+          "label": "c",
+          "text": "3,250 kcal"
+        },
+        {
+          "label": "d",
+          "text": "4, 250 kcal"
+        },
+        {
+          "label": "e",
+          "text": "5, 250 kcal"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-99",
+      "section": "A",
+      "number": 99,
+      "questionText": "歯 科 用 コ ー ン ビ ー ム CT で 吾 収 線 量 が 1 mGy の 組 織 の 等 価 線 量 は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-100",
+      "section": "A",
+      "number": 100,
+      "questionText": "あ る 中 学 1 年 生 の 学 校 歯 科 健 康 診 断 結 果 の 一 部 を 表 に 示 す 。 歯 、 ぉ 学",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-101",
+      "section": "A",
+      "number": 101,
+      "questionText": "感 染 根 管 治 瘻 で 機 械 的 拡 大 が 重 要 視 さ れ る 理 由 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "根 管 を 無 菌 化 で き る 。"
+        },
+        {
+          "label": "b",
+          "text": "薬 剤 の 到 達 性 が 高 ま る 。 ) '"
+        },
+        {
+          "label": "c",
+          "text": "消 毒 よ り も 簡 便 で あ る 。"
+        },
+        {
+          "label": "d",
+          "text": "根 管 形 態 を 改 善 で き る 。 ' e 細 菌 の 栄 養 源 が 除 去 で き る 。 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-102",
+      "section": "A",
+      "number": 102,
+      "questionText": "歯 科 医 療 従 事 者 が 禁 煙 対 策 に 関 わ る こ と が 望 ま し い 理 由 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "禁 煙 補 助 薙 を 処 方 で き る 。 “"
+        },
+        {
+          "label": "b",
+          "text": "患 者 の 体 調 管 理 が 行 え る 。"
+        },
+        {
+          "label": "c",
+          "text": "止 科 医 療 従 事 者 の 喫 煙 率 が 低 い 。"
+        },
+        {
+          "label": "d",
+          "text": "歯 周 炎 の 治 療 に 禁 煙 が 効 果 的 で あ る 。 〟"
+        },
+        {
+          "label": "e",
+          "text": "口 脩 内 の 状 態 か ら 喫 煙 の 状 況 が 容 易 に 把 握 で き る 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-103",
+      "section": "A",
+      "number": 103,
+      "questionText": "急 性 白 血 病 の 初 発 時 症 状 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-104",
+      "section": "A",
+      "number": 104,
+      "questionText": "支 台 築 造 の 主 な 目 的 は ど れ か 。 2 つ 選 べ 。 )",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 根 破 折 の 防 止 )"
+        },
+        {
+          "label": "b",
+          "text": "歯 質 削 除 量 の 軽 減 '"
+        },
+        {
+          "label": "c",
+          "text": "ク ラ ウ ン 保 持 力 の 増 加 '"
+        },
+        {
+          "label": "d",
+          "text": "ク リ ア ラ ン ス 量 の 翠 整 ~"
+        },
+        {
+          "label": "e",
+          "text": "支 台 歯 の 二 次 麟 蝕 防 止"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-105",
+      "section": "A",
+      "number": 105,
+      "questionText": "口 腔 清 掃 状 態 の 悪 い 全 部 床 義 歯 装 着 者 で 起 こ り や す い の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "口 臭 ' _"
+        },
+        {
+          "label": "b",
+          "text": "咀 嚼 障 害"
+        },
+        {
+          "label": "c",
+          "text": "嘆 下 障 害"
+        },
+        {
+          "label": "d",
+          "text": "構 音 障 害"
+        },
+        {
+          "label": "e",
+          "text": "粒 膜 の 発 赤 ー"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-106",
+      "section": "A",
+      "number": 106,
+      "questionText": "筋 の 機 能 再 建 を 行 う の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "口 曽 形 成 術 國 謀"
+        },
+        {
+          "label": "b",
+          "text": "口 蓋 形 成 術 ` _ ー c 小 常 延 長 衛"
+        },
+        {
+          "label": "d",
+          "text": "外 鼻 修 正 術 ・"
+        },
+        {
+          "label": "e",
+          "text": "咽 頭 弁 移 植 術 ) 一 39 一 ぐ み M1(782 一 41"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-107",
+      "section": "A",
+      "number": 107,
+      "questionText": "根 面 顕 蝕 に つ い て 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。 ' a 歴 肉 退 縮 を 伴 う 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "_ 環 状 性 に 進 行 す る 。"
+        },
+        {
+          "label": "c",
+          "text": "穿 通 性 に 進 行 す る 。 ・ '"
+        },
+        {
+          "label": "d",
+          "text": "願 蝕 円 錐 の 形 態 を と る 。"
+        },
+        {
+          "label": "e",
+          "text": "ブ ラ キ シ ズ ム が 関 与 す る 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-108",
+      "section": "A",
+      "number": 108,
+      "questionText": "歯 原 性 腫 瘍 で 正 し ぃ の は ど れ か 。 2 つ 選 べ 。 _ . a 10~20 歳 代 が 多 い 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "下 顎 が 上 顎 よ り も 多 い 。"
+        },
+        {
+          "label": "c",
+          "text": "知 覚 神 経 麻 痺 を 伴 う こ と が 多 い 。"
+        },
+        {
+          "label": "d",
+          "text": "顎 骨 切 除 の 適 応 と な る こ と が 多 い 。 ー e エ ッ ク ス 線 写 真 所 見 で は 石 け ん 泡 状 が 多 い 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-109",
+      "section": "A",
+      "number": 109,
+      "questionText": "歯 磨 剤 で 歯 周 疾 患 予 防 の 薬 用 成 分 は ど れ か 。 2 つ 選 べ 。 _ a ク ロ ロ フ ィ ル",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "_ ト リ ク ロ サ ン _"
+        },
+        {
+          "label": "c",
+          "text": "硝 酸 カ リ ウ ム"
+        },
+        {
+          "label": "d",
+          "text": "塩 化 ナ ト リ ウ ゥ ム"
+        },
+        {
+          "label": "e",
+          "text": "フ ッ 化 ナ ト リ ウ ム ' . 一 40 一 ぐ NM1(782 一 42"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-110",
+      "section": "A",
+      "number": 110,
+      "questionText": "浮 腫 性 の 歯 肉 炎 に 見 ら れ る 組 織 変 化 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "毛 細 血 管 の 減 少 _ '"
+        },
+        {
+          "label": "b",
+          "text": "血 管 透 過 性 の 亢 進 ー"
+        },
+        {
+          "label": "c",
+          "text": "外 縁 上 皮 の 角 化 亢 進 國 謀 謀"
+        },
+        {
+          "label": "d",
+          "text": "接 合 上 皮 の 根 尖 側 移 動 ー ー 〝 e コ ラ ー ゲ ン 線 綱 の 増 加 ー 閻"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-111",
+      "section": "A",
+      "number": 111,
+      "questionText": "自 発 痛 が み ら れ る 歯 周 組 織 の 疾 患 は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "喫 煙 関 連 歯 周 炎"
+        },
+        {
+          "label": "b",
+          "text": "妊 娯 関 連 歯 肉 炎"
+        },
+        {
+          "label": "c",
+          "text": "壊 死 性 潰 瘍 性 歯 肉 炎 '"
+        },
+        {
+          "label": "d",
+          "text": "Down 症 候 群 関 連 歯 周 炎 }"
+        },
+        {
+          "label": "e",
+          "text": "ア ス コ ル ピ ビ ン 酸 欠 乏 性 歯 肉 炎"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-112",
+      "section": "A",
+      "number": 112,
+      "questionText": "粗 膜 の 消 毒 に 用 い る の は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "普 通 石 け ん"
+        },
+        {
+          "label": "b",
+          "text": "_ エ タ ノ フ ー ル ー '"
+        },
+        {
+          "label": "c",
+          "text": "グ ル タ ラ ー ル _"
+        },
+        {
+          "label": "d",
+          "text": "イ ソ プ ロ パ ノ ー ル _ ・"
+        },
+        {
+          "label": "e",
+          "text": "ベ ン ザ ル コ ニ ウ ム 塩 化 物 _ ー 41 ー る み NM1(782 一 43"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-113",
+      "section": "A",
+      "number": 113,
+      "questionText": "食 事 パ ラ ン ス ガ イ ド ( 厚 生 労 働 省 、 農 林 水 産 省 ) の 主 菜 に 分 類 さ れ る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-114",
+      "section": "A",
+      "number": 114,
+      "questionText": "食 欲 の 発 現 に 最 も 関 与 す る の は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "大 脳 皮 質 昴 嚼 野"
+        },
+        {
+          "label": "b",
+          "text": "視 床 下 部"
+        },
+        {
+          "label": "c",
+          "text": "視 床 〝"
+        },
+        {
+          "label": "d",
+          "text": "黒 質"
+        },
+        {
+          "label": "e",
+          "text": "小 脳"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-115",
+      "section": "A",
+      "number": 115,
+      "questionText": "正 常 皮 膚 の 侵 害 受 容 器 で 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "速 順 応 型 で あ る 。 ~ ・ _ b C 線 維 が 分 布 す る 。 ) _ c Ae 線 維 が 分 布 す る 。 _"
+        },
+        {
+          "label": "d",
+          "text": "マ イ ス ネ ル 小 体 で あ る 。 _ _ ` e 40 C の 温 度 刺 激 で 興 奮 す る 。 ー 一 42 一 る ぐ み NM1(782 一 44"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-116",
+      "section": "A",
+      "number": 116,
+      "questionText": "心 肺 蘇 生 に 使 用 す る 機 器 の 写 真 ( 別 冊 No. 5) を 別 に 示 す 。 使 用 後 に 盲 ち に 行 う の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "意 識 の 碁 認"
+        },
+        {
+          "label": "b",
+          "text": "呼 吸 の 確 認 〕 ~"
+        },
+        {
+          "label": "c",
+          "text": "脹 拍 の 確 認 訣"
+        },
+        {
+          "label": "d",
+          "text": "人 工 呼 吸 ."
+        },
+        {
+          "label": "e",
+          "text": "胸 骨 圧 迫 ' 別 冊 ノ"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-117",
+      "section": "A",
+      "number": 117,
+      "questionText": "免 疫 不 全 患 者 の 歯 肉 病 変 か ら 培 養 し た 微 生 物 の 顕 微 鏡 写 真 ( 別 冊 No. 6) を 別 に 示 ` す 。 考 え ら れ る の は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-118",
+      "section": "A",
+      "number": 118,
+      "questionText": "値 が 高 い ほ ど 健 康 水 準 が 高 い と 評 価 さ れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "粗 死 亡 率 _ ー"
+        },
+        {
+          "label": "b",
+          "text": "周 産 期 死 亡 率 ー"
+        },
+        {
+          "label": "c",
+          "text": "年 齢 調 整 死 亡 率"
+        },
+        {
+          "label": "d",
+          "text": "早 期 新 生 児 死 亡 率"
+        },
+        {
+          "label": "e",
+          "text": "50 歳 以 上 死 亡 割 合 _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-119",
+      "section": "A",
+      "number": 119,
+      "questionText": "陶 材 焼 付 鋳 造 冠 に よ る ブ リ ッ ジ と 比 較 し た 接 着 ブ リ ッ ジ の 欠 点 は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-120",
+      "section": "A",
+      "number": 120,
+      "questionText": "下 顎 水 平 埋 伏 智 歯 を 抜 去 す る と き に 、 損 傷 に 注 意 す べ き な の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-121",
+      "section": "A",
+      "number": 121,
+      "questionText": "歯 列 弓 幅 笛 を 増 大 さ せ る 矯 正 装 置 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-122",
+      "section": "A",
+      "number": 122,
+      "questionText": "口 腔 内 写 真 ( 別 冊 No. 7A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 7B) と を 別 に 示 す 。 こ の 患 者 の 第 一 乳 臼 歯 の 位 置 異 常 の 原 因 と し て 考 え ら れ る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-123",
+      "section": "A",
+      "number": 123,
+      "questionText": "電 気 診 で 歯 髄 の 生 死 が 判 別 で き る 理 由 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "電 気 抵 抗 値 は 象 牙 質 よ り も 歯 髏 の 方 が 高 い 。 國 ・"
+        },
+        {
+          "label": "b",
+          "text": "疼 痛 閾 値 は 歯 髄 の 神 経 の 方 が 歯 肉 の 神 経 よ り も 高 い 。 閻 '"
+        },
+        {
+          "label": "c",
+          "text": "疼痛閾値は歯髄の神経の方が歯根膜の神経よりも低ぃ。"
+        },
+        {
+          "label": "d",
+          "text": "疼 痛 閾 値 は 歯 髄 の 神 経 の 方 が 歯 槽 骨 の 神 経 よ り も 高 い 。"
+        },
+        {
+          "label": "e",
+          "text": "歯 髄 の 神 経 の 失 活 は 歯 髄 組 織 全 体 の 失 活 の 末 期 に 生 じ る 。 ー 45 一 る M1(782 一 4 の"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-124",
+      "section": "A",
+      "number": 124,
+      "questionText": "日 和 見 感 染 を 生 じ ゃ す い の は ど れ か 。 す べ て 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "高 齢 ~ ー ・ b 高 血 圧 ,"
+        },
+        {
+          "label": "c",
+          "text": "低 栄 養 ~"
+        },
+        {
+          "label": "d",
+          "text": "慶 性 貧 血"
+        },
+        {
+          "label": "e",
+          "text": "免 疫 抑 制 薬 の 連 用"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-125",
+      "section": "A",
+      "number": 125,
+      "questionText": "乳 歯 根 尖 病 巣 が 後 継 永 久 歯 に 与 え る 影 響 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "位 置 異 常 , , b 歪 髄 脩 狭 窓"
+        },
+        {
+          "label": "c",
+          "text": "象 牙 質 形 成 異 常"
+        },
+        {
+          "label": "d",
+          "text": "歯 根 膜 腔 の 石 灰 化 〝 `"
+        },
+        {
+          "label": "e",
+          "text": "エ ナ メ ル 質 形 成 不 全"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-126",
+      "section": "A",
+      "number": 126,
+      "questionText": "脳 卒 中 後 の 口 腔 機 能 の リ ハ ビ リ テ ー シ ョ ン に お い て 歯 科 医 師 が 最 も 貢 献 で き る の _ は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "治 療 的 ア プ ロ ー チ"
+        },
+        {
+          "label": "b",
+          "text": "代 償 的 ア プ ロ ー チ"
+        },
+        {
+          "label": "c",
+          "text": "経 済 的 ア プ ロ ー チ ー ー ' ' ー"
+        },
+        {
+          "label": "d",
+          "text": "心 理 的 ア プ ロ ー チ ー"
+        },
+        {
+          "label": "e",
+          "text": "環 境 改 善 ア プ ロ ー チ ^ ・ ' ー 46 一 る ぐ M1782 一 49"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-127",
+      "section": "A",
+      "number": 127,
+      "questionText": "歯 科 用 コ ー ン ビ ー ム CT( 別 冊 No. 8) を 別 に 示 す 。 ー ・ 與 円 孔 は ど れ か 。 1 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "プ デ ."
+        },
+        {
+          "label": "b",
+          "text": "イ 國 談 訣 謀 道"
+        },
+        {
+          "label": "c",
+          "text": "ウ ー"
+        },
+        {
+          "label": "d",
+          "text": "エ 、"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 再"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-128",
+      "section": "A",
+      "number": 128,
+      "questionText": "嚥 下 障 害 の ス ク リ ー ニ ン グ に 用 い ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "超 音 波 検 査"
+        },
+        {
+          "label": "b",
+          "text": "内 視 鏡 検 査"
+        },
+        {
+          "label": "c",
+          "text": "水 飲 み 検 査"
+        },
+        {
+          "label": "d",
+          "text": "パ ラ ト グ ラ ム -"
+        },
+        {
+          "label": "e",
+          "text": "エ ッ ク ス 線 造 影 検 査"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-129",
+      "section": "A",
+      "number": 129,
+      "questionText": "義 歯 床 下 粘 膜 の 病 的 変 化 で 、 義 歯 調 整 に よ っ て 短 期 的 に 治 癒 す る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "A-130",
+      "section": "A",
+      "number": 130,
+      "questionText": "緩 衝 能 を 測 定 す る 響 蝕 活 動 性 試 験 の 検 体 と 検 査 に 用 い る 材 と の 組 合 せ で 正 し い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "咽 測 一 一 一 一 乳 酸"
+        },
+        {
+          "label": "b",
+          "text": "時 液 一 一 一 一 グ ル コ ー ス"
+        },
+        {
+          "label": "c",
+          "text": "普 淡 一 一 一 一 エ ナ チ メ ル 質"
+        },
+        {
+          "label": "d",
+          "text": "止 垢 一 一 一 一 pH 指 示 薬"
+        },
+        {
+          "label": "e",
+          "text": "止 垢 一 一 一 一 ス ク ロ ー ス ー 48 一 る み M1(782 一 50"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-2",
+      "section": "B",
+      "number": 2,
+      "questionText": "つ 選 べ 。 . ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 冠 歯 根 比 の 改 善 ・ ' b 対 合 歯 挺 出 の 防 止 ー c 付 睡 歯 肉 幅 の 確 保 '"
+        },
+        {
+          "label": "b",
+          "text": "咬 合 調 整 ′ _ c 顕 関 節 円 板 切 除 術 ー"
+        },
+        {
+          "label": "c",
+          "text": "リ ド カ イ ン 塩 酸 塩"
+        },
+        {
+          "label": "d",
+          "text": "関 節 腔 内 洗 浄 療 法 國"
+        },
+        {
+          "label": "e",
+          "text": "中 枢 性 筋 弛 緩 薬 の 探 与 別 冊 一 23 一 み M2(782 一 75 成 術 、 1 歳 8 か 月 時 に 口 蓋 形 成 術 を 行 っ た と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 38A) と 装 置 の 写 真 ( 別 冊 No. 38B) と を 別 に 示 す 。 装 置 の 目 的 は ど れ か 。 1 つ 選 べ 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-3",
+      "section": "B",
+      "number": 3,
+      "questionText": "暫 間 岳 定 `",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "生 涛 断 髄 法 ・ . c コ ン ポ ボ ポ ジ ッ ト レ ジ ン 修 復"
+        },
+        {
+          "label": "d",
+          "text": "グ ラ ス ア イ オ ノ マ ー セ メ ン ト 修 復"
+        },
+        {
+          "label": "e",
+          "text": "水 酸 化 カ ル シ ウ ム 剤 に よ る 間 接 覆 髄 別 再 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-7",
+      "section": "B",
+      "number": 7,
+      "questionText": "18 歳 の 女 子 。 顔 面 の 変 形 を 主 訴 と し て 来 院 し た 。 痛 み は な い が 最 近 に な っ て 顔 面 の 変 形 が 進 行 し て き た と い う 。 初 診 時 の エ ッ ク ス 緯 写 真 ( 別 再 No. 7A、B) を 別 に 示 す 。 閻 疑 わ れ る の は ど れ か 。 1 つ 選 べ 。 `",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-8",
+      "section": "B",
+      "number": 8,
+      "questionText": "歯 原 性 粘 液 腫",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "歯 性 上 顎 洞 炎"
+        },
+        {
+          "label": "c",
+          "text": "緯 維 性 異 形 成 症"
+        },
+        {
+          "label": "d",
+          "text": "セ メ ン ト 芽 細 胞 腫 ~ e 慢 性 硬 化 性 骨 髄 炎 國 細 ー ・ 別 内 ,"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-10",
+      "section": "B",
+      "number": 10,
+      "questionText": "76 歳 の 男 性 。10 年 前 に 装 着 し た 上 下 顎 全 部 床 義 歯 の 不 適 合 を 主 訴 と し て 来 院 し た 。 新 義 歯 を 製 作 す る こ と と し た 。 完 成 義 歯 の 側 方 運 動 時 の 哀 合 接 触 点 の 写 真 ( 刹 冊 No. 9A) と 中 心 咬 合 時 の 口 腔 内 写 真 ( 別 冊 No。 9B) と を 別 に 示 す 。 付 与 し た の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-11",
+      "section": "B",
+      "number": 11,
+      "questionText": "70 歳 の 女 性 。 舌 の ヒ リ ヒ リ 感 を 主 訴 と し て 来 院 し た 。 初 診 時 の 舌 の 写 真 ( 別 冊 No. 10 を 別 に 示 す 。 ~ ・ 診 断 に 有 効 な 検 査 項 目 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ヘ へ モ グ ロ ビ ン ' '"
+        },
+        {
+          "label": "b",
+          "text": "平 均 赤 血 球 容 積 _"
+        },
+        {
+          "label": "c",
+          "text": "リ ウ マ ト イ ド 因 子"
+        },
+        {
+          "label": "d",
+          "text": "C 反 応 性 タ ン パ ク"
+        },
+        {
+          "label": "e",
+          "text": "派 性 化 部 分 ト ロ ン ボ プ ラ ス チ ン 時 間 ' 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-12",
+      "section": "B",
+      "number": 12,
+      "questionText": "4 歳 の 女 児 。 歯 の 変 色 と 臼 歯 部 の 冷 水 痛 と を 主 訴 と し て 来 院 し た 。 骨 変 形 と 側 暴 症 に よ る 低 身 長 が み ら れ る 。 乳 臼 歯 部 の 咬 耗 が 著 し い た め 乳 歯 冠 に よ る 修 復 を 行 う こ と と し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 11) を 別 に 示 す 。 治 療 に 際 し 留 意 す べ き な の は ど れ か 。 1 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "変 色 部 は す べ て 切 削 す る 。"
+        },
+        {
+          "label": "b",
+          "text": "上 下 顎 歯 と も に 修 復 す る 。"
+        },
+        {
+          "label": "c",
+          "text": "乳 歯 冠 幅 径 は 大 き く す る 。"
+        },
+        {
+          "label": "d",
+          "text": "断 髄 法 を 行 っ て か ら 修 復 す る 。 ー~"
+        },
+        {
+          "label": "e",
+          "text": "術 野 確 保 の た め 開 口 器 を 使 用 す る 。 別 冊 ・ 一 6 一 ぐ M2782 一 58"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-13",
+      "section": "B",
+      "number": 13,
+      "questionText": "11 歳 の 男 児 。 他 院 で 咬 み 合 わ せ が 深 い こ と を 指 摘 さ れ 来 院 し た 。 第 一 大 臼 歯 の 咲 合 関 係 は 左 右 側 と も に Angle T 級 で 、 ア ー チ レ ン グ ス デ ィ ス ク レ パ ン シ ー は 上 顎 ー8 mm、 下 顎 ー1 mm で あ る 。 初 診 時 の 顔 面 写 真 ( 別 冊 No。 12A) と 口 腔 内 写 真 ( 別 冊 No。 12B) と を 別 に 示 す 。 セ フ ァ ロ 分 析 の 結 果 を 図 に 示 す 。 ー _ ' 顔 面 角 一 ー 董讐 記 } 上 顎 突 出 度 ナ _ ・ ラ ラ ン ク フ ル ト 下 新 下 暁 \\ 面 角 ー プ ー ト ペ で SN 平 面 に 対 す る 下 顕 枝 傾 斜 角 ャ ト 、/ m ニ ー ト V ` “ SNA 角 '・賽 SNB 角 電曼 ANB 角 `プ . 上 下 顎 中 切 歯 歯 軸 傾 斜 角 召警~ 〝 FH 平 面 に 対 す る 上 顎 中 切 歯 歯 軸 傾 斜 角 髏電・ 下 顎 下 縁 平 面 に 対 す る 下 顎 中 切 歯 歯 軸 傾 斜 角 ー ョ ー キ ー FMIA 鄭鼻 遮 切 な 燕 正 装 置 は ど れ か 。 2 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "タ ン グ ク リ ブ ' ー"
+        },
+        {
+          "label": "b",
+          "text": "_ ア ク チ バ ト ー ル"
+        },
+        {
+          "label": "c",
+          "text": "リ ン ガ ル ア ー チ"
+        },
+        {
+          "label": "d",
+          "text": "ハ イ ブ ル ヘ ッ ド ギ ア `"
+        },
+        {
+          "label": "e",
+          "text": "サ ー ビ カ ル プ ル ヘ ッ ド ギ ア 別 冊 ' No. 12 A、B ー 7 一 ぐ み M2782 一 59 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-14",
+      "section": "B",
+      "number": 14,
+      "questionText": "5 歳 の 男 児 。 遊 戮 中 に 衝 突 し 上 顎 前 歯 部 を 強 打 し た た め 来 院 し た 。 LA と と に 動 撒 を 認 め る 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 13A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 13B) と を 別 に 示 す 。 行 う べ き 処 置 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-15",
+      "section": "B",
+      "number": 15,
+      "questionText": "35 歳 の 男 性 。 左 側 頬 部 の 腫 脹 を 主 訴 と し て 来 院 し た 。 1 週 前 か ら 疼 痛 を 伴 う 腫 脹 を 自 覚 し た が 、 放 置 し て い た と い う 。 日 腔 内 の 清 掃 状 態 は 悪 く 、 下 顎 左 側 第 一 大 臼 歯 は 残 根 状 態 で あ る 。 初 診 時 の 顔 貌 写 真 ( 別 冊 No. 14A) と 処 置 時 の 写 真 ( 別 冊 No. 14B) と を 別 に 示 す 。 _ こ の 処 置 の 目 的 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "抗 菌 薬 の 注 入 ~ ・ ・"
+        },
+        {
+          "label": "b",
+          "text": "造 影 剤 の 注 入 ・"
+        },
+        {
+          "label": "c",
+          "text": "病 巣 部 の 洗 津 國 談 謀"
+        },
+        {
+          "label": "d",
+          "text": "病 巣 周 囲 の 麻 酔 '"
+        },
+        {
+          "label": "e",
+          "text": "病 巣 内 容 物 の 確 認 . ' ` 別 内 ー 8 一 る M2(782 一 60 ・ 16 24 歳 の 男 性 。 上 顎 左 側 前 歯 部 の 破 折 を 主 訴 と し て 来 院 し た 。 1 時 間 前 に 転 倒 に . よ っ て 打 撲 し た と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No。 15A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 15B) と を 別 に 示 す 。 [ の 処 置 で 適 切 な の は ど れ か 。 2 つ 選 べ 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-17",
+      "section": "B",
+      "number": 17,
+      "questionText": "78 歳 の 女 性 。 上 顎 の 違 和 感 を 訴 え て 在 宅 診 療 を 希 望 し た 。 患 者 は 6 年 前 に 上 下 _ 顎 全 部 床 義 歯 を 装 着 し た が 、 5 年 前 か ら 寝 た き り で あ る 。 `初診時の口腔内写真(別 冊 No. 16A) と 使 用 中 の 義 歯 の 写 真 ( 別 冊 No. 16B) と を 別 に 示 す 。 最 初 に 行 う の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-18",
+      "section": "B",
+      "number": 18,
+      "questionText": "67 歳 の 男 性 。 上 顎 義 歯 の 雛 持 不 良 に よ る 再 襄 作 を 希 望 し て 来 院 し た 。 使 用 中 の 義 歯 は 10 年 前 に 製 作 し た と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 17A) と 義 歯 の 写 真 ( 別 冊 No. 17B) と を 別 に 示 す 。 ′ _ 適 切 な 検 査 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-19",
+      "section": "B",
+      "number": 19,
+      "questionText": "15 歳 の 男 子 。 臼 歯 部 の 異 常 を 主 訴 と し て 来 院 し た 。 脳 性 麻 痺 に よ る 摂 食 嚥 下 障 害 の た め 、 経 管 栄 養 で あ る と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 18) を 別 に 示 す 。 適 切 な 対 応 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-20",
+      "section": "B",
+      "number": 20,
+      "questionText": "27 歳 の 男 性 。 口 臭 を 主 訴 と し て 来 院 し た 。 官 餅 検 査 で 強 い 口 臭 を 認 め る が 、 響 蝕 や 歯 周 炊 は 認 め な い 。 初 診 時 の ガ ス ク ロ マ ト ダ グ ダ グ ラ フ ィ ー 検 査 総 果 を 図 に 示 す 。 た だ し 矢 印 は 各 成 分 の 嗅 覚 闘 値 を 示 す 。 . ーーー- メ チ ル メ ル カ プ タ ン ジ メ チ ル サ ル フ ァ イ ド † † 適 切 な 対 応 は ど れ か 。 2 つ 選 べ 。 ー 8 性 格 検 査",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "普 液 分 泌 量 の 評 価"
+        },
+        {
+          "label": "c",
+          "text": "口 腔 淑 掃 指 導 ."
+        },
+        {
+          "label": "d",
+          "text": "内 科 へ の 紹 介"
+        },
+        {
+          "label": "e",
+          "text": "精 神 科 の 受 診 勧 奨"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-21",
+      "section": "B",
+      "number": 21,
+      "questionText": "62 歳 の 女 性 。 上 下 顎 可 撤 性 義 歯 を 製 作 中 で あ る 。 口 腔 内 写 真 ( 別 冊 No. 19A、 B、C) と 筋 圧 形 成 を 終 え た 個 人 ト レ ー の 写 真 ( 別 冊 No. 19D、E) と を 別 に 示 す 。 ` 印 象 探 得 操 作 に つ い て 正 し い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "上 下 題 同 時 に 印 象 揉 得 を 行 う 。"
+        },
+        {
+          "label": "b",
+          "text": "上 顎 前 歯 部 に ワ ッ ク ス ス ペ ー サ ー を 置 く 。"
+        },
+        {
+          "label": "c",
+          "text": "上 顎 の 印 象 に は 非 弾 性 印 象 材 を 用 い る こ と が で き る 。"
+        },
+        {
+          "label": "d",
+          "text": "下 顎 残 存 歯 の ア ン ダ ー カ ッ ト 部 を す べ て ブ ロ ッ ク ア ウ ト す る 。"
+        },
+        {
+          "label": "e",
+          "text": "上 顎 の 印 象 に は 流 動 性 の 低 い 印 象 材 を 用 い 積 極 的 な 加 圧 を 行 う 。 別 冊 ‥ 一 11 一 ぐ M2(782 一 69"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-22",
+      "section": "B",
+      "number": 22,
+      "questionText": "38 歳 の 男 性 。 オ ト ガ イ 下 部 の 疼 痛 を 主 訴 と し て 来 院 し た 。 オ ト ガ イ 部 に 著 明 な ー び ま ん 性 腫 脹 と 発 赤 と を 認 め 、 波 動 を 触 知 す る 。 口 腔 外 か ら 切 開 排 膿 術 を 行 う こ と と し た 。 波 動 部 と 切 開 線 の 写 真 ( 別 冊 No. 20) を 別 に 示 す 。 . 適 切 な 切 開 線 は ど れ か 。 1 つ 選 べ 。 國 謀 謀 國 談 詞 謀 詞 8 プ ア",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "イ 〝"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ ' ~"
+        },
+        {
+          "label": "e",
+          "text": "オ ' 別 冊 ' 閻 ー 12 一 る M2(782 一 64"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-23",
+      "section": "B",
+      "number": 23,
+      "questionText": "63 歳 の 男 性 。 口 腔 内 の 疼 痛 を 主 訴 と し て 来 院 し た 。 7 日 前 か ら 智 歯 周 囲 炎 の た め 抗 菌 薙 を 服 用 し て い る 。 昨 日 か ら 熱 発 し 、 眼 の 充 血 と 全 身 の 皮 膚 の 発 赤 と が 生 じ 、 口 腔 内 全 体 が し み る よ う に な り 食 事 が 困 難 に な っ た と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 21) を 別 に 示 す 。 血 液 検 査 の 総 果 を 表 に 示 す 。 ー } 赤 血 球 : 467 万 /c へ モ グ ロ ビ ン : 14.4 g/d 白 血 球 : 2. 500/7 好 中 球 : 75 % ' 好 酸 球 : 7 % . ' ' リ ン パ 琳 : 14 % CRP : 3.1 mg/d7( 基 準 0.3 以 下 ) AST : 56 IUZ ALTF : 48 IU/? こ の 疾 患 の 病 熊 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "化 学 的 損 傷"
+        },
+        {
+          "label": "b",
+          "text": "菌 交 代 現 象 _ '"
+        },
+        {
+          "label": "c",
+          "text": "自 己 免 疫 疾 患"
+        },
+        {
+          "label": "d",
+          "text": "日 和 見 感 染 症"
+        },
+        {
+          "label": "e",
+          "text": "_ ア レ ル ギ ー 性 疾 患 ' 別 内 一 13 一 る M2(782 一 65"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-24",
+      "section": "B",
+      "number": 24,
+      "questionText": "18 歳 の 女 子 。 下 顎 前 突 と 前 歯 部 の 開 咬 と を 主 訴 と し て 来 院 し た 。 初 診 時 の エ ッ ク ス 線 写 真 ( 別 冊 No. 22A) で 下 顎 左 側 第 一 大 臼 歯 根 尖 部 に 異 常 を 認 め た が 、 同 部 の 自 覚 症 状 は な い と い う 。 CT( 別 冊 No. 22B 、 C) を 別 に 示 す 。 ′ こ の 病 変 に 対 す る 適 切 な 対 応 は ど れ か 。 1 つ 選 べ 。 ~ -",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-25",
+      "section": "B",
+      "number": 25,
+      "questionText": "35 歳 の 女 性 。 上 顎 有 側 中 切 歯 の 変 色 を 主 訴 と し て 来 院 し た 。 5 年 前 に 治 療 を 受 け た と い う 。 ウ ォ ー キ ン グ ブ リ ー チ を 行 う こ と と し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 23A) と エ ッ ク ス 線 写 真 ( 別 冊 No。 23B) と を 別 に 示 す 。 処 置 に 際 し て 考 慮 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 肉 の 色 調"
+        },
+        {
+          "label": "b",
+          "text": "根 管 充 塁 状 態"
+        },
+        {
+          "label": "c",
+          "text": "象 牙 細 管 の 走 行"
+        },
+        {
+          "label": "d",
+          "text": "エ ナ メ ル 質 の 厚 さ"
+        },
+        {
+          "label": "e",
+          "text": "歯 周 ポ ケ ッ ト の 深 さ ` ' 別 冊 ー 14 一 る M2(782 一 66"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-26",
+      "section": "B",
+      "number": 26,
+      "questionText": "70 歳 の 男 性 。 歯 周 治 療 終 了 後 、 SPT 〈supportive periodontal therapy? に 移 行 す る こ と と し た 。 移 行 時 の 口 腔 内 写 真 ( 別 冊 No。 24A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 24B) ー と を 別 に 示 す 。 〝 SPT 期 間 中 に 前 歯 部 で 発 生 す る り ス ク が 高 い の は ど れ か 。 2 つ 選 べ 。 `",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-27",
+      "section": "B",
+      "number": 27,
+      "questionText": "38 歳 の 女 性 。 左 側 顎 下 部 の 腫 脹 を 主 訴 と し て 来 院 し た 。 5 年 前 か ら 同 部 の 無 痛 ' 性 腫 脹 に 気 付 い た と い う 。 初 診 時 の 顔 貌 写 真 ( 別 冊 No. 25A)、MRI の T 2 強 調 像 ( 別 冊 No. 25B) 及 び 摘 出 物 の せ -E 染 色 病 理 組 織 像 ( 別 冊 No。 25C) を 別 に 示 す 。 診 断 名 は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-28",
+      "section": "B",
+      "number": 28,
+      "questionText": "6 歳 の 男 児 。 上 顎 左 側 中 切 歯 が 萌 出 し て こ な い こ と を 主 訴 と し て 来 院 し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No。 26A)、 エ ッ ク ス 線 写 真 ( 別 冊 No。 26B 、C) 及 び そ の ト レ ー ス 図 ( 別 冊 No. 26D) を 別 に 示 す 。 . . _ ー ま ず 行 う の は ど れ か 。 1 つ 選 べ 。 閻 國 謀 謀 謀 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア の 抜 歯 國 談 副"
+        },
+        {
+          "label": "b",
+          "text": "イ の 抜 歯 謀 ー"
+        },
+        {
+          "label": "c",
+          "text": "ウ の 抜 歯 _ )"
+        },
+        {
+          "label": "d",
+          "text": "ウ の 開 窓 牽 引 _"
+        },
+        {
+          "label": "e",
+          "text": "ウ の 萌 出 観 察 ・ 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-29",
+      "section": "B",
+      "number": 29,
+      "questionText": "063 歳 の 男 性 。 上 下 顎 の 全 部 床 義 歯 の 製 作 を 希 望 し て 来 院 し た 。 新 義 歯 を 製 作 し 装 着 し た が 、 調 整 中 に 左 側 頬 粘 膜 後 方 部 に 疼 痛 と 腫 脹 と が 発 生 し た 。 そ の 時 の 口 腔 内 写 真 ( 別 冊 No。 27A、B)、 咬 合 時 の 顔 貌 写 真 ( 別 冊 No. 27C)、 中 心 咬 合 位 で の 哀 合 接 触 状 態 の 写 真 ( 別 冊 No。 27D)、 適 合 試 験 の 写 真 ( 別 冊 No. 27E) 及 び 上 下 顎 義 歯 の 嵌 合 状 態 の 写 真 ( 別 冊 No. 27F) を 別 に 示 す 。 腫 脹 部 を 矢 印 で 示 す 。 原 因 は ど れ か 。 1 つ 選 べ 。 ー a _ 絵 持 不 良",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "低 位 咬 合 _ c 早 期 接 無"
+        },
+        {
+          "label": "d",
+          "text": "床 研 磨 面 の 形 態 不 良"
+        },
+        {
+          "label": "e",
+          "text": "人 工 歯 の 排 列 位 置 不 良 別 冊 一 16 一 ぐ M2(782 一 68"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "B-30",
+      "section": "B",
+      "number": 30,
+      "questionText": "9 歳 の 男 児 。 下 顎 右 側 第 一 乳 臼 歯 歯 肉 の 腫 脹 を 主 訴 と し て 来 院 し た 。 自 発 痛 は な _ く 、 繰 り 返 し 膿 瘍 を 形 成 す る と い う 。 刈 の 動 揺 序 は 2 序 で 打 診 痛 を 認 め る 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No。 28A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 28B) と を 別 に 示 す 。 適 切 な 対 応 は ど れ か 。 1 つ 選 べ 。 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ー ェ ョ ー * : 歯 周 ポ ケ ッ ト の 深 さ (mm) 細 indhe の 分 類 * ま Miller の 判 定 基 準 適 切 な 治 療 方 針 は ど れ か 。 1 つ 選 べ 。"
+        },
+        {
+          "label": "b",
+          "text": "麟 竈 の 修 復 '"
+        },
+        {
+          "label": "c",
+          "text": "感 染 根 管 治 瘻 ー d 止 周 ポ ケ ッ ト 内 洗 湊"
+        },
+        {
+          "label": "d",
+          "text": "古 の 根 尖 切 除"
+        },
+        {
+          "label": "e",
+          "text": "ル ー ト プ レ ー ニ ン グ 別 再 ' No. 29 A、B 一 18 一 み ぐ M2(782 一 70 ー 92 25 歳 の 男 性 。 上 題 左 側 犬 歯 の 一 遇 性 の 冷 水 痛 を 主 訴 と し て 来 院 し た 。 コ ン ポ ジ ッ ト レ ジ ン 修 復 を 行 う こ と と し た 。 初 診 時 の 口 脩 内 写 真 ( 別 冊 No. 30A) と 富 洞 形 成 後 の 口 膝 内 写 真 ( 別 冊 No。 30B) と を 別 に 示 す 。 ・ コ ン ポ ジ ッ ト レ ジ ン の 重 合 収 縮 応 力 を 緩 和 す る た め に 有 効 な の は ど れ か 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-1",
+      "section": "C",
+      "number": 1,
+      "questionText": "つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-2",
+      "section": "C",
+      "number": 2,
+      "questionText": "つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "PET"
+        },
+        {
+          "label": "b",
+          "text": "MREI _ 、"
+        },
+        {
+          "label": "c",
+          "text": "急 音 波 検 査 _"
+        },
+        {
+          "label": "d",
+          "text": "経 静 脈 造 影 CT ・"
+        },
+        {
+          "label": "e",
+          "text": "腫 瘍 シ ン チ ダ グ ラ フ ィ * ~ 一 20 一 み ぐ NM3 F782_ー06) 】 ' 58 無 歯 顔 者 に 対 す る 個 人 ト レ ー を 用 い た 最 終 印 象 時 に 行 う の は ど れ か 。 2 つ 選 べ 。 }"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-3",
+      "section": "C",
+      "number": 3,
+      "questionText": "歯 石 の 除 去 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "義 歯 の 調 整"
+        },
+        {
+          "label": "c",
+          "text": "屈 宅 療 養 管 理 指 導"
+        },
+        {
+          "label": "d",
+          "text": "要 介 護 認 定 の 一 次 判 定 〟"
+        },
+        {
+          "label": "e",
+          "text": "要 介 護 認 定 の 二 次 判 定 ・ ー 31 一 る M3(782 一 11 の 7"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-4",
+      "section": "C",
+      "number": 4,
+      "questionText": "現 病 歴 の 閾 き 取 り '",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-5",
+      "section": "C",
+      "number": 5,
+      "questionText": "既 往 歴 の 閻 き 取 り 初 診 時 に 行 う 順 序 で 適 切 な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "4 っ 5 っ 3 っ 2 っ 1"
+        },
+        {
+          "label": "b",
+          "text": "4 っ 5 っ 3 っ 1 っ 2 _"
+        },
+        {
+          "label": "c",
+          "text": "8 っ 8@ っ 5 っ 2 っ 1"
+        },
+        {
+          "label": "d",
+          "text": "3 っ 5 っ 4 っ 1 っ 2"
+        },
+        {
+          "label": "e",
+          "text": "2 っ 8 っ 8@ っ 56 っ 1"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-8",
+      "section": "C",
+      "number": 8,
+      "questionText": "0.47 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "0.75"
+        },
+        {
+          "label": "c",
+          "text": "0.78"
+        },
+        {
+          "label": "d",
+          "text": "0.90 ` e 0.97"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-9",
+      "section": "C",
+      "number": 9,
+      "questionText": "た T 9 い M た T",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-11",
+      "section": "C",
+      "number": 11,
+      "questionText": "速 化 液 の 分 泌 を 促 進 す る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-12",
+      "section": "C",
+      "number": 12,
+      "questionText": "検 疫 感 染 症 の 疑 い の あ る 者 が 入 国 す る 際 に と ら れ る 措 置 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "透 遇 . 囲 詞 謀 謀 謀 閻 `"
+        },
+        {
+          "label": "b",
+          "text": "笹 芦 ョ ー"
+        },
+        {
+          "label": "c",
+          "text": "電 離 闇 謀 謀 詞 沼 0 託 00 向 11"
+        },
+        {
+          "label": "d",
+          "text": "散 乱  ・ 閻 謀 詞 梨 誌 1 剣 a"
+        },
+        {
+          "label": "e",
+          "text": "回 折 談 謀 詞"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-14",
+      "section": "C",
+      "number": 14,
+      "questionText": "歯 科 医 師 法 の 目 的 は ど れ か 。 1 つ 選 べ 。 _ ~",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "単 琳 〝 〝"
+        },
+        {
+          "label": "b",
+          "text": "好 酸 球 '"
+        },
+        {
+          "label": "c",
+          "text": "好 中 琳"
+        },
+        {
+          "label": "d",
+          "text": "骨 髄 球"
+        },
+        {
+          "label": "e",
+          "text": "好 塩 基 球"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-17",
+      "section": "C",
+      "number": 17,
+      "questionText": "2008 年 ノ ー ベ ル 化 学 賞 受 賞 者 の 下 村 脩 博 士 の 業 績 と 関 連 す る の は ど れ か 、。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-18",
+      "section": "C",
+      "number": 18,
+      "questionText": "ア ル ジ ネ ー ト 印 象 体 の 消 毒 に 適 し て ぃ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "紫 外 線 . b ホ ル マ リ ン"
+        },
+        {
+          "label": "c",
+          "text": "グ ル タ ラ ー ル"
+        },
+        {
+          "label": "d",
+          "text": "速 毒 用 ア ル コ ー ル"
+        },
+        {
+          "label": "e",
+          "text": "次 亜 塩 素 酸 ナ ト リ ウ ム ー 6 一 み M3782 一 92"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-19",
+      "section": "C",
+      "number": 19,
+      "questionText": "S が ヶ e ヵ Zococczs が Zz2s の 特 徴 は ど れ か 。 1 つ 選 べ 。 . 8 4 溶 血 性",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "酸 感 受 性"
+        },
+        {
+          "label": "c",
+          "text": "偏 性 嫌 気 性 ー ー"
+        },
+        {
+          "label": "d",
+          "text": "バ シ ト ラ シ ン 感 受 性 ' ^ e グ リ コ ー ゲ ン 様 多 糖 の 菌 体 内 蕃 積"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-20",
+      "section": "C",
+      "number": 20,
+      "questionText": "器 具 を 滅 菌 す る 際 の オ ー ト ク レ ー ブ の 温 度 は ど れ か 。 1 つ 選 べ 。 ′",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "99 で"
+        },
+        {
+          "label": "b",
+          "text": "105 で"
+        },
+        {
+          "label": "c",
+          "text": "121 で"
+        },
+        {
+          "label": "d",
+          "text": "147 で C '"
+        },
+        {
+          "label": "e",
+          "text": "183 で C"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-21",
+      "section": "C",
+      "number": 21,
+      "questionText": "GTR 法 で 根 面 に 誘 導 す る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 肉 上 皮 組 織 ` '"
+        },
+        {
+          "label": "b",
+          "text": "歯 肉 結 合 組 繁"
+        },
+        {
+          "label": "c",
+          "text": "骨 膜 由 来 組 織"
+        },
+        {
+          "label": "d",
+          "text": "歯 根 膜 由 来 組 繁"
+        },
+        {
+          "label": "e",
+          "text": "止 槽 粗 膜 結 合 組 繁 . ー 7 一 み M3782 一 99"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-22",
+      "section": "C",
+      "number": 22,
+      "questionText": "チ ー ム 医 療 の 目 的 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "コ ス ト の 削 減"
+        },
+        {
+          "label": "b",
+          "text": "仕 事 量 の 平 均 化"
+        },
+        {
+          "label": "c",
+          "text": "医 療 の 質 の 向 上"
+        },
+        {
+          "label": "d",
+          "text": "従 事 者 の 勤 務 時 間 短 綺 }"
+        },
+        {
+          "label": "e",
+          "text": "患 者 へ の 説 明 時 間 確 保"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-23",
+      "section": "C",
+      "number": 23,
+      "questionText": "プ ロ ー ピ ン グ 時 の 出 血 に 影 響 を 与 え る の は ど れ か 。 1 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 肉 増 殖 量"
+        },
+        {
+          "label": "b",
+          "text": "_ ポ ケ ッ ト の 深 さ “"
+        },
+        {
+          "label": "c",
+          "text": "根 面 の 陥 囚 程 度"
+        },
+        {
+          "label": "d",
+          "text": "ア タ ッ チ メ ン ト レ ベ ル"
+        },
+        {
+          "label": "e",
+          "text": "歯 肉 内 縁 部 の 炎 症 程 度"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-24",
+      "section": "C",
+      "number": 24,
+      "questionText": "基 底 膜 の 構 成 成 分 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ケ ラ チ ン"
+        },
+        {
+          "label": "b",
+          "text": "_ ラ ミ ニ ン"
+        },
+        {
+          "label": "c",
+          "text": "型 コ ラ ー ゲ ン"
+        },
+        {
+          "label": "d",
+          "text": "T 型 コ ラ ー ゲ ン"
+        },
+        {
+          "label": "e",
+          "text": "オ ス テ オ ポ ボ ン チ ン ` ' ー 8 一 ぐ M3782 一 94"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-25",
+      "section": "C",
+      "number": 25,
+      "questionText": "血 液 凝 固 を 起 こ す 血 液 成 分 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-26",
+      "section": "C",
+      "number": 26,
+      "questionText": "特 定 健 康 診 査 に お け る メ タ ポ ボ リ ッ ク シ ン ド ロ ー ム の 診 断 で 基 準 値 を 超 え る こ と が 必 須 な の は ど れ か 。 1 つ 選 べ 。 8 腹 囲",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "中 性 脂 肪 値"
+        },
+        {
+          "label": "c",
+          "text": "最 高 血 圧 値"
+        },
+        {
+          "label": "d",
+          "text": "空 腹 時 血 糖 値 ー"
+        },
+        {
+          "label": "e",
+          "text": "HDL - コ レ ス テ ロ ー ル 値"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-27",
+      "section": "C",
+      "number": 27,
+      "questionText": "水 平 位 診 療 で 試 適 中 の 金 属 冠 が 口 腔 内 で 落 下 し 、 見 失 っ た 。 直 後 の 対 応 で 適 切 な の は ど れ か 。 1 つ 選 べ 。 & 背 中 を 殴 打 す る 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "顔 を 横 に 向 か せ る 。 ) '"
+        },
+        {
+          "label": "c",
+          "text": "起 こ し て 吐 き 出 さ せ る 。"
+        },
+        {
+          "label": "d",
+          "text": "バ キ ュ ー ム で 口 腎 内 を 吸 引 す る 。"
+        },
+        {
+          "label": "e",
+          "text": "曰 を 大 き く 開 け さ せ て 口 峡 部 を 確 認 す る 。 _ ー 9 一 ぐ M3(782 一 95"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-28",
+      "section": "C",
+      "number": 28,
+      "questionText": "同 部 位 の 口 内 法 エ ッ ク ス 線 写 真 ( 別 冊 No. 1A、B) を 別 に 示 す 。 歯 槽 頂 部 の 描 出 が 異 な る 原 因 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "照 射 野"
+        },
+        {
+          "label": "b",
+          "text": "管 電 圧 `"
+        },
+        {
+          "label": "c",
+          "text": "無 射 時 間 ・"
+        },
+        {
+          "label": "d",
+          "text": "授 影 角 度"
+        },
+        {
+          "label": "e",
+          "text": "_ フ イ ル ム 感 度 別 冊 |"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-29",
+      "section": "C",
+      "number": 29,
+      "questionText": "身 体 の 部 位 と 主 要 常 在 細 菌 と の 組 合 せ で 正 し ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "腎 一 一 一 一 一 一 ractobaciltus"
+        },
+        {
+          "label": "b",
+          "text": "勝 胱 一 一 一 一 Bacteroides ."
+        },
+        {
+          "label": "c",
+          "text": "小 腸 一 一 一 Hgicobacter _"
+        },
+        {
+          "label": "d",
+          "text": "鼻 膝 一 一 一 一 Enterococcus"
+        },
+        {
+          "label": "e",
+          "text": "皮 鷹 一 一 一 一 Bifidobacterum *"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-30",
+      "section": "C",
+      "number": 30,
+      "questionText": "鯛 診 で 圧 縮 性 を 示 す の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ガ マ 腫"
+        },
+        {
+          "label": "b",
+          "text": "線 維 腫 ・ c 血 管 腫 * '"
+        },
+        {
+          "label": "d",
+          "text": "エ プ ー リ ス 〝 〝"
+        },
+        {
+          "label": "e",
+          "text": "悪 性 リ ン パ 腫 一 10 一 み M3(782 一 96)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-31",
+      "section": "C",
+      "number": 31,
+      "questionText": "医 療 面 接 と 診 察 の 項 目 1~5 を 以 下 に 示 す 。 )",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-32",
+      "section": "C",
+      "number": 32,
+      "questionText": "咬 合 高 径 の 滅 少 に よ っ て 生 じ ゃ す い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "上 顎 前 歯 の 曽 側 傾 斜"
+        },
+        {
+          "label": "b",
+          "text": "下 顎 前 歯 の 歯 間 離 開"
+        },
+        {
+          "label": "c",
+          "text": "下 顎 前 歯 の 舌 側 傾 斜"
+        },
+        {
+          "label": "d",
+          "text": "臼 歯 の 歯 間 離 開 ・ “ e 臼 歯 の 遠 心 傾 斜"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-33",
+      "section": "C",
+      "number": 33,
+      "questionText": "唾 液 の 抗 脱 灰 作 用 に 関 与 す る の は ど れ か 。 1 つ 選 べ 。 8  NaT",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "CQ~ '"
+        },
+        {
+          "label": "c",
+          "text": "M ケ"
+        },
+        {
+          "label": "d",
+          "text": "SCN~"
+        },
+        {
+          "label": "e",
+          "text": "耽 COg 一 11 一 る ぐ M3(782 一 97"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-34",
+      "section": "C",
+      "number": 34,
+      "questionText": "熱 伝 導 係 数 が 最 も 大 き い の は ど れ か 。 1 つ 選 べ 。 誓 謀",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "金 合 金 ー"
+        },
+        {
+          "label": "b",
+          "text": "PMMA '"
+        },
+        {
+          "label": "c",
+          "text": "金 属 焼 付 用 陶 材 國 謀 訣"
+        },
+        {
+          "label": "d",
+          "text": "_ コ ン ポ ジ ッ ト レ ジ ン '"
+        },
+        {
+          "label": "e",
+          "text": "モ デ リ ン グ コ ン パ ウ ン ド ′ ."
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-35",
+      "section": "C",
+      "number": 35,
+      "questionText": "老 化 に よ っ て 増 大 す る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "舌 旭 _ b 最 大 咬 合 カ"
+        },
+        {
+          "label": "c",
+          "text": "下 顎 骨 重 量"
+        },
+        {
+          "label": "d",
+          "text": "顎 関 節 の 可 動 性"
+        },
+        {
+          "label": "e",
+          "text": "唾 注 中 の ム チ ン 量 一 12 一 る ぐ NM3(782 一 98)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-36",
+      "section": "C",
+      "number": 36,
+      "questionText": "図 の 1 と 2 と の 組 合 せ で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。 120 ? 100 1 6 80 ペ 5 会 る の 60 _ ` o 数 数 値 3 値",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-37",
+      "section": "C",
+      "number": 37,
+      "questionText": "線 量 の 単 位 で Gy は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "空 気 中 の 電 離 に よ る 電 荷 の 量"
+        },
+        {
+          "label": "b",
+          "text": "物 質 が 吸 収 し た エ ネ ル ギ ー 量"
+        },
+        {
+          "label": "c",
+          "text": "吾 収 線 量 と 放 射 線 荷 重 係 数 の 積 }"
+        },
+        {
+          "label": "d",
+          "text": "南 位 時 間 あ た り の 放 射 性 壊 変 の 回 数"
+        },
+        {
+          "label": "e",
+          "text": "紺 織 等 価 線 量 と 組 織 荷 重 係 数 の 積 の 総 和 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-38",
+      "section": "C",
+      "number": 38,
+      "questionText": "メ ラ ニ ン 沈 着 を 伴 う の は ど れ か 。 2 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-39",
+      "section": "C",
+      "number": 39,
+      "questionText": "義 歯 製 作 過 程 で レ ジ ン 塁 入 の 際 に 用 い る 分 離 材 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "シ リ コ ー ン ."
+        },
+        {
+          "label": "b",
+          "text": "パ ラ フ ィ ン"
+        },
+        {
+          "label": "c",
+          "text": "リ ン 酸 水 溶 測 ・"
+        },
+        {
+          "label": "d",
+          "text": "_ エ チ ル シ リ ケ ー ト '"
+        },
+        {
+          "label": "e",
+          "text": "_ ア ル ジ ネ ー ト 水 溶 測 ' ー ‡4 一 み M3(782 一 100 ` 】"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-40",
+      "section": "C",
+      "number": 40,
+      "questionText": "ン 2 20 2 I 0 0 1995 。 1997 1999。 2001 2003 2005 ( 年 ) 1 2",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "砂 糖 消 貴 量 g 一 一 一 一 一 一 一 一 3 団 dmrt 指 数 _ ' b 年 間 歯 科 医 療 賽 ( 百 億 円 ) 一 一 一 一 40 歳 の CPI コ ー ド 0 の 平 均 分 画 数"
+        },
+        {
+          "label": "c",
+          "text": "和 口 託 カ 入 あ た り の 一 一 一 一 80 歳 の 一 人 平 均 残 存 歯 数 フ ッ 化 物 配 合 歯 磨 剤 の Bs [s| 市蕩占有率 『%雷石 12 歳 児 の DMFT 指 数 人 口 10 万 人 あ た り の _ ー 人 平 垂 喪 失 歯 ま"
+        },
+        {
+          "label": "e",
+          "text": "畜 科 医 療 施 設 数 ( 仲 ) 00 愚 の 一 人 子 牡 弯 失 歯 数 ” 一 13 一 み M3782 一 99 |"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-41",
+      "section": "C",
+      "number": 41,
+      "questionText": "接 着 性 モ ノ マ ー に 含 有 さ れ る イ オ ウ と の 反 応 に よ っ て 接 着 す る 材 料 は ど れ か 。 _ 2 つ 選 べ 。 〝",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-42",
+      "section": "C",
+      "number": 42,
+      "questionText": "普 液 分 波 で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。 ` 3 随 意 的 制 御 を 受 け る 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "イ オ ン 成 分 の 濃 度 は 分 泌 速 序 に 影 響 さ れ な い 。 ・"
+        },
+        {
+          "label": "c",
+          "text": "安 静 時 唾 液 の 分 泌 に は 日 内 変 動 が 認 め ら れ る 。"
+        },
+        {
+          "label": "d",
+          "text": "交 感 神 経 の 刺 激 で 有 機 成 分 の 濃 度 が 減 少 す る 。"
+        },
+        {
+          "label": "e",
+          "text": "安 静 時 の 分 泌 量 は 顎 下 腺 よ り も 耳 下 膜 の 方 が 多 い 。 一 15 一 ぐ M3(782 一 101 ・"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-43",
+      "section": "C",
+      "number": 43,
+      "questionText": "我 が 国 の 社 会 保 障 制 度 に ち け る 所 得 保 障 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "医 療 扶 助 ー b 児 童 手 当"
+        },
+        {
+          "label": "c",
+          "text": "介 護 給 付"
+        },
+        {
+          "label": "d",
+          "text": "医 療 給 付"
+        },
+        {
+          "label": "e",
+          "text": "老 齢 基 礎 年 金"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-44",
+      "section": "C",
+      "number": 44,
+      "questionText": "全 身 疾 患 を 有 す る 患 者 の 栄 養 摂 取 状 況 の 評 価 の 指 標 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "BMI '"
+        },
+        {
+          "label": "b",
+          "text": "体 温"
+        },
+        {
+          "label": "c",
+          "text": "動 脈 血 酸 素 飽 和 度 ・"
+        },
+        {
+          "label": "d",
+          "text": "血 淡 ア ル プ ミ ン 値 ・e _ HDL - コ レ ス テ ロ ー ル 値"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-45",
+      "section": "C",
+      "number": 45,
+      "questionText": "エ ナ メ ル 器 の 星 状 網 で 正 し ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "聞 蒋 性 で あ る 。"
+        },
+        {
+          "label": "b",
+          "text": "無 髄 神 経 が 分 布 す る 。"
+        },
+        {
+          "label": "c",
+          "text": "帽 状 期 歯 胚 で み ら れ る 。 _ ・"
+        },
+        {
+          "label": "d",
+          "text": "細 胞 間 質 が 豊 富 で あ る 。 _"
+        },
+        {
+          "label": "e",
+          "text": "エ ナ メ ル 芽 細 胞 を 生 じ る 。 ~ 一 16 一 る ぐ M3(782 一 102) ]"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-46",
+      "section": "C",
+      "number": 46,
+      "questionText": "号 側 頭 部 郭 浩 術 時 の 写 真 ( 別 冊 No. 2) を 別 に 示 す . 矢 印 で 示 す 神 経 に よ っ て 運 動 す る の は ど れ か 。 1 つ 選 べ 。 `",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "舌"
+        },
+        {
+          "label": "b",
+          "text": "下 曽"
+        },
+        {
+          "label": "c",
+          "text": "斉 門"
+        },
+        {
+          "label": "d",
+          "text": "下 顕"
+        },
+        {
+          "label": "e",
+          "text": "軟 口 蓋 別 内 ー"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-47",
+      "section": "C",
+      "number": 47,
+      "questionText": "日 本 人 の 食 事 振 取 基 準 (2005 年 ) で 正 し い ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "フ ッ 素 の 基 準 が 示 さ れ て い る 。 ."
+        },
+        {
+          "label": "b",
+          "text": "個 人 の 栄 養 指 導 に 利 用 で き る 。 〝 c カ ル シ ウ ム は 減 ら す べ き 査 養 素 で あ る 。 _ ` _"
+        },
+        {
+          "label": "d",
+          "text": "n-3 系 脂 肪 酸 は 増 や す べ き 栄 養 素 で あ る 。 }"
+        },
+        {
+          "label": "e",
+          "text": "推 定 エ ネ ル ギ ー 必 要 量 は 体 重 ご と に 示 さ れ て い る 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-48",
+      "section": "C",
+      "number": 48,
+      "questionText": "ク ラ ス プ の 設 計 で 最 初 に 行 う の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "着 脱 方 向 の 決 定 _ ' ー"
+        },
+        {
+          "label": "b",
+          "text": "サ ベ イ ラ イ ン の 描 記 ~ c ク ラ ス プ の 種 類 の 選 択"
+        },
+        {
+          "label": "d",
+          "text": "ア ン ダ ー カ ッ ト 量 の 測 定"
+        },
+        {
+          "label": "e",
+          "text": "ガ イ ド プ レ ー ン の 設 置 部 位 の 決 定 一 17 一 み M3(782 一 103"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-49",
+      "section": "C",
+      "number": 49,
+      "questionText": "全 身 疾 患 と 口 腔 所 見 と の 組 合 せ で 正 し い ぃ い の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "血 友 病 一 一 一 一 一 一 一 一 一 一 酉 肉 線 維 化"
+        },
+        {
+          "label": "b",
+          "text": "ク レ チ ン 疱 一 一 一 一 一 巨 言"
+        },
+        {
+          "label": "c",
+          "text": "Down 症 候 群 一 一 一 一 一 一 一 歯 の 旨 期 萌 出"
+        },
+        {
+          "label": "d",
+          "text": "再 生 不 良 性 貧 血 一 一 一 一 一 無 状 画 血 國 謀"
+        },
+        {
+          "label": "e",
+          "text": "Pierre Robin 症 候 群 一 一 一 一 舌 根 沈 下"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-50",
+      "section": "C",
+      "number": 50,
+      "questionText": "義 歯 設 計 の た め の サ ベ イ ラ イ ン を 描 記 し た 模 型 の 写 真 ( 別 冊 No. 3) を 別 に 示 す 。 小 臼 歯 部 に 赤 色 で 記 入 し た X 印 は 鉤 尖 部 を 示 す 。 こ の 部 位 に 用 い る ク ラ ス プ で 適 切 な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "RPI ク ラ ス プ"
+        },
+        {
+          "label": "b",
+          "text": "_ リ ン グ ク ラ ス プ ~"
+        },
+        {
+          "label": "c",
+          "text": "ツ イ ン ク ラ ス プ"
+        },
+        {
+          "label": "d",
+          "text": "エ ー カ ー ス ク ラ ス プ"
+        },
+        {
+          "label": "e",
+          "text": "バ ッ ク ア ク シ ョ ン ク ラ ス プ 〝 別 冊 ー"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-51",
+      "section": "C",
+      "number": 51,
+      "questionText": "骨 延 長 術 が 用 い ら れ る の は ど れ か 。 1 つ 選 べ 。 )",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-52",
+      "section": "C",
+      "number": 52,
+      "questionText": "晒 合 接 触 の 検 査 で 使 用 す る の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-53",
+      "section": "C",
+      "number": 53,
+      "questionText": "上 顎 全 部 床 義 歯 の 完 成 時 の り リ マ ウ ン ト に 用 い る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-54",
+      "section": "C",
+      "number": 54,
+      "questionText": "唾 液 腺 に 腫 脹 を 呈 す る 疾 患 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "Dowan 症 候 群 ~"
+        },
+        {
+          "label": "b",
+          "text": "Marfan 症 候 群"
+        },
+        {
+          "label": "c",
+          "text": "Sjogren 症 候 群"
+        },
+        {
+          "label": "d",
+          "text": "Mikulicz 症 候 群 ~"
+        },
+        {
+          "label": "e",
+          "text": "Peutz -Jeghers 症 候 群 ` 一 19 一 ” ぐ M3782 一 105"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-55",
+      "section": "C",
+      "number": 55,
+      "questionText": "SPT supportive periodontal therapyy に お け る リ コ ー ル 間 隔 の 決 定 で 重 要 な の は ど れ か 。 2 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "年 齢"
+        },
+        {
+          "label": "b",
+          "text": "性 刈 “"
+        },
+        {
+          "label": "c",
+          "text": "残 存 歯 数"
+        },
+        {
+          "label": "d",
+          "text": "口 腔 清 掃 狂 態 _ ` e _ プ ロ ー ビ ン グ 時 の 出 血"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-56",
+      "section": "C",
+      "number": 56,
+      "questionText": "レ ジ ン 添 加 型 グ ダ ラ ス ア イ オ ノ マ ー セ メ ン ト に 用 い ら れ る の は ど れ か 。 1 つ 選 べ 。 8 MDP",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "HEMA"
+        },
+        {
+          "label": "c",
+          "text": "4-AETF"
+        },
+        {
+          "label": "d",
+          "text": "MAC-10 〝 〝"
+        },
+        {
+          "label": "e",
+          "text": "4- META"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-57",
+      "section": "C",
+      "number": 57,
+      "questionText": "頚 部 リ ン パ 節 の 画 像 検 査 法 で 医 薬 品 を 用 い ず に 適 用 で き る の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-59",
+      "section": "C",
+      "number": 59,
+      "questionText": "無 歯 顎 の 下 顎 骨 体 部 骨 折 の 治 療 法 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-60",
+      "section": "C",
+      "number": 60,
+      "questionText": "哲 顎 口 蓋 裂 患 者 で 顎 裂 部 の 形 態 の 把 握 に 有 用 な の は ど れ か 。 2 つ 選 べ 。 3 C ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "咬 翼 法 ` . c 哀 合 法 ー"
+        },
+        {
+          "label": "d",
+          "text": "Waters 法"
+        },
+        {
+          "label": "e",
+          "text": "セ フ ァ ロ グ ラ ム 論 _ ー 21 一 る M3(782 一 10 の"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-61",
+      "section": "C",
+      "number": 61,
+      "questionText": "1 週 前 に 発 症 し た 病 変 の 写 真 ( 別 冊 No. 4 を 別 に 示 す 。 ・ 発 症 に 関 連 す る と 考 え ら れ る 既 往 症 は ど れ か 。 1 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "高 血 圧 ー ヽ _ b 脳 梗 塞 國 謀"
+        },
+        {
+          "label": "c",
+          "text": "上 顎 洞 炎"
+        },
+        {
+          "label": "d",
+          "text": "優 性 腎 不 全 _"
+        },
+        {
+          "label": "e",
+          "text": "ウ イ ル ス 性 肝 炎 | 別 再 _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-62",
+      "section": "C",
+      "number": 62,
+      "questionText": "無 歯 顎 様 顔 貌 の 特 徴 は ど れ か 。 2 つ 選 べ 。 “",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "薄 い 赤 唇"
+        },
+        {
+          "label": "b",
+          "text": "津 い 鼻 曽 滝"
+        },
+        {
+          "label": "c",
+          "text": "口 角 の 下 垂"
+        },
+        {
+          "label": "d",
+          "text": "明 瞭 な 人 中"
+        },
+        {
+          "label": "e",
+          "text": "明 瞭 な オ ト ガ イ 唇 滑"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-63",
+      "section": "C",
+      "number": 63,
+      "questionText": "シ ャ ー ピ ー 線 維 が 認 め ら れ る の は ど れ か 。 す べ て 選 べ 。 `",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 根 膜"
+        },
+        {
+          "label": "b",
+          "text": "固 有 歯 槽 骨 ` ("
+        },
+        {
+          "label": "c",
+          "text": "支 持 歯 槽 骨 _"
+        },
+        {
+          "label": "d",
+          "text": "無 細 胞 性 線 綱 性 セ メ ン ト 質"
+        },
+        {
+          "label": "e",
+          "text": "細 胞 性 固 有 線 綱 性 セ メ ン ト 質 一 22 一 ぐ M3782 一 108 . 】"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-64",
+      "section": "C",
+      "number": 64,
+      "questionText": "高 齢 者 の 歯 で 特 徴 的 な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "内 部 吸 収"
+        },
+        {
+          "label": "b",
+          "text": "髄 室 の 狭 窓 ~ '"
+        },
+        {
+          "label": "c",
+          "text": "歯 髄 の 息 肉 〟 _"
+        },
+        {
+          "label": "d",
+          "text": "歯 髄 の 石 灰 化 _"
+        },
+        {
+          "label": "e",
+          "text": "歯 根 の 外 部 吸 収"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-65",
+      "section": "C",
+      "number": 65,
+      "questionText": "WHO が ん 疼 痛 治 療 法 で 正 し ぃ の は ど れ か 。 2 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "麻 薬 は 第 1 段 階 か ら 使 用 す る 。 ・ ・"
+        },
+        {
+          "label": "b",
+          "text": "薬 物 は 経 口 投 与 を 基 本 と す る 。"
+        },
+        {
+          "label": "c",
+          "text": "鎮 痛 補 助 薬 と し て 抗 う つ 薙 を 使 用 す る 。 `"
+        },
+        {
+          "label": "d",
+          "text": "痛 み が 発 現 し た と き に 鎮 痛 薬 を 投 与 す る 。"
+        },
+        {
+          "label": "e",
+          "text": "ア セ ト ア ミ ノ フ ェ ン は 第 3 段 階 か ら 使 用 す る 。 _ '"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-66",
+      "section": "C",
+      "number": 66,
+      "questionText": "地 域 保 健 活 動 で ハ イ リ ス ク ア プ ロ ー チ に 比 べ た 集 団 ア プ ロ ー チ の 利 点 は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-67",
+      "section": "C",
+      "number": 67,
+      "questionText": "メ ラ ニ ン を 産 生 す る 細 胞 が み ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-68",
+      "section": "C",
+      "number": 68,
+      "questionText": "口 内 法 エ ッ クス線撮影の使用フイ ル ム と 撮 影 条 件 と を 表 に 示 す 。 F ダ グ ル ー プ の フ イ ル ム 感 度 は D ダ グ ル ー プ の 4 倍 で あ る 。 闇 誠誌 で 2 閻 閻 謀 閻 謀 謀 國 0I 詞 た 0000 詞 0 閲 ※ 管 電 圧 、 管 電 流 お よ び 現 像 条 件 は 同 一 と す る 。 黒 化 度 が 同 じ に な る と き の 1 は ど れ か 。 1 つ 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "0.25 秒"
+        },
+        {
+          "label": "b",
+          "text": "0.50 秒"
+        },
+        {
+          "label": "c",
+          "text": "1.00 秒"
+        },
+        {
+          "label": "d",
+          "text": "2.00 秒 ."
+        },
+        {
+          "label": "e",
+          "text": "4.00 秒 } ? 一 24 一 〇M3〈782干ーー0)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-69",
+      "section": "C",
+      "number": 69,
+      "questionText": "パ ノ ラ マ エ ッ ク ス 線 写 真 ( 別 冊 No. 5A) の 矢 印 が 示 す 解 剖 構 造 に 相 当 す る の は CT( 別 冊 No. 5B) の ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア ` ・ ー ョ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ ~ ' 別 冊 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-70",
+      "section": "C",
+      "number": 70,
+      "questionText": "抜 髄 の 適 応 症 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "内 部 吸 収 '"
+        },
+        {
+          "label": "b",
+          "text": "上 行 性 歯 髄 炎"
+        },
+        {
+          "label": "c",
+          "text": "優 性 潰 瘍 性 歯 髄 炎"
+        },
+        {
+          "label": "d",
+          "text": "怠 性 全 部 性 単 純 性 歯 髄 炎"
+        },
+        {
+          "label": "e",
+          "text": "急 性 全 部 性 化 膿 性 歯 髄 炎"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-71",
+      "section": "C",
+      "number": 71,
+      "questionText": "残 留 モ ノ マ ー が 最 も 多 い の は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-72",
+      "section": "C",
+      "number": 72,
+      "questionText": "水 の 接 触 角 が 最 も 小 さ く な る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "陶 材 '"
+        },
+        {
+          "label": "b",
+          "text": "PMMA “ ー c ワ ッ ク ス ~"
+        },
+        {
+          "label": "d",
+          "text": "シ リ コ ー ン ゴ ム 印 象 材 '"
+        },
+        {
+          "label": "e",
+          "text": "ポ リ エ ー テ ル ゴ ム 印 象 材 ・"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-73",
+      "section": "C",
+      "number": 73,
+      "questionText": "仰 臥 位 か ら 坐 位 に し た と き に 増 加 す る の は ど れ か 。 す べ て 選 べ 。 ' ′",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "気 道 抵 抗"
+        },
+        {
+          "label": "b",
+          "text": "排 痰 機 能 ~"
+        },
+        {
+          "label": "c",
+          "text": "1 回 換 気 量 “"
+        },
+        {
+          "label": "e",
+          "text": "末 梢 血 酸 素 飽 和 度"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-74",
+      "section": "C",
+      "number": 74,
+      "questionText": "ニ ッ ケ ル チ タ ン 合 金 が 根 管 用 フ ァ イ ル に 使 用 さ れ る 最 大 の 理 由 は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-75",
+      "section": "C",
+      "number": 75,
+      "questionText": "妊 婦 に 投 与 可 能 な 抗 菌 薬 は ど れ か 。 1 つ 選 べ 。 ・ ` ) a' ア ン ピ シ リ ン 水 和 物",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "_ カ ナ マ イ シ ン 硝 酸 塩"
+        },
+        {
+          "label": "c",
+          "text": "ミ ノ サ イ ク リ ン 塩 酸 塩 ・ ー ー"
+        },
+        {
+          "label": "d",
+          "text": "_ ク ロ ラ ム フ ェ ニ コ ー ル"
+        },
+        {
+          "label": "e",
+          "text": "レ ポ フ ロ キ サ シ ン 水 和 物"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-76",
+      "section": "C",
+      "number": 76,
+      "questionText": "象 牙 細 管 波 の 流 量 が 上 昇 す る の は ど れ か 。 1 つ 選 べ 。 睦",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歴 髄 の 変 性"
+        },
+        {
+          "label": "b",
+          "text": "ス ミ ヤ ー 履 の 存 在"
+        },
+        {
+          "label": "c",
+          "text": "透 明 象 牙 質 の 形 成 ニ"
+        },
+        {
+          "label": "d",
+          "text": "第 三 象 牙 質 の 形 成"
+        },
+        {
+          "label": "e",
+          "text": "象 牙 細 管 内 径 の 拡 大 ."
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-77",
+      "section": "C",
+      "number": 77,
+      "questionText": "畦 常 形 態 の 口 腔 内 写 真 ( 別 冊 No. 6A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 6B) と を 別 に 示 す 。 経 過 観 察 を 行 っ て い る 。 ~ 定 期 健 診 時 に 留 意 す べ き な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "破 折 〝 ・"
+        },
+        {
+          "label": "b",
+          "text": "出 血 時 間"
+        },
+        {
+          "label": "c",
+          "text": "血 小 板 数 _"
+        },
+        {
+          "label": "d",
+          "text": "血 清 FDP"
+        },
+        {
+          "label": "e",
+          "text": "血 縺 フ ィ ブ リ ノ ゲ ン"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-79",
+      "section": "C",
+      "number": 79,
+      "questionText": "学 校 歯 科 保 健 の 歯 科 健 康 診 断 で CO と 判 定 す る の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 顔 部 の 知 覚 過 敏"
+        },
+        {
+          "label": "b",
+          "text": "裂 溝 部 エ ナ メ ル 質 の 実 質 欠 損"
+        },
+        {
+          "label": "c",
+          "text": "小 窯 深 部 に 到 達 す る 暗 褐 色 の 着 色"
+        },
+        {
+          "label": "d",
+          "text": "歯 頸 部 平 滑 面 エ ナ メ ル 質 の 脈 灰 を 疑 わ せ る 白 澳"
+        },
+        {
+          "label": "e",
+          "text": "隣 接 面 エ ナ メ ル 質 に 透 過 性 に 認 め ら れ る 暗 黒 色 の 変 色"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-80",
+      "section": "C",
+      "number": 80,
+      "questionText": "擦 逼 創 の 治 癒 遍 程 で み ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "真 皮 層 の 再 生 ` '"
+        },
+        {
+          "label": "b",
+          "text": "_ リ ン パ 球 の 浸 潤"
+        },
+        {
+          "label": "c",
+          "text": "毛 細 血 管 の 新 生 _"
+        },
+        {
+          "label": "d",
+          "text": "線 綱 芽 細 胞 の 増 殖 _"
+        },
+        {
+          "label": "e",
+          "text": "扁 平 上 皮 細 胞 の 増 殖 ー ー 一 28 一 ぐ M3(782 一 114"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-81",
+      "section": "C",
+      "number": 81,
+      "questionText": "フ ッ 化 物 歯 面 塞 布 が フ ッ 化 物 洗 口 よ り も 優 れ て い る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "安 全 管 理 國 ' `"
+        },
+        {
+          "label": "b",
+          "text": "集 団 応 用 性 ‥ ) `"
+        },
+        {
+          "label": "c",
+          "text": "費 用 便 益 性 g ` _ d 自 律 刊 応 用 性 ′"
+        },
+        {
+          "label": "e",
+          "text": "低 年 齢 児 へ の 適 用 性 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-82",
+      "section": "C",
+      "number": 82,
+      "questionText": "神 経 堤 に 由 来 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "シ ュ ワ ン 細 胞"
+        },
+        {
+          "label": "b",
+          "text": "運 動 神 経 細 胞 }"
+        },
+        {
+          "label": "c",
+          "text": "口 腎 粘 膜 上 皮 細 胞 `"
+        },
+        {
+          "label": "d",
+          "text": "_ メ ラ ニ ン 産 生 細 胞"
+        },
+        {
+          "label": "e",
+          "text": "_ ラ ン ゲ ル ハ ン ス 細 胞 ・ ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-83",
+      "section": "C",
+      "number": 83,
+      "questionText": "我 が 国 の 医 療 保 険 制 度 で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "被 保 険 者 は 保 険 料 を 納 入 す る 。 ・"
+        },
+        {
+          "label": "b",
+          "text": "財 源 は す べ て 保 険 料 で 賄 わ れ る 。 `"
+        },
+        {
+          "label": "c",
+          "text": "日 本 国 籍 の な い 者 は 加 入 で き な い 。"
+        },
+        {
+          "label": "d",
+          "text": "保 険 料 は 所 得 に か か わ ら ず 一 定 で あ る 。 ` ."
+        },
+        {
+          "label": "e",
+          "text": "被 用 者 保 険 は 国 民 健 康 保 険 法 を 根 拠 と し て い る 。 ー ー 一 29 一 ぐ M3(782 一 115"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-84",
+      "section": "C",
+      "number": 84,
+      "questionText": "口 内 炎 の 患 者 に ビ タ ミ ン B 製 剤 を 服 用 さ せ た 。 こ の 療 法 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "原 因 療 法"
+        },
+        {
+          "label": "b",
+          "text": "対 症 療 法 ・"
+        },
+        {
+          "label": "c",
+          "text": "補 充 療 法 _"
+        },
+        {
+          "label": "d",
+          "text": "予 防 療 法 ` ー"
+        },
+        {
+          "label": "e",
+          "text": "再 生 療 法"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-85",
+      "section": "C",
+      "number": 85,
+      "questionText": "化 膿 性 炎 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "壊 疸"
+        },
+        {
+          "label": "b",
+          "text": "膿 瘍 '"
+        },
+        {
+          "label": "c",
+          "text": "肉 芽 腫"
+        },
+        {
+          "label": "d",
+          "text": "蓄 膿 症"
+        },
+        {
+          "label": "e",
+          "text": "蜂 窮 繁 炎 _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-86",
+      "section": "C",
+      "number": 86,
+      "questionText": "我 が 国 の 国 家 試 験 の 受 験 資 格 と し て 法 律 で 6 年 間 の 修 業 が 規 定 さ れ て い る の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "医 師"
+        },
+        {
+          "label": "b",
+          "text": "薬 剤 師"
+        },
+        {
+          "label": "c",
+          "text": "保 健 師"
+        },
+        {
+          "label": "d",
+          "text": "獣 医 師"
+        },
+        {
+          "label": "e",
+          "text": "歯 科 医 師 “ 一 30 一 み M3(782 一 116)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-87",
+      "section": "C",
+      "number": 87,
+      "questionText": "乳 歯 外 傷 の 特 徴 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "下 顎 前 歯 に 多 い 。"
+        },
+        {
+          "label": "b",
+          "text": "乳 歯 萌 出 期 に 多 い 。 _"
+        },
+        {
+          "label": "c",
+          "text": "脈 臼 よ り も 破 折 が 多 い 。 `."
+        },
+        {
+          "label": "d",
+          "text": "歯 髄 電 気 診 の 信 頼 性 が 高 い 。 , _ ー e 原 因 の 50 % 以 上 が 衝 突 で あ る 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-88",
+      "section": "C",
+      "number": 88,
+      "questionText": "介 護 保 険 制 度 で 歯 科 医 師 が 関 与 す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-89",
+      "section": "C",
+      "number": 89,
+      "questionText": "無 作 為 担 出 し た 標 本 に 同 一 の 食 品 を 摂 取 さ せ 、 ア ン ケ ー ト に 回 答 し て も ら っ た 結 果 を 表 に 示 す 。 ' ー ド 如 き | 華 _ - 女 | 人 4 人 こ の 結 果 か ら 食 品 の 好 き 嫌 い が 性 別 に よ っ て 影 響 さ れ て い る か 否 か を 分 析 す る 方 法 は ど れ か 。 1 つ 選 べ 。 _ a t 検 定 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "U 検 定 }"
+        },
+        {
+          "label": "c",
+          "text": "が 検 定"
+        },
+        {
+          "label": "d",
+          "text": "相 関 分 析"
+        },
+        {
+          "label": "e",
+          "text": "分 散 分 析"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-90",
+      "section": "C",
+      "number": 90,
+      "questionText": "プ ラ ー ク コ ン ト ロ ー ル が 症 状 の 改 善 に 有 効 で な い の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "妊 娠 関 連 歯 肉 炎 `"
+        },
+        {
+          "label": "b",
+          "text": "糖 尿 病 関 連 歯 肉 炎 “"
+        },
+        {
+          "label": "c",
+          "text": "萌 出 期 関 連 歯 肉 炎"
+        },
+        {
+          "label": "d",
+          "text": "ア レ ル ギ ー 佐 歯 肉 炎"
+        },
+        {
+          "label": "e",
+          "text": "フ ェ ニ ト イ ン 歯 肉 増 殖 症 一 32 一 ぐ M3(782 一 118"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-91",
+      "section": "C",
+      "number": 91,
+      "questionText": "イ ン レ ー 窮 淑 に レ ジ デ ン コ ー テ ィ ン グ を 行 う 目 的 は ど れ か 。 2 つ 選 べ 。 p 土",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-92",
+      "section": "C",
+      "number": 92,
+      "questionText": "第 一 大 臼 歯 の 萌 出 経 路 を 図 に 示 す 。 ア イ ウ マ 2 8 2",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "i 2 ッ a 。 ぃ い a ,"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-93",
+      "section": "C",
+      "number": 93,
+      "questionText": "パ ノ ラ マ エ ッ ク ス 線 撮 影 装 置 で ス リ ッ ト を 細 く し た と き に 港 少 す る の は ど れ か 。 ー",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-94",
+      "section": "C",
+      "number": 94,
+      "questionText": "歯 周 基 本 治 療 後 の 口 腔 内 写 真 ( 別 冊 No. 7A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 7B) と を 別 に 示 す 。 歯 周 基 本 治 療 後 の 歯 周 組 織 検 査 結 果 の 一 部 を 表 に 示 す 。 願 側 * 9 闇 謀 謀 誌 ( 水 平 的 4",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "GTR 法 '"
+        },
+        {
+          "label": "b",
+          "text": "_ フ ァ ル カ プ ラ ス テ ィ ^ `"
+        },
+        {
+          "label": "c",
+          "text": "ト ン ネ ル 形 成 術"
+        },
+        {
+          "label": "d",
+          "text": "_ ル ー ト セ パ レ ー シ ョ ン"
+        },
+        {
+          "label": "e",
+          "text": "ヘ へ ミ セ ク シ ョ ン 別 再 No. 7 A、B . 一 34 一 ぐ M3(782 一 120)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-95",
+      "section": "C",
+      "number": 95,
+      "questionText": "フ レ ー ム ワ ー ク の 写 真 ( 別 冊 No. 8A) と 義 歯 の 写 真 ( 別 冊 No. 8B) と を 別 に 示 す 。 ' 円 で 示 す 部 分 に 共 通 す る 役 割 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "支 持 の 増 強"
+        },
+        {
+          "label": "b",
+          "text": "維 持 の 補 助"
+        },
+        {
+          "label": "c",
+          "text": "義 歯 着 脱 の 誘 導"
+        },
+        {
+          "label": "d",
+          "text": "食 片 圧 入 の 防 止"
+        },
+        {
+          "label": "e",
+          "text": "義 歯 動 揺 の 防 止 別 冊 國 謀"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-96",
+      "section": "C",
+      "number": 96,
+      "questionText": "既 往 歴 の 聴 取 で 得 る ぺ べ き 情 報 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "患 者 の 人 生 観"
+        },
+        {
+          "label": "b",
+          "text": "現 病 患 と の 関 連 性 〝"
+        },
+        {
+          "label": "c",
+          "text": "現 疾 患 の 発 病 日 時"
+        },
+        {
+          "label": "d",
+          "text": "患 者 の 解 釈 モ デ ル _"
+        },
+        {
+          "label": "e",
+          "text": "薙 物 ア レ ル ギ ー の 有 無 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-97",
+      "section": "C",
+      "number": 97,
+      "questionText": "上 下 顎 第 一 小 臼 歯 を 抜 去 し て マ ル チ ブ ラ ケ ッ ト 浴 療 を 行 う こ と と し た 。 ' 上 顎 大 臼 歯 が 近 心 に 移 動 す る の は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "T 級 ゴ ム _ . b 皿 級 ゴ ム 〈"
+        },
+        {
+          "label": "c",
+          "text": "ヘ ッ ド ギ テ ^"
+        },
+        {
+          "label": "d",
+          "text": "リ ッ プ バ ン パ ー '"
+        },
+        {
+          "label": "e",
+          "text": "Nance のホールデイ ングアーチ ー 35 一 ぐ M3782 一 121"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-98",
+      "section": "C",
+      "number": 98,
+      "questionText": "顎 骨 の 膨 隆 を 生 じ る の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 根 嚢 胞 〟"
+        },
+        {
+          "label": "b",
+          "text": "含 歯 性 嚢 胞 _"
+        },
+        {
+          "label": "c",
+          "text": "鼻 歯 槽 嚢 胞"
+        },
+        {
+          "label": "d",
+          "text": "鼻 口 蓋 管 嚢 胞"
+        },
+        {
+          "label": "e",
+          "text": "。 リ ン パ 上 皮 性 嚢 胞"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-99",
+      "section": "C",
+      "number": 99,
+      "questionText": "矯 正 治 療 後 の 再 発 防 止 に 有 効 な の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "長 期 保 定"
+        },
+        {
+          "label": "b",
+          "text": "咬 合 調 整"
+        },
+        {
+          "label": "c",
+          "text": "セ ブ プ ト ト ミ ー _"
+        },
+        {
+          "label": "d",
+          "text": "口 腔 習 癖 の 除 去 _"
+        },
+        {
+          "label": "e",
+          "text": "オ ー パ バ ー コ レ ク シ ョ ン"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-100",
+      "section": "C",
+      "number": 100,
+      "questionText": "Sjgren 症 候 莉 に お け る 口 曽 生 検 で 重 要 な 所 見 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "粘 注 の 貯 留 _"
+        },
+        {
+          "label": "b",
+          "text": "肉 芽 腫 の 形 成"
+        },
+        {
+          "label": "c",
+          "text": "腸 房 細 胞 の 破 壊"
+        },
+        {
+          "label": "d",
+          "text": "核 封 入 体 の 出 現 _"
+        },
+        {
+          "label": "e",
+          "text": "巣 状 の リ ン パ 琳 浸 潤 ' 一 36 一 ぐ M3782 一 122)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-101",
+      "section": "C",
+      "number": 101,
+      "questionText": "経 口 抗 菌 薬 に お ち け る プ ロ ド ラ ッ グ の 目 的 は ど れ か 。 1 つ 選 べ 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "肝 代 謝 の 促 進"
+        },
+        {
+          "label": "b",
+          "text": "尿 中 排 泄 の 促 進 , ~"
+        },
+        {
+          "label": "c",
+          "text": "選 択 毒 性 の 向 上 ー"
+        },
+        {
+          "label": "d",
+          "text": "腸 管 吸 収 性 の 向 上 ー } ー e 抗 菌 ス ペ ク ト ル の 拡 大 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-102",
+      "section": "C",
+      "number": 102,
+      "questionText": "構 音 に 関 係 す る の は ど れ か 。 2 つ 選 べ 。 '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "香"
+        },
+        {
+          "label": "b",
+          "text": "斉 帯"
+        },
+        {
+          "label": "c",
+          "text": "気 管"
+        },
+        {
+          "label": "d",
+          "text": "喉 頭 蓋"
+        },
+        {
+          "label": "e",
+          "text": "軟 口 蓋"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-103",
+      "section": "C",
+      "number": 103,
+      "questionText": "開 咬 を 伴 う Angle T 級 1 類 の 特 徴 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "軟 骨 細 胞"
+        },
+        {
+          "label": "b",
+          "text": "破 骨 細 胞 ・"
+        },
+        {
+          "label": "c",
+          "text": "血 注 幹 細 胞 _"
+        },
+        {
+          "label": "d",
+          "text": "間 葉 系 幹 細 胞"
+        },
+        {
+          "label": "e",
+          "text": "骨 髄 脂 肪 細 胞 ^"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-105",
+      "section": "C",
+      "number": 105,
+      "questionText": "メ ッ キ 工 場 の 従 業 員 に 労 働 安 全 衛 生 法 に 基 づ い て 歯 科 医 師 に よ る 健 康 診 断 を 実 施 す る こ と と な っ た 。 特 に 留 意 す べ き な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 石 の 沈 着"
+        },
+        {
+          "label": "b",
+          "text": "顎 骨 の 壊 死 ."
+        },
+        {
+          "label": "c",
+          "text": "歯 表 面 の 脱 灰"
+        },
+        {
+          "label": "d",
+          "text": "_ カ ド ミ ウ ム 黄 色 環"
+        },
+        {
+          "label": "e",
+          "text": "口 腔 粘 膜 の び ら ん _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-106",
+      "section": "C",
+      "number": 106,
+      "questionText": "口 腔 イ ン プ ラ ン ト 治 療 の リ ス ク 因 子 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "飲 酒 習 慣"
+        },
+        {
+          "label": "b",
+          "text": "喫 煙 習 慣"
+        },
+        {
+          "label": "c",
+          "text": "ブ ラ キ シ ズ ム"
+        },
+        {
+          "label": "d",
+          "text": "重 度 歯 周 病 患 `"
+        },
+        {
+          "label": "e",
+          "text": "閉 塞 型 睡 眠 時 呼 吸 障 害 一 38 一 み ぐ M3(782 一 124"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-107",
+      "section": "C",
+      "number": 107,
+      "questionText": "歯 の 動 揺 序 が 増 加 す る の は ど れ か 。 す べ て 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-108",
+      "section": "C",
+      "number": 108,
+      "questionText": "歯 原 性 上 皮 と 成 熟 し た 線 維 性 間 質 と か ら な り 、 止 原 性 外 胚 葉 性 間 葉 組 織 を 伴 わ な い の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "複 雑 性 歯 牙 腫 ・ b _ エ ナ メ ル 上 皮 腫"
+        },
+        {
+          "label": "c",
+          "text": "セ メ ン ト 芽 細 胞 腫 q エ ナ メ ル 上 皮 線 維 腫"
+        },
+        {
+          "label": "e",
+          "text": "石 灰 化 上 皮 性 歪 原 性 腫 瘍"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-109",
+      "section": "C",
+      "number": 109,
+      "questionText": "歯 周 炎 で プ ロ ー ビ ン グ デ プ ス が 増 加 す る 理 由 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 肉 の 腫 脹 増 大 '"
+        },
+        {
+          "label": "b",
+          "text": "上 皮 付 着 の 増 大 '"
+        },
+        {
+          "label": "c",
+          "text": "生 物 学 的 幅 径 の 港 少 )"
+        },
+        {
+          "label": "d",
+          "text": "_ ア タ ッ チ メ ン ト ロ ス の 増 大 ・"
+        },
+        {
+          "label": "e",
+          "text": "ポ ケ ッ ト 底 部 へ の 穿 通 の 減 少 _ ー 39 一 る M3782 一 125"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-110",
+      "section": "C",
+      "number": 110,
+      "questionText": "水 酸 化 カ ル シ ウ ム が 使 用 さ れ る の は ど れ か 。 す べ て 選 べ 。 ′",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-111",
+      "section": "C",
+      "number": 111,
+      "questionText": "怠 性 歯 性 感 染 症 の 検 査 で 有 用 な の は ど れ か 。 す べ て 選 べ 。 .",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-112",
+      "section": "C",
+      "number": 112,
+      "questionText": "怠 性 歯 性 感 染 症 に お け る 対 症 療 法 は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-113",
+      "section": "C",
+      "number": 113,
+      "questionText": "3 歳 児 歯 科 健 康 診 査 で 嘗 待 が 疑 わ れ る 児 を 発 見 し た 際 の 通 告 先 は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-114",
+      "section": "C",
+      "number": 114,
+      "questionText": "反 対 咬 合 を 特 徴 と す る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "猫 鳴 き 症 候 群"
+        },
+        {
+          "label": "b",
+          "text": "Crouzon 症候群"
+        },
+        {
+          "label": "c",
+          "text": "鎖 骨 頭 蓋 骨 異 形 成 症 [6| Russeーー一Siーver症候群"
+        },
+        {
+          "label": "e",
+          "text": "Treacher - Collins 症候群 ー 4 一 る M3(782 一 12 の"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-115",
+      "section": "C",
+      "number": 115,
+      "questionText": "歯 科 疾 患 実 態 調 査 の 総 果 を 図 に 示 す 。 國 謀 談 謀 ・ ~ % ー ~ ー ー シ ー * ー ペ ー ー ン ー ン ケ ン ー 」 令",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-116",
+      "section": "C",
+      "number": 116,
+      "questionText": "前 癌 病 変 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-117",
+      "section": "C",
+      "number": 117,
+      "questionText": "臀 器 と 産 生 す る ホ ル モ ン と の 組 合 せ で 正 し い ぃ の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "副 膝 一 一 ィ ン ス リ ン"
+        },
+        {
+          "label": "b",
+          "text": "膵 臓 一 一 一 エ ス ト ロ ゲ ン ~"
+        },
+        {
+          "label": "c",
+          "text": "肝 臀 一 一 一 一 カ ル シ ト ニ ン '"
+        },
+        {
+          "label": "d",
+          "text": "坪 巣 一 一 一 ー テ ス ト ス テ ロ ン * ' e 腎 臀 一 一 一 一 活 性 型 ビ タ ミ ン D"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-118",
+      "section": "C",
+      "number": 118,
+      "questionText": "我 が 国 で 行 わ れ て い る 移 植 で 多 い の は ど れ か 。 2 つ 選 べ 。 ' 8 角 膜",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "心 臓"
+        },
+        {
+          "label": "c",
+          "text": "肺 臓"
+        },
+        {
+          "label": "d",
+          "text": "脾 臓 ~"
+        },
+        {
+          "label": "e",
+          "text": "腎 臀 ~"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-119",
+      "section": "C",
+      "number": 119,
+      "questionText": "慶 性 再 発 性 ア フ タ の 患 者 で 留 意 す べ き 皮 膚 症 状 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-121",
+      "section": "C",
+      "number": 121,
+      "questionText": "辺 縁 性 歯 周 炎 で 正 し ぃ の は ど れ か 。 2 つ 選 べ 。 二",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯 槽 骨 吾 収 は 部 位 特 異 的 で あ る 。"
+        },
+        {
+          "label": "b",
+          "text": "歯 肉 出 血 部 は 歯 槽 骨 の 吸 収 が 大 き い 。 )"
+        },
+        {
+          "label": "c",
+          "text": "深 い 歯 周 ポ ケ ッ ト 侵 ど 上 皮 付 着 の 幅 は 狭 い 。 ` _ d 咬 合 性 外 傷 に よ っ て 紺 織 破 壊 が 加 速 さ れ る 。"
+        },
+        {
+          "label": "e",
+          "text": "ア タ ッ チ メ ン ト ロ ス と 歯 周 ポ ボ ケ ッ ト の 深 さ と は 同 値 で あ る 。"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-122",
+      "section": "C",
+      "number": 122,
+      "questionText": "埋 没 縫 合 の 目 的 は ど れ か 。 2 つ 選 べ 。 ー . 団 訣",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-124",
+      "section": "C",
+      "number": 124,
+      "questionText": "ADL の 評 価 項 目 は ど れ か 。 2 つ 選 べ 。 ー ー ト",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア ー"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ . 、"
+        },
+        {
+          "label": "d",
+          "text": "エ ー"
+        },
+        {
+          "label": "e",
+          "text": "オ ー 別 内 一 45 一 み M3782 一 13D1"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-126",
+      "section": "C",
+      "number": 126,
+      "questionText": "障 害 に よ っ て 嗅 声 を 生 じ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "三 又 神 経 ~ 國 誌"
+        },
+        {
+          "label": "b",
+          "text": "顔 面 神 経 ′_"
+        },
+        {
+          "label": "c",
+          "text": "前 庭 神 経 _*"
+        },
+        {
+          "label": "d",
+          "text": "反 回 神 経 ) ‥"
+        },
+        {
+          "label": "e",
+          "text": "舌 下 神 経"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-127",
+      "section": "C",
+      "number": 127,
+      "questionText": "麗 蝕 部 位 と 検 査 法 と の 組 合 せ で 正 し ぃ の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "前 歯 隣 接 面 一 一 一 一 透 照 診"
+        },
+        {
+          "label": "b",
+          "text": "臼 歯 隣 接 面 一 一 一 一 歯 髄 電 気 診"
+        },
+        {
+          "label": "c",
+          "text": "咬 合 面 一 一 一 一 一 喪 河 エ ッ ク ス 線 検 査"
+        },
+        {
+          "label": "d",
+          "text": "咬 合 面 ー 一 レ ー サ ザ ー 先 に よ る 検 定"
+        },
+        {
+          "label": "e",
+          "text": "止 頭 部 一 一 一 一 一 咬 合 法 エ ッ ク ス 線 検 査"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-128",
+      "section": "C",
+      "number": 128,
+      "questionText": "麟 蝕 の 第 一 次 予 防 に 適 切 な の は ど れ か 。 す べ て 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "フ ッ 化 水 素 _"
+        },
+        {
+          "label": "b",
+          "text": "フ ッ 化 ナ ト リ ウ ム"
+        },
+        {
+          "label": "c",
+          "text": "フ ル オ ロ ア パ タ イ ト"
+        },
+        {
+          "label": "d",
+          "text": "フ ッ 化 ジ ア ン ミ ン 銀 ー"
+        },
+        {
+          "label": "e",
+          "text": "モ ノ フ ル オ ロ リ ン 酸 ナ ト リ ウ ム 一 46 一 ' み M3782 一 132) ' 次 の 文 に よ り 129、 130 の 問 い に 答 え よ 。 モ ニ タ ー 中 の 写 真 ( 別 冊 No. 10) を 別 に 示 す 。 ) 別 再 No. 10"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-129",
+      "section": "C",
+      "number": 129,
+      "questionText": "測 定 し て ぃ る の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "血 旭"
+        },
+        {
+          "label": "b",
+          "text": "脈 拍"
+        },
+        {
+          "label": "c",
+          "text": "体 過 “"
+        },
+        {
+          "label": "d",
+          "text": "動 脈 血 酸 素 分 圧 ・"
+        },
+        {
+          "label": "e",
+          "text": "動 脈 血 酸 素 飼 和 度 _ ・"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "C-130",
+      "section": "C",
+      "number": 130,
+      "questionText": "歯 科 泣 療 の 際 、 写 真 ( 別 冊 No. 10) の 対 応 が 必 要 な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-1",
+      "section": "D",
+      "number": 1,
+      "questionText": "咬 合 採 得 國",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-2",
+      "section": "D",
+      "number": 2,
+      "questionText": "上 顎 の 印 象 採 得 閻 '",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-3",
+      "section": "D",
+      "number": 3,
+      "questionText": "下 顎 の 印 象 採 得 _ 談 謀 '",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-4",
+      "section": "D",
+      "number": 4,
+      "questionText": "破 折 義 歯 の 仮 接 合 , ' ・ 56 破 折 義 歯 の 口 腔 内 へ の 設 置 _ 適 切 な 順 番 は ど れ か 。 1 つ 選 べ 。 ~",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "6 っ 9 っ 1 っ 2@ っ 8"
+        },
+        {
+          "label": "b",
+          "text": "3 っ 5 っ 2 っ @ っ 1"
+        },
+        {
+          "label": "c",
+          "text": "6 っ 2 る っ 8 っ 1 っ @ '"
+        },
+        {
+          "label": "e",
+          "text": "2 っ 8 っ 5 っ @ っ 1 , 別 冊 ・ ー 7 一 ぐ M4(782 一 142"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-5",
+      "section": "D",
+      "number": 5,
+      "questionText": "50 歳 の 男 性 。 下 顎 左 側 臼 歯 部 の 歯 肉 の 腫 れ を 主 訴 と し て 来 院 し た 。 歯 周 基 本 浦 療 後 、|4 の 遠 心 に 歯 周 ポ ケ ッ ト が 残 存 し た た め 歯 周 組 織 再 生 療 法 を 行 う こ と と し た 。 再 評 価 時 の 口 腔 内 写 真 ( 別 冊 No. 5A)、 エ ッ ク ス 線 写 真 ( 別 冊 No. 5B ) 及 び 術 中 の 口 膣 内 写 真 ( 別 冊 No. 5C) を 別 に 示 す 。 再 評 価 時 の 歯 周 組 織 検 査 結 果 の 一 部 を 表 に 示 す 。 ー w z z T g ー ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "生 活 歯 で あ る 。 〝 '"
+        },
+        {
+          "label": "b",
+          "text": "付 着 歯 肉 幅 が 少 な い 。 ~"
+        },
+        {
+          "label": "c",
+          "text": "動 揺 度 は 1 序 で あ る 。 [sl 骨縁上ポヶッ ト で あ る 。 ~"
+        },
+        {
+          "label": "e",
+          "text": "2 壁 性 ・ 3 壁 性 の 混 合 型 骨 欠 損 で あ る 。 別 再 ー コ 一 4 一 ぐ M4(782 一 139"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-6",
+      "section": "D",
+      "number": 6,
+      "questionText": "68 歳 の 男 性 。 顔 面 の 打 撲 を 主 訴 と し て 来 院 し た 。 昨 夜 、 階 段 か ら 転 落 し て 顔 面 を 強 打 し 鼻 血 が 出 た と い う 。 咬 合 に 異 常 は 認 め な い が 開 口 障 害 を 認 め る 。 初 診 時 の CT 別 冊 No. 6A)、 治 療 に 使 用 す る 器 具 ( 別 冊 No. 6B) 及 び 切 開 線 部 位 の 図 ( 別 冊 No. 6C) を 別 に 示 す 。 “ ' こ の 雲 具 を 使 用 す る 際 の 切 開 線 は ど れ か 。 1 つ 選 べ 。 ' 8 ブ ア ) b イ",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ ー . e オ 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-7",
+      "section": "D",
+      "number": 7,
+      "questionText": "60 歳 の 女 性 。 右 側 顎 下 部 の 違 和 感 を 主 訴 と し て 来 院 し た 。 初 診 時 の エ ッ ク ス 練 ー 写 真 ( 別 再 No、 7A) と そ の ト レ ー ス 図 ( 別 冊 No。 7B) と を 別 に 示 す 。 点 線 で 示 さ れ る 陰 影 の 原 因 と 考 え ら れ る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "香 骨 ー"
+        },
+        {
+          "label": "b",
+          "text": "左 側 下 顎 隆 起 '"
+        },
+        {
+          "label": "c",
+          "text": "号 側 顎 下 腺 唾 石 '"
+        },
+        {
+          "label": "d",
+          "text": "下 顕 左 側 大 臼 歯 の 修 復 物"
+        },
+        {
+          "label": "e",
+          "text": "下 顎 右 側 大 臼 歯 部 の 骨 硬 化 別 冊 喪 - ー リ ー 5 一 み M4(782 一 140)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-8",
+      "section": "D",
+      "number": 8,
+      "questionText": "68 歳 の 女 性 。 1 週 前 に 上 下 顎 全 部 床 義 歯 を 装 着 し た が 、 カ 行 の 発 音 障 害 を 訴 え て 来 院 し た 。 カ 音 発 音 時 の パ ラ ト グ ラ ム ( 別 冊 No. 8 を 別 に 示 す 。 ' 修 正 が 必 要 な 部 位 は ど れ か 。 1 つ 選 べ 。 _ _ a S 字 状 隆 起",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "義 歯 床 後 縁 部 の 厚 径"
+        },
+        {
+          "label": "c",
+          "text": "義 歯 床 後 縁 の 設 定 位 置"
+        },
+        {
+          "label": "d",
+          "text": "小 臼 歯 部 研 磨 面 の 豊 隆"
+        },
+        {
+          "label": "e",
+          "text": "前 歯 部 人 工 歯 の 排 列 位 置 ・ 別 再 一 6 一 ぐ M4(782 一 141)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-9",
+      "section": "D",
+      "number": 9,
+      "questionText": "56 歳 の 男 性 。 上 顎 義 歯 の 破 折 と 審 美 障 害 と を 主 訴 と し て 来 院 し た 。 床 義 歯 の 上 ' 顎 右 側 犬 歯 部 は 以 前 に 破 折 し て い た が 、 破 折 部 を 保 管 中 に 紛 失 し た と い う 。 模 型 を “ 製 作 し て 人 工 歯 の 追 加 と 義 歯 破 折 部 の 修 理 と を 行 う こ と と し た 。 破 折 し た 義 歯 の 写 真 ( 別 冊 No. 9A) と 口 腔 内 写 真 ( 別 冊 No。 9B) と を 別 に 示 す 。 行 う べ き 手 技 を 表 に 示 す 。 闇 謀 謀 謀 謀 .",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-10",
+      "section": "D",
+      "number": 10,
+      "questionText": "19 歳 の 男 性 。 上 顎 前 歯 部 の 叢 生 を 主 訴 と し て 来 院 し た 。 第 一 大 臼 歯 の 咬 合 関 係 は 左 右 側 と も に AngleTT 級 で 、 上 顎 の ア ー チ レ ン グ ス デ ィ ス ク レ パ ン シ ー は ー6 mm で あ る 。 マ ル チ ブ ラ ケ ッ ト 治 療 を 行 う こ と と し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 10A)、 顔 面 写 真 ( 別 冊 No. 10B) 及 び エ ッ ク ス 練 写 真 ( 別 冊 No。 10C) を 別 に 示 す 。 セ フ ァ ロ 分 析 の 結 果 を 図 に 示 す 。 ー _ ー ・ 十 顔 面 角 騙~ 上 顎 突 出 度 ′翼 〟 フ ラ ン ク フ ル ト 下 顎 下 縁 平 面 角 _轍 下 顎 角 ′′ SN 平 面 に 対 す る 下 顎 枝 傾 斜 角 vブ SN P 角 善・ ' _ SNA 角 ,ー SNB 角 贄' ANB 角 `〝 〝 ` 上 下 顎 中 切 歯 歯 軸 傾 斜 角 * 召〝 , F せ H 平 面 に 対 す る 上 顎 中 切 歯 歯 軸 傾 斜 角 * '夢> ` 下 顎 下 縁 平 面 に 対 す る 下 顎 中 切 歯 歯 軸 傾 斜 角 醤電 FMIA > 「” ・ * : 上 顎 右 側 中 切 歯 で 計 測 適 切 な 抜 歯 部 位 は ど れ か 。 1 つ 選 べ 。 〟 8 1 ー",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "444 ・ 報"
+        },
+        {
+          "label": "d",
+          "text": "龍"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-11",
+      "section": "D",
+      "number": 11,
+      "questionText": "_ 6 歳 の 男 児 。 下 顎 前 歯 の 形 態 異 常 を 主 訴 と し て 来 院 し た 。 経 過 観 察 を 行 っ て い る 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No。 11A) と エ ッ ク ス 線 写 真 ( 別 冊 No。 11B) と を 別 に 示 す 。 定 期 健 診 時 に 留 意 す べ き な の は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "醒 蝕"
+        },
+        {
+          "label": "b",
+          "text": "咬 耗"
+        },
+        {
+          "label": "c",
+          "text": "歪 冠 破 折"
+        },
+        {
+          "label": "d",
+          "text": "歪 髄 感 染"
+        },
+        {
+          "label": "e",
+          "text": "生 理 的 歯 根 吸 収 ” ' _ 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-12",
+      "section": "D",
+      "number": 12,
+      "questionText": "38 歳 の 女 性 。 下 顎 右 側 の 疼 痛 と 腫 脹 と を 主 訴 と し て 来 院 し た 。 2 年 前 か ら 同 部 の 腫 脹 に 気 付 き 、 1 週 前 か ら は 下 顎 右 側 大 臼 歯 部 の 自 発 痛 と 同 部 か ら の 排 膿 と が 出 現 し た と い う 。 抗 菌 薬 と 非 ス テ ロ イ ド 性 抗 炎 症 薬 の 投 与 を 行 い 、 疼 痛 と 排 膿 は 消 退 し レ た 。 初 診 時 の 顔 貌 写 真 ( 別 冊 No。 12A)、 口 腔 内 写 真 ( 別 冊 No。 12B) 及 び エ ッ ク ス 線 写 真 ( 別 冊 No. 12C) を 別 に 示 す 。 次 に 行 う の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "切 開"
+        },
+        {
+          "label": "b",
+          "text": "生 検"
+        },
+        {
+          "label": "c",
+          "text": "開 窓"
+        },
+        {
+          "label": "d",
+          "text": "根 尖 切 除 術 _"
+        },
+        {
+          "label": "e",
+          "text": "下 顎 骨 区 域 切 除 術 別 冊 _ 一 9 一 ぐ M4(782 一 144"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-13",
+      "section": "D",
+      "number": 13,
+      "questionText": "36 歳 の 女 性 。 左 側 烈 部 の 疼 痛 を 主 訴 と し て 来 院 し た 。 閉 口 時 と 開 口 時 の 左 側 顕 関 節 MRI( 別 冊 No. 13 を 別 に 示 す 。 ) 顔 関 節 の 状 態 は ど れ か 。 1 つ 選 べ 。 ) _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "正 箔 ` , }"
+        },
+        {
+          "label": "b",
+          "text": "脚 白"
+        },
+        {
+          "label": "c",
+          "text": "滑 膜 炎"
+        },
+        {
+          "label": "d",
+          "text": "関 節 円 板 転 位"
+        },
+        {
+          "label": "e",
+          "text": "下 顕 頭 の 変 形 , 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-14",
+      "section": "D",
+      "number": 14,
+      "questionText": "54 歳 の 女 性 。 舌 の 腫 脹 を 主 訴 と し て 来 院 し た 。 幼 少 期 か ら 気 付 い て い た が 、 機 能 障 害 や 疼 痛 が な い た め 放 置 し て い た と い う 。 弾 性 軟 で あ る 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No。 14A) と 検 査 時 の 写 真 ( 別 冊 No。 14B) と を 別 に 示 す 。 ' 次 に 行 う 検 査 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "PET"
+        },
+        {
+          "label": "b",
+          "text": "MRI"
+        },
+        {
+          "label": "c",
+          "text": "生 検 )"
+        },
+        {
+          "label": "d",
+          "text": "細 菌 検 査"
+        },
+        {
+          "label": "e",
+          "text": "穿 刺 君 引 細 胞 診 ' ー 別 冊 _ 一 10 一 み M4782 一 145"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-15",
+      "section": "D",
+      "number": 15,
+      "questionText": "11 歳 の 男 児 。 下 顎 左 側 部 の 腫 脹 を 主 訴 と し て 来 院 し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 15A)、 エ ッ ク ス 線 写 真 ( 別 冊 No. 15B、C) 及 び 生 検 時 の せ -E 染 色 病 理 組 ・ 織 像 ( 別 冊 No. 15D) を 別 に 示 す 。 ・ ' 治 瘻 計 画 で 最 も 考 慮 す る の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "粒 膜 調 整"
+        },
+        {
+          "label": "b",
+          "text": "根 尖 の 切 除"
+        },
+        {
+          "label": "c",
+          "text": "鼻 腔 粘 膜 の 温 存"
+        },
+        {
+          "label": "d",
+          "text": "大 口 蓋 動 脈 の 結 苑"
+        },
+        {
+          "label": "e",
+          "text": "口 蓋 側 か ら の ア プ ロ ー チ 別 再 . . `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-18",
+      "section": "D",
+      "number": 18,
+      "questionText": "64 歳 の 女 性 。 咀 嚼 時 の 義 歯 の 維 持 不 良 を 主 訴 と し て 来 院 し た 。 新 義 歯 装 着 時 の 写 真 ( 別 冊 No. 18A) と 口 腔 内 写 真 ( 別 冊 No. 18B、C) と を 別 に 示 す 。 写 真 C の 状 況 を 悪 化 さ せ な い た め の 患 者 指 導 と し て 適 切 な の は ど れ か 。",
+      "selectCount": 1,
+      "choices": [],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-19",
+      "section": "D",
+      "number": 19,
+      "questionText": "35 歳 の 女 性 。 下 顎 左 側 第 二 小 臼 歯 が 欠 け た こ と を 主 訴 と し て 来 院 し た 。 `5 は 4 年 前 に 治 療 し 、 良 好 に 経 過 し て い た が 、 3 日 前 に 一 部 が 欠 け た と い う 。 コ ン ポ ボ ジ ッ ト レ ジ ン イ ン レ ー 修 復 を 行 う こ と と し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 19A) と エ ッ ク ス 写 真 ( 別 冊 No. 19B) と を 別 に 示 す 。 謀 談 詞 0 談 謀 謀 間 接 法 を 選 択 し た 利 点 は ど れ か 。 2 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "舌 側 歯 質 の 強 化 '"
+        },
+        {
+          "label": "b",
+          "text": "歯 髄 刺 激 の 軽 減 閻 誌 〝 c 歯 肉 排 除 が 不 要"
+        },
+        {
+          "label": "d",
+          "text": "重 合 収 縮 の 低 減"
+        },
+        {
+          "label": "e",
+          "text": "隣 接 面 部 の 形 態 回 復 ' 別 再 No. 19 A、B"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-20",
+      "section": "D",
+      "number": 20,
+      "questionText": "3 歳 の 男 児 。 醜 蝕 を 主 訴 と し て 来 院 し た 。 願 蝕 活 動 性 試 験 は 高 リ ス ク を 示 し た 。 上 下 顎 両 側 第 一 乳 臼 歯 の 断 髄 後 、 修 復 処 置 を 行 う こ と と し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 20A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 20B) と を 別 に 示 す 。 “ 臼 歯 部 の 修 復 法 で 適 切 な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "BB コ ン パ ジ ッ ト レ ジ シ ン 腐 誠 R 圏 乳 歯 冠"
+        },
+        {
+          "label": "b",
+          "text": "一 P 艸 映 圖 乳 歯 冠 ."
+        },
+        {
+          "label": "c",
+          "text": "E DID E コ ン ポ ジ ッ ト レ ジ ン 、EDID E 既 襄 乳 歯 冠 ` “"
+        },
+        {
+          "label": "e",
+          "text": "部 コ ン ポ ジ ッ ト レ ジ ン 旨 居 智 程 歯 冠 別 冊 ` No. 20 A、B 一 13 一 ぐ M4(782 一 148)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-21",
+      "section": "D",
+      "number": 21,
+      "questionText": "84 歳 の 男 性 。 下 顎 第 一 小 臼 歯 の 鋳 造 コ ア を 試 適 中 に 口 腔 内 に 落 下 さ せ た 。 一 度 . 咳 き 込 ん だ が 違 和 感 は 訴 え な か っ た 。 口 腔 内 に 鋳 造 コ ア は 見 つ け ら れ な か っ た 。 呼 吸 苛 は な い と い う 。 そ の と き の エ ッ ク ス 線 写 真 ( 別 冊 No. 21) を 別 に 示 す 。 鋳 造 コ ア が あ る 部 位 は ど れ か 。 1 つ 選 べ 。 } 8 食 道",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "b",
+          "text": "舌 貢 孔 _"
+        },
+        {
+          "label": "c",
+          "text": "喉 頭 饂 谷 '"
+        },
+        {
+          "label": "d",
+          "text": "口 蓋 扁 桃 窪 “"
+        },
+        {
+          "label": "e",
+          "text": "気 管 分 岐 部 別 冊 ~ ー 14 一 ぐ M4(782 一 149"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-22",
+      "section": "D",
+      "number": 22,
+      "questionText": "10 歳 の 女 児 。 歯 並 び が 悪 い こ と を 主 訴 と し て 来 院 し た 。 ア ー チ レ ン グ ス デ ィ ス ク レ パ ン シ ー の 予 測 値 は 、 上 顎 -11 mm、 下 顎 ? mm で あ る 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 22A)、 顔 面 写 真 ( 別 冊 No. 22B) 及 び エ ッ ク ス 線 写 真 ( 別 冊 No. 22C) を 別 に 示 す 。 セ フ ァ ロ 分 析 の 結 果 を 図 に 示 す 。 國 誠 謀 謀 ー 寸 顔 面 角 誓責 IS 上 顕 突 出 度 ア 成 フ ラ ン ク フ ル ト 下 顎 下 縁 平 面 角 /_~ 下 顔 角 へ さ ー/ SN 平 面 に 対 す る 下 顎 枝 傾 斜 角 ー ジ み > ' “ SNP角 責__′ ー . SNA 角 農 SNB 角 44ー 騙 ~~ー」 上 下 顎 中 切 歯 歯 軸 傾 斜 角 響簾 FH 平 面 に 対 す る 上 顎 中 切 歯 歯 軸 傾 斜 角 寸董膏 下 顕 下 縁 平 面 に 対 す る 下 顎 中 切 歯 歪 軸 傾 斜 角 国 喪 `_ 混 合 歯 列 期 に 使 用 す る 矯 正 装 置 で 適 切 な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "。 リ ン ガ ル ア ー チ ・ ヘ ッ ド ギ ア ・ 哀 合 挙 上 板"
+        },
+        {
+          "label": "b",
+          "text": "リ ン ガ ル ア ー チ ・ ア ク チ バ ト ー ル ・ 急 速 拡 大 装 置"
+        },
+        {
+          "label": "c",
+          "text": "Nance の ホ ー ル デ ィ ン グ ア ー チ ・ ヘ ッ ド ギ ア ・ 急 速 拡 大 装 置"
+        },
+        {
+          "label": "d",
+          "text": "Nance の ホ ー ル デ ィ ン グ ア ー チ ・ ア ク チ バ ト ー ル ・ 咬 合 挙 上 板"
+        },
+        {
+          "label": "e",
+          "text": "Nance の ホ ー ル デ ィ ン グ ア ー チ ・ ア ク チ バ ト ー ル ・ 急 速 拡 大 装 置 別 冊 . No. 22 A、B、C 一 15 一 み M4(782 一 150)"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-23",
+      "section": "D",
+      "number": 23,
+      "questionText": "9 歳 の 男 児 。 歯 科 健 康 診 査 を 希 望 し て 来 院 し た 。 既 往 歴 と 服 薬 歴 と に 特 記 す べ き こ と は な い 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 23 を 別 に 示 す 。 考 慮 す べ き 所 見 は ど れ か 。 2 つ 選 べ 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "過 蓋 哀 合"
+        },
+        {
+          "label": "b",
+          "text": "隣 接 面 麗 蝕"
+        },
+        {
+          "label": "c",
+          "text": "歯 肉 の 炎 症"
+        },
+        {
+          "label": "d",
+          "text": "歯 の 萌 出 遅 延"
+        },
+        {
+          "label": "e",
+          "text": "上 唇 小 帯 の 付 着 異 常 別 再 _"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-24",
+      "section": "D",
+      "number": 24,
+      "questionText": "75 歳 の 女 性 。 下 顎 右 側 臼 歯 部 の 違 和 感 を 主 訴 と し て 来 院 し た 。10 年 前 か ら 同 じ 義 歯 を 使 用 し て い る と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 24A) と 生 検 時 の 旧 -E 染 色 病 理 組 織 像 ( 別 冊 No。 24B) と を 別 に 示 す 。 患 者 へ の 説 明 で 適 切 な の は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "` 午 年 後 に 経 過 を 観 察 し ま し ょ う 」 ー b ` 睡 菌 を と る う が い 薬 を 出 し ま し ょ う 」 ー c ` 愚 性 な の で 下 顎 の 骨 と 一 緒 に 切 除 し ま し ょ う 」"
+        },
+        {
+          "label": "d",
+          "text": "` 悪 性 化 す る と い け な い の で 病 変 部 を 切 除 し ま し ょ う 」"
+        },
+        {
+          "label": "e",
+          "text": "` 口 内 炙 な の で 副 腔 皮 質 ス テ ロ イ ド 軟 膏 を 塩 り ま し ょ う 」 別 ョ ョ ョ ョ ョ ョ 一 16 一 み M4(782 一 151"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-25",
+      "section": "D",
+      "number": 25,
+      "questionText": "47 歳 の 女 性 。 下 顎 左 側 小 臼 歯 の 審 美 障 害 を 主 訴 と し て 来 院 し た 。 遊 離 歯 肉 弁 移 ` 植 術 を 行 う こ と と し た 。 遊 離 歯 肉 弁 の 探 取 部 位 の 写 真 ( 別 冊 No。 25) を 別 に 示 す 。 適 切 な 採 取 部 位 は ど れ か 。 1 つ 選 べ 。 ′ ′ ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "ブ ア ー。"
+        },
+        {
+          "label": "b",
+          "text": "イ ー `"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ ."
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 ~ {"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-26",
+      "section": "D",
+      "number": 26,
+      "questionText": "12 歳 の 男 児 。 前 歯 部 の 審 美 障 害 を 主 訴 と し て 来 院 し た 。 乳 歯 列 期 に は み ら れ な か っ た が 、 永 久 歯 萌 出 時 か ら 着 色 は ふ み ら れ た と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No 26) を 別 に 示 す 。 _ ) ) ー 原 囚 が 生 じ た 時 期 は ど れ か 。 1 つ 選 べ 。",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "生 後 3 か 月 こ ろ 〟"
+        },
+        {
+          "label": "b",
+          "text": "生 後 10 か 月 こ ろ }"
+        },
+        {
+          "label": "c",
+          "text": "1 歳 6 か 月 こ ろ"
+        },
+        {
+          "label": "d",
+          "text": "3 歳 こ ろ"
+        },
+        {
+          "label": "e",
+          "text": "5 歳 こ ろ ー 閻 閻 訣 訣 謀 訣 別 冊 一 17 一 み ぐ み NK4782 一 152"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-27",
+      "section": "D",
+      "number": 27,
+      "questionText": "49 歳 の 女 性 。 上 顎 前 歯 部 の 歯 根 露 出 に よ る 審 美 障 害 を 主 訴 と し て 来 院 し た 。 ロ 口 腔 内 写 真 ( 別 冊 No。 27 を 別 に 示 す 。 〟 適 切 な 治 療 法 は ど れ か 。 2 つ 選 べ 。 國 謀 談 諸 謀 細 。 ・",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "補 綴 装 置 の 再 製 作 』"
+        },
+        {
+          "label": "b",
+          "text": "_ ホ ー ム ブ リ ー チ 法 に よ る 漂 白"
+        },
+        {
+          "label": "c",
+          "text": "超 音 波 ス ケ ー ラ ー に よ る 歯 面 清 掃"
+        },
+        {
+          "label": "d",
+          "text": "_ コ ン ポ ジ ッ ト レ ジ ン に よ る 充 報 処 置 ,"
+        },
+        {
+          "label": "e",
+          "text": "噴 射 式 歯 面 清 掃 装 置 に よ る 着 色 除 去 _ 別 冊 }"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-28",
+      "section": "D",
+      "number": 28,
+      "questionText": "50 歳 の 男 性 。 上 顎 左 側 前 歯 部 の 歯 肉 の 腫 れ を 主 訴 と し て 来 院 し た 。 LL は 電 気 診 に 反 応 を 示 し 、 頬 側 遠 心 に 9 mm の 歯 周 ポ ケ ッ ト が あ る 。 歯 周 プ ロ ー ブ 挿 入 時 の 口 膝 内 写 真 ( 別 冊 No。 28A) と 初 診 時 の エ ッ ク ス 線 写 真 ( 別 冊 No。 28B) と を 別 に 示 す 。 診 断 名 は ど れ か 。 1 つ 選 べ 。 } '",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "乳 頭 腫"
+        },
+        {
+          "label": "b",
+          "text": "歯 周 膿 瘍"
+        },
+        {
+          "label": "c",
+          "text": "歯 根 嚢 胞 ' d 歴 肉 増 殖 症 〝"
+        },
+        {
+          "label": "e",
+          "text": "エ プ ー リ ス ョ ー 別 内 一 18 一 ぐ M4(782 一 153"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-29",
+      "section": "D",
+      "number": 29,
+      "questionText": "47 歳 の 男 性 。 下 顎 左 側 第 二 小 臼 歯 の 疹 痛 を 主 訴 と し て 来 院 し た 。 他 院 を 受 診 し た が 、 そ の 後 も 間 歌 性 の 自 発 痛 が 続 い て い る と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 29A)、 エ ッ ク ス 線 写 真 ( 別 冊 No. 29B) 及 び 処 置 時 の 口 腔 内 写 真 ( 別 冊 No. 29C) を 別 に 示 す 。 ー 次 に 行 う の は ど れ か 。 1 つ 選 べ 。 _",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "髄 室 開 拡"
+        },
+        {
+          "label": "b",
+          "text": "_ コ ン ポ ジ ッ ト レ ジ ン 修 復"
+        },
+        {
+          "label": "c",
+          "text": "グ ラ ス ア イ オ ノ マ ー セ メ ン ト 修 復 `"
+        },
+        {
+          "label": "d",
+          "text": "テ ン ポ ラ リ ー ス ト ッ ピ ン グ に よ る 仮 封"
+        },
+        {
+          "label": "e",
+          "text": "酸 化 亜 鉛 ユ ー ジ ノ ー ル セ メ ン ト の 堪 寛 別 冊"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    },
+    {
+      "id": "D-30",
+      "section": "D",
+      "number": 30,
+      "questionText": "8 歳 の 男 児 。 上 顎 切 歯 の 前 突 を 主 訴 と し て 来 院 し た 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 30A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 30B) と を 別 に 示 す 。 こ の 惟 児 に み ら れ る の は ど れ か 。 1 つ 選 べ 。 }",
+      "selectCount": 1,
+      "choices": [
+        {
+          "label": "a",
+          "text": "骨 腫 . '"
+        },
+        {
+          "label": "b",
+          "text": "神 経 線 綱 腫"
+        },
+        {
+          "label": "c",
+          "text": "執 底 細 胞 癌 '"
+        },
+        {
+          "label": "d",
+          "text": "緯 維 性 異 形 成 症"
+        },
+        {
+          "label": "e",
+          "text": "速 化 管 ポ リ ポ ー シ ス 別 内 に 修 復 処 置 を 受 け た が 、 2 年 前 か ら 同 様 の 症 状 が 度 々 発 現 す る と い う 。 初 診 時 の 口 腔 内 写 真 ( 別 冊 No. 35A) と エ ッ ク ス 線 写 真 ( 別 冊 No. 35B) と を 別 に 示 す 。 こ の 疾 患 で 他 に 予 測 さ れ る の は ど れ か 。 す べ て 選 べ 。 `"
+        }
+      ],
+      "correctAnswers": [],
+      "imageRef": null,
+      "relatedLinks": null
+    }
+  ]
+}

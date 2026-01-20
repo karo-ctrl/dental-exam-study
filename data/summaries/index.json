@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "id": "anatomy",
+      "name": "解剖学",
+      "icon": "bone",
+      "color": "#e74c3c",
+      "textbooks": ["口腔解剖学", "イラスト顎顔面解剖学"],
+      "topicCount": 45
+    },
+    {
+      "id": "physiology",
+      "name": "生理学",
+      "icon": "heart",
+      "color": "#e91e63",
+      "textbooks": ["基礎歯科生理学_第7版"],
+      "topicCount": 38
+    },
+    {
+      "id": "biochemistry",
+      "name": "生化学",
+      "icon": "flask",
+      "color": "#9c27b0",
+      "textbooks": ["口腔生化学_第6版"],
+      "topicCount": 32
+    },
+    {
+      "id": "pathology",
+      "name": "病理学",
+      "icon": "microscope",
+      "color": "#673ab7",
+      "textbooks": ["わかる病理組織像"],
+      "topicCount": 42
+    },
+    {
+      "id": "pharmacology",
+      "name": "薬理学",
+      "icon": "pill",
+      "color": "#3f51b5",
+      "textbooks": ["現代歯科薬理学_第6版"],
+      "topicCount": 35
+    },
+    {
+      "id": "histology",
+      "name": "口腔組織・発生学",
+      "icon": "dna",
+      "color": "#2196f3",
+      "textbooks": ["カラーエッセンシャル_口腔組織・発生学"],
+      "topicCount": 28
+    },
+    {
+      "id": "materials",
+      "name": "歯科理工学",
+      "icon": "cog",
+      "color": "#00bcd4",
+      "textbooks": ["スタンダード歯科理工学_第7版"],
+      "topicCount": 40
+    },
+    {
+      "id": "prostho-fixed",
+      "name": "クラウンブリッジ",
+      "icon": "crown",
+      "color": "#009688",
+      "textbooks": ["クラウンブリッジ補綴学_第6版", "クラウンブリッジテクニック"],
+      "topicCount": 36
+    },
+    {
+      "id": "prostho-removable",
+      "name": "有床義歯",
+      "icon": "denture",
+      "color": "#4caf50",
+      "textbooks": ["コンプリートデンチャー", "パーシャルデンチャーテクニック"],
+      "topicCount": 44
+    },
+    {
+      "id": "endo",
+      "name": "歯内療法",
+      "icon": "tooth",
+      "color": "#8bc34a",
+      "textbooks": ["エンドドンティクス_第５版"],
+      "topicCount": 30
+    },
+    {
+      "id": "oral-surgery",
+      "name": "口腔外科",
+      "icon": "scalpel",
+      "color": "#cddc39",
+      "textbooks": ["口腔外科学_第４版", "口腔外科_セレクトアトラス_第4版"],
+      "topicCount": 52
+    },
+    {
+      "id": "implant",
+      "name": "インプラント",
+      "icon": "implant",
+      "color": "#ffeb3b",
+      "textbooks": ["よくわかる_口腔インプラント学_第3版_2"],
+      "topicCount": 25
+    },
+    {
+      "id": "geriatric",
+      "name": "高齢者歯科",
+      "icon": "elderly",
+      "color": "#ffc107",
+      "textbooks": ["よくわかる_高齢者歯科学"],
+      "topicCount": 22
+    },
+    {
+      "id": "special-needs",
+      "name": "障害者歯科",
+      "icon": "accessibility",
+      "color": "#ff9800",
+      "textbooks": ["スペシャルニーズデンティストリー_障碍者歯科_第2版"],
+      "topicCount": 18
+    }
+  ]
+}

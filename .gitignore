@@ -1,0 +1,25 @@
+# 古い試験の画像（容量削減のため）
+images/exam/100/
+images/exam/101/
+images/exam/102/
+images/exam/103/
+images/exam/104/
+images/exam/105/
+images/exam/106/
+images/exam/107/
+images/exam/108/
+images/exam/109/
+images/exam/110/
+images/exam/111/
+images/exam/112/
+images/exam/113/
+images/exam/114/
+images/exam/115/
+images/exam/116/
+
+# 教科書画像（容量削減のため）
+images/textbook/
+
+# 不要ファイル
+PLAN.md
+data.js
