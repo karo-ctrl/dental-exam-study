@@ -35,6 +35,7 @@ const state = {
   // 画像モーダル状態
   currentImages: [],
   currentImageIndex: 0,
+  carouselIndex: 0,
 
   // タッチ操作用
   touchStartX: 0,
@@ -551,38 +552,150 @@ function renderImageThumbnails(question) {
   const examId = state.currentExam?.examId || question.examId;
   if (!examId || !question.imageRef) {
     elements.imageThumbnails.innerHTML = '';
-    elements.imageThumbnails.classList.remove('multiple');
     return;
   }
 
   const imagePaths = parseImageRef(question.imageRef, examId);
   state.currentImages = imagePaths;
+  state.carouselIndex = 0;
 
   if (imagePaths.length === 0) {
     elements.imageThumbnails.innerHTML = '<span style="color: var(--text-muted); font-size: 0.85rem;">画像を読み込めません</span>';
-    elements.imageThumbnails.classList.remove('multiple');
     return;
   }
 
-  // 複数画像の場合はグリッド表示用のクラスを追加
-  elements.imageThumbnails.classList.toggle('multiple', imagePaths.length > 1);
+  // カルーセル形式のHTML生成
+  const hasMultiple = imagePaths.length > 1;
 
-  elements.imageThumbnails.innerHTML = imagePaths.map((path, idx) => `
-    <img
-      src="${path}"
-      alt="問題画像 ${idx + 1}"
-      class="image-thumbnail"
-      data-index="${idx}"
-      onerror="this.style.display='none'"
-    >
-  `).join('');
+  elements.imageThumbnails.innerHTML = `
+    <div class="image-carousel">
+      <div class="carousel-track" style="transform: translateX(0%)">
+        ${imagePaths.map((path, idx) => `
+          <div class="carousel-slide">
+            <img
+              src="${path}"
+              alt="問題画像 ${idx + 1}"
+              class="carousel-image"
+              data-index="${idx}"
+              onerror="this.parentElement.innerHTML='<span class=\\'carousel-error\\'>画像を読み込めません</span>'"
+            >
+          </div>
+        `).join('')}
+      </div>
+      ${hasMultiple ? `
+        <button class="carousel-btn carousel-prev" aria-label="前の画像">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-btn carousel-next" aria-label="次の画像">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <div class="carousel-dots">
+          ${imagePaths.map((_, idx) => `
+            <button class="carousel-dot ${idx === 0 ? 'active' : ''}" data-index="${idx}" aria-label="画像 ${idx + 1}"></button>
+          `).join('')}
+        </div>
+      ` : ''}
+    </div>
+  `;
 
-  // サムネイルクリックイベント
-  elements.imageThumbnails.querySelectorAll('.image-thumbnail').forEach(img => {
-    img.addEventListener('click', () => {
-      openImageModal(parseInt(img.dataset.index));
+  // イベントリスナー設定
+  setupCarouselEvents();
+}
+
+// カルーセルのイベント設定
+function setupCarouselEvents() {
+  const carousel = elements.imageThumbnails.querySelector('.image-carousel');
+  if (!carousel) return;
+
+  const track = carousel.querySelector('.carousel-track');
+  const prevBtn = carousel.querySelector('.carousel-prev');
+  const nextBtn = carousel.querySelector('.carousel-next');
+  const dots = carousel.querySelectorAll('.carousel-dot');
+  const images = carousel.querySelectorAll('.carousel-image');
+
+  // 矢印ボタン
+  prevBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    goToCarouselSlide(state.carouselIndex - 1);
+  });
+
+  nextBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    goToCarouselSlide(state.carouselIndex + 1);
+  });
+
+  // ドットインジケーター
+  dots.forEach(dot => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      goToCarouselSlide(parseInt(dot.dataset.index));
     });
   });
+
+  // 画像クリックでモーダル表示
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      openImageModal(state.carouselIndex);
+    });
+  });
+
+  // スワイプ操作
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  carousel.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    const minSwipe = 50;
+
+    if (Math.abs(diff) > minSwipe) {
+      if (diff > 0) {
+        goToCarouselSlide(state.carouselIndex + 1);
+      } else {
+        goToCarouselSlide(state.carouselIndex - 1);
+      }
+    }
+  }, { passive: true });
+
+  updateCarouselButtons();
+}
+
+// カルーセルスライド移動
+function goToCarouselSlide(index) {
+  const total = state.currentImages.length;
+  if (index < 0 || index >= total) return;
+
+  state.carouselIndex = index;
+
+  const track = elements.imageThumbnails.querySelector('.carousel-track');
+  if (track) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // ドット更新
+  const dots = elements.imageThumbnails.querySelectorAll('.carousel-dot');
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+
+  updateCarouselButtons();
+}
+
+// カルーセルボタンの有効/無効更新
+function updateCarouselButtons() {
+  const prevBtn = elements.imageThumbnails.querySelector('.carousel-prev');
+  const nextBtn = elements.imageThumbnails.querySelector('.carousel-next');
+
+  if (prevBtn) prevBtn.disabled = state.carouselIndex <= 0;
+  if (nextBtn) nextBtn.disabled = state.carouselIndex >= state.currentImages.length - 1;
 }
 
 function openImageModal(index = 0) {

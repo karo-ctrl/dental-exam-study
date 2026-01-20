@@ -638,50 +638,147 @@ body {
   border-radius: 4px;
 }
 
-/* 画像サムネイル */
+/* 画像カルーセル */
 .image-thumbnails {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  width: 100%;
 }
 
-.image-thumbnail {
+.image-carousel {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--bg-tertiary);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease-out;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
   max-height: 300px;
   object-fit: contain;
-  border-radius: 8px;
-  border: 2px solid var(--border-color);
-  background-color: var(--bg-tertiary);
   cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.carousel-image:active {
+  opacity: 0.9;
+}
+
+.carousel-error {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* カルーセル矢印ボタン */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.carousel-prev {
+  left: 8px;
+}
+
+.carousel-next {
+  right: 8px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-btn:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ドットインジケーター */
+.carousel-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
   transition: all 0.2s;
 }
 
-.image-thumbnail:hover {
-  border-color: var(--accent-color);
+.carousel-dot:hover {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.image-thumbnail:active {
-  transform: scale(0.98);
-}
-
-/* 複数画像の場合はグリッド表示 */
-.image-thumbnails.multiple {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-}
-
-.image-thumbnails.multiple .image-thumbnail {
-  max-height: 150px;
+.carousel-dot.active {
+  background-color: white;
+  transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
-  .image-thumbnail {
+  .carousel-slide {
+    min-height: 250px;
     max-height: 400px;
   }
 
-  .image-thumbnails.multiple .image-thumbnail {
-    max-height: 200px;
+  .carousel-image {
+    max-height: 400px;
+  }
+
+  .carousel-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .carousel-prev {
+    left: 12px;
+  }
+
+  .carousel-next {
+    right: 12px;
   }
 }
 
