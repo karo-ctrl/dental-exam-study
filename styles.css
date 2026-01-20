@@ -1163,6 +1163,55 @@ body {
   background-color: #16a34a;
 }
 
+/* 難易度選択ボタン */
+.difficulty-btns {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  justify-content: center;
+}
+
+.difficulty-btn {
+  flex: 1;
+  max-width: 120px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: white;
+}
+
+.difficulty-easy {
+  background-color: #22c55e;
+}
+
+.difficulty-easy:hover {
+  background-color: #16a34a;
+}
+
+.difficulty-normal {
+  background-color: #f59e0b;
+}
+
+.difficulty-normal:hover {
+  background-color: #d97706;
+}
+
+.difficulty-hard {
+  background-color: #ef4444;
+}
+
+.difficulty-hard:hover {
+  background-color: #dc2626;
+}
+
+.difficulty-btn:active {
+  transform: scale(0.95);
+}
+
 /* クイズカード追加スタイル */
 .quiz-card .card-title {
   font-size: 1.1rem;

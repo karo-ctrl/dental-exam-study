@@ -45,7 +45,10 @@ const state = {
   touchEndY: 0,
 
   // 日次統計
-  dailyStats: {} // { "2024-01-20": 5, "2024-01-19": 10, ... }
+  dailyStats: {}, // { "2024-01-20": 5, "2024-01-19": 10, ... }
+
+  // 回答履歴
+  questionHistory: {} // { "117-A001": { attempts, correct, incorrect, lastAttempt, difficulty, history: [...] } }
 };
 
 // ===== DOM要素 =====
@@ -119,6 +122,7 @@ function initElements() {
   elements.correctAnswer = document.getElementById('correctAnswer');
   elements.showAnswerBtn = document.getElementById('showAnswerBtn');
   elements.nextQuestionBtn = document.getElementById('nextQuestionBtn');
+  elements.difficultyBtns = document.getElementById('difficultyBtns');
   elements.quizFavoriteBtn = document.getElementById('quizFavoriteBtn');
 
   // まとめカード
@@ -157,6 +161,7 @@ async function init() {
   initElements();
   loadState();
   loadDailyStats();
+  loadQuestionHistory();
   applyTheme(state.theme);
   applyFontSize();
   setupEventListeners();
@@ -429,6 +434,9 @@ function renderQuestion() {
   elements.answerArea.style.display = 'none';
   elements.showAnswerBtn.style.display = 'block';
   elements.nextQuestionBtn.style.display = 'none';
+  if (elements.difficultyBtns) {
+    elements.difficultyBtns.style.display = 'none';
+  }
 
   if (question.selectCount > 1) {
     elements.showAnswerBtn.textContent = `解答を見る (${question.selectCount}つ選択)`;
@@ -503,7 +511,11 @@ function showAnswer() {
   });
 
   elements.showAnswerBtn.style.display = 'none';
-  elements.nextQuestionBtn.style.display = 'block';
+  // 難易度ボタンを表示（次の問題ボタンは非表示）
+  elements.nextQuestionBtn.style.display = 'none';
+  if (elements.difficultyBtns) {
+    elements.difficultyBtns.style.display = 'flex';
+  }
 
   const allCorrect = correctLabels.every(l => state.selectedChoices.has(l)) &&
                      state.selectedChoices.size === correctLabels.length;
@@ -512,6 +524,9 @@ function showAnswer() {
     selected: Array.from(state.selectedChoices),
     correct: allCorrect
   });
+
+  // 回答履歴を記録
+  recordAnswer(question.id, Array.from(state.selectedChoices), allCorrect);
 
   // 初めて回答した問題のみカウント
   if (!wasAlreadyAnswered) {
@@ -1311,6 +1326,100 @@ function loadDailyStats() {
   }
 }
 
+// ===== 回答履歴管理 =====
+function saveQuestionHistory() {
+  localStorage.setItem('dentalExamQuestionHistory', JSON.stringify(state.questionHistory));
+}
+
+function loadQuestionHistory() {
+  const saved = localStorage.getItem('dentalExamQuestionHistory');
+  if (saved) {
+    state.questionHistory = JSON.parse(saved);
+  }
+}
+
+function recordAnswer(questionId, selectedChoices, isCorrect) {
+  const todayKey = getTodayKey();
+
+  if (!state.questionHistory[questionId]) {
+    state.questionHistory[questionId] = {
+      attempts: 0,
+      correct: 0,
+      incorrect: 0,
+      lastAttempt: null,
+      difficulty: null,
+      history: []
+    };
+  }
+
+  const record = state.questionHistory[questionId];
+  record.attempts++;
+  record.lastAttempt = todayKey;
+
+  if (isCorrect) {
+    record.correct++;
+  } else {
+    record.incorrect++;
+  }
+
+  // 履歴に追加（最新10件まで保持）
+  record.history.push({
+    date: todayKey,
+    correct: isCorrect,
+    selected: selectedChoices
+  });
+  if (record.history.length > 10) {
+    record.history.shift();
+  }
+
+  saveQuestionHistory();
+}
+
+function setDifficulty(questionId, difficulty) {
+  if (!state.questionHistory[questionId]) {
+    state.questionHistory[questionId] = {
+      attempts: 0,
+      correct: 0,
+      incorrect: 0,
+      lastAttempt: getTodayKey(),
+      difficulty: null,
+      history: []
+    };
+  }
+
+  state.questionHistory[questionId].difficulty = difficulty;
+  saveQuestionHistory();
+}
+
+function getQuestionStats(questionId) {
+  return state.questionHistory[questionId] || null;
+}
+
+function selectDifficulty(difficulty) {
+  const question = state.filteredQuestions[state.currentIndex];
+  if (!question) return;
+
+  // 難易度を保存
+  setDifficulty(question.id, difficulty);
+
+  // 難易度ボタンを非表示
+  if (elements.difficultyBtns) {
+    elements.difficultyBtns.style.display = 'none';
+  }
+
+  // 次の問題へ自動で進む
+  const total = state.filteredQuestions.length;
+  if (state.currentIndex < total - 1) {
+    state.currentIndex++;
+    state.showingAnswer = false;
+    state.selectedChoices.clear();
+    renderQuestion();
+  } else {
+    // 最後の問題の場合は次の問題ボタンを表示
+    elements.nextQuestionBtn.style.display = 'block';
+  }
+}
+
 // ===== サイドバー/設定パネル =====
 function openSidebar() {
   elements.sidebar.classList.add('open');
@@ -1396,6 +1505,11 @@ function setupEventListeners() {
   elements.showAnswerBtn?.addEventListener('click', showAnswer);
   elements.nextQuestionBtn?.addEventListener('click', goToNext);
 
+  // 難易度選択ボタン
+  elements.difficultyBtns?.querySelectorAll('.difficulty-btn').forEach(btn => {
+    btn.addEventListener('click', () => selectDifficulty(btn.dataset.difficulty));
+  });
+
   // 画像モーダル
   elements.imageModalClose?.addEventListener('click', closeImageModal);
   elements.imageModalBackdrop?.addEventListener('click', closeImageModal);
@@ -1452,8 +1566,21 @@ function setupEventListeners() {
         closeSidebar();
         closeSettings();
         break;
-      case '1': case '2': case '3': case '4': case '5':
+      case '1': case '2': case '3':
         if (state.mode === 'quiz') {
+          if (state.showingAnswer) {
+            // 回答表示中は難易度選択
+            const difficulties = ['easy', 'normal', 'hard'];
+            selectDifficulty(difficulties[parseInt(e.key) - 1]);
+          } else {
+            // 回答前は選択肢選択
+            const labels = ['a', 'b', 'c'];
+            toggleChoice(labels[parseInt(e.key) - 1]);
+          }
+        }
+        break;
+      case '4': case '5':
+        if (state.mode === 'quiz' && !state.showingAnswer) {
           const labels = ['a', 'b', 'c', 'd', 'e'];
           const idx = parseInt(e.key) - 1;
           if (idx < labels.length) toggleChoice(labels[idx]);
