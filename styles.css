@@ -1870,3 +1870,234 @@ body {
 [data-mode="summary"] #categoryList {
   display: flex !important;
 }
+
+/* ===== 出題設定パネル ===== */
+.quiz-settings-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  background-color: var(--bg-primary);
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+}
+
+.quiz-settings-panel.open {
+  right: 0;
+}
+
+.quiz-settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 199;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.quiz-settings-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quiz-settings-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quiz-settings-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.quiz-settings-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.quiz-settings-footer {
+  padding: 16px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+}
+
+/* セクション */
+.settings-section {
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.settings-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--bg-secondary);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.settings-section-header:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.section-chevron {
+  transition: transform 0.2s;
+}
+
+.settings-section-header.collapsed .section-chevron {
+  transform: rotate(-90deg);
+}
+
+.settings-section-body {
+  padding: 16px;
+  background-color: var(--bg-primary);
+  display: block;
+}
+
+.settings-section-body.collapsed {
+  display: none;
+}
+
+/* 設定行 */
+.setting-row {
+  margin-bottom: 16px;
+}
+
+.setting-row:last-child {
+  margin-bottom: 0;
+}
+
+.setting-row label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+/* セレクト */
+.setting-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.setting-select:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+/* 範囲ボタン */
+.range-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.range-btn {
+  min-width: 36px;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+}
+
+.range-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.range-btn.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+/* 科目ボタン（幅広め） */
+.subject-buttons .range-btn {
+  min-width: auto;
+  padding: 8px 12px;
+}
+
+/* 条件ボタン */
+.condition-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.condition-btn {
+  padding: 8px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.condition-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.condition-btn.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+/* 保存ボタン */
+.btn-save-settings {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save-settings:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-save-settings:active {
+  transform: scale(0.98);
+}

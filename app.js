@@ -48,7 +48,26 @@ const state = {
   dailyStats: {}, // { "2024-01-20": 5, "2024-01-19": 10, ... }
 
   // 回答履歴
-  questionHistory: {} // { "117-A001": { attempts, correct, incorrect, lastAttempt, difficulty, history: [...] } }
+  questionHistory: {}, // { "117-A001": { attempts, correct, incorrect, lastAttempt, difficulty, history: [...] } }
+
+  // 出題設定
+  quizSettings: {
+    hisshu: {
+      count: 20,
+      range: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+      condition: ['unanswered']
+    },
+    ippan: {
+      count: 10,
+      range: ['解剖学', '組織学', '病理学', '生理学', '生化学', '微生物学', '薬理学', '歯科理工学', '衛生', '保存修復学', '歯内療法学', '歯周病学', '有床義歯補綴学', '冠橋補綴学', 'インプラント', '口腔外科学', '矯正歯科学', '小児歯科学', '高齢者歯科学', '障害者歯科学', '放射線学', '麻酔学', '総合医学'],
+      condition: ['unanswered']
+    },
+    rinjitsu: {
+      count: 10,
+      range: ['解剖学', '組織学', '病理学', '生理学', '生化学', '微生物学', '薬理学', '歯科理工学', '衛生', '保存修復学', '歯内療法学', '歯周病学', '有床義歯補綴学', '冠橋補綴学', 'インプラント', '口腔外科学', '矯正歯科学', '小児歯科学', '高齢者歯科学', '障害者歯科学', '放射線学', '麻酔学', '総合医学'],
+      condition: ['unanswered']
+    }
+  }
 };
 
 // ===== DOM要素 =====
@@ -106,6 +125,21 @@ function initElements() {
   elements.todayDiff = document.getElementById('todayDiff');
   elements.loginBtn = document.getElementById('loginBtn');
 
+  // 出題設定パネル
+  elements.quizSettingsPanel = document.getElementById('quizSettingsPanel');
+  elements.quizSettingsOverlay = document.getElementById('quizSettingsOverlay');
+  elements.closeQuizSettingsBtn = document.getElementById('closeQuizSettingsBtn');
+  elements.saveQuizSettingsBtn = document.getElementById('saveQuizSettingsBtn');
+  elements.hisshuCount = document.getElementById('hisshuCount');
+  elements.hisshuRange = document.getElementById('hisshuRange');
+  elements.hisshuCondition = document.getElementById('hisshuCondition');
+  elements.ippanCount = document.getElementById('ippanCount');
+  elements.ippanRange = document.getElementById('ippanRange');
+  elements.ippanCondition = document.getElementById('ippanCondition');
+  elements.rinjitsuCount = document.getElementById('rinjitsuCount');
+  elements.rinjitsuRange = document.getElementById('rinjitsuRange');
+  elements.rinjitsuCondition = document.getElementById('rinjitsuCondition');
+
   // カード共通
   elements.loadingState = document.getElementById('loadingState');
 
@@ -162,6 +196,7 @@ async function init() {
   loadState();
   loadDailyStats();
   loadQuestionHistory();
+  loadQuizSettings();
   applyTheme(state.theme);
   applyFontSize();
   setupEventListeners();
@@ -259,6 +294,7 @@ function backToHome() {
 function startDailyQuiz(type) {
   if (!state.allData) return;
 
+  const settings = state.quizSettings[type];
   let questions = [];
 
   // 全試験から問題を収集
@@ -274,8 +310,11 @@ function startDailyQuiz(type) {
     });
   });
 
+  // 出題条件でフィルタリング
+  questions = filterByCondition(questions, settings.condition);
+
   // シャッフルして指定数を取得
-  const count = type === 'hisshu' ? 20 : 10;
+  const count = settings.count === 'all' ? questions.length : settings.count;
   const shuffled = questions.sort(() => Math.random() - 0.5);
   state.filteredQuestions = shuffled.slice(0, Math.min(count, shuffled.length));
   state.currentIndex = 0;
@@ -286,6 +325,28 @@ function startDailyQuiz(type) {
   showQuizScreen();
   renderQuestion();
   updateNavButtons();
+}
+
+function filterByCondition(questions, conditions) {
+  if (!conditions || conditions.length === 0 || conditions.includes('unanswered')) {
+    // 未出題: 回答履歴がない問題
+    return questions.filter(q => !state.questionHistory[q.id]);
+  }
+
+  // 不正解回数でフィルタリング
+  return questions.filter(q => {
+    const history = state.questionHistory[q.id];
+    if (!history) return false;
+
+    const incorrectCount = history.incorrect || 0;
+
+    // 条件に合致するかチェック
+    if (conditions.includes('incorrect1') && incorrectCount >= 1) return true;
+    if (conditions.includes('incorrect2') && incorrectCount >= 2) return true;
+    if (conditions.includes('incorrect3') && incorrectCount >= 3) return true;
+
+    return false;
+  });
 }
 
 // ===== レガシー: モード切替（後で整理） =====
@@ -1420,6 +1481,142 @@ function selectDifficulty(difficulty) {
   }
 }
 
+// ===== 出題設定管理 =====
+function saveQuizSettings() {
+  localStorage.setItem('dentalExamQuizSettings', JSON.stringify(state.quizSettings));
+}
+
+function loadQuizSettings() {
+  const saved = localStorage.getItem('dentalExamQuizSettings');
+  if (saved) {
+    state.quizSettings = JSON.parse(saved);
+  }
+}
+
+function openQuizSettings() {
+  // UIを現在の設定で更新
+  updateQuizSettingsUI();
+  elements.quizSettingsPanel.classList.add('open');
+  elements.quizSettingsOverlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeQuizSettings() {
+  elements.quizSettingsPanel.classList.remove('open');
+  elements.quizSettingsOverlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function updateQuizSettingsUI() {
+  // 必修
+  if (elements.hisshuCount) {
+    elements.hisshuCount.value = state.quizSettings.hisshu.count === 'all' ? 'all' : state.quizSettings.hisshu.count;
+  }
+  updateRangeButtons('hisshuRange', state.quizSettings.hisshu.range);
+  updateConditionButtons('hisshuCondition', state.quizSettings.hisshu.condition);
+
+  // 一般
+  if (elements.ippanCount) {
+    elements.ippanCount.value = state.quizSettings.ippan.count === 'all' ? 'all' : state.quizSettings.ippan.count;
+  }
+  updateRangeButtons('ippanRange', state.quizSettings.ippan.range);
+  updateConditionButtons('ippanCondition', state.quizSettings.ippan.condition);
+
+  // 臨実
+  if (elements.rinjitsuCount) {
+    elements.rinjitsuCount.value = state.quizSettings.rinjitsu.count === 'all' ? 'all' : state.quizSettings.rinjitsu.count;
+  }
+  updateRangeButtons('rinjitsuRange', state.quizSettings.rinjitsu.range);
+  updateConditionButtons('rinjitsuCondition', state.quizSettings.rinjitsu.condition);
+}
+
+function updateRangeButtons(containerId, selectedValues) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.querySelectorAll('.range-btn').forEach(btn => {
+    btn.classList.toggle('active', selectedValues.includes(btn.dataset.value));
+  });
+}
+
+function updateConditionButtons(containerId, selectedValues) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  container.querySelectorAll('.condition-btn').forEach(btn => {
+    btn.classList.toggle('active', selectedValues.includes(btn.dataset.value));
+  });
+}
+
+function toggleSectionCollapse(sectionId) {
+  const body = document.getElementById(sectionId + 'Settings');
+  if (!body) return;
+
+  const header = body.previousElementSibling;
+  body.classList.toggle('collapsed');
+  header.classList.toggle('collapsed');
+}
+
+function handleRangeButtonClick(containerId, btn) {
+  btn.classList.toggle('active');
+}
+
+function handleConditionButtonClick(containerId, btn) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+
+  const value = btn.dataset.value;
+
+  if (value === 'unanswered') {
+    // 未出題は単独選択
+    container.querySelectorAll('.condition-btn').forEach(b => {
+      b.classList.remove('active');
+    });
+    btn.classList.add('active');
+  } else {
+    // 不正解系は複数選択可
+    // 未出題を外す
+    container.querySelector('[data-value="unanswered"]')?.classList.remove('active');
+    btn.classList.toggle('active');
+
+    // 何も選択されていなければ未出題を選択
+    const anyActive = container.querySelectorAll('.condition-btn.active:not([data-value="unanswered"])').length > 0;
+    if (!anyActive) {
+      container.querySelector('[data-value="unanswered"]')?.classList.add('active');
+    }
+  }
+}
+
+function collectQuizSettingsFromUI() {
+  // 必修
+  state.quizSettings.hisshu.count = elements.hisshuCount?.value === 'all' ? 'all' : parseInt(elements.hisshuCount?.value || 20);
+  state.quizSettings.hisshu.range = collectActiveValues('hisshuRange');
+  state.quizSettings.hisshu.condition = collectActiveValues('hisshuCondition');
+
+  // 一般
+  state.quizSettings.ippan.count = elements.ippanCount?.value === 'all' ? 'all' : parseInt(elements.ippanCount?.value || 10);
+  state.quizSettings.ippan.range = collectActiveValues('ippanRange');
+  state.quizSettings.ippan.condition = collectActiveValues('ippanCondition');
+
+  // 臨実
+  state.quizSettings.rinjitsu.count = elements.rinjitsuCount?.value === 'all' ? 'all' : parseInt(elements.rinjitsuCount?.value || 10);
+  state.quizSettings.rinjitsu.range = collectActiveValues('rinjitsuRange');
+  state.quizSettings.rinjitsu.condition = collectActiveValues('rinjitsuCondition');
+}
+
+function collectActiveValues(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return [];
+
+  return Array.from(container.querySelectorAll('.active')).map(btn => btn.dataset.value);
+}
+
+function saveAndCloseQuizSettings() {
+  collectQuizSettingsFromUI();
+  saveQuizSettings();
+  closeQuizSettings();
+}
+
 // ===== サイドバー/設定パネル =====
 function openSidebar() {
   elements.sidebar.classList.add('open');
@@ -1453,7 +1650,7 @@ function setupEventListeners() {
   elements.dailyHisshuBtn?.addEventListener('click', () => startDailyQuiz('hisshu'));
   elements.dailyIppanBtn?.addEventListener('click', () => startDailyQuiz('ippan'));
   elements.dailyRinjitsuBtn?.addEventListener('click', () => startDailyQuiz('rinjitsu'));
-  elements.settingsMenuBtn?.addEventListener('click', openSettings);
+  elements.settingsMenuBtn?.addEventListener('click', openQuizSettings);
   elements.examSelectBtn?.addEventListener('click', openSidebar);
 
   // レガシー: モードタブ
@@ -1474,6 +1671,36 @@ function setupEventListeners() {
   // 設定パネル
   elements.closeSettingsBtn.addEventListener('click', closeSettings);
   elements.settingsOverlay.addEventListener('click', closeSettings);
+
+  // 出題設定パネル
+  elements.closeQuizSettingsBtn?.addEventListener('click', closeQuizSettings);
+  elements.quizSettingsOverlay?.addEventListener('click', closeQuizSettings);
+  elements.saveQuizSettingsBtn?.addEventListener('click', saveAndCloseQuizSettings);
+
+  // セクション開閉
+  document.querySelectorAll('.settings-section-header').forEach(header => {
+    header.addEventListener('click', () => {
+      toggleSectionCollapse(header.dataset.toggle);
+    });
+  });
+
+  // 範囲ボタン
+  document.querySelectorAll('.range-buttons').forEach(container => {
+    container.querySelectorAll('.range-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        handleRangeButtonClick(container.id, btn);
+      });
+    });
+  });
+
+  // 条件ボタン
+  document.querySelectorAll('.condition-buttons').forEach(container => {
+    container.querySelectorAll('.condition-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        handleConditionButtonClick(container.id, btn);
+      });
+    });
+  });
 
   // テーマ選択
   elements.themeOptions.forEach(btn => {

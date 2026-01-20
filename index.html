@@ -128,6 +128,189 @@
   </aside>
   <div class="settings-overlay" id="settingsOverlay"></div>
 
+  <!-- 出題設定パネル -->
+  <aside class="quiz-settings-panel" id="quizSettingsPanel">
+    <div class="quiz-settings-header">
+      <button class="btn-icon" id="closeQuizSettingsBtn" aria-label="閉じる">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <h2>出題設定</h2>
+    </div>
+    <div class="quiz-settings-content">
+      <!-- 必修の設定 -->
+      <div class="settings-section" data-section="hisshu">
+        <button class="settings-section-header" data-toggle="hisshu">
+          <span class="section-title">必修の設定</span>
+          <svg class="section-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="settings-section-body" id="hisshuSettings">
+          <div class="setting-row">
+            <label>出題数</label>
+            <select id="hisshuCount" class="setting-select">
+              <option value="10">10問</option>
+              <option value="20" selected>20問</option>
+              <option value="30">30問</option>
+              <option value="50">50問</option>
+              <option value="all">全問</option>
+            </select>
+          </div>
+          <div class="setting-row">
+            <label>出題範囲（大項目）</label>
+            <div class="range-buttons" id="hisshuRange">
+              <button class="range-btn active" data-value="1">1</button>
+              <button class="range-btn active" data-value="2">2</button>
+              <button class="range-btn active" data-value="3">3</button>
+              <button class="range-btn active" data-value="4">4</button>
+              <button class="range-btn active" data-value="5">5</button>
+              <button class="range-btn active" data-value="6">6</button>
+              <button class="range-btn active" data-value="7">7</button>
+              <button class="range-btn active" data-value="8">8</button>
+              <button class="range-btn active" data-value="9">9</button>
+              <button class="range-btn active" data-value="10">10</button>
+              <button class="range-btn active" data-value="11">11</button>
+              <button class="range-btn active" data-value="12">12</button>
+            </div>
+          </div>
+          <div class="setting-row">
+            <label>出題条件</label>
+            <div class="condition-buttons" id="hisshuCondition">
+              <button class="condition-btn active" data-value="unanswered">未出題</button>
+              <button class="condition-btn" data-value="incorrect1">1回不正解</button>
+              <button class="condition-btn" data-value="incorrect2">2回不正解</button>
+              <button class="condition-btn" data-value="incorrect3">3回以上不正解</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 一般の設定 -->
+      <div class="settings-section" data-section="ippan">
+        <button class="settings-section-header" data-toggle="ippan">
+          <span class="section-title">一般の設定</span>
+          <svg class="section-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="settings-section-body collapsed" id="ippanSettings">
+          <div class="setting-row">
+            <label>出題数</label>
+            <select id="ippanCount" class="setting-select">
+              <option value="10" selected>10問</option>
+              <option value="20">20問</option>
+              <option value="30">30問</option>
+              <option value="50">50問</option>
+              <option value="all">全問</option>
+            </select>
+          </div>
+          <div class="setting-row">
+            <label>出題範囲（科目）</label>
+            <div class="range-buttons subject-buttons" id="ippanRange">
+              <button class="range-btn active" data-value="解剖学">解剖学</button>
+              <button class="range-btn active" data-value="組織学">組織学</button>
+              <button class="range-btn active" data-value="病理学">病理学</button>
+              <button class="range-btn active" data-value="生理学">生理学</button>
+              <button class="range-btn active" data-value="生化学">生化学</button>
+              <button class="range-btn active" data-value="微生物学">微生物学</button>
+              <button class="range-btn active" data-value="薬理学">薬理学</button>
+              <button class="range-btn active" data-value="歯科理工学">歯科理工学</button>
+              <button class="range-btn active" data-value="衛生">衛生</button>
+              <button class="range-btn active" data-value="保存修復学">保存修復学</button>
+              <button class="range-btn active" data-value="歯内療法学">歯内療法学</button>
+              <button class="range-btn active" data-value="歯周病学">歯周病学</button>
+              <button class="range-btn active" data-value="有床義歯補綴学">有床義歯</button>
+              <button class="range-btn active" data-value="冠橋補綴学">冠橋補綴</button>
+              <button class="range-btn active" data-value="インプラント">インプラント</button>
+              <button class="range-btn active" data-value="口腔外科学">口腔外科</button>
+              <button class="range-btn active" data-value="矯正歯科学">矯正</button>
+              <button class="range-btn active" data-value="小児歯科学">小児</button>
+              <button class="range-btn active" data-value="高齢者歯科学">高齢者</button>
+              <button class="range-btn active" data-value="障害者歯科学">障害者</button>
+              <button class="range-btn active" data-value="放射線学">放射線</button>
+              <button class="range-btn active" data-value="麻酔学">麻酔</button>
+              <button class="range-btn active" data-value="総合医学">総合医学</button>
+            </div>
+          </div>
+          <div class="setting-row">
+            <label>出題条件</label>
+            <div class="condition-buttons" id="ippanCondition">
+              <button class="condition-btn active" data-value="unanswered">未出題</button>
+              <button class="condition-btn" data-value="incorrect1">1回不正解</button>
+              <button class="condition-btn" data-value="incorrect2">2回不正解</button>
+              <button class="condition-btn" data-value="incorrect3">3回以上不正解</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 臨実の設定 -->
+      <div class="settings-section" data-section="rinjitsu">
+        <button class="settings-section-header" data-toggle="rinjitsu">
+          <span class="section-title">臨実の設定</span>
+          <svg class="section-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="settings-section-body collapsed" id="rinjitsuSettings">
+          <div class="setting-row">
+            <label>出題数</label>
+            <select id="rinjitsuCount" class="setting-select">
+              <option value="10" selected>10問</option>
+              <option value="20">20問</option>
+              <option value="30">30問</option>
+              <option value="50">50問</option>
+              <option value="all">全問</option>
+            </select>
+          </div>
+          <div class="setting-row">
+            <label>出題範囲（科目）</label>
+            <div class="range-buttons subject-buttons" id="rinjitsuRange">
+              <button class="range-btn active" data-value="解剖学">解剖学</button>
+              <button class="range-btn active" data-value="組織学">組織学</button>
+              <button class="range-btn active" data-value="病理学">病理学</button>
+              <button class="range-btn active" data-value="生理学">生理学</button>
+              <button class="range-btn active" data-value="生化学">生化学</button>
+              <button class="range-btn active" data-value="微生物学">微生物学</button>
+              <button class="range-btn active" data-value="薬理学">薬理学</button>
+              <button class="range-btn active" data-value="歯科理工学">歯科理工学</button>
+              <button class="range-btn active" data-value="衛生">衛生</button>
+              <button class="range-btn active" data-value="保存修復学">保存修復学</button>
+              <button class="range-btn active" data-value="歯内療法学">歯内療法学</button>
+              <button class="range-btn active" data-value="歯周病学">歯周病学</button>
+              <button class="range-btn active" data-value="有床義歯補綴学">有床義歯</button>
+              <button class="range-btn active" data-value="冠橋補綴学">冠橋補綴</button>
+              <button class="range-btn active" data-value="インプラント">インプラント</button>
+              <button class="range-btn active" data-value="口腔外科学">口腔外科</button>
+              <button class="range-btn active" data-value="矯正歯科学">矯正</button>
+              <button class="range-btn active" data-value="小児歯科学">小児</button>
+              <button class="range-btn active" data-value="高齢者歯科学">高齢者</button>
+              <button class="range-btn active" data-value="障害者歯科学">障害者</button>
+              <button class="range-btn active" data-value="放射線学">放射線</button>
+              <button class="range-btn active" data-value="麻酔学">麻酔</button>
+              <button class="range-btn active" data-value="総合医学">総合医学</button>
+            </div>
+          </div>
+          <div class="setting-row">
+            <label>出題条件</label>
+            <div class="condition-buttons" id="rinjitsuCondition">
+              <button class="condition-btn active" data-value="unanswered">未出題</button>
+              <button class="condition-btn" data-value="incorrect1">1回不正解</button>
+              <button class="condition-btn" data-value="incorrect2">2回不正解</button>
+              <button class="condition-btn" data-value="incorrect3">3回以上不正解</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quiz-settings-footer">
+      <button class="btn-save-settings" id="saveQuizSettingsBtn">設定を保存</button>
+    </div>
+  </aside>
+  <div class="quiz-settings-overlay" id="quizSettingsOverlay"></div>
+
   <main class="main">
     <!-- 過去問ホーム画面 -->
     <div id="kakomonHome" class="home-screen">
