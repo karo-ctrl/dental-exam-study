@@ -34,7 +34,13 @@ const state = {
 
   // 画像モーダル状態
   currentImages: [],
-  currentImageIndex: 0
+  currentImageIndex: 0,
+
+  // タッチ操作用
+  touchStartX: 0,
+  touchStartY: 0,
+  touchEndX: 0,
+  touchEndY: 0
 };
 
 // ===== DOM要素 =====
@@ -542,9 +548,10 @@ function parseImageRef(imageRef, examId) {
 }
 
 function renderImageThumbnails(question) {
-  const examId = state.currentExam?.examId;
+  const examId = state.currentExam?.examId || question.examId;
   if (!examId || !question.imageRef) {
     elements.imageThumbnails.innerHTML = '';
+    elements.imageThumbnails.classList.remove('multiple');
     return;
   }
 
@@ -553,8 +560,12 @@ function renderImageThumbnails(question) {
 
   if (imagePaths.length === 0) {
     elements.imageThumbnails.innerHTML = '<span style="color: var(--text-muted); font-size: 0.85rem;">画像を読み込めません</span>';
+    elements.imageThumbnails.classList.remove('multiple');
     return;
   }
+
+  // 複数画像の場合はグリッド表示用のクラスを追加
+  elements.imageThumbnails.classList.toggle('multiple', imagePaths.length > 1);
 
   elements.imageThumbnails.innerHTML = imagePaths.map((path, idx) => `
     <img
@@ -608,6 +619,43 @@ function nextModalImage() {
   if (state.currentImageIndex < state.currentImages.length - 1) {
     state.currentImageIndex++;
     updateModalImage();
+  }
+}
+
+// スワイプ操作の設定
+function setupImageModalSwipe() {
+  const modalContent = document.querySelector('.image-modal-content');
+  if (!modalContent) return;
+
+  // タッチ開始
+  modalContent.addEventListener('touchstart', (e) => {
+    state.touchStartX = e.changedTouches[0].screenX;
+    state.touchStartY = e.changedTouches[0].screenY;
+  }, { passive: true });
+
+  // タッチ終了
+  modalContent.addEventListener('touchend', (e) => {
+    state.touchEndX = e.changedTouches[0].screenX;
+    state.touchEndY = e.changedTouches[0].screenY;
+    handleSwipe();
+  }, { passive: true });
+}
+
+// スワイプ処理
+function handleSwipe() {
+  const diffX = state.touchStartX - state.touchEndX;
+  const diffY = state.touchStartY - state.touchEndY;
+  const minSwipeDistance = 50;
+
+  // 水平方向のスワイプが垂直方向より大きい場合のみ処理
+  if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > minSwipeDistance) {
+    if (diffX > 0) {
+      // 左スワイプ = 次の画像
+      nextModalImage();
+    } else {
+      // 右スワイプ = 前の画像
+      prevModalImage();
+    }
   }
 }
 
@@ -1156,6 +1204,9 @@ function setupEventListeners() {
   elements.imageModalBackdrop?.addEventListener('click', closeImageModal);
   elements.imageModalPrev?.addEventListener('click', prevModalImage);
   elements.imageModalNext?.addEventListener('click', nextModalImage);
+
+  // 画像モーダルのスワイプ操作
+  setupImageModalSwipe();
 
   // キーボードナビゲーション
   document.addEventListener('keydown', (e) => {
