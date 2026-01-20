@@ -506,6 +506,22 @@ body {
   color: var(--text-secondary);
 }
 
+#currentIndex {
+  color: var(--accent-color);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+#currentIndex:hover {
+  background-color: var(--accent-light);
+}
+
+#currentIndex:active {
+  transform: scale(0.95);
+}
+
 /* ===== レスポンシブ ===== */
 @media (min-width: 768px) {
   .main {

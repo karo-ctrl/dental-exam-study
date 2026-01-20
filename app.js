@@ -3,6 +3,7 @@ const state = {
   // タブとビュー
   currentTab: 'kakomon', // 'kakomon', 'original', 'summary'
   currentView: 'home', // 'home', 'quiz'
+  kakomonWasInQuiz: false, // タブ切替時の状態保持用
 
   // レガシー（後で整理）
   mode: 'quiz', // 'quiz' or 'summary'
@@ -164,9 +165,9 @@ async function init() {
 }
 
 // ===== タブ切替 =====
-function switchTab(tab) {
+function switchTab(tab, forceHome = false) {
+  const previousTab = state.currentTab;
   state.currentTab = tab;
-  state.currentView = 'home';
 
   // 下部ナビのアクティブ状態更新
   elements.bottomNavItems.forEach(item => {
@@ -180,20 +181,34 @@ function switchTab(tab) {
   elements.quizScreen.style.display = 'none';
   elements.questionNav.style.display = 'none';
 
-  // 選択したタブのホーム画面を表示
-  switch (tab) {
-    case 'kakomon':
-      elements.kakomonHome.style.display = 'block';
-      elements.headerTitle.textContent = '過去問';
-      break;
-    case 'original':
-      elements.originalHome.style.display = 'block';
-      elements.headerTitle.textContent = 'オリジナル';
-      break;
-    case 'summary':
-      elements.summaryHome.style.display = 'block';
-      elements.headerTitle.textContent = 'まとめ';
-      break;
+  // 過去問タブで問題表示中だった場合は復元
+  if (tab === 'kakomon' && !forceHome && state.kakomonWasInQuiz && state.filteredQuestions.length > 0) {
+    state.currentView = 'quiz';
+    showQuizScreen();
+    elements.headerTitle.textContent = '過去問';
+  } else {
+    state.currentView = 'home';
+    // 選択したタブのホーム画面を表示
+    switch (tab) {
+      case 'kakomon':
+        elements.kakomonHome.style.display = 'block';
+        elements.headerTitle.textContent = '過去問';
+        elements.backBtn.style.display = 'none';
+        elements.menuBtn.style.display = 'flex';
+        break;
+      case 'original':
+        elements.originalHome.style.display = 'block';
+        elements.headerTitle.textContent = 'オリジナル';
+        elements.backBtn.style.display = 'none';
+        elements.menuBtn.style.display = 'flex';
+        break;
+      case 'summary':
+        elements.summaryHome.style.display = 'block';
+        elements.headerTitle.textContent = 'まとめ';
+        elements.backBtn.style.display = 'none';
+        elements.menuBtn.style.display = 'flex';
+        break;
+    }
   }
 
   saveState();
@@ -202,6 +217,7 @@ function switchTab(tab) {
 // ===== 問題画面表示 =====
 function showQuizScreen() {
   state.currentView = 'quiz';
+  state.kakomonWasInQuiz = true; // タブ切替時の復元用
 
   // ホーム画面を非表示
   elements.kakomonHome.style.display = 'none';
@@ -221,11 +237,13 @@ function showQuizScreen() {
 
 // ===== ホーム画面に戻る =====
 function backToHome() {
+  state.kakomonWasInQuiz = false; // 明示的にホームに戻る場合はフラグをリセット
+
   // ヘッダー更新
   elements.backBtn.style.display = 'none';
   elements.menuBtn.style.display = 'flex';
 
-  switchTab(state.currentTab);
+  switchTab(state.currentTab, true); // forceHome = true でホーム画面を強制表示
 }
 
 // ===== 今日の問題（ランダム出題） =====
@@ -431,15 +449,9 @@ function renderQuestion() {
     elements.showAnswerBtn.textContent = '解答を見る';
   }
 
-  if (state.answeredCards.has(question.id)) {
-    const answered = state.answeredCards.get(question.id);
-    state.selectedChoices = new Set(answered.selected);
-    state.showingAnswer = true;
-    showAnswer();
-  } else {
-    state.showingAnswer = false;
-    state.selectedChoices.clear();
-  }
+  // 常に未回答状態で表示（前後移動で回答リセット）
+  state.showingAnswer = false;
+  state.selectedChoices.clear();
 
   elements.quizFavoriteBtn.classList.toggle('active', state.favorites.has(question.id));
 
@@ -1076,6 +1088,39 @@ function updateNavButtons() {
   elements.nextBtn.disabled = state.currentIndex >= total - 1;
 }
 
+// 問題番号ジャンプ
+function showJumpDialog() {
+  const total = state.mode === 'quiz' ? state.filteredQuestions.length : state.flattenedCards.length;
+  if (total === 0) return;
+
+  const input = prompt(`問題番号を入力 (1〜${total})`, state.currentIndex + 1);
+  if (input === null) return; // キャンセル
+
+  const num = parseInt(input, 10);
+  if (isNaN(num) || num < 1 || num > total) {
+    alert(`1〜${total}の数字を入力してください`);
+    return;
+  }
+
+  jumpToQuestion(num - 1);
+}
+
+function jumpToQuestion(index) {
+  const total = state.mode === 'quiz' ? state.filteredQuestions.length : state.flattenedCards.length;
+  if (index < 0 || index >= total) return;
+
+  state.currentIndex = index;
+  state.showingAnswer = false;
+  state.selectedChoices.clear();
+
+  if (state.mode === 'quiz') {
+    renderQuestion();
+  } else {
+    renderSummaryCard();
+  }
+  updateProgress();
+}
+
 function goToPrev() {
   if (state.currentIndex > 0) {
     state.currentIndex--;
@@ -1303,6 +1348,9 @@ function setupEventListeners() {
   // ナビゲーション
   elements.prevBtn.addEventListener('click', goToPrev);
   elements.nextBtn.addEventListener('click', goToNext);
+
+  // 問題番号クリックでジャンプ
+  elements.currentIndexEl?.addEventListener('click', showJumpDialog);
 
   // お気に入り
   elements.quizFavoriteBtn?.addEventListener('click', toggleFavorite);
