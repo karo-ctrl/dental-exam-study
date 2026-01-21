@@ -5,6 +5,12 @@ const state = {
   currentView: 'home', // 'home', 'quiz'
   kakomonWasInQuiz: false, // タブ切替時の状態保持用
 
+  // Firebase認証
+  currentUser: null,
+  isAuthenticated: false,
+  inviteCodeVerified: false,
+  syncStatus: 'idle', // 'idle', 'syncing', 'synced', 'error'
+
   // レガシー（後で整理）
   mode: 'quiz', // 'quiz' or 'summary'
 
@@ -124,6 +130,13 @@ function initElements() {
   elements.todayCount = document.getElementById('todayCount');
   elements.todayDiff = document.getElementById('todayDiff');
   elements.loginBtn = document.getElementById('loginBtn');
+  elements.loginSection = document.querySelector('.setting-item-login');
+
+  // 招待コードモーダル
+  elements.inviteModal = document.getElementById('inviteModal');
+  elements.inviteCodeInput = document.getElementById('inviteCodeInput');
+  elements.inviteError = document.getElementById('inviteError');
+  elements.inviteSubmitBtn = document.getElementById('inviteSubmitBtn');
 
   // 出題設定パネル
   elements.quizSettingsPanel = document.getElementById('quizSettingsPanel');
@@ -1915,11 +1928,8 @@ function setupEventListeners() {
   elements.fontDecrease.addEventListener('click', () => changeFontSize(-10));
   elements.fontIncrease.addEventListener('click', () => changeFontSize(10));
 
-  // ログインボタン（仮）
-  elements.loginBtn?.addEventListener('click', () => {
-    // TODO: ログイン機能を実装
-    console.log('ログインボタンがクリックされました');
-  });
+  // ログインボタン（Firebase認証で処理）
+  elements.loginBtn?.addEventListener('click', handleGoogleLogin);
 
   // ナビゲーション
   elements.prevBtn.addEventListener('click', goToPrev);
@@ -2029,5 +2039,379 @@ function setupEventListeners() {
   });
 }
 
+// ===== Firebase認証・招待コード =====
+
+// 招待コードが検証済みかチェック
+function isInviteCodeVerified() {
+  return localStorage.getItem('dentalExamInviteVerified') === 'true';
+}
+
+// 招待コードモーダルを表示
+function showInviteModal() {
+  elements.inviteModal?.classList.add('open');
+  elements.inviteCodeInput?.focus();
+}
+
+// 招待コードモーダルを非表示
+function hideInviteModal() {
+  elements.inviteModal?.classList.remove('open');
+}
+
+// 招待コードを検証
+async function validateInviteCode(code) {
+  if (!window.firebaseDb || !window.firebaseFunctions) {
+    console.error('Firebase not initialized');
+    return { valid: false, error: 'システムエラーが発生しました' };
+  }
+
+  const { doc, getDoc, updateDoc, serverTimestamp } = window.firebaseFunctions;
+  const db = window.firebaseDb;
+
+  try {
+    const codeRef = doc(db, 'inviteCodes', code.toUpperCase());
+    const codeDoc = await getDoc(codeRef);
+
+    if (!codeDoc.exists()) {
+      return { valid: false, error: '無効な招待コードです' };
+    }
+
+    const codeData = codeDoc.data();
+
+    if (codeData.used) {
+      return { valid: false, error: 'このコードは既に使用されています' };
+    }
+
+    // コードを使用済みにする
+    await updateDoc(codeRef, {
+      used: true,
+      usedAt: serverTimestamp(),
+      usedBy: state.currentUser?.uid || 'anonymous'
+    });
+
+    return { valid: true };
+  } catch (error) {
+    console.error('Invite code validation error:', error);
+    return { valid: false, error: 'コードの確認中にエラーが発生しました' };
+  }
+}
+
+// 招待コード送信ハンドラ
+async function handleInviteSubmit() {
+  const code = elements.inviteCodeInput?.value.trim();
+
+  if (!code) {
+    elements.inviteError.textContent = '招待コードを入力してください';
+    return;
+  }
+
+  elements.inviteSubmitBtn.disabled = true;
+  elements.inviteSubmitBtn.textContent = '確認中...';
+  elements.inviteError.textContent = '';
+
+  const result = await validateInviteCode(code);
+
+  if (result.valid) {
+    localStorage.setItem('dentalExamInviteVerified', 'true');
+    state.inviteCodeVerified = true;
+    hideInviteModal();
+  } else {
+    elements.inviteError.textContent = result.error;
+  }
+
+  elements.inviteSubmitBtn.disabled = false;
+  elements.inviteSubmitBtn.textContent = '確認';
+}
+
+// Googleログイン
+async function handleGoogleLogin() {
+  if (!window.firebaseAuth || !window.firebaseProvider || !window.firebaseFunctions) {
+    console.error('Firebase not initialized');
+    alert('ログイン機能の準備中です。しばらくお待ちください。');
+    return;
+  }
+
+  const { signInWithPopup } = window.firebaseFunctions;
+
+  try {
+    const result = await signInWithPopup(window.firebaseAuth, window.firebaseProvider);
+    state.currentUser = result.user;
+    state.isAuthenticated = true;
+    updateLoginUI();
+
+    // ログイン後にデータを移行・同期
+    await migrateAndSyncData();
+  } catch (error) {
+    console.error('Google login error:', error);
+    if (error.code !== 'auth/popup-closed-by-user') {
+      alert('ログインに失敗しました: ' + error.message);
+    }
+  }
+}
+
+// ログアウト
+async function handleLogout() {
+  if (!window.firebaseAuth || !window.firebaseFunctions) return;
+
+  const { signOut } = window.firebaseFunctions;
+
+  try {
+    await signOut(window.firebaseAuth);
+    state.currentUser = null;
+    state.isAuthenticated = false;
+    updateLoginUI();
+  } catch (error) {
+    console.error('Logout error:', error);
+  }
+}
+
+// ログインUIを更新
+function updateLoginUI() {
+  if (!elements.loginSection) return;
+
+  if (state.isAuthenticated && state.currentUser) {
+    elements.loginSection.innerHTML = `
+      <div class="user-info">
+        <img src="${state.currentUser.photoURL || ''}" alt="" class="user-avatar" onerror="this.style.display='none'">
+        <div class="user-details">
+          <div class="user-name">${state.currentUser.displayName || 'ユーザー'}</div>
+          <div class="user-email">${state.currentUser.email || ''}</div>
+        </div>
+      </div>
+      <button class="btn-logout" id="logoutBtn">ログアウト</button>
+      <div class="sync-indicator ${state.syncStatus}" id="syncIndicator">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 0 1 9-9"></path>
+        </svg>
+        <span>${getSyncStatusText()}</span>
+      </div>
+    `;
+
+    document.getElementById('logoutBtn')?.addEventListener('click', handleLogout);
+  } else {
+    elements.loginSection.innerHTML = `
+      <button class="btn-login" id="loginBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+          <polyline points="10 17 15 12 10 7"></polyline>
+          <line x1="15" y1="12" x2="3" y2="12"></line>
+        </svg>
+        Googleでログイン
+      </button>
+    `;
+
+    document.getElementById('loginBtn')?.addEventListener('click', handleGoogleLogin);
+  }
+}
+
+function getSyncStatusText() {
+  switch (state.syncStatus) {
+    case 'syncing': return '同期中...';
+    case 'synced': return '同期済み';
+    case 'error': return '同期エラー';
+    default: return 'クラウド保存';
+  }
+}
+
+// Firestoreにデータを保存
+async function syncToFirestore() {
+  if (!state.isAuthenticated || !state.currentUser) return;
+  if (!window.firebaseDb || !window.firebaseFunctions) return;
+
+  const { doc, setDoc, serverTimestamp } = window.firebaseFunctions;
+  const db = window.firebaseDb;
+
+  state.syncStatus = 'syncing';
+  updateSyncIndicator();
+
+  try {
+    const userData = {
+      // 基本設定
+      theme: state.theme,
+      fontSize: state.fontSize,
+
+      // 出題設定
+      quizSettings: state.quizSettings,
+
+      // 学習データ
+      favorites: Array.from(state.favorites),
+      viewedCards: Array.from(state.viewedCards),
+      answeredCards: Array.from(state.answeredCards.entries()),
+
+      // 統計データ
+      dailyStats: state.dailyStats,
+      questionHistory: state.questionHistory,
+
+      // メタデータ
+      lastUpdated: serverTimestamp(),
+      appVersion: '1.0.0'
+    };
+
+    await setDoc(doc(db, 'users', state.currentUser.uid), userData, { merge: true });
+
+    state.syncStatus = 'synced';
+    console.log('Data synced to Firestore');
+  } catch (error) {
+    console.error('Sync error:', error);
+    state.syncStatus = 'error';
+  }
+
+  updateSyncIndicator();
+}
+
+// Firestoreからデータを読み込み
+async function loadFromFirestore() {
+  if (!state.isAuthenticated || !state.currentUser) return false;
+  if (!window.firebaseDb || !window.firebaseFunctions) return false;
+
+  const { doc, getDoc } = window.firebaseFunctions;
+  const db = window.firebaseDb;
+
+  try {
+    const userDoc = await getDoc(doc(db, 'users', state.currentUser.uid));
+
+    if (userDoc.exists()) {
+      const data = userDoc.data();
+
+      // 設定を復元
+      if (data.theme) {
+        state.theme = data.theme;
+        applyTheme(state.theme);
+      }
+      if (data.fontSize) {
+        state.fontSize = data.fontSize;
+        applyFontSize();
+      }
+      if (data.quizSettings) {
+        state.quizSettings = data.quizSettings;
+      }
+
+      // 学習データを復元
+      if (data.favorites) state.favorites = new Set(data.favorites);
+      if (data.viewedCards) state.viewedCards = new Set(data.viewedCards);
+      if (data.answeredCards) state.answeredCards = new Map(data.answeredCards);
+      if (data.dailyStats) state.dailyStats = data.dailyStats;
+      if (data.questionHistory) state.questionHistory = data.questionHistory;
+
+      console.log('Data loaded from Firestore');
+      return true;
+    }
+    return false;
+  } catch (error) {
+    console.error('Load from Firestore error:', error);
+    return false;
+  }
+}
+
+// LocalStorageからFirestoreへの移行
+async function migrateAndSyncData() {
+  if (!state.isAuthenticated || !state.currentUser) return;
+
+  // まずFirestoreからデータを読み込む
+  const hasCloudData = await loadFromFirestore();
+
+  if (!hasCloudData) {
+    // クラウドにデータがなければ、LocalStorageのデータを使用
+    loadState();
+    loadDailyStats();
+    loadQuestionHistory();
+    loadQuizSettings();
+
+    // Firestoreに保存
+    await syncToFirestore();
+    console.log('Local data migrated to Firestore');
+  }
+}
+
+// 同期インジケーターを更新
+function updateSyncIndicator() {
+  const indicator = document.getElementById('syncIndicator');
+  if (indicator) {
+    indicator.className = `sync-indicator ${state.syncStatus}`;
+    indicator.querySelector('span').textContent = getSyncStatusText();
+  }
+}
+
+// デバウンス付き同期（頻繁な保存を防ぐ）
+let syncTimeout = null;
+function debouncedSync() {
+  if (!state.isAuthenticated) return;
+
+  if (syncTimeout) clearTimeout(syncTimeout);
+  syncTimeout = setTimeout(() => {
+    syncToFirestore();
+  }, 2000); // 2秒後に同期
+}
+
+// 元のsaveState関数を拡張
+const originalSaveState = saveState;
+saveState = function() {
+  // LocalStorageにも保存（オフライン対応）
+  const saveData = {
+    mode: state.mode,
+    favorites: Array.from(state.favorites),
+    viewedCards: Array.from(state.viewedCards),
+    answeredCards: Array.from(state.answeredCards.entries()),
+    filter: state.filter,
+    theme: state.theme,
+    fontSize: state.fontSize,
+    currentExamId: state.currentExam?.examId,
+    currentCategory: state.currentCategory,
+    currentIndex: state.currentIndex
+  };
+  localStorage.setItem('dentalExamState', JSON.stringify(saveData));
+
+  // Firestoreにも同期
+  debouncedSync();
+};
+
+// Firebase認証状態の監視を設定
+function setupAuthStateListener() {
+  if (!window.firebaseAuth || !window.firebaseFunctions) {
+    // Firebaseがまだ読み込まれていない場合は後で再試行
+    setTimeout(setupAuthStateListener, 500);
+    return;
+  }
+
+  const { onAuthStateChanged } = window.firebaseFunctions;
+
+  onAuthStateChanged(window.firebaseAuth, async (user) => {
+    if (user) {
+      state.currentUser = user;
+      state.isAuthenticated = true;
+      await migrateAndSyncData();
+    } else {
+      state.currentUser = null;
+      state.isAuthenticated = false;
+    }
+    updateLoginUI();
+  });
+}
+
+// 招待コードのイベントリスナーを設定
+function setupInviteCodeListeners() {
+  elements.inviteSubmitBtn?.addEventListener('click', handleInviteSubmit);
+
+  elements.inviteCodeInput?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      handleInviteSubmit();
+    }
+  });
+}
+
 // ===== アプリ起動 =====
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', () => {
+  // DOM要素を初期化
+  initElements();
+
+  // 招待コードのチェック
+  if (!isInviteCodeVerified()) {
+    showInviteModal();
+    setupInviteCodeListeners();
+  }
+
+  // Firebase認証の監視を開始
+  setupAuthStateListener();
+
+  // 通常の初期化
+  init();
+});
