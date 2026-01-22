@@ -1815,6 +1815,7 @@ function closeSidebar() {
 
 function openSettings() {
   updateTodayStatsDisplay();
+  updateLoginUI(); // ログイン状態を反映
   elements.settingsPanel.classList.add('open');
   elements.settingsOverlay.classList.add('open');
 }
@@ -2232,34 +2233,60 @@ function updateLoginUI() {
   if (!elements.loginSection) return;
 
   if (state.isAuthenticated && state.currentUser) {
+    // ログイン済みの表示
+    const photoURL = state.currentUser.photoURL || '';
+    const displayName = state.currentUser.displayName || 'ユーザー';
+    const email = state.currentUser.email || '';
+
     elements.loginSection.innerHTML = `
       <div class="user-info">
-        <img src="${state.currentUser.photoURL || ''}" alt="" class="user-avatar" onerror="this.style.display='none'">
+        ${photoURL ? `<img src="${photoURL}" alt="" class="user-avatar" referrerpolicy="no-referrer">` : `
+          <div class="user-avatar-placeholder">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+        `}
         <div class="user-details">
-          <div class="user-name">${state.currentUser.displayName || 'ユーザー'}</div>
-          <div class="user-email">${state.currentUser.email || ''}</div>
+          <div class="user-name">${displayName}</div>
+          <div class="user-email">${email}</div>
         </div>
       </div>
-      <button class="btn-logout" id="logoutBtn">ログアウト</button>
-      <div class="sync-indicator ${state.syncStatus}" id="syncIndicator">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 0 1 9-9"></path>
-        </svg>
-        <span>${getSyncStatusText()}</span>
+      <div class="sync-status-bar">
+        <div class="sync-indicator ${state.syncStatus}" id="syncIndicator">
+          <svg class="sync-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M23 4v6h-6"></path>
+            <path d="M1 20v-6h6"></path>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+          <span>${getSyncStatusText()}</span>
+        </div>
       </div>
+      <button class="btn-logout" id="logoutBtn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+          <polyline points="16 17 21 12 16 7"></polyline>
+          <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+        ログアウト
+      </button>
     `;
 
     document.getElementById('logoutBtn')?.addEventListener('click', handleLogout);
   } else {
+    // 未ログインの表示（Googleアイコン付き）
     elements.loginSection.innerHTML = `
-      <button class="btn-login" id="loginBtn">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
-          <polyline points="10 17 15 12 10 7"></polyline>
-          <line x1="15" y1="12" x2="3" y2="12"></line>
+      <button class="btn-google-login" id="loginBtn">
+        <svg class="google-icon" width="18" height="18" viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
         </svg>
         Googleでログイン
       </button>
+      <p class="login-hint">ログインするとデータがクラウドに保存され、<br>別のデバイスでも使えるようになります</p>
     `;
 
     document.getElementById('loginBtn')?.addEventListener('click', handleGoogleLogin);
