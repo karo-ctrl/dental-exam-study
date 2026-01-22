@@ -21,10 +21,12 @@ const state = {
 
   // まとめモード用データ
   summaryIndex: null,
+  summaryAllCards: [], // 全まとめカードのフラット配列（検索用）
   currentCategoryData: null,
   currentCategory: null,
   currentTopic: null,
   flattenedCards: [],
+  recentSummaries: [], // 最近見たまとめ {id, title, categoryId, categoryName, color}
 
   // UI状態
   currentIndex: 0,
@@ -96,6 +98,21 @@ function initElements() {
   elements.originalHome = document.getElementById('originalHome');
   elements.summaryHome = document.getElementById('summaryHome');
   elements.quizScreen = document.getElementById('quizScreen');
+  elements.summaryCategoryScreen = document.getElementById('summaryCategoryScreen');
+
+  // まとめホームの要素
+  elements.summarySearchInput = document.getElementById('summarySearchInput');
+  elements.summarySearchClear = document.getElementById('summarySearchClear');
+  elements.summarySearchResults = document.getElementById('summarySearchResults');
+  elements.searchResultsCount = document.getElementById('searchResultsCount');
+  elements.searchResultsList = document.getElementById('searchResultsList');
+  elements.summaryCategoriesSection = document.getElementById('summaryCategoriesSection');
+  elements.summaryCategoriesGrid = document.getElementById('summaryCategoriesGrid');
+  elements.summaryRecentSection = document.getElementById('summaryRecentSection');
+  elements.summaryRecentList = document.getElementById('summaryRecentList');
+  elements.summaryCategoryTitle = document.getElementById('summaryCategoryTitle');
+  elements.summaryCategoryCount = document.getElementById('summaryCategoryCount');
+  elements.summaryTopicsList = document.getElementById('summaryTopicsList');
 
   // 過去問ホームのボタン
   elements.dailyHisshuBtn = document.getElementById('dailyHisshuBtn');
@@ -253,6 +270,9 @@ function switchTab(tab, forceHome = false) {
   elements.summaryHome.style.display = 'none';
   elements.quizScreen.style.display = 'none';
   elements.questionNav.style.display = 'none';
+  if (elements.summaryCategoryScreen) {
+    elements.summaryCategoryScreen.style.display = 'none';
+  }
 
   // 過去問タブで問題表示中だった場合は復元
   if (tab === 'kakomon' && !forceHome && state.kakomonWasInQuiz && state.filteredQuestions.length > 0) {
@@ -280,6 +300,8 @@ function switchTab(tab, forceHome = false) {
         elements.headerTitle.textContent = 'まとめ';
         elements.backBtn.style.display = 'none';
         elements.menuBtn.style.display = 'flex';
+        // まとめホームを初期化
+        initSummaryHome();
         break;
     }
   }
@@ -310,6 +332,30 @@ function showQuizScreen() {
 
 // ===== ホーム画面に戻る =====
 function backToHome() {
+  // まとめカード画面からはカテゴリ画面に戻る
+  if (state.currentView === 'summaryCard' && state.currentTab === 'summary') {
+    const category = state.summaryIndex?.categories.find(c => c.id === state.currentCategory);
+    if (category) {
+      openSummaryCategory(state.currentCategory);
+      return;
+    }
+  }
+
+  // まとめカテゴリ画面からはまとめホームに戻る
+  if (state.currentView === 'summaryCategory' && state.currentTab === 'summary') {
+    if (elements.summaryCategoryScreen) {
+      elements.summaryCategoryScreen.style.display = 'none';
+    }
+    elements.summaryHome.style.display = 'block';
+    elements.quizScreen.style.display = 'none';
+    elements.questionNav.style.display = 'none';
+    elements.backBtn.style.display = 'none';
+    elements.menuBtn.style.display = 'flex';
+    elements.headerTitle.textContent = 'まとめ';
+    state.currentView = 'home';
+    return;
+  }
+
   state.kakomonWasInQuiz = false; // 明示的にホームに戻る場合はフラグをリセット
 
   // ヘッダー更新
@@ -958,6 +1004,400 @@ function getCategoryEmoji(icon) {
     'accessibility': '♿'
   };
   return icons[icon] || '📚';
+}
+
+// ===== まとめホーム画面 =====
+
+// まとめホーム画面を初期化
+async function initSummaryHome() {
+  // インデックスデータを読み込み
+  if (!state.summaryIndex) {
+    try {
+      const response = await fetch('./data/summaries/index.json');
+      if (!response.ok) throw new Error('まとめデータの読み込みに失敗しました');
+      state.summaryIndex = await response.json();
+    } catch (error) {
+      console.error('まとめインデックス読み込みエラー:', error);
+      return;
+    }
+  }
+
+  // カテゴリグリッドを表示
+  renderSummaryCategoriesGrid();
+
+  // 最近見たまとめを表示
+  loadRecentSummaries();
+  renderRecentSummaries();
+
+  // 検索イベントを設定
+  setupSummarySearch();
+}
+
+// カテゴリグリッドを表示
+function renderSummaryCategoriesGrid() {
+  if (!state.summaryIndex || !elements.summaryCategoriesGrid) return;
+
+  elements.summaryCategoriesGrid.innerHTML = state.summaryIndex.categories.map(cat => `
+    <div class="summary-category-card" data-category-id="${cat.id}">
+      <div class="summary-category-icon" style="background-color: ${cat.color}">
+        ${getCategoryEmoji(cat.icon)}
+      </div>
+      <div class="summary-category-name">${cat.name}</div>
+      <div class="summary-category-count">${cat.topicCount}件</div>
+    </div>
+  `).join('');
+
+  // クリックイベント
+  elements.summaryCategoriesGrid.querySelectorAll('.summary-category-card').forEach(card => {
+    card.addEventListener('click', () => {
+      openSummaryCategory(card.dataset.categoryId);
+    });
+  });
+}
+
+// カテゴリ詳細画面を開く
+async function openSummaryCategory(categoryId) {
+  const category = state.summaryIndex.categories.find(c => c.id === categoryId);
+  if (!category) return;
+
+  // カテゴリデータを読み込み
+  try {
+    const response = await fetch(`./data/summaries/${categoryId}.json`);
+    if (!response.ok) throw new Error('カテゴリデータの読み込みに失敗しました');
+    state.currentCategoryData = await response.json();
+  } catch (error) {
+    console.error('カテゴリデータ読み込みエラー:', error);
+    return;
+  }
+
+  // ヘッダー更新
+  if (elements.summaryCategoryTitle) {
+    elements.summaryCategoryTitle.textContent = category.name;
+  }
+
+  // カード数をカウント
+  let cardCount = 0;
+  state.currentCategoryData.topics.forEach(topic => {
+    cardCount += topic.cards.length;
+  });
+  if (elements.summaryCategoryCount) {
+    elements.summaryCategoryCount.textContent = `${cardCount}件`;
+  }
+
+  // トピックリストを表示
+  renderSummaryTopicsList(category);
+
+  // 画面を切り替え
+  elements.summaryHome.style.display = 'none';
+  elements.summaryCategoryScreen.style.display = 'block';
+  elements.backBtn.style.display = 'block';
+  elements.headerTitle.textContent = category.name;
+
+  state.currentView = 'summaryCategory';
+  state.currentCategory = categoryId;
+}
+
+// トピックリストを表示
+function renderSummaryTopicsList(category) {
+  if (!elements.summaryTopicsList || !state.currentCategoryData) return;
+
+  elements.summaryTopicsList.innerHTML = state.currentCategoryData.topics.map((topic, topicIdx) => `
+    <div class="summary-topic-group" data-topic-id="${topic.id}">
+      <div class="summary-topic-header">
+        <span class="summary-topic-name">${topic.name}</span>
+        <svg class="summary-topic-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+      <div class="summary-topic-cards">
+        ${topic.cards.map((card, cardIdx) => `
+          <div class="summary-card-item" data-card-id="${card.id}" data-category-id="${category.id}">
+            <span class="summary-card-number">${cardIdx + 1}</span>
+            <span class="summary-card-title">${card.title}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  // トピック開閉イベント
+  elements.summaryTopicsList.querySelectorAll('.summary-topic-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.parentElement.classList.toggle('expanded');
+    });
+  });
+
+  // カードクリックイベント
+  elements.summaryTopicsList.querySelectorAll('.summary-card-item').forEach(item => {
+    item.addEventListener('click', () => {
+      openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+    });
+  });
+
+  // 最初のトピックを開く
+  const firstTopic = elements.summaryTopicsList.querySelector('.summary-topic-group');
+  if (firstTopic) {
+    firstTopic.classList.add('expanded');
+  }
+}
+
+// まとめカードを開く
+async function openSummaryCard(cardId, categoryId) {
+  // カテゴリデータがなければ読み込み
+  if (!state.currentCategoryData || state.currentCategoryData.categoryId !== categoryId) {
+    try {
+      const response = await fetch(`./data/summaries/${categoryId}.json`);
+      if (!response.ok) throw new Error('カテゴリデータの読み込みに失敗しました');
+      state.currentCategoryData = await response.json();
+    } catch (error) {
+      console.error('カテゴリデータ読み込みエラー:', error);
+      return;
+    }
+  }
+
+  // カードをフラット化してインデックスを見つける
+  state.flattenedCards = [];
+  let targetIndex = 0;
+  state.currentCategoryData.topics.forEach(topic => {
+    topic.cards.forEach(card => {
+      if (card.id === cardId) {
+        targetIndex = state.flattenedCards.length;
+      }
+      state.flattenedCards.push({
+        ...card,
+        topicId: topic.id,
+        topicName: topic.name
+      });
+    });
+  });
+
+  state.currentIndex = targetIndex;
+  state.currentCategory = categoryId;
+  state.mode = 'summary';
+
+  // 最近見たまとめに追加
+  addToRecentSummaries(cardId, categoryId);
+
+  // カード表示
+  showSummaryCardScreen();
+  renderSummaryCard();
+  updateNavButtons();
+}
+
+// まとめカード画面を表示
+function showSummaryCardScreen() {
+  const category = state.summaryIndex?.categories.find(c => c.id === state.currentCategory);
+
+  elements.summaryHome.style.display = 'none';
+  elements.summaryCategoryScreen.style.display = 'none';
+  elements.quizScreen.style.display = 'block';
+  elements.quizCard.style.display = 'none';
+  elements.summaryCard.style.display = 'block';
+  elements.questionNav.style.display = 'flex';
+  elements.backBtn.style.display = 'block';
+  elements.headerTitle.textContent = category?.name || 'まとめ';
+
+  state.currentView = 'summaryCard';
+}
+
+// 最近見たまとめに追加
+function addToRecentSummaries(cardId, categoryId) {
+  const category = state.summaryIndex?.categories.find(c => c.id === categoryId);
+  const card = state.flattenedCards.find(c => c.id === cardId);
+
+  if (!category || !card) return;
+
+  // 既存のエントリを削除
+  state.recentSummaries = state.recentSummaries.filter(r => r.id !== cardId);
+
+  // 先頭に追加
+  state.recentSummaries.unshift({
+    id: cardId,
+    title: card.title,
+    categoryId: categoryId,
+    categoryName: category.name,
+    color: category.color
+  });
+
+  // 最大10件まで
+  if (state.recentSummaries.length > 10) {
+    state.recentSummaries = state.recentSummaries.slice(0, 10);
+  }
+
+  // 保存
+  saveRecentSummaries();
+}
+
+// 最近見たまとめを保存
+function saveRecentSummaries() {
+  localStorage.setItem('dentalExamRecentSummaries', JSON.stringify(state.recentSummaries));
+}
+
+// 最近見たまとめを読み込み
+function loadRecentSummaries() {
+  const saved = localStorage.getItem('dentalExamRecentSummaries');
+  if (saved) {
+    state.recentSummaries = JSON.parse(saved);
+  }
+}
+
+// 最近見たまとめを表示
+function renderRecentSummaries() {
+  if (!elements.summaryRecentList) return;
+
+  if (state.recentSummaries.length === 0) {
+    elements.summaryRecentList.innerHTML = '<p class="empty-message">まだ閲覧したまとめがありません</p>';
+    return;
+  }
+
+  elements.summaryRecentList.innerHTML = state.recentSummaries.map(item => `
+    <div class="summary-recent-item" data-card-id="${item.id}" data-category-id="${item.categoryId}">
+      <div class="summary-recent-dot" style="background-color: ${item.color}"></div>
+      <span class="summary-recent-title">${item.title}</span>
+      <span class="summary-recent-category">${item.categoryName}</span>
+    </div>
+  `).join('');
+
+  // クリックイベント
+  elements.summaryRecentList.querySelectorAll('.summary-recent-item').forEach(item => {
+    item.addEventListener('click', () => {
+      openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+    });
+  });
+}
+
+// まとめ検索を設定
+function setupSummarySearch() {
+  if (!elements.summarySearchInput) return;
+
+  let searchTimeout = null;
+
+  elements.summarySearchInput.addEventListener('input', (e) => {
+    const query = e.target.value.trim();
+
+    // クリアボタン表示切替
+    if (elements.summarySearchClear) {
+      elements.summarySearchClear.style.display = query ? 'flex' : 'none';
+    }
+
+    // デバウンス検索
+    if (searchTimeout) clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      if (query.length >= 2) {
+        searchSummaries(query);
+      } else {
+        hideSearchResults();
+      }
+    }, 300);
+  });
+
+  // クリアボタン
+  elements.summarySearchClear?.addEventListener('click', () => {
+    elements.summarySearchInput.value = '';
+    elements.summarySearchClear.style.display = 'none';
+    hideSearchResults();
+  });
+}
+
+// まとめを検索
+async function searchSummaries(query) {
+  const results = [];
+  const lowerQuery = query.toLowerCase();
+
+  // 全カテゴリのデータを検索
+  for (const category of state.summaryIndex.categories) {
+    try {
+      // キャッシュがあれば使用
+      let categoryData;
+      if (state.currentCategoryData?.categoryId === category.id) {
+        categoryData = state.currentCategoryData;
+      } else {
+        const response = await fetch(`./data/summaries/${category.id}.json`);
+        if (response.ok) {
+          categoryData = await response.json();
+        }
+      }
+
+      if (categoryData?.topics) {
+        categoryData.topics.forEach(topic => {
+          topic.cards.forEach(card => {
+            // タイトル、コンテンツ、キーポイント、タグで検索
+            const searchText = [
+              card.title,
+              card.content,
+              ...(card.keyPoints || []),
+              ...(card.tags || [])
+            ].join(' ').toLowerCase();
+
+            if (searchText.includes(lowerQuery)) {
+              results.push({
+                id: card.id,
+                title: card.title,
+                categoryId: category.id,
+                categoryName: category.name,
+                color: category.color
+              });
+            }
+          });
+        });
+      }
+    } catch (error) {
+      console.log(`カテゴリ ${category.id} の検索スキップ`);
+    }
+  }
+
+  // 結果を表示
+  showSearchResults(results);
+}
+
+// 検索結果を表示
+function showSearchResults(results) {
+  if (!elements.summarySearchResults) return;
+
+  elements.summarySearchResults.style.display = 'block';
+  elements.summaryCategoriesSection.style.display = 'none';
+  elements.summaryRecentSection.style.display = 'none';
+
+  if (elements.searchResultsCount) {
+    elements.searchResultsCount.textContent = `${results.length}件の結果`;
+  }
+
+  if (results.length === 0) {
+    elements.searchResultsList.innerHTML = '<p class="empty-message">該当するまとめが見つかりませんでした</p>';
+    return;
+  }
+
+  elements.searchResultsList.innerHTML = results.slice(0, 20).map(item => `
+    <div class="search-result-item" data-card-id="${item.id}" data-category-id="${item.categoryId}">
+      <div class="search-result-icon" style="background-color: ${item.color}">
+        ${getCategoryEmoji(state.summaryIndex.categories.find(c => c.id === item.categoryId)?.icon)}
+      </div>
+      <div class="search-result-content">
+        <div class="search-result-title">${item.title}</div>
+        <div class="search-result-category">${item.categoryName}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // クリックイベント
+  elements.searchResultsList.querySelectorAll('.search-result-item').forEach(item => {
+    item.addEventListener('click', () => {
+      openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+    });
+  });
+}
+
+// 検索結果を非表示
+function hideSearchResults() {
+  if (elements.summarySearchResults) {
+    elements.summarySearchResults.style.display = 'none';
+  }
+  if (elements.summaryCategoriesSection) {
+    elements.summaryCategoriesSection.style.display = 'block';
+  }
+  if (elements.summaryRecentSection) {
+    elements.summaryRecentSection.style.display = 'block';
+  }
 }
 
 async function selectCategory(categoryId) {

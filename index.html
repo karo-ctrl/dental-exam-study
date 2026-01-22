@@ -397,16 +397,60 @@
       </div>
     </div>
 
-    <!-- まとめホーム画面（後で実装） -->
+    <!-- まとめホーム画面 -->
     <div id="summaryHome" class="home-screen" style="display: none;">
       <div class="home-content">
-        <div class="coming-soon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-          </svg>
-          <p>まとめ機能は準備中です</p>
+        <!-- 検索バー -->
+        <div class="summary-search-section">
+          <div class="summary-search-bar">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="summarySearchInput" class="summary-search-input" placeholder="キーワードで検索...">
+            <button class="summary-search-clear" id="summarySearchClear" style="display: none;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
         </div>
+
+        <!-- 検索結果（検索時のみ表示） -->
+        <div class="summary-search-results" id="summarySearchResults" style="display: none;">
+          <div class="search-results-header">
+            <span id="searchResultsCount">0件の結果</span>
+          </div>
+          <div class="search-results-list" id="searchResultsList"></div>
+        </div>
+
+        <!-- カテゴリセクション -->
+        <div class="summary-categories-section" id="summaryCategoriesSection">
+          <h2 class="section-title">カテゴリ</h2>
+          <div class="summary-categories-grid" id="summaryCategoriesGrid">
+            <!-- カテゴリがJSで動的に追加される -->
+          </div>
+        </div>
+
+        <!-- 最近見たまとめ -->
+        <div class="summary-recent-section" id="summaryRecentSection">
+          <h2 class="section-title">最近見たまとめ</h2>
+          <div class="summary-recent-list" id="summaryRecentList">
+            <p class="empty-message">まだ閲覧したまとめがありません</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- まとめカテゴリ一覧画面 -->
+    <div id="summaryCategoryScreen" class="quiz-screen" style="display: none;">
+      <div class="summary-list-container">
+        <div class="summary-list-header">
+          <h2 id="summaryCategoryTitle">解剖学</h2>
+          <span id="summaryCategoryCount">0件</span>
+        </div>
+        <div class="summary-topics-list" id="summaryTopicsList"></div>
       </div>
     </div>
 
