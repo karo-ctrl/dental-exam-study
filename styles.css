@@ -2386,14 +2386,14 @@ body {
   transform: scale(0.98);
 }
 
-/* ===== 招待コードモーダル ===== */
-.invite-modal {
+/* ===== ログインページ（フルスクリーン） ===== */
+.login-page {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -2404,86 +2404,240 @@ body {
   transition: opacity 0.3s, visibility 0.3s;
 }
 
-.invite-modal.open {
+[data-theme="dark"] .login-page {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.login-page.open {
   opacity: 1;
   visibility: visible;
 }
 
-.invite-modal-content {
-  background-color: var(--card-bg);
-  border-radius: 16px;
-  padding: 32px 24px;
-  max-width: 360px;
+.login-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 32px;
+  max-width: 400px;
   width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .login-container {
+  background-color: #1e1e1e;
+}
+
+.login-header {
   text-align: center;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  margin-bottom: 32px;
 }
 
-.invite-modal-icon {
-  margin-bottom: 16px;
-  color: var(--accent-color);
+.login-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  color: white;
 }
 
-.invite-modal-content h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
+[data-theme="dark"] .login-icon {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
   margin-bottom: 8px;
-  color: var(--text-color);
 }
 
-.invite-description {
+[data-theme="dark"] .login-title {
+  color: #f0f0f0;
+}
+
+.login-subtitle {
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: #666;
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .login-subtitle {
+  color: #999;
+}
+
+.login-form {
   margin-bottom: 24px;
 }
 
-.invite-input {
+.login-input-group {
+  margin-bottom: 20px;
+}
+
+.login-input-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .login-input-group label {
+  color: #ccc;
+}
+
+.login-input {
   width: 100%;
-  padding: 14px 16px;
-  border: 2px solid var(--border-color);
-  border-radius: var(--border-radius);
+  padding: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
   font-size: 1rem;
   text-align: center;
-  letter-spacing: 2px;
-  font-weight: 500;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: border-color 0.2s;
+  letter-spacing: 3px;
+  font-weight: 600;
+  background-color: #fafafa;
+  color: #333;
+  transition: all 0.2s;
 }
 
-.invite-input:focus {
+[data-theme="dark"] .login-input {
+  background-color: #2a2a2a;
+  border-color: #404040;
+  color: #f0f0f0;
+}
+
+.login-input:focus {
   outline: none;
-  border-color: var(--accent-color);
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
 }
 
-.invite-error {
-  color: #ef4444;
-  font-size: 0.85rem;
-  margin-top: 8px;
-  min-height: 20px;
+[data-theme="dark"] .login-input:focus {
+  background-color: #333;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2);
 }
 
-.btn-invite-submit {
+.login-input::placeholder {
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #999;
+}
+
+.btn-login-submit {
   width: 100%;
-  padding: 14px;
-  margin-top: 16px;
-  background-color: var(--accent-color);
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
-.btn-invite-submit:hover {
-  background-color: var(--accent-hover);
+.btn-login-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 }
 
-.btn-invite-submit:disabled {
-  background-color: var(--border-color);
+.btn-login-submit:active {
+  transform: translateY(0);
+}
+
+.btn-login-submit:disabled {
+  background: #ccc;
+  box-shadow: none;
   cursor: not-allowed;
+  transform: none;
+}
+
+[data-theme="dark"] .btn-login-submit:disabled {
+  background: #404040;
+}
+
+/* ログインエラー表示エリア */
+.login-error-area {
+  display: none;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+[data-theme="dark"] .login-error-area {
+  background-color: #2d1f1f;
+  border-color: #5c2828;
+}
+
+.login-error-area.show {
+  display: block;
+}
+
+.login-error-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #dc2626;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+[data-theme="dark"] .login-error-title {
+  color: #f87171;
+}
+
+.login-error-details {
+  font-size: 0.85rem;
+  color: #7f1d1d;
+  line-height: 1.8;
+}
+
+[data-theme="dark"] .login-error-details {
+  color: #fca5a5;
+}
+
+.login-error-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login-error-details li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 4px;
+}
+
+.login-error-details li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.login-footer {
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+[data-theme="dark"] .login-footer {
+  border-top-color: #404040;
+}
+
+.login-footer p {
+  font-size: 0.8rem;
+  color: #999;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .login-footer p {
+  color: #666;
 }
 
 /* ===== ログインボタン（設定パネル内） ===== */

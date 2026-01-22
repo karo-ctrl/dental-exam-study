@@ -132,11 +132,13 @@ function initElements() {
   elements.loginBtn = document.getElementById('loginBtn');
   elements.loginSection = document.querySelector('.setting-item-login');
 
-  // 招待コードモーダル
-  elements.inviteModal = document.getElementById('inviteModal');
+  // ログインページ（招待コード）
+  elements.loginPage = document.getElementById('loginPage');
   elements.inviteCodeInput = document.getElementById('inviteCodeInput');
-  elements.inviteError = document.getElementById('inviteError');
   elements.inviteSubmitBtn = document.getElementById('inviteSubmitBtn');
+  elements.loginErrorArea = document.getElementById('loginErrorArea');
+  elements.loginErrorTitle = document.getElementById('loginErrorTitle');
+  elements.loginErrorDetails = document.getElementById('loginErrorDetails');
 
   // 出題設定パネル
   elements.quizSettingsPanel = document.getElementById('quizSettingsPanel');
@@ -2046,15 +2048,37 @@ function isInviteCodeVerified() {
   return localStorage.getItem('dentalExamInviteVerified') === 'true';
 }
 
-// 招待コードモーダルを表示
-function showInviteModal() {
-  elements.inviteModal?.classList.add('open');
-  elements.inviteCodeInput?.focus();
+// ログインページを表示
+function showLoginPage() {
+  elements.loginPage?.classList.add('open');
+  setTimeout(() => {
+    elements.inviteCodeInput?.focus();
+  }, 300);
 }
 
-// 招待コードモーダルを非表示
-function hideInviteModal() {
-  elements.inviteModal?.classList.remove('open');
+// ログインページを非表示
+function hideLoginPage() {
+  elements.loginPage?.classList.remove('open');
+}
+
+// ログインエラーを表示
+function showLoginError(title, details) {
+  if (elements.loginErrorArea) {
+    elements.loginErrorArea.classList.add('show');
+  }
+  if (elements.loginErrorTitle) {
+    elements.loginErrorTitle.textContent = title;
+  }
+  if (elements.loginErrorDetails) {
+    elements.loginErrorDetails.innerHTML = details;
+  }
+}
+
+// ログインエラーを非表示
+function hideLoginError() {
+  if (elements.loginErrorArea) {
+    elements.loginErrorArea.classList.remove('show');
+  }
 }
 
 // 招待コードを検証
@@ -2127,27 +2151,38 @@ async function validateInviteCode(code) {
 async function handleInviteSubmit() {
   const code = elements.inviteCodeInput?.value.trim();
 
+  // エラー表示をリセット
+  hideLoginError();
+
   if (!code) {
-    elements.inviteError.textContent = '招待コードを入力してください';
+    showLoginError('招待コードを入力してください', '');
     return;
   }
 
   elements.inviteSubmitBtn.disabled = true;
-  elements.inviteSubmitBtn.textContent = '確認中...';
-  elements.inviteError.textContent = '';
+  elements.inviteSubmitBtn.textContent = 'ログイン中...';
 
   const result = await validateInviteCode(code);
 
   if (result.valid) {
     localStorage.setItem('dentalExamInviteVerified', 'true');
     state.inviteCodeVerified = true;
-    hideInviteModal();
+    hideLoginPage();
   } else {
-    elements.inviteError.textContent = result.error;
+    // 詳細なエラーメッセージを表示
+    const errorDetails = `
+      <p style="margin-bottom: 12px;">以下を確認してください</p>
+      <ul>
+        <li>全角と半角間違えていませんか？</li>
+        <li>大文字と小文字間違えていませんか？</li>
+        <li>ログイン失敗が続く場合は招待者に問い合わせてください</li>
+      </ul>
+    `;
+    showLoginError('ログイン失敗しました', errorDetails);
   }
 
   elements.inviteSubmitBtn.disabled = false;
-  elements.inviteSubmitBtn.textContent = '確認';
+  elements.inviteSubmitBtn.textContent = 'ログイン';
 }
 
 // Googleログイン
@@ -2433,7 +2468,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 招待コードのチェック
   if (!isInviteCodeVerified()) {
-    showInviteModal();
+    showLoginPage();
     setupInviteCodeListeners();
   }
 
