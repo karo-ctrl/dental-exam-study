@@ -425,19 +425,73 @@
           <div class="search-results-list" id="searchResultsList"></div>
         </div>
 
-        <!-- カテゴリセクション -->
-        <div class="summary-categories-section" id="summaryCategoriesSection">
-          <h2 class="section-title">カテゴリ</h2>
-          <div class="summary-categories-grid" id="summaryCategoriesGrid">
-            <!-- カテゴリがJSで動的に追加される -->
+        <!-- カテゴリセクション（トグル） -->
+        <div class="summary-toggle-section" id="summaryCategoriesSection">
+          <button class="summary-toggle-header" data-toggle="categories">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">カテゴリ</span>
+            <span class="toggle-badge" id="categoryCount">0</span>
+          </button>
+          <div class="summary-toggle-content" id="categoriesToggleContent">
+            <div class="summary-categories-grid" id="summaryCategoriesGrid">
+              <!-- カテゴリがJSで動的に追加される -->
+            </div>
           </div>
         </div>
 
-        <!-- 最近見たまとめ -->
-        <div class="summary-recent-section" id="summaryRecentSection">
-          <h2 class="section-title">最近見たまとめ</h2>
-          <div class="summary-recent-list" id="summaryRecentList">
-            <p class="empty-message">まだ閲覧したまとめがありません</p>
+        <!-- 最近見たまとめ（トグル） -->
+        <div class="summary-toggle-section" id="summaryRecentSection">
+          <button class="summary-toggle-header" data-toggle="recent">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">最近見たまとめ</span>
+            <span class="toggle-badge" id="recentCount">0</span>
+          </button>
+          <div class="summary-toggle-content" id="recentToggleContent">
+            <div class="summary-recent-list" id="summaryRecentList">
+              <p class="empty-message">まだ閲覧したまとめがありません</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ランキング（トグル） -->
+        <div class="summary-toggle-section" id="summaryRankingSection">
+          <button class="summary-toggle-header" data-toggle="ranking">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">ランキング</span>
+            <svg class="ranking-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+          <div class="summary-toggle-content" id="rankingToggleContent">
+            <div class="ranking-tabs">
+              <button class="ranking-tab active" data-period="weekly">週間TOP5</button>
+              <button class="ranking-tab" data-period="yearly">年間TOP5</button>
+            </div>
+            <div class="ranking-list" id="rankingList">
+              <p class="empty-message">ランキングデータを読み込み中...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- お気に入り（トグル） -->
+        <div class="summary-toggle-section" id="summaryFavoritesSection">
+          <button class="summary-toggle-header" data-toggle="favorites">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">お気に入り</span>
+            <span class="toggle-badge" id="favoritesCount">0</span>
+          </button>
+          <div class="summary-toggle-content" id="favoritesToggleContent">
+            <div class="favorites-list" id="favoritesList">
+              <p class="empty-message">お気に入りに追加したまとめがありません</p>
+            </div>
           </div>
         </div>
       </div>

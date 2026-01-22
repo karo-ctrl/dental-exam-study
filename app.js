@@ -27,6 +27,8 @@ const state = {
   currentTopic: null,
   flattenedCards: [],
   recentSummaries: [], // 最近見たまとめ {id, title, categoryId, categoryName, color}
+  summaryFavorites: [], // お気に入りまとめ {id, title, categoryId, categoryName, color}
+  rankingPeriod: 'weekly', // 'weekly' or 'yearly'
 
   // UI状態
   currentIndex: 0,
@@ -110,6 +112,13 @@ function initElements() {
   elements.summaryCategoriesGrid = document.getElementById('summaryCategoriesGrid');
   elements.summaryRecentSection = document.getElementById('summaryRecentSection');
   elements.summaryRecentList = document.getElementById('summaryRecentList');
+  elements.summaryRankingSection = document.getElementById('summaryRankingSection');
+  elements.rankingList = document.getElementById('rankingList');
+  elements.summaryFavoritesSection = document.getElementById('summaryFavoritesSection');
+  elements.favoritesList = document.getElementById('favoritesList');
+  elements.categoryCount = document.getElementById('categoryCount');
+  elements.recentCount = document.getElementById('recentCount');
+  elements.favoritesCount = document.getElementById('favoritesCount');
   elements.summaryCategoryTitle = document.getElementById('summaryCategoryTitle');
   elements.summaryCategoryCount = document.getElementById('summaryCategoryCount');
   elements.summaryTopicsList = document.getElementById('summaryTopicsList');
@@ -1022,6 +1031,9 @@ async function initSummaryHome() {
     }
   }
 
+  // トグルセクションを設定
+  setupSummaryToggles();
+
   // カテゴリグリッドを表示
   renderSummaryCategoriesGrid();
 
@@ -1029,8 +1041,56 @@ async function initSummaryHome() {
   loadRecentSummaries();
   renderRecentSummaries();
 
+  // お気に入りを表示
+  loadSummaryFavorites();
+  renderSummaryFavorites();
+
+  // ランキングを表示
+  loadRanking();
+
   // 検索イベントを設定
   setupSummarySearch();
+
+  // バッジを更新
+  updateSummaryBadges();
+}
+
+// トグルセクションを設定
+function setupSummaryToggles() {
+  const toggleHeaders = document.querySelectorAll('.summary-toggle-header');
+  toggleHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+      const section = header.parentElement;
+      section.classList.toggle('open');
+    });
+  });
+
+  // ランキングタブを設定
+  const rankingTabs = document.querySelectorAll('.ranking-tab');
+  rankingTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      rankingTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      state.rankingPeriod = tab.dataset.period;
+      renderRanking();
+    });
+  });
+
+  // デフォルトでカテゴリを開く
+  elements.summaryCategoriesSection?.classList.add('open');
+}
+
+// バッジを更新
+function updateSummaryBadges() {
+  if (elements.categoryCount && state.summaryIndex) {
+    elements.categoryCount.textContent = state.summaryIndex.categories.length;
+  }
+  if (elements.recentCount) {
+    elements.recentCount.textContent = state.recentSummaries.length;
+  }
+  if (elements.favoritesCount) {
+    elements.favoritesCount.textContent = state.summaryFavorites.length;
+  }
 }
 
 // カテゴリグリッドを表示
@@ -1226,6 +1286,9 @@ function addToRecentSummaries(cardId, categoryId) {
 
   // 保存
   saveRecentSummaries();
+
+  // Firestoreに閲覧記録
+  recordSummaryView(cardId, categoryId, card.title, category.name, category.color);
 }
 
 // 最近見たまとめを保存
@@ -1264,6 +1327,224 @@ function renderRecentSummaries() {
       openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
     });
   });
+
+  // バッジを更新
+  if (elements.recentCount) {
+    elements.recentCount.textContent = state.recentSummaries.length;
+  }
+}
+
+// ===== ランキング機能 =====
+
+// ランキングデータを読み込み
+async function loadRanking() {
+  if (!elements.rankingList) return;
+
+  // Firestoreからランキングデータを取得
+  try {
+    if (window.firebaseDb && window.firebaseFunctions && state.isAuthenticated) {
+      const { doc, getDoc } = window.firebaseFunctions;
+
+      // 週間ランキング
+      const weeklyDoc = await getDoc(doc(window.firebaseDb, 'rankings', 'weekly'));
+      const yearlyDoc = await getDoc(doc(window.firebaseDb, 'rankings', 'yearly'));
+
+      state.weeklyRanking = weeklyDoc.exists() ? weeklyDoc.data().items || [] : [];
+      state.yearlyRanking = yearlyDoc.exists() ? yearlyDoc.data().items || [] : [];
+    } else {
+      // ローカルの閲覧履歴からランキングを生成
+      generateLocalRanking();
+    }
+  } catch (error) {
+    console.error('ランキング読み込みエラー:', error);
+    generateLocalRanking();
+  }
+
+  renderRanking();
+}
+
+// ローカルデータからランキングを生成
+function generateLocalRanking() {
+  // 最近見たまとめから頻度をカウント
+  const viewCounts = {};
+  state.recentSummaries.forEach(item => {
+    if (!viewCounts[item.id]) {
+      viewCounts[item.id] = { ...item, count: 0 };
+    }
+    viewCounts[item.id].count++;
+  });
+
+  // ソートして上位5件を取得
+  const sorted = Object.values(viewCounts)
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 5);
+
+  state.weeklyRanking = sorted;
+  state.yearlyRanking = sorted;
+}
+
+// ランキングを表示
+function renderRanking() {
+  if (!elements.rankingList) return;
+
+  const ranking = state.rankingPeriod === 'weekly' ? state.weeklyRanking : state.yearlyRanking;
+
+  if (!ranking || ranking.length === 0) {
+    elements.rankingList.innerHTML = '<p class="empty-message">まだランキングデータがありません</p>';
+    return;
+  }
+
+  elements.rankingList.innerHTML = ranking.map((item, index) => {
+    const rankClass = index === 0 ? 'gold' : index === 1 ? 'silver' : index === 2 ? 'bronze' : 'normal';
+    return `
+      <div class="ranking-item" data-card-id="${item.id}" data-category-id="${item.categoryId}">
+        <div class="ranking-rank ${rankClass}">${index + 1}</div>
+        <div class="ranking-info">
+          <div class="ranking-title">${item.title}</div>
+          <div class="ranking-category">${item.categoryName}</div>
+        </div>
+        <div class="ranking-views">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+          ${item.count || 0}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // クリックイベント
+  elements.rankingList.querySelectorAll('.ranking-item').forEach(item => {
+    item.addEventListener('click', () => {
+      openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+    });
+  });
+}
+
+// 閲覧をFirestoreに記録
+async function recordSummaryView(cardId, categoryId, title, categoryName, color) {
+  if (!window.firebaseDb || !window.firebaseFunctions || !state.isAuthenticated) return;
+
+  try {
+    const { doc, getDoc, setDoc, serverTimestamp } = window.firebaseFunctions;
+    const viewRef = doc(window.firebaseDb, 'summaryViews', cardId);
+
+    const viewDoc = await getDoc(viewRef);
+    const currentData = viewDoc.exists() ? viewDoc.data() : { count: 0 };
+
+    await setDoc(viewRef, {
+      id: cardId,
+      categoryId,
+      title,
+      categoryName,
+      color,
+      count: (currentData.count || 0) + 1,
+      lastViewed: serverTimestamp()
+    }, { merge: true });
+  } catch (error) {
+    console.error('閲覧記録エラー:', error);
+  }
+}
+
+// ===== お気に入り機能 =====
+
+// お気に入りを読み込み
+function loadSummaryFavorites() {
+  const saved = localStorage.getItem('dentalExamSummaryFavorites');
+  if (saved) {
+    state.summaryFavorites = JSON.parse(saved);
+  }
+}
+
+// お気に入りを保存
+function saveSummaryFavorites() {
+  localStorage.setItem('dentalExamSummaryFavorites', JSON.stringify(state.summaryFavorites));
+
+  // Firestoreにも同期
+  if (state.isAuthenticated) {
+    scheduleSyncToFirestore();
+  }
+}
+
+// お気に入りを表示
+function renderSummaryFavorites() {
+  if (!elements.favoritesList) return;
+
+  if (state.summaryFavorites.length === 0) {
+    elements.favoritesList.innerHTML = '<p class="empty-message">お気に入りに追加したまとめがありません</p>';
+    return;
+  }
+
+  elements.favoritesList.innerHTML = state.summaryFavorites.map(item => `
+    <div class="favorite-item" data-card-id="${item.id}" data-category-id="${item.categoryId}">
+      <svg class="favorite-star" width="18" height="18" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2">
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      </svg>
+      <div class="favorite-info">
+        <div class="favorite-title">${item.title}</div>
+        <div class="favorite-category">${item.categoryName}</div>
+      </div>
+      <button class="favorite-remove" data-card-id="${item.id}" title="お気に入りから削除">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  `).join('');
+
+  // カードクリックイベント
+  elements.favoritesList.querySelectorAll('.favorite-item').forEach(item => {
+    item.addEventListener('click', (e) => {
+      if (!e.target.closest('.favorite-remove')) {
+        openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+      }
+    });
+  });
+
+  // 削除ボタンクリックイベント
+  elements.favoritesList.querySelectorAll('.favorite-remove').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      removeSummaryFavorite(btn.dataset.cardId);
+    });
+  });
+
+  // バッジを更新
+  if (elements.favoritesCount) {
+    elements.favoritesCount.textContent = state.summaryFavorites.length;
+  }
+}
+
+// お気に入りに追加
+function addSummaryFavorite(cardId, title, categoryId, categoryName, color) {
+  // 既に存在する場合は追加しない
+  if (state.summaryFavorites.some(f => f.id === cardId)) return false;
+
+  state.summaryFavorites.unshift({
+    id: cardId,
+    title,
+    categoryId,
+    categoryName,
+    color
+  });
+
+  saveSummaryFavorites();
+  renderSummaryFavorites();
+  return true;
+}
+
+// お気に入りから削除
+function removeSummaryFavorite(cardId) {
+  state.summaryFavorites = state.summaryFavorites.filter(f => f.id !== cardId);
+  saveSummaryFavorites();
+  renderSummaryFavorites();
+}
+
+// お気に入り状態を確認
+function isSummaryFavorite(cardId) {
+  return state.summaryFavorites.some(f => f.id === cardId);
 }
 
 // まとめ検索を設定
@@ -2767,6 +3048,10 @@ async function syncToFirestore() {
       viewedCards: Array.from(state.viewedCards),
       answeredCards: Array.from(state.answeredCards.entries()),
 
+      // まとめデータ
+      summaryFavorites: state.summaryFavorites,
+      recentSummaries: state.recentSummaries,
+
       // 統計データ
       dailyStats: state.dailyStats,
       questionHistory: state.questionHistory,
@@ -2821,6 +3106,10 @@ async function loadFromFirestore() {
       if (data.answeredCards) state.answeredCards = new Map(data.answeredCards);
       if (data.dailyStats) state.dailyStats = data.dailyStats;
       if (data.questionHistory) state.questionHistory = data.questionHistory;
+
+      // まとめデータを復元
+      if (data.summaryFavorites) state.summaryFavorites = data.summaryFavorites;
+      if (data.recentSummaries) state.recentSummaries = data.recentSummaries;
 
       console.log('Data loaded from Firestore');
       return true;

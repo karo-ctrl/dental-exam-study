@@ -2963,18 +2963,259 @@ body {
   color: var(--text-secondary);
 }
 
-/* カテゴリセクション */
-.summary-categories-section {
-  margin-bottom: 24px;
+/* トグルセクション */
+.summary-toggle-section {
+  margin-bottom: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-.summary-categories-section .section-title {
-  font-size: 1rem;
-  font-weight: 600;
+.summary-toggle-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
   color: var(--text-color);
-  margin-bottom: 12px;
-  padding-left: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
 }
+
+.summary-toggle-header:hover {
+  background-color: var(--hover-color);
+}
+
+.summary-toggle-header .toggle-arrow {
+  transition: transform 0.3s ease;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.summary-toggle-section.open .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.toggle-title {
+  flex: 1;
+  text-align: left;
+}
+
+.toggle-badge {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 10px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.ranking-icon {
+  flex-shrink: 0;
+}
+
+.summary-toggle-content {
+  display: none;
+  padding: 0 16px 16px;
+  animation: slideDown 0.3s ease;
+}
+
+.summary-toggle-section.open .summary-toggle-content {
+  display: block;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ランキングタブ */
+.ranking-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ranking-tab {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid var(--border-color);
+  background: none;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ranking-tab:hover {
+  background-color: var(--hover-color);
+}
+
+.ranking-tab.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+/* ランキングリスト */
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ranking-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ranking-item:hover {
+  background-color: var(--hover-color);
+}
+
+.ranking-rank {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ranking-rank.gold {
+  background: linear-gradient(135deg, #ffd700, #ffb300);
+  color: #000;
+}
+
+.ranking-rank.silver {
+  background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+  color: #000;
+}
+
+.ranking-rank.bronze {
+  background: linear-gradient(135deg, #cd7f32, #b8860b);
+  color: #fff;
+}
+
+.ranking-rank.normal {
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.ranking-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ranking-title {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.ranking-category {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.ranking-views {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* お気に入りリスト */
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.favorite-item:hover {
+  background-color: var(--hover-color);
+}
+
+.favorite-star {
+  color: #ffc107;
+  flex-shrink: 0;
+}
+
+.favorite-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.favorite-title {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.favorite-category {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.favorite-remove {
+  padding: 6px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.favorite-remove:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #e74c3c;
+}
+
+/* カテゴリグリッド */
 
 .summary-categories-grid {
   display: grid;
