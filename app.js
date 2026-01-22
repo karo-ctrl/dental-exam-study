@@ -30,6 +30,19 @@ const state = {
   summaryFavorites: [], // お気に入りまとめ {id, title, categoryId, categoryName, color}
   rankingPeriod: 'weekly', // 'weekly' or 'yearly'
 
+  // オリジナル問題用データ
+  originalDecks: [], // デッキ配列
+  currentDeck: null, // 現在表示中のデッキ
+  editingDeckId: null, // 編集中のデッキID
+  editingCardId: null, // 編集中のカードID
+
+  // フラッシュカード演習用
+  flashcardIndex: 0, // 現在のカードインデックス
+  flashcardOrder: [], // シャッフルされたカード順序
+  flashcardCorrect: 0, // 正解数
+  flashcardIncorrect: 0, // 不正解数
+  isFlashcardFlipped: false, // カードがめくられているか
+
   // UI状態
   currentIndex: 0,
   favorites: new Set(),
@@ -122,6 +135,71 @@ function initElements() {
   elements.summaryCategoryTitle = document.getElementById('summaryCategoryTitle');
   elements.summaryCategoryCount = document.getElementById('summaryCategoryCount');
   elements.summaryTopicsList = document.getElementById('summaryTopicsList');
+
+  // オリジナル問題の要素
+  elements.deckList = document.getElementById('deckList');
+  elements.addDeckBtn = document.getElementById('addDeckBtn');
+  elements.importDeckBtn = document.getElementById('importDeckBtn');
+  elements.deckFileInput = document.getElementById('deckFileInput');
+  elements.deckDetailScreen = document.getElementById('deckDetailScreen');
+  elements.deckDetailName = document.getElementById('deckDetailName');
+  elements.deckDetailDescription = document.getElementById('deckDetailDescription');
+  elements.deckDetailCardCount = document.getElementById('deckDetailCardCount');
+  elements.deckDetailAccuracy = document.getElementById('deckDetailAccuracy');
+  elements.editDeckBtn = document.getElementById('editDeckBtn');
+  elements.deleteDeckBtn = document.getElementById('deleteDeckBtn');
+  elements.exportDeckBtn = document.getElementById('exportDeckBtn');
+  elements.startPracticeBtn = document.getElementById('startPracticeBtn');
+  elements.deckCardList = document.getElementById('deckCardList');
+  elements.addCardBtn = document.getElementById('addCardBtn');
+
+  // フラッシュカード演習の要素
+  elements.flashcardScreen = document.getElementById('flashcardScreen');
+  elements.flashcard = document.getElementById('flashcard');
+  elements.flashcardInner = document.getElementById('flashcardInner');
+  elements.flashcardFront = document.getElementById('flashcardFront');
+  elements.flashcardBack = document.getElementById('flashcardBack');
+  elements.flashcardProgress = document.getElementById('flashcardProgress');
+  elements.flashcardProgressFill = document.getElementById('flashcardProgressFill');
+  elements.flashcardButtons = document.getElementById('flashcardButtons');
+  elements.btnCorrect = document.getElementById('btnCorrect');
+  elements.btnIncorrect = document.getElementById('btnIncorrect');
+  elements.flashcardResultScreen = document.getElementById('flashcardResultScreen');
+  elements.resultCorrect = document.getElementById('resultCorrect');
+  elements.resultIncorrect = document.getElementById('resultIncorrect');
+  elements.resultAccuracy = document.getElementById('resultAccuracy');
+  elements.btnRetryPractice = document.getElementById('btnRetryPractice');
+  elements.btnBackToDeck = document.getElementById('btnBackToDeck');
+
+  // デッキモーダルの要素
+  elements.deckModal = document.getElementById('deckModal');
+  elements.deckModalTitle = document.getElementById('deckModalTitle');
+  elements.deckNameInput = document.getElementById('deckNameInput');
+  elements.deckDescInput = document.getElementById('deckDescInput');
+  elements.deckTagsInput = document.getElementById('deckTagsInput');
+  elements.deckModalSave = document.getElementById('deckModalSave');
+  elements.deckModalCancel = document.getElementById('deckModalCancel');
+  elements.deckModalClose = document.getElementById('deckModalClose');
+  elements.deckModalBackdrop = document.getElementById('deckModalBackdrop');
+
+  // カードモーダルの要素
+  elements.cardModal = document.getElementById('cardModal');
+  elements.cardModalTitle = document.getElementById('cardModalTitle');
+  elements.cardFrontInput = document.getElementById('cardFrontInput');
+  elements.cardBackInput = document.getElementById('cardBackInput');
+  elements.cardTagsInput = document.getElementById('cardTagsInput');
+  elements.cardModalSave = document.getElementById('cardModalSave');
+  elements.cardModalCancel = document.getElementById('cardModalCancel');
+  elements.cardModalClose = document.getElementById('cardModalClose');
+  elements.cardModalBackdrop = document.getElementById('cardModalBackdrop');
+
+  // 確認モーダルの要素
+  elements.confirmModal = document.getElementById('confirmModal');
+  elements.confirmModalTitle = document.getElementById('confirmModalTitle');
+  elements.confirmModalMessage = document.getElementById('confirmModalMessage');
+  elements.confirmModalConfirm = document.getElementById('confirmModalConfirm');
+  elements.confirmModalCancel = document.getElementById('confirmModalCancel');
+  elements.confirmModalBackdrop = document.getElementById('confirmModalBackdrop');
 
   // 過去問ホームのボタン
   elements.dailyHisshuBtn = document.getElementById('dailyHisshuBtn');
@@ -303,6 +381,8 @@ function switchTab(tab, forceHome = false) {
         elements.headerTitle.textContent = 'オリジナル';
         elements.backBtn.style.display = 'none';
         elements.menuBtn.style.display = 'flex';
+        // オリジナルホームを初期化
+        initOriginalHome();
         break;
       case 'summary':
         elements.summaryHome.style.display = 'block';
@@ -362,6 +442,24 @@ function backToHome() {
     elements.menuBtn.style.display = 'flex';
     elements.headerTitle.textContent = 'まとめ';
     state.currentView = 'home';
+    return;
+  }
+
+  // オリジナル：演習結果画面からはデッキ詳細に戻る
+  if (state.currentView === 'flashcardResult' && state.currentTab === 'original') {
+    backToDeckDetail();
+    return;
+  }
+
+  // オリジナル：フラッシュカード演習画面からはデッキ詳細に戻る
+  if (state.currentView === 'flashcard' && state.currentTab === 'original') {
+    backToDeckDetail();
+    return;
+  }
+
+  // オリジナル：デッキ詳細画面からはオリジナルホームに戻る
+  if (state.currentView === 'deckDetail' && state.currentTab === 'original') {
+    backToOriginalHome();
     return;
   }
 
@@ -1899,6 +1997,660 @@ function parseMarkdown(text) {
     .replace(/(<\/h3>|<\/ul>|<\/ol>|<\/table>)<\/p>/g, '$1');
 }
 
+// ===== オリジナル問題機能 =====
+
+// オリジナルホーム画面を初期化
+function initOriginalHome() {
+  loadOriginalDecks();
+  renderDeckList();
+  setupOriginalEventListeners();
+}
+
+// デッキをLocalStorageから読み込み
+function loadOriginalDecks() {
+  const saved = localStorage.getItem('dentalExamOriginalDecks');
+  if (saved) {
+    state.originalDecks = JSON.parse(saved);
+  }
+}
+
+// デッキをLocalStorageに保存
+function saveOriginalDecks() {
+  localStorage.setItem('dentalExamOriginalDecks', JSON.stringify(state.originalDecks));
+  // Firestoreにも同期
+  if (state.isAuthenticated) {
+    scheduleSyncToFirestore();
+  }
+}
+
+// デッキリストを表示
+function renderDeckList() {
+  if (!elements.deckList) return;
+
+  if (state.originalDecks.length === 0) {
+    elements.deckList.innerHTML = '<p class="empty-message">まだデッキがありません。新規作成ボタンからデッキを作成しましょう。</p>';
+    return;
+  }
+
+  elements.deckList.innerHTML = state.originalDecks.map(deck => {
+    const cardCount = deck.cards?.length || 0;
+    const accuracy = calculateDeckAccuracy(deck);
+    const accuracyClass = accuracy >= 70 ? 'good' : accuracy >= 40 ? 'medium' : 'poor';
+    const accuracyText = accuracy !== null ? `${accuracy}%` : '--';
+
+    return `
+      <div class="deck-item" data-deck-id="${deck.deckId}">
+        <div class="deck-icon">📚</div>
+        <div class="deck-info">
+          <div class="deck-name">${escapeHtml(deck.deckName)}</div>
+          <div class="deck-meta">
+            <span class="deck-card-count">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              ${cardCount}枚
+            </span>
+            <span class="deck-accuracy ${accuracyClass}">
+              正解率: ${accuracyText}
+            </span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // デッキクリックイベント
+  elements.deckList.querySelectorAll('.deck-item').forEach(item => {
+    item.addEventListener('click', () => {
+      openDeckDetail(item.dataset.deckId);
+    });
+  });
+}
+
+// デッキ正解率を計算
+function calculateDeckAccuracy(deck) {
+  if (!deck.stats || deck.stats.totalAttempts === 0) return null;
+  return Math.round((deck.stats.correctCount / deck.stats.totalAttempts) * 100);
+}
+
+// HTMLエスケープ
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// オリジナル機能のイベントリスナーを設定
+function setupOriginalEventListeners() {
+  // 新規デッキ作成ボタン
+  elements.addDeckBtn?.addEventListener('click', () => {
+    openDeckModal();
+  });
+
+  // インポートボタン
+  elements.importDeckBtn?.addEventListener('click', () => {
+    elements.deckFileInput?.click();
+  });
+
+  // ファイル選択
+  elements.deckFileInput?.addEventListener('change', handleDeckImport);
+
+  // デッキモーダル
+  elements.deckModalSave?.addEventListener('click', saveDeck);
+  elements.deckModalCancel?.addEventListener('click', closeDeckModal);
+  elements.deckModalClose?.addEventListener('click', closeDeckModal);
+  elements.deckModalBackdrop?.addEventListener('click', closeDeckModal);
+
+  // カードモーダル
+  elements.cardModalSave?.addEventListener('click', saveCard);
+  elements.cardModalCancel?.addEventListener('click', closeCardModal);
+  elements.cardModalClose?.addEventListener('click', closeCardModal);
+  elements.cardModalBackdrop?.addEventListener('click', closeCardModal);
+
+  // 確認モーダル
+  elements.confirmModalCancel?.addEventListener('click', closeConfirmModal);
+  elements.confirmModalBackdrop?.addEventListener('click', closeConfirmModal);
+
+  // デッキ詳細画面のボタン
+  elements.editDeckBtn?.addEventListener('click', () => {
+    if (state.currentDeck) {
+      openDeckModal(state.currentDeck.deckId);
+    }
+  });
+
+  elements.deleteDeckBtn?.addEventListener('click', () => {
+    if (state.currentDeck) {
+      showDeleteConfirm('deck', state.currentDeck.deckId);
+    }
+  });
+
+  elements.exportDeckBtn?.addEventListener('click', () => {
+    if (state.currentDeck) {
+      exportDeck(state.currentDeck.deckId);
+    }
+  });
+
+  elements.addCardBtn?.addEventListener('click', () => {
+    openCardModal();
+  });
+
+  elements.startPracticeBtn?.addEventListener('click', startPractice);
+
+  // フラッシュカード
+  elements.flashcard?.addEventListener('click', flipFlashcard);
+  elements.btnCorrect?.addEventListener('click', () => answerFlashcard(true));
+  elements.btnIncorrect?.addEventListener('click', () => answerFlashcard(false));
+
+  // 結果画面
+  elements.btnRetryPractice?.addEventListener('click', startPractice);
+  elements.btnBackToDeck?.addEventListener('click', backToDeckDetail);
+}
+
+// デッキモーダルを開く
+function openDeckModal(deckId = null) {
+  state.editingDeckId = deckId;
+
+  if (deckId) {
+    // 編集モード
+    const deck = state.originalDecks.find(d => d.deckId === deckId);
+    if (!deck) return;
+
+    elements.deckModalTitle.textContent = 'デッキを編集';
+    elements.deckNameInput.value = deck.deckName;
+    elements.deckDescInput.value = deck.description || '';
+    elements.deckTagsInput.value = (deck.tags || []).join(', ');
+  } else {
+    // 新規作成モード
+    elements.deckModalTitle.textContent = '新規デッキ作成';
+    elements.deckNameInput.value = '';
+    elements.deckDescInput.value = '';
+    elements.deckTagsInput.value = '';
+  }
+
+  elements.deckModal.style.display = 'flex';
+}
+
+// デッキモーダルを閉じる
+function closeDeckModal() {
+  elements.deckModal.style.display = 'none';
+  state.editingDeckId = null;
+}
+
+// デッキを保存
+function saveDeck() {
+  const name = elements.deckNameInput.value.trim();
+  if (!name) {
+    alert('デッキ名を入力してください');
+    return;
+  }
+
+  const description = elements.deckDescInput.value.trim();
+  const tags = elements.deckTagsInput.value
+    .split(',')
+    .map(t => t.trim())
+    .filter(t => t);
+
+  if (state.editingDeckId) {
+    // 編集
+    const deck = state.originalDecks.find(d => d.deckId === state.editingDeckId);
+    if (deck) {
+      deck.deckName = name;
+      deck.description = description;
+      deck.tags = tags;
+    }
+  } else {
+    // 新規作成
+    const newDeck = {
+      deckId: 'deck-' + Date.now(),
+      deckName: name,
+      description: description,
+      tags: tags,
+      cards: [],
+      stats: {
+        totalAttempts: 0,
+        correctCount: 0
+      },
+      createdAt: new Date().toISOString()
+    };
+    state.originalDecks.push(newDeck);
+  }
+
+  saveOriginalDecks();
+  renderDeckList();
+  closeDeckModal();
+
+  // デッキ詳細画面が開いていれば更新
+  if (state.currentDeck && state.editingDeckId === state.currentDeck.deckId) {
+    updateDeckDetailHeader();
+  }
+}
+
+// デッキ詳細画面を開く
+function openDeckDetail(deckId) {
+  const deck = state.originalDecks.find(d => d.deckId === deckId);
+  if (!deck) return;
+
+  state.currentDeck = deck;
+  state.currentView = 'deckDetail';
+
+  // ホーム画面を非表示
+  elements.originalHome.style.display = 'none';
+  elements.deckDetailScreen.style.display = 'block';
+
+  // ヘッダー更新
+  elements.headerTitle.textContent = deck.deckName;
+  elements.backBtn.style.display = 'flex';
+  elements.menuBtn.style.display = 'none';
+
+  // 詳細を表示
+  updateDeckDetailHeader();
+  renderDeckCardList();
+}
+
+// デッキ詳細ヘッダーを更新
+function updateDeckDetailHeader() {
+  const deck = state.currentDeck;
+  if (!deck) return;
+
+  elements.deckDetailName.textContent = deck.deckName;
+  elements.deckDetailDescription.textContent = deck.description || '';
+  elements.deckDetailCardCount.textContent = `${deck.cards?.length || 0}枚`;
+
+  const accuracy = calculateDeckAccuracy(deck);
+  elements.deckDetailAccuracy.textContent = accuracy !== null ? `正解率: ${accuracy}%` : '正解率: --';
+
+  // カードがない場合は演習ボタンを無効化
+  elements.startPracticeBtn.disabled = !deck.cards || deck.cards.length === 0;
+}
+
+// デッキのカードリストを表示
+function renderDeckCardList() {
+  if (!elements.deckCardList || !state.currentDeck) return;
+
+  const cards = state.currentDeck.cards || [];
+
+  if (cards.length === 0) {
+    elements.deckCardList.innerHTML = '<p class="empty-message">まだカードがありません。カード追加ボタンから追加しましょう。</p>';
+    return;
+  }
+
+  elements.deckCardList.innerHTML = cards.map((card, index) => `
+    <div class="card-item" data-card-id="${card.id}">
+      <span class="card-number">${index + 1}</span>
+      <div class="card-preview">
+        <div class="card-front-preview">${escapeHtml(card.front)}</div>
+        <div class="card-back-preview">${escapeHtml(card.back)}</div>
+      </div>
+      <div class="card-actions">
+        <button class="btn-edit" data-card-id="${card.id}" title="編集">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg>
+        </button>
+        <button class="btn-delete" data-card-id="${card.id}" title="削除">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"></polyline>
+            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  `).join('');
+
+  // 編集ボタンイベント
+  elements.deckCardList.querySelectorAll('.btn-edit').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openCardModal(btn.dataset.cardId);
+    });
+  });
+
+  // 削除ボタンイベント
+  elements.deckCardList.querySelectorAll('.btn-delete').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showDeleteConfirm('card', btn.dataset.cardId);
+    });
+  });
+}
+
+// カードモーダルを開く
+function openCardModal(cardId = null) {
+  state.editingCardId = cardId;
+
+  if (cardId) {
+    // 編集モード
+    const card = state.currentDeck?.cards?.find(c => c.id === cardId);
+    if (!card) return;
+
+    elements.cardModalTitle.textContent = 'カードを編集';
+    elements.cardFrontInput.value = card.front;
+    elements.cardBackInput.value = card.back;
+    elements.cardTagsInput.value = (card.tags || []).join(', ');
+  } else {
+    // 新規作成モード
+    elements.cardModalTitle.textContent = 'カード追加';
+    elements.cardFrontInput.value = '';
+    elements.cardBackInput.value = '';
+    elements.cardTagsInput.value = '';
+  }
+
+  elements.cardModal.style.display = 'flex';
+}
+
+// カードモーダルを閉じる
+function closeCardModal() {
+  elements.cardModal.style.display = 'none';
+  state.editingCardId = null;
+}
+
+// カードを保存
+function saveCard() {
+  const front = elements.cardFrontInput.value.trim();
+  const back = elements.cardBackInput.value.trim();
+
+  if (!front || !back) {
+    alert('表面と裏面を入力してください');
+    return;
+  }
+
+  const tags = elements.cardTagsInput.value
+    .split(',')
+    .map(t => t.trim())
+    .filter(t => t);
+
+  if (!state.currentDeck) return;
+
+  if (state.editingCardId) {
+    // 編集
+    const card = state.currentDeck.cards?.find(c => c.id === state.editingCardId);
+    if (card) {
+      card.front = front;
+      card.back = back;
+      card.tags = tags;
+    }
+  } else {
+    // 新規作成
+    if (!state.currentDeck.cards) {
+      state.currentDeck.cards = [];
+    }
+    state.currentDeck.cards.push({
+      id: 'card-' + Date.now(),
+      front: front,
+      back: back,
+      tags: tags,
+      image: null
+    });
+  }
+
+  saveOriginalDecks();
+  renderDeckCardList();
+  updateDeckDetailHeader();
+  closeCardModal();
+}
+
+// 削除確認モーダルを表示
+let deleteTarget = { type: null, id: null };
+
+function showDeleteConfirm(type, id) {
+  deleteTarget = { type, id };
+
+  if (type === 'deck') {
+    const deck = state.originalDecks.find(d => d.deckId === id);
+    elements.confirmModalTitle.textContent = 'デッキを削除';
+    elements.confirmModalMessage.textContent = `「${deck?.deckName || ''}」を削除しますか？この操作は取り消せません。`;
+  } else {
+    elements.confirmModalTitle.textContent = 'カードを削除';
+    elements.confirmModalMessage.textContent = 'このカードを削除しますか？この操作は取り消せません。';
+  }
+
+  elements.confirmModalConfirm.onclick = confirmDelete;
+  elements.confirmModal.style.display = 'flex';
+}
+
+// 削除を実行
+function confirmDelete() {
+  if (deleteTarget.type === 'deck') {
+    state.originalDecks = state.originalDecks.filter(d => d.deckId !== deleteTarget.id);
+    saveOriginalDecks();
+    renderDeckList();
+    closeConfirmModal();
+    // デッキ詳細画面を閉じてホームに戻る
+    backToOriginalHome();
+  } else if (deleteTarget.type === 'card') {
+    if (state.currentDeck?.cards) {
+      state.currentDeck.cards = state.currentDeck.cards.filter(c => c.id !== deleteTarget.id);
+      saveOriginalDecks();
+      renderDeckCardList();
+      updateDeckDetailHeader();
+    }
+    closeConfirmModal();
+  }
+}
+
+// 確認モーダルを閉じる
+function closeConfirmModal() {
+  elements.confirmModal.style.display = 'none';
+  deleteTarget = { type: null, id: null };
+}
+
+// オリジナルホームに戻る
+function backToOriginalHome() {
+  elements.deckDetailScreen.style.display = 'none';
+  elements.flashcardScreen.style.display = 'none';
+  elements.flashcardResultScreen.style.display = 'none';
+  elements.originalHome.style.display = 'block';
+
+  elements.headerTitle.textContent = 'オリジナル';
+  elements.backBtn.style.display = 'none';
+  elements.menuBtn.style.display = 'flex';
+
+  state.currentView = 'home';
+  state.currentDeck = null;
+}
+
+// デッキ詳細に戻る
+function backToDeckDetail() {
+  elements.flashcardScreen.style.display = 'none';
+  elements.flashcardResultScreen.style.display = 'none';
+  elements.deckDetailScreen.style.display = 'block';
+
+  elements.headerTitle.textContent = state.currentDeck?.deckName || 'デッキ';
+  state.currentView = 'deckDetail';
+}
+
+// フラッシュカード演習を開始
+function startPractice() {
+  if (!state.currentDeck?.cards || state.currentDeck.cards.length === 0) {
+    alert('カードがありません');
+    return;
+  }
+
+  // シャッフル
+  state.flashcardOrder = [...state.currentDeck.cards]
+    .map((card, index) => ({ card, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(item => item.card);
+
+  state.flashcardIndex = 0;
+  state.flashcardCorrect = 0;
+  state.flashcardIncorrect = 0;
+  state.isFlashcardFlipped = false;
+  state.currentView = 'flashcard';
+
+  // 画面切り替え
+  elements.deckDetailScreen.style.display = 'none';
+  elements.flashcardResultScreen.style.display = 'none';
+  elements.flashcardScreen.style.display = 'block';
+
+  elements.headerTitle.textContent = '演習';
+  elements.backBtn.style.display = 'flex';
+
+  // 最初のカードを表示
+  showFlashcard();
+}
+
+// フラッシュカードを表示
+function showFlashcard() {
+  const card = state.flashcardOrder[state.flashcardIndex];
+  if (!card) return;
+
+  // プログレス更新
+  const total = state.flashcardOrder.length;
+  const current = state.flashcardIndex + 1;
+  elements.flashcardProgress.textContent = `${current} / ${total}`;
+  elements.flashcardProgressFill.style.width = `${(current / total) * 100}%`;
+
+  // カード内容
+  elements.flashcardFront.textContent = card.front;
+  elements.flashcardBack.textContent = card.back;
+
+  // リセット
+  elements.flashcard.classList.remove('flipped');
+  elements.flashcardButtons.style.display = 'none';
+  state.isFlashcardFlipped = false;
+}
+
+// フラッシュカードをめくる
+function flipFlashcard() {
+  if (state.isFlashcardFlipped) return;
+
+  elements.flashcard.classList.add('flipped');
+  elements.flashcardButtons.style.display = 'flex';
+  state.isFlashcardFlipped = true;
+}
+
+// 回答する
+function answerFlashcard(correct) {
+  if (correct) {
+    state.flashcardCorrect++;
+  } else {
+    state.flashcardIncorrect++;
+  }
+
+  // 次のカードへ
+  state.flashcardIndex++;
+
+  if (state.flashcardIndex >= state.flashcardOrder.length) {
+    // 演習終了
+    finishPractice();
+  } else {
+    showFlashcard();
+  }
+}
+
+// 演習終了
+function finishPractice() {
+  // 統計を更新
+  if (state.currentDeck) {
+    if (!state.currentDeck.stats) {
+      state.currentDeck.stats = { totalAttempts: 0, correctCount: 0 };
+    }
+    state.currentDeck.stats.totalAttempts += state.flashcardOrder.length;
+    state.currentDeck.stats.correctCount += state.flashcardCorrect;
+    saveOriginalDecks();
+  }
+
+  // 結果画面を表示
+  elements.flashcardScreen.style.display = 'none';
+  elements.flashcardResultScreen.style.display = 'block';
+
+  elements.resultCorrect.textContent = state.flashcardCorrect;
+  elements.resultIncorrect.textContent = state.flashcardIncorrect;
+
+  const total = state.flashcardCorrect + state.flashcardIncorrect;
+  const accuracy = total > 0 ? Math.round((state.flashcardCorrect / total) * 100) : 0;
+  elements.resultAccuracy.textContent = `${accuracy}%`;
+
+  elements.headerTitle.textContent = '結果';
+  state.currentView = 'flashcardResult';
+}
+
+// デッキをエクスポート
+function exportDeck(deckId) {
+  const deck = state.originalDecks.find(d => d.deckId === deckId);
+  if (!deck) return;
+
+  // エクスポート用にデータを整形
+  const exportData = {
+    deckName: deck.deckName,
+    description: deck.description || '',
+    tags: deck.tags || [],
+    cards: (deck.cards || []).map(card => ({
+      front: card.front,
+      back: card.back,
+      tags: card.tags || []
+    })),
+    exportedAt: new Date().toISOString()
+  };
+
+  const json = JSON.stringify(exportData, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${deck.deckName}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+// デッキをインポート
+function handleDeckImport(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const data = JSON.parse(e.target.result);
+
+      // バリデーション
+      if (!data.deckName || !data.cards || !Array.isArray(data.cards)) {
+        throw new Error('無効なデッキファイルです');
+      }
+
+      // インポート
+      const newDeck = {
+        deckId: 'deck-' + Date.now(),
+        deckName: data.deckName,
+        description: data.description || '',
+        tags: data.tags || [],
+        cards: data.cards.map((card, index) => ({
+          id: 'card-' + Date.now() + '-' + index,
+          front: card.front,
+          back: card.back,
+          tags: card.tags || [],
+          image: null
+        })),
+        stats: {
+          totalAttempts: 0,
+          correctCount: 0
+        },
+        createdAt: new Date().toISOString(),
+        importedAt: new Date().toISOString()
+      };
+
+      state.originalDecks.push(newDeck);
+      saveOriginalDecks();
+      renderDeckList();
+
+      alert(`「${data.deckName}」をインポートしました（${data.cards.length}枚）`);
+    } catch (error) {
+      console.error('インポートエラー:', error);
+      alert('デッキのインポートに失敗しました。ファイル形式を確認してください。');
+    }
+  };
+
+  reader.readAsText(file);
+  event.target.value = ''; // リセット
+}
+
 // ===== 共通ナビゲーション =====
 function updateNavButtons() {
   const total = state.mode === 'quiz' ? state.filteredQuestions.length : state.flattenedCards.length;
@@ -3052,6 +3804,9 @@ async function syncToFirestore() {
       summaryFavorites: state.summaryFavorites,
       recentSummaries: state.recentSummaries,
 
+      // オリジナル問題データ
+      originalDecks: state.originalDecks,
+
       // 統計データ
       dailyStats: state.dailyStats,
       questionHistory: state.questionHistory,
@@ -3110,6 +3865,9 @@ async function loadFromFirestore() {
       // まとめデータを復元
       if (data.summaryFavorites) state.summaryFavorites = data.summaryFavorites;
       if (data.recentSummaries) state.recentSummaries = data.recentSummaries;
+
+      // オリジナル問題データを復元
+      if (data.originalDecks) state.originalDecks = data.originalDecks;
 
       console.log('Data loaded from Firestore');
       return true;

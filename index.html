@@ -385,14 +385,171 @@
       </div>
     </div>
 
-    <!-- オリジナルホーム画面（後で実装） -->
+    <!-- オリジナルホーム画面 -->
     <div id="originalHome" class="home-screen" style="display: none;">
       <div class="home-content">
-        <div class="coming-soon">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        <!-- マイデッキセクション -->
+        <div class="original-section">
+          <div class="original-section-header">
+            <h2 class="section-title">マイデッキ</h2>
+            <button class="btn-add-deck" id="addDeckBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              新規作成
+            </button>
+          </div>
+          <div class="deck-list" id="deckList">
+            <p class="empty-message">まだデッキがありません。新規作成ボタンからデッキを作成しましょう。</p>
+          </div>
+        </div>
+
+        <!-- インポートセクション -->
+        <div class="original-import-section">
+          <button class="btn-import-deck" id="importDeckBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            デッキをインポート
+          </button>
+          <input type="file" id="deckFileInput" accept=".json" style="display: none;">
+        </div>
+      </div>
+    </div>
+
+    <!-- デッキ詳細画面 -->
+    <div id="deckDetailScreen" class="quiz-screen" style="display: none;">
+      <div class="deck-detail-container">
+        <div class="deck-detail-header">
+          <div class="deck-detail-info">
+            <h2 id="deckDetailName">デッキ名</h2>
+            <p id="deckDetailDescription" class="deck-detail-desc"></p>
+            <div class="deck-detail-stats">
+              <span id="deckDetailCardCount">0枚</span>
+              <span class="stats-separator">|</span>
+              <span id="deckDetailAccuracy">正解率: --</span>
+            </div>
+          </div>
+          <div class="deck-detail-actions">
+            <button class="btn-icon" id="editDeckBtn" title="デッキを編集">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+            </button>
+            <button class="btn-icon btn-danger" id="deleteDeckBtn" title="デッキを削除">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+            </button>
+            <button class="btn-icon" id="exportDeckBtn" title="デッキをエクスポート">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 演習開始ボタン -->
+        <button class="btn-start-practice" id="startPracticeBtn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg>
-          <p>オリジナル問題は準備中です</p>
+          演習を開始
+        </button>
+
+        <!-- カードリスト -->
+        <div class="card-list-section">
+          <div class="card-list-header">
+            <h3>カード一覧</h3>
+            <button class="btn-add-card" id="addCardBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              カード追加
+            </button>
+          </div>
+          <div class="card-list" id="deckCardList">
+            <p class="empty-message">まだカードがありません。カード追加ボタンから追加しましょう。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- フラッシュカード演習画面 -->
+    <div id="flashcardScreen" class="quiz-screen" style="display: none;">
+      <div class="flashcard-container">
+        <div class="flashcard-progress">
+          <span id="flashcardProgress">1 / 10</span>
+          <div class="flashcard-progress-bar">
+            <div class="flashcard-progress-fill" id="flashcardProgressFill"></div>
+          </div>
+        </div>
+
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard-inner" id="flashcardInner">
+            <div class="flashcard-front">
+              <div class="flashcard-content" id="flashcardFront">質問</div>
+              <p class="flashcard-hint">タップして答えを見る</p>
+            </div>
+            <div class="flashcard-back">
+              <div class="flashcard-content" id="flashcardBack">答え</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashcard-buttons" id="flashcardButtons" style="display: none;">
+          <button class="btn-incorrect" id="btnIncorrect">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            わからなかった
+          </button>
+          <button class="btn-correct" id="btnCorrect">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            わかった
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 演習結果画面 -->
+    <div id="flashcardResultScreen" class="quiz-screen" style="display: none;">
+      <div class="flashcard-result-container">
+        <div class="result-icon">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+        </div>
+        <h2 class="result-title">演習完了！</h2>
+        <div class="result-stats">
+          <div class="result-stat">
+            <span class="result-stat-value" id="resultCorrect">0</span>
+            <span class="result-stat-label">正解</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-stat-value" id="resultIncorrect">0</span>
+            <span class="result-stat-label">不正解</span>
+          </div>
+          <div class="result-stat">
+            <span class="result-stat-value" id="resultAccuracy">0%</span>
+            <span class="result-stat-label">正解率</span>
+          </div>
+        </div>
+        <div class="result-buttons">
+          <button class="btn-retry" id="btnRetryPractice">もう一度</button>
+          <button class="btn-back-to-deck" id="btnBackToDeck">デッキに戻る</button>
         </div>
       </div>
     </div>
@@ -783,6 +940,94 @@
       </div>
       <img id="imageModalImg" class="image-modal-img" src="" alt="問題画像">
       <div class="image-modal-counter" id="imageModalCounter"></div>
+    </div>
+  </div>
+
+  <!-- デッキ作成/編集モーダル -->
+  <div class="deck-modal" id="deckModal" style="display: none;">
+    <div class="deck-modal-backdrop" id="deckModalBackdrop"></div>
+    <div class="deck-modal-content">
+      <div class="deck-modal-header">
+        <h2 id="deckModalTitle">新規デッキ作成</h2>
+        <button class="deck-modal-close" id="deckModalClose">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="deck-modal-body">
+        <div class="form-group">
+          <label for="deckNameInput">デッキ名 *</label>
+          <input type="text" id="deckNameInput" class="form-input" placeholder="例：解剖学 基礎">
+        </div>
+        <div class="form-group">
+          <label for="deckDescInput">説明（任意）</label>
+          <textarea id="deckDescInput" class="form-textarea" placeholder="デッキの説明を入力..." rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="deckTagsInput">タグ（任意、カンマ区切り）</label>
+          <input type="text" id="deckTagsInput" class="form-input" placeholder="例：解剖学, 基礎, 筋肉">
+        </div>
+      </div>
+      <div class="deck-modal-footer">
+        <button class="btn-cancel" id="deckModalCancel">キャンセル</button>
+        <button class="btn-save" id="deckModalSave">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- カード作成/編集モーダル -->
+  <div class="card-modal" id="cardModal" style="display: none;">
+    <div class="card-modal-backdrop" id="cardModalBackdrop"></div>
+    <div class="card-modal-content">
+      <div class="card-modal-header">
+        <h2 id="cardModalTitle">カード追加</h2>
+        <button class="card-modal-close" id="cardModalClose">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="card-modal-body">
+        <div class="form-group">
+          <label for="cardFrontInput">表面（質問） *</label>
+          <textarea id="cardFrontInput" class="form-textarea" placeholder="質問を入力..." rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cardBackInput">裏面（答え） *</label>
+          <textarea id="cardBackInput" class="form-textarea" placeholder="答えを入力..." rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="cardTagsInput">タグ（任意、カンマ区切り）</label>
+          <input type="text" id="cardTagsInput" class="form-input" placeholder="例：神経, 重要">
+        </div>
+      </div>
+      <div class="card-modal-footer">
+        <button class="btn-cancel" id="cardModalCancel">キャンセル</button>
+        <button class="btn-save" id="cardModalSave">保存</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 削除確認モーダル -->
+  <div class="confirm-modal" id="confirmModal" style="display: none;">
+    <div class="confirm-modal-backdrop" id="confirmModalBackdrop"></div>
+    <div class="confirm-modal-content">
+      <div class="confirm-modal-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+      </div>
+      <h3 id="confirmModalTitle">削除の確認</h3>
+      <p id="confirmModalMessage">本当に削除しますか？この操作は取り消せません。</p>
+      <div class="confirm-modal-buttons">
+        <button class="btn-cancel" id="confirmModalCancel">キャンセル</button>
+        <button class="btn-danger" id="confirmModalConfirm">削除</button>
+      </div>
     </div>
   </div>
 
