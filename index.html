@@ -554,6 +554,103 @@
       </div>
     </div>
 
+    <!-- 成績管理ホーム画面 -->
+    <div id="statsHome" class="home-screen" style="display: none;">
+      <div class="home-content">
+        <!-- 学習統計セクション（トグル） -->
+        <div class="stats-toggle-section open" id="learningStatsSection">
+          <button class="stats-toggle-header" data-toggle="learning">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">学習統計</span>
+          </button>
+          <div class="stats-toggle-content">
+            <!-- 今日の統計カード -->
+            <div class="stats-today-card">
+              <div class="stats-today-main">
+                <div class="stats-today-value" id="statsTodayCount">0</div>
+                <div class="stats-today-label">今日の問題数</div>
+              </div>
+              <div class="stats-today-compare" id="statsTodayCompare">
+                <span class="compare-badge neutral">--</span>
+                <span class="compare-label">前週平均比</span>
+              </div>
+            </div>
+
+            <!-- 総合統計 -->
+            <div class="stats-summary-grid">
+              <div class="stats-summary-item">
+                <div class="stats-summary-value" id="statsTotalQuestions">0</div>
+                <div class="stats-summary-label">総回答数</div>
+              </div>
+              <div class="stats-summary-item">
+                <div class="stats-summary-value" id="statsTotalAccuracy">--%</div>
+                <div class="stats-summary-label">正答率</div>
+              </div>
+              <div class="stats-summary-item">
+                <div class="stats-summary-value" id="statsStreak">0</div>
+                <div class="stats-summary-label">連続日数</div>
+              </div>
+            </div>
+
+            <!-- 週間グラフ -->
+            <div class="stats-chart-section">
+              <div class="stats-chart-header">
+                <span class="stats-chart-title">週間学習推移</span>
+                <div class="stats-chart-tabs">
+                  <button class="stats-chart-tab active" data-period="week">週間</button>
+                  <button class="stats-chart-tab" data-period="month">月間</button>
+                </div>
+              </div>
+              <div class="stats-bar-chart" id="statsBarChart">
+                <!-- グラフがJSで描画される -->
+              </div>
+            </div>
+
+            <!-- 科目別正答率 -->
+            <div class="stats-subject-section" id="statsSubjectSection" style="display: none;">
+              <div class="stats-subject-header">科目別正答率</div>
+              <div class="stats-subject-list" id="statsSubjectList">
+                <!-- 科目別データがJSで追加される -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 模試成績セクション（トグル） -->
+        <div class="stats-toggle-section open" id="mockExamSection">
+          <button class="stats-toggle-header" data-toggle="mock">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">模試成績</span>
+            <button class="btn-add-mock" id="addMockExamBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              追加
+            </button>
+          </button>
+          <div class="stats-toggle-content">
+            <!-- 模試成績リスト -->
+            <div class="mock-exam-list" id="mockExamList">
+              <p class="empty-message">まだ模試成績が登録されていません。</p>
+            </div>
+
+            <!-- 成績推移グラフ -->
+            <div class="mock-chart-section" id="mockChartSection" style="display: none;">
+              <div class="mock-chart-header">成績推移</div>
+              <div class="mock-line-chart" id="mockLineChart">
+                <!-- グラフがJSで描画される -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- まとめホーム画面 -->
     <div id="summaryHome" class="home-screen" style="display: none;">
       <div class="home-content">
@@ -763,27 +860,36 @@
   <!-- 下部ナビゲーション -->
   <nav class="bottom-nav" id="bottomNav">
     <button class="bottom-nav-item active" data-tab="kakomon">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
         <polyline points="14 2 14 8 20 8"></polyline>
         <line x1="16" y1="13" x2="8" y2="13"></line>
         <line x1="16" y1="17" x2="8" y2="17"></line>
-        <polyline points="10 9 9 9 8 9"></polyline>
       </svg>
       <span>過去問</span>
     </button>
     <button class="bottom-nav-item" data-tab="original">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
       </svg>
       <span>オリジナル</span>
     </button>
     <button class="bottom-nav-item" data-tab="summary">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
         <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
       </svg>
       <span>まとめ</span>
+    </button>
+    <button class="bottom-nav-item" data-tab="stats">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+      </svg>
+      <span>成績</span>
     </button>
   </nav>
 
@@ -1027,6 +1133,113 @@
       <div class="confirm-modal-buttons">
         <button class="btn-cancel" id="confirmModalCancel">キャンセル</button>
         <button class="btn-danger" id="confirmModalConfirm">削除</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 模試成績登録モーダル -->
+  <div class="mock-modal" id="mockExamModal" style="display: none;">
+    <div class="mock-modal-backdrop" id="mockModalBackdrop"></div>
+    <div class="mock-modal-content">
+      <div class="mock-modal-header">
+        <h2 id="mockModalTitle">模試成績を登録</h2>
+        <button class="mock-modal-close" id="mockModalClose">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mock-modal-body">
+        <div class="form-group">
+          <label for="mockNameInput">模試名 *</label>
+          <input type="text" id="mockNameInput" class="form-input" placeholder="例：第3回全国模試">
+        </div>
+        <div class="form-group">
+          <label for="mockDateInput">受験日 *</label>
+          <input type="date" id="mockDateInput" class="form-input">
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-half">
+            <label for="mockTotalScoreInput">総合点数 *</label>
+            <input type="number" id="mockTotalScoreInput" class="form-input" placeholder="180">
+          </div>
+          <div class="form-group form-group-half">
+            <label for="mockTotalMaxInput">満点 *</label>
+            <input type="number" id="mockTotalMaxInput" class="form-input" placeholder="300">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-half">
+            <label for="mockHisshuScoreInput">必修点数</label>
+            <input type="number" id="mockHisshuScoreInput" class="form-input" placeholder="65">
+          </div>
+          <div class="form-group form-group-half">
+            <label for="mockHisshuMaxInput">満点</label>
+            <input type="number" id="mockHisshuMaxInput" class="form-input" placeholder="80">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-half">
+            <label for="mockIppanScoreInput">一般点数</label>
+            <input type="number" id="mockIppanScoreInput" class="form-input" placeholder="90">
+          </div>
+          <div class="form-group form-group-half">
+            <label for="mockIppanMaxInput">満点</label>
+            <input type="number" id="mockIppanMaxInput" class="form-input" placeholder="150">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-half">
+            <label for="mockRinjitsuScoreInput">臨実点数</label>
+            <input type="number" id="mockRinjitsuScoreInput" class="form-input" placeholder="25">
+          </div>
+          <div class="form-group form-group-half">
+            <label for="mockRinjitsuMaxInput">満点</label>
+            <input type="number" id="mockRinjitsuMaxInput" class="form-input" placeholder="70">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-group-half">
+            <label for="mockRankInput">順位</label>
+            <input type="text" id="mockRankInput" class="form-input" placeholder="例：150/3000">
+          </div>
+          <div class="form-group form-group-half">
+            <label for="mockDeviationInput">偏差値</label>
+            <input type="number" id="mockDeviationInput" class="form-input" placeholder="55" step="0.1">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mockMemoInput">メモ</label>
+          <textarea id="mockMemoInput" class="form-textarea" placeholder="振り返りや気づきを記録..." rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="mockImageInput">成績表画像</label>
+          <div class="mock-image-upload" id="mockImageUpload">
+            <input type="file" id="mockImageInput" accept="image/*" style="display: none;">
+            <div class="mock-image-preview" id="mockImagePreview" style="display: none;">
+              <img id="mockImagePreviewImg" src="" alt="プレビュー">
+              <button class="mock-image-remove" id="mockImageRemove" type="button">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="mock-image-placeholder" id="mockImagePlaceholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+              <span>タップして画像を選択</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mock-modal-footer">
+        <button class="btn-cancel" id="mockModalCancel">キャンセル</button>
+        <button class="btn-save" id="mockModalSave">保存</button>
       </div>
     </div>
   </div>

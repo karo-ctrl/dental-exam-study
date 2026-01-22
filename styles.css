@@ -4324,3 +4324,636 @@ body {
 .confirm-modal-buttons .btn-danger:hover {
   background-color: #c0392b;
 }
+
+/* ===== 成績管理機能 ===== */
+
+/* トグルセクション */
+.stats-toggle-section {
+  margin-bottom: 12px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stats-toggle-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.stats-toggle-header:hover {
+  background-color: var(--hover-color);
+}
+
+.stats-toggle-header .toggle-arrow {
+  transition: transform 0.3s ease;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.stats-toggle-section.open .toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.stats-toggle-header .toggle-title {
+  flex: 1;
+  text-align: left;
+}
+
+.btn-add-mock {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add-mock:hover {
+  background-color: var(--accent-hover);
+}
+
+.stats-toggle-content {
+  display: none;
+  padding: 0 16px 16px;
+}
+
+.stats-toggle-section.open .stats-toggle-content {
+  display: block;
+}
+
+/* 今日の統計カード */
+.stats-today-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.stats-today-main {
+  text-align: left;
+}
+
+.stats-today-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stats-today-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.stats-today-compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.compare-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.compare-badge.positive {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+
+.compare-badge.negative {
+  background-color: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+.compare-badge.neutral {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.compare-label {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* 総合統計グリッド */
+.stats-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stats-summary-item {
+  text-align: center;
+  padding: 16px 8px;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+.stats-summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.stats-summary-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* 週間グラフセクション */
+.stats-chart-section {
+  margin-bottom: 20px;
+}
+
+.stats-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.stats-chart-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.stats-chart-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.stats-chart-tab {
+  padding: 4px 10px;
+  border: 1px solid var(--border-color);
+  background: none;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stats-chart-tab.active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: white;
+}
+
+/* 棒グラフ */
+.stats-bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 150px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+}
+
+.bar-container {
+  width: 100%;
+  max-width: 32px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bar {
+  width: 100%;
+  background: linear-gradient(180deg, var(--accent-color), var(--accent-hover));
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease;
+  min-height: 4px;
+}
+
+.bar-value {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.bar-label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+}
+
+/* 科目別正答率 */
+.stats-subject-section {
+  margin-top: 16px;
+}
+
+.stats-subject-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+.stats-subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stats-subject-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.subject-name {
+  width: 80px;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  flex-shrink: 0;
+}
+
+.subject-bar-container {
+  flex: 1;
+  height: 8px;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subject-bar {
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.subject-value {
+  width: 40px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* 模試成績リスト */
+.mock-exam-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.mock-exam-item {
+  padding: 16px;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mock-exam-item:hover {
+  background-color: var(--hover-color);
+}
+
+.mock-exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.mock-exam-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.mock-exam-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.mock-exam-actions button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.mock-exam-actions button:hover {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.mock-exam-actions .btn-delete:hover {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.mock-exam-score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.mock-exam-score-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.mock-exam-score-max {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.mock-exam-percent {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-left: 4px;
+}
+
+.mock-exam-date {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.mock-exam-details {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.mock-exam-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 成績推移グラフ */
+.mock-chart-section {
+  margin-top: 16px;
+}
+
+.mock-chart-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+.mock-line-chart {
+  position: relative;
+  height: 180px;
+  padding: 10px 0;
+}
+
+.line-chart-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line-chart-grid-line {
+  border-top: 1px dashed var(--border-color);
+  position: relative;
+}
+
+.line-chart-grid-label {
+  position: absolute;
+  left: -30px;
+  top: -8px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.line-chart-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 30px);
+}
+
+.line-chart-labels {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.line-chart-label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* 模試モーダル */
+.mock-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.mock-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.mock-modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: modalSlideUp 0.3s ease;
+  margin: 20px 0;
+}
+
+.mock-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mock-modal-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.mock-modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.mock-modal-close:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-color);
+}
+
+.mock-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-group-half {
+  flex: 1;
+}
+
+.mock-modal-footer {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border-color);
+  justify-content: flex-end;
+}
+
+/* 画像アップロード */
+.mock-image-upload {
+  border: 2px dashed var(--border-color);
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mock-image-upload:hover {
+  border-color: var(--accent-color);
+  background-color: var(--accent-light);
+}
+
+.mock-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.mock-image-placeholder span {
+  font-size: 0.85rem;
+}
+
+.mock-image-preview {
+  position: relative;
+}
+
+.mock-image-preview img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.mock-image-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.mock-image-remove:hover {
+  background-color: #e74c3c;
+}

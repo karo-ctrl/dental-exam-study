@@ -43,6 +43,11 @@ const state = {
   flashcardIncorrect: 0, // 不正解数
   isFlashcardFlipped: false, // カードがめくられているか
 
+  // 成績管理用
+  mockExams: [], // 模試成績配列
+  editingMockId: null, // 編集中の模試ID
+  statsChartPeriod: 'week', // 'week' or 'month'
+
   // UI状態
   currentIndex: 0,
   favorites: new Set(),
@@ -201,6 +206,50 @@ function initElements() {
   elements.confirmModalCancel = document.getElementById('confirmModalCancel');
   elements.confirmModalBackdrop = document.getElementById('confirmModalBackdrop');
 
+  // 成績管理の要素
+  elements.statsHome = document.getElementById('statsHome');
+  elements.statsTodayCount = document.getElementById('statsTodayCount');
+  elements.statsTodayCompare = document.getElementById('statsTodayCompare');
+  elements.statsTotalQuestions = document.getElementById('statsTotalQuestions');
+  elements.statsTotalAccuracy = document.getElementById('statsTotalAccuracy');
+  elements.statsStreak = document.getElementById('statsStreak');
+  elements.statsBarChart = document.getElementById('statsBarChart');
+  elements.statsSubjectSection = document.getElementById('statsSubjectSection');
+  elements.statsSubjectList = document.getElementById('statsSubjectList');
+  elements.mockExamList = document.getElementById('mockExamList');
+  elements.mockChartSection = document.getElementById('mockChartSection');
+  elements.mockLineChart = document.getElementById('mockLineChart');
+  elements.addMockExamBtn = document.getElementById('addMockExamBtn');
+  elements.learningStatsSection = document.getElementById('learningStatsSection');
+  elements.mockExamSection = document.getElementById('mockExamSection');
+
+  // 模試モーダルの要素
+  elements.mockExamModal = document.getElementById('mockExamModal');
+  elements.mockModalTitle = document.getElementById('mockModalTitle');
+  elements.mockNameInput = document.getElementById('mockNameInput');
+  elements.mockDateInput = document.getElementById('mockDateInput');
+  elements.mockTotalScoreInput = document.getElementById('mockTotalScoreInput');
+  elements.mockTotalMaxInput = document.getElementById('mockTotalMaxInput');
+  elements.mockHisshuScoreInput = document.getElementById('mockHisshuScoreInput');
+  elements.mockHisshuMaxInput = document.getElementById('mockHisshuMaxInput');
+  elements.mockIppanScoreInput = document.getElementById('mockIppanScoreInput');
+  elements.mockIppanMaxInput = document.getElementById('mockIppanMaxInput');
+  elements.mockRinjitsuScoreInput = document.getElementById('mockRinjitsuScoreInput');
+  elements.mockRinjitsuMaxInput = document.getElementById('mockRinjitsuMaxInput');
+  elements.mockRankInput = document.getElementById('mockRankInput');
+  elements.mockDeviationInput = document.getElementById('mockDeviationInput');
+  elements.mockMemoInput = document.getElementById('mockMemoInput');
+  elements.mockImageInput = document.getElementById('mockImageInput');
+  elements.mockImageUpload = document.getElementById('mockImageUpload');
+  elements.mockImagePreview = document.getElementById('mockImagePreview');
+  elements.mockImagePreviewImg = document.getElementById('mockImagePreviewImg');
+  elements.mockImagePlaceholder = document.getElementById('mockImagePlaceholder');
+  elements.mockImageRemove = document.getElementById('mockImageRemove');
+  elements.mockModalSave = document.getElementById('mockModalSave');
+  elements.mockModalCancel = document.getElementById('mockModalCancel');
+  elements.mockModalClose = document.getElementById('mockModalClose');
+  elements.mockModalBackdrop = document.getElementById('mockModalBackdrop');
+
   // 過去問ホームのボタン
   elements.dailyHisshuBtn = document.getElementById('dailyHisshuBtn');
   elements.dailyIppanBtn = document.getElementById('dailyIppanBtn');
@@ -355,10 +404,20 @@ function switchTab(tab, forceHome = false) {
   elements.kakomonHome.style.display = 'none';
   elements.originalHome.style.display = 'none';
   elements.summaryHome.style.display = 'none';
+  elements.statsHome.style.display = 'none';
   elements.quizScreen.style.display = 'none';
   elements.questionNav.style.display = 'none';
   if (elements.summaryCategoryScreen) {
     elements.summaryCategoryScreen.style.display = 'none';
+  }
+  if (elements.deckDetailScreen) {
+    elements.deckDetailScreen.style.display = 'none';
+  }
+  if (elements.flashcardScreen) {
+    elements.flashcardScreen.style.display = 'none';
+  }
+  if (elements.flashcardResultScreen) {
+    elements.flashcardResultScreen.style.display = 'none';
   }
 
   // 過去問タブで問題表示中だった場合は復元
@@ -391,6 +450,14 @@ function switchTab(tab, forceHome = false) {
         elements.menuBtn.style.display = 'flex';
         // まとめホームを初期化
         initSummaryHome();
+        break;
+      case 'stats':
+        elements.statsHome.style.display = 'block';
+        elements.headerTitle.textContent = '成績管理';
+        elements.backBtn.style.display = 'none';
+        elements.menuBtn.style.display = 'flex';
+        // 成績管理ホームを初期化
+        initStatsHome();
         break;
     }
   }
@@ -2651,6 +2718,590 @@ function handleDeckImport(event) {
   event.target.value = ''; // リセット
 }
 
+// ===== 成績管理機能 =====
+
+// 成績管理ホームを初期化
+function initStatsHome() {
+  loadMockExams();
+  renderLearningStats();
+  renderMockExamList();
+  setupStatsEventListeners();
+}
+
+// 学習統計を表示
+function renderLearningStats() {
+  // 今日の問題数
+  const today = new Date().toISOString().split('T')[0];
+  const todayCount = state.dailyStats[today] || 0;
+
+  if (elements.statsTodayCount) {
+    elements.statsTodayCount.textContent = todayCount;
+  }
+
+  // 前週平均との比較
+  const lastWeekAvg = calculateLastWeekAverage();
+  if (elements.statsTodayCompare) {
+    const diff = todayCount - lastWeekAvg;
+    const badge = elements.statsTodayCompare.querySelector('.compare-badge');
+    if (badge) {
+      badge.className = 'compare-badge';
+      if (diff > 0) {
+        badge.classList.add('positive');
+        badge.textContent = `+${diff}`;
+      } else if (diff < 0) {
+        badge.classList.add('negative');
+        badge.textContent = `${diff}`;
+      } else {
+        badge.classList.add('neutral');
+        badge.textContent = '±0';
+      }
+    }
+  }
+
+  // 総回答数
+  const totalQuestions = Object.values(state.dailyStats).reduce((sum, count) => sum + count, 0);
+  if (elements.statsTotalQuestions) {
+    elements.statsTotalQuestions.textContent = totalQuestions.toLocaleString();
+  }
+
+  // 正答率
+  const accuracy = calculateOverallAccuracy();
+  if (elements.statsTotalAccuracy) {
+    elements.statsTotalAccuracy.textContent = accuracy !== null ? `${accuracy}%` : '--%';
+  }
+
+  // 連続日数
+  const streak = calculateStreak();
+  if (elements.statsStreak) {
+    elements.statsStreak.textContent = streak;
+  }
+
+  // 週間/月間グラフを描画
+  renderStatsChart();
+
+  // 科目別正答率を描画
+  renderSubjectStats();
+}
+
+// 前週平均を計算
+function calculateLastWeekAverage() {
+  const dates = [];
+  const today = new Date();
+
+  for (let i = 1; i <= 7; i++) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    dates.push(date.toISOString().split('T')[0]);
+  }
+
+  const counts = dates.map(date => state.dailyStats[date] || 0);
+  const sum = counts.reduce((a, b) => a + b, 0);
+  return Math.round(sum / 7);
+}
+
+// 全体正答率を計算
+function calculateOverallAccuracy() {
+  let totalCorrect = 0;
+  let totalAttempts = 0;
+
+  Object.values(state.questionHistory).forEach(history => {
+    if (history.history && history.history.length > 0) {
+      totalAttempts += history.history.length;
+      totalCorrect += history.history.filter(h => h.correct).length;
+    }
+  });
+
+  if (totalAttempts === 0) return null;
+  return Math.round((totalCorrect / totalAttempts) * 100);
+}
+
+// 連続日数を計算
+function calculateStreak() {
+  let streak = 0;
+  const today = new Date();
+
+  for (let i = 0; i < 365; i++) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    const dateStr = date.toISOString().split('T')[0];
+
+    if (state.dailyStats[dateStr] && state.dailyStats[dateStr] > 0) {
+      streak++;
+    } else if (i > 0) {
+      break;
+    }
+  }
+
+  return streak;
+}
+
+// 学習グラフを描画
+function renderStatsChart() {
+  if (!elements.statsBarChart) return;
+
+  const period = state.statsChartPeriod;
+  const days = period === 'week' ? 7 : 30;
+  const data = [];
+  const today = new Date();
+
+  for (let i = days - 1; i >= 0; i--) {
+    const date = new Date(today);
+    date.setDate(date.getDate() - i);
+    const dateStr = date.toISOString().split('T')[0];
+    const count = state.dailyStats[dateStr] || 0;
+    const label = period === 'week'
+      ? ['日', '月', '火', '水', '木', '金', '土'][date.getDay()]
+      : `${date.getMonth() + 1}/${date.getDate()}`;
+
+    data.push({ date: dateStr, count, label });
+  }
+
+  const maxCount = Math.max(...data.map(d => d.count), 1);
+
+  elements.statsBarChart.innerHTML = data.map(d => {
+    const height = (d.count / maxCount) * 100;
+    return `
+      <div class="bar-item">
+        <div class="bar-container">
+          <span class="bar-value">${d.count > 0 ? d.count : ''}</span>
+          <div class="bar" style="height: ${height}%"></div>
+        </div>
+        <span class="bar-label">${d.label}</span>
+      </div>
+    `;
+  }).join('');
+}
+
+// 科目別正答率を表示
+function renderSubjectStats() {
+  if (!elements.statsSubjectSection || !elements.statsSubjectList) return;
+
+  const subjectStats = {};
+
+  Object.entries(state.questionHistory).forEach(([id, history]) => {
+    if (history.history && history.history.length > 0) {
+      const subject = history.subject || '不明';
+      if (!subjectStats[subject]) {
+        subjectStats[subject] = { correct: 0, total: 0 };
+      }
+      subjectStats[subject].total += history.history.length;
+      subjectStats[subject].correct += history.history.filter(h => h.correct).length;
+    }
+  });
+
+  const subjects = Object.entries(subjectStats)
+    .map(([name, stats]) => ({
+      name,
+      accuracy: Math.round((stats.correct / stats.total) * 100),
+      total: stats.total
+    }))
+    .sort((a, b) => b.total - a.total)
+    .slice(0, 8);
+
+  if (subjects.length === 0) {
+    elements.statsSubjectSection.style.display = 'none';
+    return;
+  }
+
+  elements.statsSubjectSection.style.display = 'block';
+  elements.statsSubjectList.innerHTML = subjects.map(s => `
+    <div class="stats-subject-item">
+      <span class="subject-name">${s.name}</span>
+      <div class="subject-bar-container">
+        <div class="subject-bar" style="width: ${s.accuracy}%"></div>
+      </div>
+      <span class="subject-value">${s.accuracy}%</span>
+    </div>
+  `).join('');
+}
+
+// 成績管理のイベントリスナーを設定
+function setupStatsEventListeners() {
+  // トグルセクション
+  document.querySelectorAll('.stats-toggle-header').forEach(header => {
+    header.addEventListener('click', (e) => {
+      // 追加ボタンのクリックは除外
+      if (e.target.closest('.btn-add-mock')) return;
+      const section = header.parentElement;
+      section.classList.toggle('open');
+    });
+  });
+
+  // グラフ期間タブ
+  document.querySelectorAll('.stats-chart-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.stats-chart-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      state.statsChartPeriod = tab.dataset.period;
+      renderStatsChart();
+    });
+  });
+
+  // 模試追加ボタン
+  elements.addMockExamBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    openMockModal();
+  });
+
+  // 模試モーダル
+  elements.mockModalSave?.addEventListener('click', saveMockExam);
+  elements.mockModalCancel?.addEventListener('click', closeMockModal);
+  elements.mockModalClose?.addEventListener('click', closeMockModal);
+  elements.mockModalBackdrop?.addEventListener('click', closeMockModal);
+
+  // 画像アップロード
+  elements.mockImageUpload?.addEventListener('click', () => {
+    elements.mockImageInput?.click();
+  });
+
+  elements.mockImageInput?.addEventListener('change', handleMockImageSelect);
+
+  elements.mockImageRemove?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    removeMockImage();
+  });
+}
+
+// 模試をLocalStorageから読み込み
+function loadMockExams() {
+  const saved = localStorage.getItem('dentalExamMockExams');
+  if (saved) {
+    state.mockExams = JSON.parse(saved);
+  }
+}
+
+// 模試をLocalStorageに保存
+function saveMockExamsToStorage() {
+  localStorage.setItem('dentalExamMockExams', JSON.stringify(state.mockExams));
+  // Firestoreにも同期
+  if (state.isAuthenticated) {
+    scheduleSyncToFirestore();
+  }
+}
+
+// 模試リストを表示
+function renderMockExamList() {
+  if (!elements.mockExamList) return;
+
+  if (state.mockExams.length === 0) {
+    elements.mockExamList.innerHTML = '<p class="empty-message">まだ模試成績が登録されていません。</p>';
+    if (elements.mockChartSection) {
+      elements.mockChartSection.style.display = 'none';
+    }
+    return;
+  }
+
+  // 日付順にソート（新しい順）
+  const sortedExams = [...state.mockExams].sort((a, b) =>
+    new Date(b.date) - new Date(a.date)
+  );
+
+  elements.mockExamList.innerHTML = sortedExams.map(exam => {
+    const percent = Math.round((exam.totalScore / exam.totalMax) * 100);
+    const dateStr = formatDate(exam.date);
+
+    let detailsHtml = '';
+    const details = [];
+    if (exam.rank) details.push(`順位: ${exam.rank}`);
+    if (exam.deviation) details.push(`偏差値: ${exam.deviation}`);
+
+    if (details.length > 0) {
+      detailsHtml = `
+        <div class="mock-exam-details">
+          ${details.map(d => `<span class="mock-exam-detail-item">${d}</span>`).join('')}
+        </div>
+      `;
+    }
+
+    return `
+      <div class="mock-exam-item" data-mock-id="${exam.id}">
+        <div class="mock-exam-header">
+          <div class="mock-exam-name">${escapeHtml(exam.name)}</div>
+          <div class="mock-exam-actions">
+            <button class="btn-edit" data-mock-id="${exam.id}" title="編集">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+            </button>
+            <button class="btn-delete" data-mock-id="${exam.id}" title="削除">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mock-exam-score">
+          <span class="mock-exam-score-value">${exam.totalScore}</span>
+          <span class="mock-exam-score-max">/ ${exam.totalMax}</span>
+          <span class="mock-exam-percent">(${percent}%)</span>
+        </div>
+        <div class="mock-exam-date">${dateStr}</div>
+        ${detailsHtml}
+      </div>
+    `;
+  }).join('');
+
+  // 編集・削除ボタンのイベント
+  elements.mockExamList.querySelectorAll('.btn-edit').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openMockModal(btn.dataset.mockId);
+    });
+  });
+
+  elements.mockExamList.querySelectorAll('.btn-delete').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showDeleteMockConfirm(btn.dataset.mockId);
+    });
+  });
+
+  // 成績推移グラフを表示
+  if (state.mockExams.length >= 2 && elements.mockChartSection) {
+    elements.mockChartSection.style.display = 'block';
+    renderMockLineChart();
+  } else if (elements.mockChartSection) {
+    elements.mockChartSection.style.display = 'none';
+  }
+}
+
+// 日付をフォーマット
+function formatDate(dateStr) {
+  const date = new Date(dateStr);
+  return `${date.getFullYear()}/${String(date.getMonth() + 1).padStart(2, '0')}/${String(date.getDate()).padStart(2, '0')}`;
+}
+
+// 模試モーダルを開く
+function openMockModal(mockId = null) {
+  state.editingMockId = mockId;
+
+  if (mockId) {
+    // 編集モード
+    const exam = state.mockExams.find(e => e.id === mockId);
+    if (!exam) return;
+
+    elements.mockModalTitle.textContent = '模試成績を編集';
+    elements.mockNameInput.value = exam.name;
+    elements.mockDateInput.value = exam.date;
+    elements.mockTotalScoreInput.value = exam.totalScore;
+    elements.mockTotalMaxInput.value = exam.totalMax;
+    elements.mockHisshuScoreInput.value = exam.hisshuScore || '';
+    elements.mockHisshuMaxInput.value = exam.hisshuMax || '';
+    elements.mockIppanScoreInput.value = exam.ippanScore || '';
+    elements.mockIppanMaxInput.value = exam.ippanMax || '';
+    elements.mockRinjitsuScoreInput.value = exam.rinjitsuScore || '';
+    elements.mockRinjitsuMaxInput.value = exam.rinjitsuMax || '';
+    elements.mockRankInput.value = exam.rank || '';
+    elements.mockDeviationInput.value = exam.deviation || '';
+    elements.mockMemoInput.value = exam.memo || '';
+
+    // 画像
+    if (exam.image) {
+      elements.mockImagePreviewImg.src = exam.image;
+      elements.mockImagePreview.style.display = 'block';
+      elements.mockImagePlaceholder.style.display = 'none';
+    } else {
+      elements.mockImagePreview.style.display = 'none';
+      elements.mockImagePlaceholder.style.display = 'flex';
+    }
+  } else {
+    // 新規作成モード
+    elements.mockModalTitle.textContent = '模試成績を登録';
+    elements.mockNameInput.value = '';
+    elements.mockDateInput.value = new Date().toISOString().split('T')[0];
+    elements.mockTotalScoreInput.value = '';
+    elements.mockTotalMaxInput.value = '';
+    elements.mockHisshuScoreInput.value = '';
+    elements.mockHisshuMaxInput.value = '';
+    elements.mockIppanScoreInput.value = '';
+    elements.mockIppanMaxInput.value = '';
+    elements.mockRinjitsuScoreInput.value = '';
+    elements.mockRinjitsuMaxInput.value = '';
+    elements.mockRankInput.value = '';
+    elements.mockDeviationInput.value = '';
+    elements.mockMemoInput.value = '';
+    elements.mockImagePreview.style.display = 'none';
+    elements.mockImagePlaceholder.style.display = 'flex';
+  }
+
+  elements.mockExamModal.style.display = 'flex';
+}
+
+// 模試モーダルを閉じる
+function closeMockModal() {
+  elements.mockExamModal.style.display = 'none';
+  state.editingMockId = null;
+}
+
+// 模試を保存
+function saveMockExam() {
+  const name = elements.mockNameInput.value.trim();
+  const date = elements.mockDateInput.value;
+  const totalScore = parseInt(elements.mockTotalScoreInput.value);
+  const totalMax = parseInt(elements.mockTotalMaxInput.value);
+
+  if (!name || !date || isNaN(totalScore) || isNaN(totalMax)) {
+    alert('模試名、受験日、総合点数、満点は必須です');
+    return;
+  }
+
+  const examData = {
+    name,
+    date,
+    totalScore,
+    totalMax,
+    hisshuScore: elements.mockHisshuScoreInput.value ? parseInt(elements.mockHisshuScoreInput.value) : null,
+    hisshuMax: elements.mockHisshuMaxInput.value ? parseInt(elements.mockHisshuMaxInput.value) : null,
+    ippanScore: elements.mockIppanScoreInput.value ? parseInt(elements.mockIppanScoreInput.value) : null,
+    ippanMax: elements.mockIppanMaxInput.value ? parseInt(elements.mockIppanMaxInput.value) : null,
+    rinjitsuScore: elements.mockRinjitsuScoreInput.value ? parseInt(elements.mockRinjitsuScoreInput.value) : null,
+    rinjitsuMax: elements.mockRinjitsuMaxInput.value ? parseInt(elements.mockRinjitsuMaxInput.value) : null,
+    rank: elements.mockRankInput.value.trim() || null,
+    deviation: elements.mockDeviationInput.value ? parseFloat(elements.mockDeviationInput.value) : null,
+    memo: elements.mockMemoInput.value.trim() || null,
+    image: elements.mockImagePreview.style.display !== 'none' ? elements.mockImagePreviewImg.src : null
+  };
+
+  if (state.editingMockId) {
+    // 編集
+    const index = state.mockExams.findIndex(e => e.id === state.editingMockId);
+    if (index !== -1) {
+      state.mockExams[index] = { ...state.mockExams[index], ...examData };
+    }
+  } else {
+    // 新規作成
+    examData.id = 'mock-' + Date.now();
+    examData.createdAt = new Date().toISOString();
+    state.mockExams.push(examData);
+  }
+
+  saveMockExamsToStorage();
+  renderMockExamList();
+  closeMockModal();
+}
+
+// 画像選択を処理
+function handleMockImageSelect(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  // ファイルサイズチェック（2MB以下）
+  if (file.size > 2 * 1024 * 1024) {
+    alert('画像サイズは2MB以下にしてください');
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    // 画像を圧縮
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      const maxSize = 800;
+      let width = img.width;
+      let height = img.height;
+
+      if (width > height && width > maxSize) {
+        height = (height * maxSize) / width;
+        width = maxSize;
+      } else if (height > maxSize) {
+        width = (width * maxSize) / height;
+        height = maxSize;
+      }
+
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, width, height);
+
+      const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.7);
+      elements.mockImagePreviewImg.src = compressedDataUrl;
+      elements.mockImagePreview.style.display = 'block';
+      elements.mockImagePlaceholder.style.display = 'none';
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+  event.target.value = '';
+}
+
+// 画像を削除
+function removeMockImage() {
+  elements.mockImagePreviewImg.src = '';
+  elements.mockImagePreview.style.display = 'none';
+  elements.mockImagePlaceholder.style.display = 'flex';
+}
+
+// 模試削除確認
+function showDeleteMockConfirm(mockId) {
+  const exam = state.mockExams.find(e => e.id === mockId);
+  if (!exam) return;
+
+  elements.confirmModalTitle.textContent = '模試成績を削除';
+  elements.confirmModalMessage.textContent = `「${exam.name}」を削除しますか？この操作は取り消せません。`;
+  elements.confirmModalConfirm.onclick = () => {
+    state.mockExams = state.mockExams.filter(e => e.id !== mockId);
+    saveMockExamsToStorage();
+    renderMockExamList();
+    closeConfirmModal();
+  };
+  elements.confirmModal.style.display = 'flex';
+}
+
+// 成績推移グラフを描画
+function renderMockLineChart() {
+  if (!elements.mockLineChart || state.mockExams.length < 2) return;
+
+  // 日付順にソート（古い順）
+  const sortedExams = [...state.mockExams]
+    .sort((a, b) => new Date(a.date) - new Date(b.date))
+    .slice(-10); // 最新10件
+
+  const points = sortedExams.map((exam, index) => {
+    const percent = Math.round((exam.totalScore / exam.totalMax) * 100);
+    return { exam, percent, index };
+  });
+
+  const maxPercent = 100;
+  const minPercent = 0;
+  const chartHeight = 150;
+  const chartWidth = elements.mockLineChart.clientWidth - 20;
+  const padding = { top: 10, bottom: 30, left: 10, right: 10 };
+
+  const getX = (index) => padding.left + (index / (points.length - 1)) * (chartWidth - padding.left - padding.right);
+  const getY = (percent) => padding.top + ((maxPercent - percent) / (maxPercent - minPercent)) * (chartHeight - padding.top - padding.bottom);
+
+  // SVGパス生成
+  let pathD = points.map((p, i) => {
+    const x = getX(i);
+    const y = getY(p.percent);
+    return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
+  }).join(' ');
+
+  elements.mockLineChart.innerHTML = `
+    <div class="line-chart-grid">
+      <div class="line-chart-grid-line"><span class="line-chart-grid-label">100%</span></div>
+      <div class="line-chart-grid-line"><span class="line-chart-grid-label">75%</span></div>
+      <div class="line-chart-grid-line"><span class="line-chart-grid-label">50%</span></div>
+      <div class="line-chart-grid-line"><span class="line-chart-grid-label">25%</span></div>
+      <div class="line-chart-grid-line"><span class="line-chart-grid-label">0%</span></div>
+    </div>
+    <svg class="line-chart-svg" viewBox="0 0 ${chartWidth} ${chartHeight}" preserveAspectRatio="none">
+      <path d="${pathD}" fill="none" stroke="var(--accent-color)" stroke-width="2"/>
+      ${points.map(p => {
+        const x = getX(p.index);
+        const y = getY(p.percent);
+        return `<circle cx="${x}" cy="${y}" r="4" fill="var(--accent-color)"/>`;
+      }).join('')}
+    </svg>
+    <div class="line-chart-labels">
+      ${points.map(p => `<span class="line-chart-label">${p.exam.date.slice(5)}</span>`).join('')}
+    </div>
+  `;
+}
+
 // ===== 共通ナビゲーション =====
 function updateNavButtons() {
   const total = state.mode === 'quiz' ? state.filteredQuestions.length : state.flattenedCards.length;
@@ -3807,6 +4458,9 @@ async function syncToFirestore() {
       // オリジナル問題データ
       originalDecks: state.originalDecks,
 
+      // 模試成績データ
+      mockExams: state.mockExams,
+
       // 統計データ
       dailyStats: state.dailyStats,
       questionHistory: state.questionHistory,
@@ -3868,6 +4522,9 @@ async function loadFromFirestore() {
 
       // オリジナル問題データを復元
       if (data.originalDecks) state.originalDecks = data.originalDecks;
+
+      // 模試成績データを復元
+      if (data.mockExams) state.mockExams = data.mockExams;
 
       console.log('Data loaded from Firestore');
       return true;
