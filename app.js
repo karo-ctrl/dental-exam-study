@@ -445,11 +445,13 @@ function switchTab(tab, forceHome = false) {
         initOriginalHome();
         break;
       case 'summary':
+        console.log('[DEBUG] switchTab: summary タブに切り替え');
         elements.summaryHome.style.display = 'block';
         elements.headerTitle.textContent = 'まとめ';
         elements.backBtn.style.display = 'none';
         elements.menuBtn.style.display = 'flex';
         // まとめホームを初期化
+        console.log('[DEBUG] initSummaryHome() を呼び出し');
         initSummaryHome();
         break;
       case 'stats':
@@ -1185,26 +1187,37 @@ function getCategoryEmoji(icon) {
 
 // まとめホーム画面を初期化
 async function initSummaryHome() {
+  console.log('[DEBUG] initSummaryHome() 開始');
+
   // インデックスデータを読み込み
   if (!state.summaryIndex) {
+    console.log('[DEBUG] summaryIndex がないので読み込み開始');
     try {
       const response = await fetch('./data/summaries/index.json');
+      console.log('[DEBUG] index.json fetch 結果:', response.status);
       if (!response.ok) throw new Error('まとめデータの読み込みに失敗しました');
       state.summaryIndex = await response.json();
+      console.log('[DEBUG] summaryIndex 読み込み完了');
     } catch (error) {
-      console.error('まとめインデックス読み込みエラー:', error);
+      console.error('[DEBUG] まとめインデックス読み込みエラー:', error);
       return;
     }
+  } else {
+    console.log('[DEBUG] summaryIndex は既に存在');
   }
 
   // トグルセクションを設定
+  console.log('[DEBUG] setupSummaryToggles() 呼び出し');
   setupSummaryToggles();
 
   // カテゴリグリッドを表示
+  console.log('[DEBUG] renderSummaryCategoriesGrid() 呼び出し');
   renderSummaryCategoriesGrid();
 
   // キーワードまとめを読み込み・表示
+  console.log('[DEBUG] loadKeywordSummaries() 呼び出し前');
   await loadKeywordSummaries();
+  console.log('[DEBUG] renderKeywordSummaries() 呼び出し前');
   renderKeywordSummaries();
 
   // 最近見たまとめを表示
