@@ -695,6 +695,22 @@
           </div>
         </div>
 
+        <!-- キーワードまとめ（トグル） -->
+        <div class="summary-toggle-section open" id="keywordSummariesSection">
+          <button class="summary-toggle-header" data-toggle="keywords">
+            <svg class="toggle-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span class="toggle-title">キーワードまとめ</span>
+            <span class="toggle-badge" id="keywordCount">0</span>
+          </button>
+          <div class="summary-toggle-content" id="keywordsToggleContent">
+            <div class="keyword-summaries-list" id="keywordSummariesList">
+              <!-- キーワードがJSで動的に追加される -->
+            </div>
+          </div>
+        </div>
+
         <!-- 最近見たまとめ（トグル） -->
         <div class="summary-toggle-section" id="summaryRecentSection">
           <button class="summary-toggle-header" data-toggle="recent">

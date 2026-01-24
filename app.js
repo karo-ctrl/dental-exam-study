@@ -21,6 +21,7 @@ const state = {
 
   // まとめモード用データ
   summaryIndex: null,
+  keywordSummaries: null, // キーワードまとめデータ
   summaryAllCards: [], // 全まとめカードのフラット配列（検索用）
   currentCategoryData: null,
   currentCategory: null,
@@ -1202,6 +1203,10 @@ async function initSummaryHome() {
   // カテゴリグリッドを表示
   renderSummaryCategoriesGrid();
 
+  // キーワードまとめを読み込み・表示
+  await loadKeywordSummaries();
+  renderKeywordSummaries();
+
   // 最近見たまとめを表示
   loadRecentSummaries();
   renderRecentSummaries();
@@ -1276,6 +1281,57 @@ function renderSummaryCategoriesGrid() {
   elements.summaryCategoriesGrid.querySelectorAll('.summary-category-card').forEach(card => {
     card.addEventListener('click', () => {
       openSummaryCategory(card.dataset.categoryId);
+    });
+  });
+}
+
+// キーワードまとめを読み込み
+async function loadKeywordSummaries() {
+  if (state.keywordSummaries) return; // 既に読み込み済み
+
+  try {
+    const response = await fetch('./data/summaries/keywords.json');
+    if (!response.ok) throw new Error('キーワードまとめデータの読み込みに失敗しました');
+    state.keywordSummaries = await response.json();
+    console.log(`キーワードまとめ読み込み完了: ${state.keywordSummaries.keywords.length}件`);
+  } catch (error) {
+    console.error('キーワードまとめ読み込みエラー:', error);
+    state.keywordSummaries = { keywords: [] };
+  }
+}
+
+// キーワードまとめを表示
+function renderKeywordSummaries() {
+  const container = document.getElementById('keywordSummariesList');
+  const countBadge = document.getElementById('keywordCount');
+
+  if (!container || !state.keywordSummaries) return;
+
+  const keywords = state.keywordSummaries.keywords;
+
+  if (keywords.length === 0) {
+    container.innerHTML = '<p class="empty-message">キーワードまとめがありません</p>';
+    if (countBadge) countBadge.textContent = '0';
+    return;
+  }
+
+  // キーワード数を更新
+  if (countBadge) countBadge.textContent = keywords.length;
+
+  // キーワードチップを生成
+  container.innerHTML = keywords.map(kw => `
+    <div class="keyword-summary-chip" data-html-file="${kw.htmlFile}" data-keyword="${kw.keyword}">
+      <span class="keyword-name">${kw.keyword}</span>
+      <span class="keyword-category">${kw.category}</span>
+      ${kw.questions.length > 0 ? `<span class="question-count">${kw.questions.length}</span>` : ''}
+    </div>
+  `).join('');
+
+  // クリックイベント
+  container.querySelectorAll('.keyword-summary-chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const htmlFile = chip.dataset.htmlFile;
+      showKeywordSummaryModal(htmlFile);
     });
   });
 }
