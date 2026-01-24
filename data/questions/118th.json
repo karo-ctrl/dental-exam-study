@@ -35,7 +35,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A002",
@@ -69,7 +72,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A003",
@@ -103,7 +109,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A004",
@@ -138,7 +147,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A005",
@@ -172,7 +184,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A006",
@@ -206,7 +221,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A007",
@@ -242,7 +260,10 @@
       "imageRef": "別冊No.1",
       "relatedLinks": [
         "別冊No.1"
-      ]
+      ],
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A008",
@@ -276,7 +297,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A009",
@@ -310,7 +334,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A010",
@@ -344,7 +371,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A011",
@@ -378,7 +408,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A012",
@@ -412,7 +445,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A013",
@@ -447,7 +483,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A014",
@@ -483,7 +522,10 @@
       "imageRef": "別冊No.2",
       "relatedLinks": [
         "別冊No.2"
-      ]
+      ],
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A015",
@@ -517,7 +559,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A016",
@@ -551,7 +596,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A017",
@@ -585,7 +633,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A018",
@@ -619,7 +670,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A019",
@@ -653,7 +707,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A020",
@@ -687,7 +744,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A021",
@@ -727,7 +787,10 @@
         "別冊No.3B",
         "別冊No.3C",
         "別冊No.3D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A022",
@@ -763,7 +826,10 @@
         "別冊No.4A",
         "別冊No.4B",
         "別冊No.4C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A023",
@@ -798,7 +864,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A024",
@@ -834,7 +903,10 @@
       "imageRef": "別冊No.5",
       "relatedLinks": [
         "別冊No.5"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A025",
@@ -872,7 +944,10 @@
       "relatedLinks": [
         "別冊No.6A",
         "別冊No.6B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A026",
@@ -907,7 +982,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A027",
@@ -941,7 +1019,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A028",
@@ -975,7 +1056,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A029",
@@ -1009,7 +1093,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A030",
@@ -1049,7 +1136,10 @@
         "別冊No.7C",
         "別冊No.7D",
         "別冊No.7E"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A031",
@@ -1084,7 +1174,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A032",
@@ -1122,7 +1215,10 @@
       "relatedLinks": [
         "別冊No.8A",
         "別冊No.8B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A033",
@@ -1160,7 +1256,10 @@
       "relatedLinks": [
         "別冊No.9A",
         "別冊No.9B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A034",
@@ -1195,7 +1294,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A035",
@@ -1232,7 +1334,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A036",
@@ -1264,7 +1369,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A037",
@@ -1305,7 +1413,10 @@
         "別冊No.10D",
         "別冊No.10E",
         "別冊No.10F"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A038",
@@ -1339,7 +1450,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A039",
@@ -1373,7 +1487,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A040",
@@ -1407,7 +1524,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A041",
@@ -1441,7 +1561,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A042",
@@ -1477,7 +1600,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A043",
@@ -1512,7 +1638,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A044",
@@ -1547,7 +1676,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A045",
@@ -1586,7 +1718,10 @@
         "別冊No.11A",
         "別冊No.11B",
         "別冊No.11C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A046",
@@ -1620,7 +1755,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A047",
@@ -1655,7 +1793,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A048",
@@ -1690,7 +1831,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A049",
@@ -1726,7 +1870,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A050",
@@ -1764,7 +1911,10 @@
       "relatedLinks": [
         "別冊No.12A",
         "別冊No.12B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A051",
@@ -1801,7 +1951,10 @@
       "relatedLinks": [
         "別冊No.12A",
         "別冊No.12B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A052",
@@ -1837,7 +1990,10 @@
       "imageRef": "別冊No.13",
       "relatedLinks": [
         "別冊No.13"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A053",
@@ -1871,7 +2027,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A054",
@@ -1907,7 +2066,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A055",
@@ -1943,7 +2105,10 @@
         "別冊No.14A",
         "別冊No.14B",
         "別冊No.14C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A056",
@@ -1975,7 +2140,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A057",
@@ -2010,7 +2178,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A058",
@@ -2026,7 +2197,10 @@
       "imageRef": "別冊No.15",
       "relatedLinks": [
         "別冊No.15"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A059",
@@ -2058,7 +2232,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A060",
@@ -2094,7 +2271,10 @@
       "imageRef": "別冊No.16",
       "relatedLinks": [
         "別冊No.16"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A061",
@@ -2131,7 +2311,10 @@
       "imageRef": "別冊No.17A",
       "relatedLinks": [
         "別冊No.17A"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A062",
@@ -2144,7 +2327,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A063",
@@ -2181,7 +2367,10 @@
       "relatedLinks": [
         "別冊No.18A",
         "別冊No.18B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A064",
@@ -2197,7 +2386,10 @@
       "relatedLinks": [
         "別冊No.19A",
         "別冊No.19B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A065",
@@ -2231,7 +2423,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A066",
@@ -2265,7 +2460,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A067",
@@ -2303,7 +2501,10 @@
       "relatedLinks": [
         "別冊No.20A",
         "別冊No.20B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A068",
@@ -2340,7 +2541,10 @@
       "relatedLinks": [
         "別冊No.21A",
         "別冊No.21B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A069",
@@ -2376,7 +2580,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A070",
@@ -2392,7 +2599,10 @@
       "relatedLinks": [
         "別冊No.12A",
         "別冊No.12B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A071",
@@ -2427,7 +2637,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A072",
@@ -2459,7 +2672,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A073",
@@ -2494,7 +2710,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A074",
@@ -2530,7 +2749,10 @@
       "imageRef": "別冊No.23",
       "relatedLinks": [
         "別冊No.23"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A075",
@@ -2564,7 +2786,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A076",
@@ -2602,7 +2827,10 @@
       "imageRef": "別冊No.24",
       "relatedLinks": [
         "別冊No.24"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A077",
@@ -2636,7 +2864,10 @@
         "別冊No.25A",
         "別冊No.25B",
         "別冊No.25C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A078",
@@ -2651,7 +2882,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A079",
@@ -2688,7 +2922,10 @@
       "relatedLinks": [
         "別冊No.27A",
         "別冊No.27B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A080",
@@ -2723,7 +2960,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A081",
@@ -2760,7 +3000,10 @@
       "relatedLinks": [
         "別冊No.28A",
         "別冊No.28B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A082",
@@ -2795,7 +3038,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A083",
@@ -2831,7 +3077,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A084",
@@ -2868,7 +3117,10 @@
       "imageRef": "別冊No.29",
       "relatedLinks": [
         "別冊No.29"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A085",
@@ -2903,7 +3155,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A086",
@@ -2939,7 +3194,10 @@
         "別冊No.30A",
         "別冊No.30B",
         "別冊No.30C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A087",
@@ -2975,7 +3233,10 @@
       "imageRef": "別冊No.31",
       "relatedLinks": [
         "別冊No.31"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A088",
@@ -3015,7 +3276,10 @@
         "別冊No.32A",
         "別冊No.32B",
         "別冊No.32C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-A089",
@@ -3053,7 +3317,10 @@
         "d"
       ],
       "imageRef": "別冊No.33",
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-A090",
@@ -3067,7 +3334,10 @@
         "0"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B001",
@@ -3101,7 +3371,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B002",
@@ -3135,7 +3408,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B003",
@@ -3169,7 +3445,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B004",
@@ -3203,7 +3482,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B005",
@@ -3238,7 +3520,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B006",
@@ -3272,7 +3557,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B007",
@@ -3308,7 +3596,10 @@
       "imageRef": "別冊No.1",
       "relatedLinks": [
         "別冊No.1"
-      ]
+      ],
+      "category": "必修",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B008",
@@ -3342,7 +3633,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B009",
@@ -3376,7 +3670,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B010",
@@ -3410,7 +3707,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B011",
@@ -3444,7 +3744,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B012",
@@ -3478,7 +3781,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B013",
@@ -3512,7 +3818,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B014",
@@ -3546,7 +3855,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B015",
@@ -3578,7 +3890,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B016",
@@ -3589,7 +3904,10 @@
       "choices": [],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B017",
@@ -3623,7 +3941,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B018",
@@ -3657,7 +3978,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B019",
@@ -3689,7 +4013,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B020",
@@ -3724,7 +4051,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B021",
@@ -3760,7 +4090,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B022",
@@ -3799,7 +4132,10 @@
       "relatedLinks": [
         "別冊No.2A",
         "別冊No.2B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B023",
@@ -3816,7 +4152,10 @@
       "relatedLinks": [
         "別冊No.3A",
         "別冊No.3B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B024",
@@ -3850,7 +4189,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B025",
@@ -3885,7 +4227,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B026",
@@ -3921,7 +4266,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B027",
@@ -3958,7 +4306,10 @@
       "relatedLinks": [
         "別冊No.4A",
         "別冊No.4C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B028",
@@ -3994,7 +4345,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B029",
@@ -4032,7 +4386,10 @@
       "relatedLinks": [
         "別冊No.5A",
         "別冊No.5B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B030",
@@ -4070,7 +4427,10 @@
         "別冊No.6A",
         "別冊No.6B",
         "別冊No.6C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B031",
@@ -4104,7 +4464,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B032",
@@ -4139,7 +4502,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B033",
@@ -4175,7 +4541,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B034",
@@ -4211,7 +4580,10 @@
       "imageRef": "別冊No.7",
       "relatedLinks": [
         "別冊No.7"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B035",
@@ -4225,7 +4597,10 @@
       "relatedLinks": [
         "別冊No.8A",
         "別冊No.8B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B036",
@@ -4262,7 +4637,10 @@
       "relatedLinks": [
         "別冊No.9A",
         "別冊No.9B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B037",
@@ -4296,7 +4674,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B038",
@@ -4334,7 +4715,10 @@
       "relatedLinks": [
         "別冊No.10A",
         "別冊No.10B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B039",
@@ -4370,7 +4754,10 @@
       "imageRef": "別冊No.11",
       "relatedLinks": [
         "別冊No.11"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B040",
@@ -4383,7 +4770,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B041",
@@ -4417,7 +4807,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B042",
@@ -4456,7 +4849,10 @@
         "別冊No.12B",
         "別冊No.12C",
         "別冊No.12D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B043",
@@ -4492,7 +4888,10 @@
       "imageRef": "別冊No.13",
       "relatedLinks": [
         "別冊No.13"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B044",
@@ -4530,7 +4929,10 @@
       "imageRef": "別冊No.14",
       "relatedLinks": [
         "別冊No.14"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B045",
@@ -4564,7 +4966,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B046",
@@ -4601,7 +5006,10 @@
       "relatedLinks": [
         "別冊No.15A",
         "別冊No.15B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B047",
@@ -4635,7 +5043,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B048",
@@ -4675,7 +5086,10 @@
         "別冊No.16A",
         "別冊No.16B",
         "別冊No.16C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B049",
@@ -4710,7 +5124,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B050",
@@ -4745,7 +5162,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B051",
@@ -4779,7 +5199,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B052",
@@ -4813,7 +5236,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B053",
@@ -4847,7 +5273,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B054",
@@ -4860,7 +5289,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B055",
@@ -4897,7 +5329,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B056",
@@ -4933,7 +5368,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B057",
@@ -4968,7 +5406,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B058",
@@ -5007,7 +5448,10 @@
       "relatedLinks": [
         "別冊No.17A",
         "別冊No.17B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B059",
@@ -5043,7 +5487,10 @@
       "imageRef": "別冊No.18A",
       "relatedLinks": [
         "別冊No.18A"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B060",
@@ -5081,7 +5528,10 @@
         "別冊No.19A",
         "別冊No.19B",
         "別冊No.19C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B061",
@@ -5115,7 +5565,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B062",
@@ -5149,7 +5602,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B063",
@@ -5183,7 +5639,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B064",
@@ -5217,7 +5676,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B065",
@@ -5251,7 +5713,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B066",
@@ -5285,7 +5750,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B067",
@@ -5324,7 +5792,10 @@
         "別冊No.20B",
         "別冊No.20C",
         "別冊No.20D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B068",
@@ -5340,7 +5811,10 @@
       "relatedLinks": [
         "別冊No.21A",
         "別冊No.21B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B069",
@@ -5353,7 +5827,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B070",
@@ -5391,7 +5868,10 @@
       "relatedLinks": [
         "別冊No.22A",
         "別冊No.22B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B071",
@@ -5404,7 +5884,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B072",
@@ -5442,7 +5925,10 @@
       "imageRef": "別冊No.23",
       "relatedLinks": [
         "別冊No.23"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B073",
@@ -5459,7 +5945,10 @@
       "relatedLinks": [
         "別冊No.24A",
         "別冊No.24B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B074",
@@ -5493,7 +5982,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B075",
@@ -5527,7 +6019,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B076",
@@ -5562,7 +6057,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B077",
@@ -5597,7 +6095,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B078",
@@ -5635,7 +6136,10 @@
         "別冊No.25A",
         "別冊No.25B",
         "別冊No.25C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B079",
@@ -5670,7 +6174,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B080",
@@ -5706,7 +6213,10 @@
       "imageRef": "別冊No.26",
       "relatedLinks": [
         "別冊No.26"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B081",
@@ -5740,7 +6250,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B082",
@@ -5777,7 +6290,10 @@
       "imageRef": "別冊No.27",
       "relatedLinks": [
         "別冊No.27"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B083",
@@ -5816,7 +6332,10 @@
       "relatedLinks": [
         "別冊No.28A",
         "別冊No.28B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B084",
@@ -5855,7 +6374,10 @@
       "relatedLinks": [
         "別冊No.29A",
         "別冊No.29B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B085",
@@ -5887,7 +6409,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B086",
@@ -5921,7 +6446,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B087",
@@ -5956,7 +6484,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B088",
@@ -5994,7 +6525,10 @@
       "relatedLinks": [
         "別冊No.30A",
         "別冊No.30B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-B089",
@@ -6038,7 +6572,10 @@
       "imageRef": "別冊No.31",
       "relatedLinks": [
         "別冊No.31"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-B090",
@@ -6076,7 +6613,10 @@
         "b"
       ],
       "imageRef": "別冊No.32",
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C001",
@@ -6110,7 +6650,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C002",
@@ -6144,7 +6687,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C003",
@@ -6178,7 +6724,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C004",
@@ -6212,7 +6761,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C005",
@@ -6225,7 +6777,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C006",
@@ -6259,7 +6814,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C007",
@@ -6293,7 +6851,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C008",
@@ -6327,7 +6888,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C009",
@@ -6361,7 +6925,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C010",
@@ -6395,7 +6962,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C011",
@@ -6429,7 +6999,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C012",
@@ -6464,7 +7037,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C013",
@@ -6477,7 +7053,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C014",
@@ -6511,7 +7090,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C015",
@@ -6545,7 +7127,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C016",
@@ -6579,7 +7164,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C017",
@@ -6613,7 +7201,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C018",
@@ -6647,7 +7238,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C019",
@@ -6681,7 +7275,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C020",
@@ -6715,7 +7312,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C021",
@@ -6749,7 +7349,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C022",
@@ -6783,7 +7386,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C023",
@@ -6819,7 +7425,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C024",
@@ -6855,7 +7464,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C025",
@@ -6871,7 +7483,10 @@
       "relatedLinks": [
         "別冊No.1A",
         "別冊No.1B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C026",
@@ -6884,7 +7499,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C027",
@@ -6923,7 +7541,10 @@
         "別冊No.2A",
         "別冊No.2B",
         "別冊No.2C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C028",
@@ -6957,7 +7578,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C029",
@@ -6994,7 +7618,10 @@
       "imageRef": "別冊No.3",
       "relatedLinks": [
         "別冊No.3"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C030",
@@ -7011,7 +7638,10 @@
         "別冊No.4A",
         "別冊No.4B",
         "別冊No.4C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C031",
@@ -7046,7 +7676,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C032",
@@ -7084,7 +7717,10 @@
       "imageRef": "別冊No.5",
       "relatedLinks": [
         "別冊No.5"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C033",
@@ -7120,7 +7756,10 @@
       "imageRef": "別冊No.6",
       "relatedLinks": [
         "別冊No.6"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C034",
@@ -7157,7 +7796,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C035",
@@ -7195,7 +7837,10 @@
       "relatedLinks": [
         "別冊No.7A",
         "別冊No.7B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C036",
@@ -7231,7 +7876,10 @@
       "imageRef": "別冊No.8",
       "relatedLinks": [
         "別冊No.8"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C037",
@@ -7265,7 +7913,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C038",
@@ -7300,7 +7951,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C039",
@@ -7336,7 +7990,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C040",
@@ -7375,7 +8032,10 @@
       "relatedLinks": [
         "別冊No.9A",
         "別冊No.9B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C041",
@@ -7410,7 +8070,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C042",
@@ -7449,7 +8112,10 @@
       "relatedLinks": [
         "別冊No.10A",
         "別冊No.10B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C043",
@@ -7486,7 +8152,10 @@
       "relatedLinks": [
         "別冊No.11A",
         "別冊No.11B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C044",
@@ -7523,7 +8192,10 @@
       "imageRef": "別冊No.12",
       "relatedLinks": [
         "別冊No.12"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C045",
@@ -7558,7 +8230,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C046",
@@ -7595,7 +8270,10 @@
       "imageRef": "別冊No.13",
       "relatedLinks": [
         "別冊No.13"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C047",
@@ -7634,7 +8312,10 @@
         "別冊No.14A",
         "別冊No.14B",
         "別冊No.14C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C048",
@@ -7669,7 +8350,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C049",
@@ -7703,7 +8387,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C050",
@@ -7738,7 +8425,10 @@
       "relatedLinks": [
         "別冊No.15A",
         "別冊No.15B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C051",
@@ -7772,7 +8462,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C052",
@@ -7788,7 +8481,10 @@
       "relatedLinks": [
         "別冊No.16A",
         "別冊No.16B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C053",
@@ -7825,7 +8521,10 @@
       "imageRef": "別冊No.17",
       "relatedLinks": [
         "別冊No.17"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C054",
@@ -7860,7 +8559,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C055",
@@ -7897,7 +8599,10 @@
       "relatedLinks": [
         "別冊No.18A",
         "別冊No.18C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C056",
@@ -7936,7 +8641,10 @@
         "別冊No.19A",
         "別冊No.19B",
         "別冊No.19C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C057",
@@ -7970,7 +8678,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C058",
@@ -7983,7 +8694,10 @@
         "a"
       ],
       "imageRef": "別冊No.20",
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C059",
@@ -7998,7 +8712,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C060",
@@ -8036,7 +8753,10 @@
         "別冊No.21A",
         "別冊No.21B",
         "別冊No.21C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C061",
@@ -8074,7 +8794,10 @@
       "relatedLinks": [
         "別冊No.22A",
         "別冊No.22B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C062",
@@ -8110,7 +8833,10 @@
       "imageRef": "別冊No.23",
       "relatedLinks": [
         "別冊No.23"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C063",
@@ -8148,7 +8874,10 @@
       "relatedLinks": [
         "別冊No.24A",
         "別冊No.24B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C064",
@@ -8184,7 +8913,10 @@
       "imageRef": "別冊No.25",
       "relatedLinks": [
         "別冊No.25"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C065",
@@ -8223,7 +8955,10 @@
       "relatedLinks": [
         "別冊No.26A",
         "別冊No.26B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C066",
@@ -8238,7 +8973,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C067",
@@ -8276,7 +9014,10 @@
         "別冊No.27A",
         "別冊No.27B",
         "別冊No.27C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C068",
@@ -8290,7 +9031,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C069",
@@ -8325,7 +9069,10 @@
       "relatedLinks": [
         "別冊No.28A",
         "別冊No.28B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C070",
@@ -8364,7 +9111,10 @@
         "別冊No.29B",
         "別冊No.29C",
         "別冊No.29D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C071",
@@ -8404,7 +9154,10 @@
         "別冊No.30A",
         "別冊No.30B",
         "別冊No.30C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C072",
@@ -8438,7 +9191,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C073",
@@ -8475,7 +9231,10 @@
       "imageRef": "別冊No.31A",
       "relatedLinks": [
         "別冊No.31A"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C074",
@@ -8511,7 +9270,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C075",
@@ -8545,7 +9307,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C076",
@@ -8562,7 +9327,10 @@
       "relatedLinks": [
         "別冊No.32A",
         "別冊No.32B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C077",
@@ -8599,7 +9367,10 @@
       "relatedLinks": [
         "別冊No.33A",
         "別冊No.33B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C078",
@@ -8634,7 +9405,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C079",
@@ -8668,7 +9442,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C080",
@@ -8705,7 +9482,10 @@
       "relatedLinks": [
         "別冊No.34A",
         "別冊No.34B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C081",
@@ -8739,7 +9519,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C082",
@@ -8775,7 +9558,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-C083",
@@ -8807,7 +9593,10 @@
       ],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C084",
@@ -8843,7 +9632,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C085",
@@ -8856,7 +9648,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C086",
@@ -8890,7 +9685,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C087",
@@ -8924,7 +9722,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C088",
@@ -8959,7 +9760,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C089",
@@ -9003,7 +9807,10 @@
       "imageRef": "別冊No.35",
       "relatedLinks": [
         "別冊No.35"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-C090",
@@ -9045,7 +9852,10 @@
         "別冊No.36A",
         "別冊No.36B",
         "別冊No.36C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D001",
@@ -9079,7 +9889,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D002",
@@ -9115,7 +9928,10 @@
       "imageRef": "別冊No.1",
       "relatedLinks": [
         "別冊No.1"
-      ]
+      ],
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D003",
@@ -9128,7 +9944,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D004",
@@ -9162,7 +9981,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D005",
@@ -9175,7 +9997,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D006",
@@ -9209,7 +10034,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D007",
@@ -9222,7 +10050,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D008",
@@ -9258,7 +10089,10 @@
       "imageRef": "別冊No.2A",
       "relatedLinks": [
         "別冊No.2A"
-      ]
+      ],
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D009",
@@ -9292,7 +10126,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D010",
@@ -9326,7 +10163,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D011",
@@ -9360,7 +10200,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D012",
@@ -9394,7 +10237,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D013",
@@ -9429,7 +10275,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D014",
@@ -9463,7 +10312,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D015",
@@ -9497,7 +10349,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D016",
@@ -9531,7 +10386,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D017",
@@ -9565,7 +10423,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D018",
@@ -9599,7 +10460,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D019",
@@ -9633,7 +10497,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D020",
@@ -9667,7 +10534,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "必修",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D021",
@@ -9704,7 +10574,10 @@
       "imageRef": "別冊No.3",
       "relatedLinks": [
         "別冊No.3"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D022",
@@ -9742,7 +10615,10 @@
         "別冊No.4A",
         "別冊No.4B",
         "別冊No.4C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D023",
@@ -9777,7 +10653,10 @@
       "relatedLinks": [
         "別冊No.5A",
         "別冊No.5B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D024",
@@ -9811,7 +10690,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D025",
@@ -9848,7 +10730,10 @@
       "relatedLinks": [
         "別冊No.6A",
         "別冊No.6B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D026",
@@ -9883,7 +10768,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D027",
@@ -9918,7 +10806,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D028",
@@ -9933,7 +10824,10 @@
       "imageRef": "別冊No.7",
       "relatedLinks": [
         "別冊No.7"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D029",
@@ -9944,7 +10838,10 @@
       "choices": [],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D030",
@@ -9978,7 +10875,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D031",
@@ -10016,7 +10916,10 @@
       "relatedLinks": [
         "別冊No.8A",
         "別冊No.8B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D032",
@@ -10050,7 +10953,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D033",
@@ -10087,7 +10993,10 @@
       "imageRef": "別冊No.9",
       "relatedLinks": [
         "別冊No.9"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D034",
@@ -10125,7 +11034,10 @@
       "relatedLinks": [
         "別冊No.10A",
         "別冊No.10B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D035",
@@ -10142,7 +11054,10 @@
       "relatedLinks": [
         "別冊No.11A",
         "別冊No.11B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D036",
@@ -10176,7 +11091,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D037",
@@ -10216,7 +11134,10 @@
         "別冊No.12B",
         "別冊No.12C",
         "別冊No.12D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D038",
@@ -10251,7 +11172,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D039",
@@ -10268,7 +11192,10 @@
       "relatedLinks": [
         "別冊No.13A",
         "別冊No.13C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D040",
@@ -10308,7 +11235,10 @@
         "別冊No.14B",
         "別冊No.14C",
         "別冊No.14D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D041",
@@ -10346,7 +11276,10 @@
       "relatedLinks": [
         "別冊No.15A",
         "別冊No.15B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D042",
@@ -10381,7 +11314,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D043",
@@ -10415,7 +11351,10 @@
       "imageRef": "別冊No.16",
       "relatedLinks": [
         "別冊No.16"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D044",
@@ -10449,7 +11388,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D045",
@@ -10483,7 +11425,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D046",
@@ -10519,7 +11464,10 @@
       "imageRef": "別冊No.17",
       "relatedLinks": [
         "別冊No.17"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D047",
@@ -10554,7 +11502,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D048",
@@ -10589,7 +11540,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D049",
@@ -10625,7 +11579,10 @@
       "imageRef": "別冊No.18",
       "relatedLinks": [
         "別冊No.18"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D050",
@@ -10659,7 +11616,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D051",
@@ -10677,7 +11637,10 @@
       "relatedLinks": [
         "別冊No.19A",
         "別冊No.19B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D052",
@@ -10692,7 +11655,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D053",
@@ -10727,7 +11693,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D054",
@@ -10764,7 +11733,10 @@
       "relatedLinks": [
         "別冊No.20A",
         "別冊No.20B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D055",
@@ -10803,7 +11775,10 @@
       "relatedLinks": [
         "別冊No.21A",
         "別冊No.21B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D056",
@@ -10838,7 +11813,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D057",
@@ -10855,7 +11833,10 @@
       "relatedLinks": [
         "別冊No.22A",
         "別冊No.22B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D058",
@@ -10868,7 +11849,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D059",
@@ -10879,7 +11863,10 @@
       "choices": [],
       "correctAnswers": [],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D060",
@@ -10914,7 +11901,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D061",
@@ -10950,7 +11940,10 @@
       "imageRef": "別冊No.23",
       "relatedLinks": [
         "別冊No.23"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D062",
@@ -10984,7 +11977,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D063",
@@ -11020,7 +12016,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D064",
@@ -11058,7 +12057,10 @@
       "relatedLinks": [
         "別冊No.24A",
         "別冊No.24B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D065",
@@ -11097,7 +12099,10 @@
         "別冊No.25A",
         "別冊No.25B",
         "別冊No.25C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D066",
@@ -11135,7 +12140,10 @@
         "別冊No.26A",
         "別冊No.26B",
         "別冊No.26D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D067",
@@ -11169,7 +12177,10 @@
         "a"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D068",
@@ -11204,7 +12215,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D069",
@@ -11245,7 +12259,10 @@
         "別冊No.27A",
         "別冊No.27B",
         "別冊No.27C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D070",
@@ -11280,7 +12297,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D071",
@@ -11314,7 +12334,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D072",
@@ -11351,7 +12374,10 @@
       "imageRef": "別冊No.28A",
       "relatedLinks": [
         "別冊No.28A"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D073",
@@ -11385,7 +12411,10 @@
       "imageRef": "別冊No.29",
       "relatedLinks": [
         "別冊No.29"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D074",
@@ -11419,7 +12448,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D075",
@@ -11455,7 +12487,10 @@
       "imageRef": "別冊No.30",
       "relatedLinks": [
         "別冊No.30"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D076",
@@ -11490,7 +12525,10 @@
         "b"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D077",
@@ -11530,7 +12568,10 @@
         "別冊No.31A",
         "別冊No.31B",
         "別冊No.31C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D078",
@@ -11569,7 +12610,10 @@
         "別冊No.32B",
         "別冊No.32C",
         "別冊No.32D"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D079",
@@ -11607,7 +12651,10 @@
       "imageRef": "別冊No.33",
       "relatedLinks": [
         "別冊No.33"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D080",
@@ -11642,7 +12689,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D081",
@@ -11676,7 +12726,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D082",
@@ -11714,7 +12767,10 @@
         "別冊No.34A",
         "別冊No.34B",
         "別冊No.34C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D083",
@@ -11754,7 +12810,10 @@
         "別冊No.34A",
         "別冊No.34B",
         "別冊No.34C"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D084",
@@ -11788,7 +12847,10 @@
         "d"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D085",
@@ -11825,7 +12887,10 @@
       "relatedLinks": [
         "別冊No.35A",
         "別冊No.35B"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D086",
@@ -11861,7 +12926,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D087",
@@ -11897,7 +12965,10 @@
         "e"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "小児歯科",
+      "field": ""
     },
     {
       "id": "118-D088",
@@ -11931,7 +13002,10 @@
         "c"
       ],
       "imageRef": null,
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "一般",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D089",
@@ -11971,7 +13045,10 @@
       "imageRef": "別冊No.36",
       "relatedLinks": [
         "別冊No.36"
-      ]
+      ],
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     },
     {
       "id": "118-D090",
@@ -11985,7 +13062,10 @@
         "0"
       ],
       "imageRef": "別冊No.37A, 37B",
-      "relatedLinks": null
+      "relatedLinks": null,
+      "category": "臨実",
+      "subject": "",
+      "field": ""
     }
   ]
 }
