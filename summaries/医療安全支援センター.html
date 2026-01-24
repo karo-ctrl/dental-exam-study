@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医療安全支援センター</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: #FAFAFA;
+        }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #388E3C;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .definition { border-left: 4px solid #1976D2; }
+        .points { border-left: 4px solid #FF9800; }
+        .related { border-left: 4px solid #4CAF50; }
+        .questions { border-left: 4px solid #607D8B; }
+        .clinical { border-left: 4px solid #E91E63; }
+        ul { margin: 10px 0; padding-left: 25px; }
+        li { margin: 10px 0; }
+        .tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .question-link {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question-link:hover { text-decoration: underline; }
+        .keyword-link {
+            color: #388E3C;
+            text-decoration: none;
+            border-bottom: 1px dashed #388E3C;
+        }
+        .keyword-link:hover { background: #E8F5E9; }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .comparison-table th {
+            background: #1976D2;
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table th:first-child { background: #0D47A1; }
+        .comparison-table td {
+            padding: 10px 8px;
+            border: 1px solid #E0E0E0;
+            text-align: center;
+            vertical-align: top;
+        }
+        .comparison-table tr:nth-child(even) { background: #F5F5F5; }
+        .comparison-table tr:hover { background: #E3F2FD; }
+        .comparison-table td:first-child {
+            background: #E8EAF6;
+            font-weight: bold;
+            text-align: left;
+        }
+        .highlight {
+            background: #FFF9C4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>医療安全支援センター</h2>
+
+    <!-- 定義 -->
+    <div class="card definition">
+        <strong>📖 定義</strong>
+        <p>医療安全支援センターは、医療法に基づき都道府県、保健所設置市、特別区に設置される機関であり、医療に関する患者・住民からの苦情や相談に対応する。</p>
+    </div>
+
+    <!-- 重要ポイント -->
+    <div class="card points">
+        <strong>⭐ 重要ポイント</strong>
+        <ul>
+            <li><strong>根拠法：</strong>医療法（地域保健法ではない）</li>
+            <li><strong>設置主体：</strong>都道府県、保健所設置市、特別区</li>
+            <li><strong>主な業務：</strong>患者・家族からの医療に関する苦情・相談対応</li>
+            <li><strong>その他の業務：</strong>医療機関への情報提供・助言、医療安全に関する情報収集・分析</li>
+            <li><strong>注意点：</strong>医療事故の報告先ではない（報告先は医療事故調査・支援センター）</li>
+        </ul>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="card">
+        <strong>📊 医療安全関連機関の比較</strong>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>医療安全支援センター</th>
+                    <th>医療事故調査・支援センター</th>
+                    <th>医療安全管理者</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>根拠法</td>
+                    <td>医療法</td>
+                    <td>医療法</td>
+                    <td>医療法</td>
+                </tr>
+                <tr>
+                    <td>設置場所</td>
+                    <td>都道府県等</td>
+                    <td>第三者機関</td>
+                    <td>病院内</td>
+                </tr>
+                <tr>
+                    <td>主な役割</td>
+                    <td>相談対応</td>
+                    <td>事故調査支援</td>
+                    <td>院内安全管理</td>
+                </tr>
+                <tr>
+                    <td>対象</td>
+                    <td>患者・住民</td>
+                    <td>医療機関</td>
+                    <td>当該病院</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 関連知識 -->
+    <div class="card related">
+        <strong>🔗 関連知識</strong>
+        <p>
+<a href="#医療法" class="keyword-link">医療法</a>、
+            <a href="#患者の権利" class="keyword-link">患者の権利</a>、
+            <a href="#医療事故" class="keyword-link">医療事故</a>、
+            <a href="#インフォームドコンセント" class="keyword-link">インフォームドコンセント</a>
+        </p>
+    </div>
+
+    <!-- 関連過去問 -->
+    <div class="card questions">
+        <strong>📝 関連過去問（116〜118回）</strong>
+        <ul>
+            <li>
+                <a href="javascript:goToQuestion('118-A001')" class="question-link">118-A001</a>:
+                医療安全支援センターについて正しいのはどれか。1 つ選べ。...
+                <br><small style="color: #4CAF50;">→ 正解：e</small>
+            </li>
+        </ul>
+        <p style="color: #666; font-size: 0.9em;">
+            ※ 問題番号をクリックすると該当問題に移動します
+        </p>
+    </div>
+
+    <script>
+        function goToQuestion(questionId) {
+            if (window.parent && window.parent.goToQuestion) {
+                window.parent.goToQuestion(questionId);
+            } else {
+                console.log('Navigate to:', questionId);
+            }
+        }
+    </script>
+</body>
+</html>

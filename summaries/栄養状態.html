@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栄養状態</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: #FAFAFA;
+        }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #388E3C;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .definition { border-left: 4px solid #1976D2; }
+        .points { border-left: 4px solid #FF9800; }
+        .related { border-left: 4px solid #4CAF50; }
+        .questions { border-left: 4px solid #607D8B; }
+        .clinical { border-left: 4px solid #E91E63; }
+        ul { margin: 10px 0; padding-left: 25px; }
+        li { margin: 10px 0; }
+        .tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .question-link {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question-link:hover { text-decoration: underline; }
+        .keyword-link {
+            color: #388E3C;
+            text-decoration: none;
+            border-bottom: 1px dashed #388E3C;
+        }
+        .keyword-link:hover { background: #E8F5E9; }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .comparison-table th {
+            background: #1976D2;
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table th:first-child { background: #0D47A1; }
+        .comparison-table td {
+            padding: 10px 8px;
+            border: 1px solid #E0E0E0;
+            text-align: center;
+            vertical-align: top;
+        }
+        .comparison-table tr:nth-child(even) { background: #F5F5F5; }
+        .comparison-table tr:hover { background: #E3F2FD; }
+        .comparison-table td:first-child {
+            background: #E8EAF6;
+            font-weight: bold;
+            text-align: left;
+        }
+        .highlight {
+            background: #FFF9C4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>栄養状態</h2>
+
+    <!-- 定義 -->
+    <div class="card definition">
+        <strong>📖 定義</strong>
+        <p>栄養状態の評価は、患者の全身状態把握や治療計画立案において重要であり、身体計測、血液検査、食事調査などを組み合わせて総合的に判断する。</p>
+        <p><span class="tag">栄養評価</span><span class="tag">栄養アセスメント</span></p>
+    </div>
+
+    <!-- 重要ポイント -->
+    <div class="card points">
+        <strong>⭐ 重要ポイント</strong>
+        <ul>
+            <li><strong>血清アルブミン：</strong>3.5g/dL未満で低栄養、半減期約21日</li>
+            <li><strong>BMI：</strong>18.5未満：低体重、18.5〜25：普通、25以上：肥満</li>
+            <li><strong>総リンパ球数：</strong>1500/μL未満で免疫能低下の指標</li>
+            <li><strong>ヘモグロビン：</strong>貧血の指標（男性13g/dL未満、女性12g/dL未満）</li>
+            <li><strong>プレアルブミン：</strong>短期的な栄養状態の指標、半減期約2日</li>
+        </ul>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="card">
+        <strong>📊 栄養評価指標の比較</strong>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>指標</th>
+                    <th>基準値</th>
+                    <th>低栄養の目安</th>
+                    <th>半減期/特徴</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>血清アルブミン</td>
+                    <td>4.0〜5.0 g/dL</td>
+                    <td><3.5 g/dL</td>
+                    <td>約21日</td>
+                </tr>
+                <tr>
+                    <td>プレアルブミン</td>
+                    <td>22〜40 mg/dL</td>
+                    <td><10 mg/dL</td>
+                    <td>約2日</td>
+                </tr>
+                <tr>
+                    <td>トランスフェリン</td>
+                    <td>200〜400 mg/dL</td>
+                    <td><200 mg/dL</td>
+                    <td>約8日</td>
+                </tr>
+                <tr>
+                    <td>総リンパ球数</td>
+                    <td>>1500/μL</td>
+                    <td><1500/μL</td>
+                    <td>免疫能指標</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 臨床的意義 -->
+    <div class="card clinical">
+        <strong>🏥 臨床的意義</strong>
+        <ul>
+            <li><strong>周術期：</strong>低栄養は術後合併症リスク増加</li>
+            <li><strong>創傷治癒：</strong>タンパク質・ビタミンC・亜鉛が重要</li>
+        </ul>
+    </div>
+
+    <!-- 関連知識 -->
+    <div class="card related">
+        <strong>🔗 関連知識</strong>
+        <p>
+<a href="#周術期管理" class="keyword-link">周術期管理</a>、
+            <a href="#創傷治癒" class="keyword-link">創傷治癒</a>、
+            <a href="#NST" class="keyword-link">NST</a>、
+            <a href="#サルコペニア" class="keyword-link">サルコペニア</a>、
+            <a href="#フレイル" class="keyword-link">フレイル</a>
+        </p>
+    </div>
+
+    <!-- 関連過去問 -->
+    <div class="card questions">
+        <strong>📝 関連過去問（116〜118回）</strong>
+        <ul>
+            <li>
+                <a href="javascript:goToQuestion('118-A004')" class="question-link">118-A004</a>:
+                栄養状態の指標となるのはどれか。2 つ選べ。...
+                <br><small style="color: #4CAF50;">→ 正解：a, b</small>
+            </li>
+        </ul>
+        <p style="color: #666; font-size: 0.9em;">
+            ※ 問題番号をクリックすると該当問題に移動します
+        </p>
+    </div>
+
+    <script>
+        function goToQuestion(questionId) {
+            if (window.parent && window.parent.goToQuestion) {
+                window.parent.goToQuestion(questionId);
+            } else {
+                console.log('Navigate to:', questionId);
+            }
+        }
+    </script>
+</body>
+</html>

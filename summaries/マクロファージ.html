@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マクロファージ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: #FAFAFA;
+        }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #388E3C;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .definition {
+            border-left: 4px solid #1976D2;
+        }
+        .points {
+            border-left: 4px solid #FF9800;
+        }
+        .m1m2 {
+            border-left: 4px solid #9C27B0;
+        }
+        .related {
+            border-left: 4px solid #4CAF50;
+        }
+        .questions {
+            border-left: 4px solid #607D8B;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 25px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .question-link {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question-link:hover {
+            text-decoration: underline;
+        }
+        .keyword-link {
+            color: #388E3C;
+            text-decoration: none;
+            border-bottom: 1px dashed #388E3C;
+        }
+        .keyword-link:hover {
+            background: #E8F5E9;
+        }
+
+        /* 比較表スタイル */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .comparison-table th {
+            background: #1976D2;
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table th:first-child {
+            background: #0D47A1;
+        }
+        .comparison-table td {
+            padding: 10px 8px;
+            border: 1px solid #E0E0E0;
+            text-align: center;
+            vertical-align: top;
+        }
+        .comparison-table tr:nth-child(even) {
+            background: #F5F5F5;
+        }
+        .comparison-table tr:hover {
+            background: #E3F2FD;
+        }
+        .comparison-table td:first-child {
+            background: #E8EAF6;
+            font-weight: bold;
+            text-align: left;
+        }
+        .highlight {
+            background: #FFF9C4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .m1-box {
+            background: #FFEBEE;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .m2-box {
+            background: #E8F5E9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .flex-container {
+            display: flex;
+            gap: 15px;
+        }
+        .flex-container > div {
+            flex: 1;
+        }
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>マクロファージ（Macrophage）</h2>
+
+    <!-- 定義 -->
+    <div class="card definition">
+        <strong>📖 定義</strong>
+        <p>
+            マクロファージは、<span class="highlight">単球から分化した組織常在性の貪食細胞</span>であり、
+            自然免疫と獲得免疫の両方において中心的な役割を果たす。
+            ギリシャ語で「大きい（macro）」+「食べる（phage）」を意味し、「大食細胞」とも呼ばれる。
+        </p>
+        <p>
+            <span class="tag">自然免疫</span>
+            <span class="tag">貪食細胞</span>
+            <span class="tag">抗原提示細胞</span>
+        </p>
+    </div>
+
+    <!-- 重要ポイント -->
+    <div class="card points">
+        <strong>⭐ 重要ポイント</strong>
+        <ul>
+            <li><strong>由来と分化：</strong>骨髄の造血幹細胞 → 単球（血中）→ マクロファージ（組織）</li>
+            <li><strong>貪食作用：</strong>病原体、異物、老廃物、アポトーシス細胞を貪食・分解</li>
+            <li><strong>抗原提示：</strong>MHCクラスII分子を介してT細胞に抗原を提示し、獲得免疫を誘導</li>
+            <li><strong>IFN-γによる活性化：</strong>Th1細胞やNK細胞が産生するIFN-γにより活性化され、殺菌能が増強</li>
+            <li><strong>サイトカイン産生：</strong>IL-1、IL-6、TNF-αなどの炎症性サイトカインを産生</li>
+            <li><strong>組織特異的名称：</strong>
+                <ul>
+                    <li>肝臓：クッパー細胞</li>
+                    <li>中枢神経：ミクログリア</li>
+                    <li>肺：肺胞マクロファージ</li>
+                    <li>骨：破骨細胞</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- M1/M2マクロファージ -->
+    <div class="card m1m2">
+        <strong>🔬 マクロファージの活性化経路（M1/M2）</strong>
+        <div class="flex-container">
+            <div class="m1-box">
+                <strong>M1マクロファージ（古典的活性化）</strong>
+                <ul>
+                    <li><strong>活性化因子：</strong>IFN-γ、LPS（リポ多糖）</li>
+                    <li><strong>特徴：</strong>炎症促進性、殺菌能↑</li>
+                    <li><strong>産生物質：</strong>TNF-α、IL-1β、IL-6、IL-12、NO</li>
+                    <li><strong>役割：</strong>細胞内寄生菌の殺菌、腫瘍細胞傷害</li>
+                </ul>
+            </div>
+            <div class="m2-box">
+                <strong>M2マクロファージ（代替的活性化）</strong>
+                <ul>
+                    <li><strong>活性化因子：</strong>IL-4、IL-13、IL-10</li>
+                    <li><strong>特徴：</strong>抗炎症性、組織修復</li>
+                    <li><strong>産生物質：</strong>TGF-β、IL-10、アルギナーゼ</li>
+                    <li><strong>役割：</strong>創傷治癒、線維化、寄生虫排除</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="card">
+        <strong>📊 免疫細胞の比較</strong>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>マクロファージ</th>
+                    <th>好中球</th>
+                    <th>NK細胞</th>
+                    <th>樹状細胞</th>
+                    <th>B細胞</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>由来</td>
+                    <td>単球<br>(骨髄系)</td>
+                    <td>骨髄<br>(骨髄系)</td>
+                    <td>骨髄<br>(リンパ系)</td>
+                    <td>単球<br>(骨髄系)</td>
+                    <td>骨髄<br>(リンパ系)</td>
+                </tr>
+                <tr>
+                    <td>寿命</td>
+                    <td class="highlight">数ヶ月〜数年</td>
+                    <td>数時間〜数日</td>
+                    <td>1〜2週間</td>
+                    <td>数週間</td>
+                    <td>数週間〜数年</td>
+                </tr>
+                <tr>
+                    <td>貪食能</td>
+                    <td><strong>◎ 強い</strong></td>
+                    <td><strong>◎ 強い</strong></td>
+                    <td>× なし</td>
+                    <td>○ あり</td>
+                    <td>× なし</td>
+                </tr>
+                <tr>
+                    <td>抗原提示</td>
+                    <td>MHC class II</td>
+                    <td>× なし</td>
+                    <td>× なし</td>
+                    <td class="highlight">MHC I/II<br>(最強のAPC)</td>
+                    <td>MHC class II</td>
+                </tr>
+                <tr>
+                    <td>主な役割</td>
+                    <td>貪食<br>抗原提示<br>炎症制御</td>
+                    <td>急性炎症<br>細菌殺傷</td>
+                    <td>ウイルス感染細胞<br>腫瘍細胞殺傷</td>
+                    <td>抗原提示<br>T細胞活性化</td>
+                    <td>抗体産生<br>液性免疫</td>
+                </tr>
+                <tr>
+                    <td>主な産生物質</td>
+                    <td>IL-1, IL-6<br>TNF-α</td>
+                    <td>活性酸素<br>ディフェンシン</td>
+                    <td>IFN-γ<br>パーフォリン</td>
+                    <td>IL-12<br>IL-1</td>
+                    <td>抗体<br>(IgG, IgM等)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 関連知識 -->
+    <div class="card related">
+        <strong>🔗 関連知識</strong>
+        <p>
+            <a href="#自然免疫" class="keyword-link">自然免疫</a>、
+            <a href="#抗原提示" class="keyword-link">抗原提示</a>、
+            <a href="#Th1細胞" class="keyword-link">Th1細胞</a>、
+            <a href="#肉芽腫形成" class="keyword-link">肉芽腫形成</a>、
+            <a href="#IFN-γ" class="keyword-link">IFN-γ</a>、
+            <a href="#サイトカイン" class="keyword-link">サイトカイン</a>、
+            <a href="#MHC" class="keyword-link">MHC分子</a>
+        </p>
+        <h3>🦠 臨床的意義</h3>
+        <ul>
+            <li><strong>結核：</strong>マクロファージ内で結核菌が生存、肉芽腫形成に関与</li>
+            <li><strong>歯周病：</strong>歯周組織のマクロファージが炎症性サイトカインを産生し組織破壊に関与</li>
+            <li><strong>創傷治癒：</strong>M2マクロファージが組織修復・線維化を促進</li>
+        </ul>
+    </div>
+
+    <!-- 関連過去問 -->
+    <div class="card questions">
+        <strong>📝 関連過去問（116〜118回）</strong>
+        <ul>
+            <li>
+                <a href="javascript:goToQuestion('118-A002')" class="question-link">118-A002</a>:
+                IFN-γ を産生してマクロファージを活性化するのはどれか。1つ選べ。
+                <br><small style="color: #4CAF50;">→ 正解：Th1細胞</small>
+            </li>
+        </ul>
+        <p style="color: #666; font-size: 0.9em;">
+            ※ 問題番号をクリックすると該当問題に移動します
+        </p>
+    </div>
+
+    <script>
+        function goToQuestion(questionId) {
+            // アプリ内の問題表示関数を呼び出し
+            // 実際の実装ではアプリのルーティングに合わせて変更
+            console.log('Navigate to question:', questionId);
+            alert('問題 ' + questionId + ' に移動します');
+        }
+    </script>
+</body>
+</html>

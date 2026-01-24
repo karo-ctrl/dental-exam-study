@@ -4632,6 +4632,125 @@ function setupInviteCodeListeners() {
   });
 }
 
+// ===== キーワードまとめ機能 =====
+
+// 問題にジャンプする関数（まとめHTMLから呼び出される）
+function goToQuestion(questionId) {
+  console.log('goToQuestion called:', questionId);
+
+  // 問題IDをパース（例: "118-A002" → exam: "118", id: "118-A002"）
+  const match = questionId.match(/^(\d+)-([A-D])(\d+)$/);
+  if (!match) {
+    console.error('Invalid question ID:', questionId);
+    return;
+  }
+
+  const examNumber = match[1];
+
+  // まとめモーダルを閉じる
+  closeKeywordSummaryModal();
+
+  // 過去問タブに切り替え
+  switchTab('kakomon');
+
+  // 該当する回の問題を読み込む
+  const examSelect = document.getElementById('examSelect');
+  if (examSelect) {
+    examSelect.value = examNumber;
+    loadQuestions();
+
+    // 問題を検索して表示
+    setTimeout(() => {
+      const questionIndex = state.filteredQuestions.findIndex(q => q.id === questionId);
+      if (questionIndex !== -1) {
+        state.currentIndex = questionIndex;
+        renderQuestion();
+        state.currentView = 'quiz';
+        updateViewDisplay();
+      } else {
+        showToast(`問題 ${questionId} が見つかりません`);
+      }
+    }, 300);
+  }
+}
+
+// キーワードまとめモーダルを表示
+function showKeywordSummaryModal(htmlFile) {
+  let modal = document.getElementById('keywordSummaryModal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'keywordSummaryModal';
+    modal.className = 'keyword-summary-modal';
+    modal.innerHTML = `
+      <div class="keyword-summary-content">
+        <button class="keyword-summary-close" onclick="closeKeywordSummaryModal()">×</button>
+        <iframe id="keywordSummaryFrame" src="" frameborder="0"></iframe>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    const style = document.createElement('style');
+    style.textContent = `
+      .keyword-summary-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 10000;
+        justify-content: center;
+        align-items: center;
+      }
+      .keyword-summary-modal.show { display: flex; }
+      .keyword-summary-content {
+        background: white;
+        width: 90%;
+        max-width: 900px;
+        height: 90%;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+      }
+      .keyword-summary-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        background: #f44336;
+        color: white;
+        font-size: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10001;
+      }
+      #keywordSummaryFrame { width: 100%; height: 100%; border: none; }
+    `;
+    document.head.appendChild(style);
+  }
+
+  const iframe = document.getElementById('keywordSummaryFrame');
+  iframe.src = `summaries/${htmlFile}`;
+  iframe.onload = function() {
+    iframe.contentWindow.goToQuestion = goToQuestion;
+  };
+  modal.classList.add('show');
+}
+
+// キーワードまとめモーダルを閉じる
+function closeKeywordSummaryModal() {
+  const modal = document.getElementById('keywordSummaryModal');
+  if (modal) modal.classList.remove('show');
+}
+
+// グローバルスコープに公開
+window.goToQuestion = goToQuestion;
+window.showKeywordSummaryModal = showKeywordSummaryModal;
+window.closeKeywordSummaryModal = closeKeywordSummaryModal;
+
 // ===== アプリ起動 =====
 document.addEventListener('DOMContentLoaded', () => {
   // DOM要素を初期化

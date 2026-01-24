@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>肝硬変</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: #FAFAFA;
+        }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #388E3C;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .definition { border-left: 4px solid #1976D2; }
+        .points { border-left: 4px solid #FF9800; }
+        .related { border-left: 4px solid #4CAF50; }
+        .questions { border-left: 4px solid #607D8B; }
+        .clinical { border-left: 4px solid #E91E63; }
+        ul { margin: 10px 0; padding-left: 25px; }
+        li { margin: 10px 0; }
+        .tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .question-link {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question-link:hover { text-decoration: underline; }
+        .keyword-link {
+            color: #388E3C;
+            text-decoration: none;
+            border-bottom: 1px dashed #388E3C;
+        }
+        .keyword-link:hover { background: #E8F5E9; }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .comparison-table th {
+            background: #1976D2;
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table th:first-child { background: #0D47A1; }
+        .comparison-table td {
+            padding: 10px 8px;
+            border: 1px solid #E0E0E0;
+            text-align: center;
+            vertical-align: top;
+        }
+        .comparison-table tr:nth-child(even) { background: #F5F5F5; }
+        .comparison-table tr:hover { background: #E3F2FD; }
+        .comparison-table td:first-child {
+            background: #E8EAF6;
+            font-weight: bold;
+            text-align: left;
+        }
+        .highlight {
+            background: #FFF9C4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>肝硬変</h2>
+
+    <!-- 定義 -->
+    <div class="card definition">
+        <strong>📖 定義</strong>
+        <p>肝硬変は、慢性肝疾患の終末像であり、肝細胞の壊死・再生と線維化により肝臓が硬化し、肝機能が低下した状態である。</p>
+        <p><span class="tag">liver cirrhosis</span></p>
+    </div>
+
+    <!-- 重要ポイント -->
+    <div class="card points">
+        <strong>⭐ 重要ポイント</strong>
+        <ul>
+            <li><strong>原因：</strong>ウイルス性肝炎（B型・C型）、アルコール性、NASH、自己免疫性</li>
+            <li><strong>症状：</strong>黄疸、腹水、浮腫、クモ状血管腫、手掌紅斑、女性化乳房</li>
+            <li><strong>合併症：</strong>食道静脈瘤、肝性脳症、肝細胞癌、出血傾向</li>
+            <li><strong>検査所見：</strong>AST/ALT比>1、アルブミン低下、PT延長、血小板減少</li>
+            <li><strong>歯科的注意：</strong>出血傾向、薬物代謝低下、易感染性</li>
+        </ul>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="card">
+        <strong>📊 Child-Pugh分類</strong>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>1点</th>
+                    <th>2点</th>
+                    <th>3点</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>脳症</td>
+                    <td>なし</td>
+                    <td>軽度</td>
+                    <td>重度</td>
+                </tr>
+                <tr>
+                    <td>腹水</td>
+                    <td>なし</td>
+                    <td>軽度</td>
+                    <td>中等度以上</td>
+                </tr>
+                <tr>
+                    <td>ビリルビン</td>
+                    <td><2.0</td>
+                    <td>2.0〜3.0</td>
+                    <td>>3.0 mg/dL</td>
+                </tr>
+                <tr>
+                    <td>アルブミン</td>
+                    <td>>3.5</td>
+                    <td>2.8〜3.5</td>
+                    <td><2.8 g/dL</td>
+                </tr>
+                <tr>
+                    <td>PT延長</td>
+                    <td><4秒</td>
+                    <td>4〜6秒</td>
+                    <td>>6秒</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 臨床的意義 -->
+    <div class="card clinical">
+        <strong>🏥 臨床的意義</strong>
+        <ul>
+            <li><strong>出血傾向：</strong>凝固因子産生低下、血小板減少により出血しやすい</li>
+            <li><strong>薬物代謝：</strong>肝代謝型薬物の投与量調節が必要</li>
+            <li><strong>観血処置：</strong>PT-INR、血小板数を確認、必要時FFP・血小板輸血</li>
+        </ul>
+    </div>
+
+    <!-- 関連知識 -->
+    <div class="card related">
+        <strong>🔗 関連知識</strong>
+        <p>
+<a href="#肝機能検査" class="keyword-link">肝機能検査</a>、
+            <a href="#凝固因子" class="keyword-link">凝固因子</a>、
+            <a href="#出血傾向" class="keyword-link">出血傾向</a>、
+            <a href="#門脈圧亢進症" class="keyword-link">門脈圧亢進症</a>
+        </p>
+    </div>
+
+    <!-- 関連過去問 -->
+    <div class="card questions">
+        <strong>📝 関連過去問（116〜118回）</strong>
+        <ul>
+            <li>
+                <a href="javascript:goToQuestion('117-B059')" class="question-link">117-B059</a>:
+                79 歳の女性。舌の違和感を主訴として来院した。尿路感染のため内科にて1 週 間抗菌薬投与を受けた後、症状が出現したという。肝硬変、骨粗鬆症の既往があ り、ビス...
+                <br><small style="color: #4CAF50;">→ 正解：a, e</small>
+            </li>
+            <li>
+                <a href="javascript:goToQuestion('117-D025')" class="question-link">117-D025</a>:
+                症候と疾患の組合せで正しいのはどれか。4 つ選べ。 肝硬変 破傷風 筋ジストロフィー Basedow 病 Cushing 症候群...
+                <br><small style="color: #4CAF50;">→ 正解：a, b, d, e</small>
+            </li>
+            <li>
+                <a href="javascript:goToQuestion('118-A006')" class="question-link">118-A006</a>:
+                肝硬変でみられるのはどれか。1 つ選べ。...
+                <br><small style="color: #4CAF50;">→ 正解：c</small>
+            </li>
+        </ul>
+        <p style="color: #666; font-size: 0.9em;">
+            ※ 問題番号をクリックすると該当問題に移動します
+        </p>
+    </div>
+
+    <script>
+        function goToQuestion(questionId) {
+            if (window.parent && window.parent.goToQuestion) {
+                window.parent.goToQuestion(questionId);
+            } else {
+                console.log('Navigate to:', questionId);
+            }
+        }
+    </script>
+</body>
+</html>

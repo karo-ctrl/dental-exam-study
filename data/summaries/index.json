@@ -1,5 +1,10 @@
 {
   "version": "1.0",
+  "keywordSummaries": {
+    "enabled": true,
+    "dataFile": "keywords.json",
+    "htmlPath": "/summaries/"
+  },
   "categories": [
     {
       "id": "anatomy",

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国際生活機能分類</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+            background: #FAFAFA;
+        }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #388E3C;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .definition { border-left: 4px solid #1976D2; }
+        .points { border-left: 4px solid #FF9800; }
+        .related { border-left: 4px solid #4CAF50; }
+        .questions { border-left: 4px solid #607D8B; }
+        .clinical { border-left: 4px solid #E91E63; }
+        ul { margin: 10px 0; padding-left: 25px; }
+        li { margin: 10px 0; }
+        .tag {
+            display: inline-block;
+            background: #E3F2FD;
+            color: #1976D2;
+            padding: 2px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .question-link {
+            color: #1976D2;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .question-link:hover { text-decoration: underline; }
+        .keyword-link {
+            color: #388E3C;
+            text-decoration: none;
+            border-bottom: 1px dashed #388E3C;
+        }
+        .keyword-link:hover { background: #E8F5E9; }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .comparison-table th {
+            background: #1976D2;
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .comparison-table th:first-child { background: #0D47A1; }
+        .comparison-table td {
+            padding: 10px 8px;
+            border: 1px solid #E0E0E0;
+            text-align: center;
+            vertical-align: top;
+        }
+        .comparison-table tr:nth-child(even) { background: #F5F5F5; }
+        .comparison-table tr:hover { background: #E3F2FD; }
+        .comparison-table td:first-child {
+            background: #E8EAF6;
+            font-weight: bold;
+            text-align: left;
+        }
+        .highlight {
+            background: #FFF9C4;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h2>国際生活機能分類</h2>
+
+    <!-- 定義 -->
+    <div class="card definition">
+        <strong>📖 定義</strong>
+        <p>国際生活機能分類（ICF）は、WHOが2001年に採択した、人間の生活機能と障害に関する分類である。健康状態を「心身機能・身体構造」「活動」「参加」の3つの次元から捉える。</p>
+        <p><span class="tag">ICF</span><span class="tag">International Classification of Functioning</span></p>
+    </div>
+
+    <!-- 重要ポイント -->
+    <div class="card points">
+        <strong>⭐ 重要ポイント</strong>
+        <ul>
+            <li><strong>構成要素：</strong>心身機能・身体構造、活動、参加の3要素</li>
+            <li><strong>背景因子：</strong>環境因子と個人因子が生活機能に影響</li>
+            <li><strong>特徴：</strong>障害を「できないこと」ではなく「生活機能」として捉える</li>
+            <li><strong>前身：</strong>ICIDH（国際障害分類、1980年）を発展</li>
+            <li><strong>歯科との関連：</strong>口腔機能（咀嚼・嚥下・発音）は活動・参加に影響</li>
+        </ul>
+    </div>
+
+    <!-- 比較表 -->
+    <div class="card">
+        <strong>📊 ICIDHとICFの比較</strong>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>項目</th>
+                    <th>ICIDH（1980）</th>
+                    <th>ICF（2001）</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>視点</td>
+                    <td>障害の否定的側面</td>
+                    <td>生活機能の肯定的側面</td>
+                </tr>
+                <tr>
+                    <td>モデル</td>
+                    <td>医学モデル</td>
+                    <td>生物・心理・社会モデル</td>
+                </tr>
+                <tr>
+                    <td>構成</td>
+                    <td>機能障害→能力障害→社会的不利</td>
+                    <td>心身機能・活動・参加</td>
+                </tr>
+                <tr>
+                    <td>環境因子</td>
+                    <td>考慮なし</td>
+                    <td>重視</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 臨床的意義 -->
+    <div class="card clinical">
+        <strong>🏥 臨床的意義</strong>
+        <ul>
+            <li><strong>口腔機能：</strong>咀嚼・嚥下・発音は「活動」に分類される</li>
+            <li><strong>歯科治療：</strong>「参加」を目標とした治療計画が重要</li>
+        </ul>
+    </div>
+
+    <!-- 関連知識 -->
+    <div class="card related">
+        <strong>🔗 関連知識</strong>
+        <p>
+<a href="#WHO" class="keyword-link">WHO</a>、
+            <a href="#リハビリテーション" class="keyword-link">リハビリテーション</a>、
+            <a href="#QOL" class="keyword-link">QOL</a>、
+            <a href="#口腔機能" class="keyword-link">口腔機能</a>、
+            <a href="#障害者歯科" class="keyword-link">障害者歯科</a>
+        </p>
+    </div>
+
+    <!-- 関連過去問 -->
+    <div class="card questions">
+        <strong>📝 関連過去問（116〜118回）</strong>
+        <ul>
+            <li>
+                <a href="javascript:goToQuestion('118-A012')" class="question-link">118-A012</a>:
+                国際生活機能分類〈ICF〉の構成要素はどれか。1 つ選べ。...
+                <br><small style="color: #4CAF50;">→ 正解：a</small>
+            </li>
+        </ul>
+        <p style="color: #666; font-size: 0.9em;">
+            ※ 問題番号をクリックすると該当問題に移動します
+        </p>
+    </div>
+
+    <script>
+        function goToQuestion(questionId) {
+            if (window.parent && window.parent.goToQuestion) {
+                window.parent.goToQuestion(questionId);
+            } else {
+                console.log('Navigate to:', questionId);
+            }
+        }
+    </script>
+</body>
+</html>

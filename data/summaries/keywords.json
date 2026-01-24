@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "title": "キーワードまとめ",
+  "description": "過去問頻出キーワードのまとめ資料",
+  "keywords": [
+    {
+      "id": "macrophage",
+      "keyword": "マクロファージ",
+      "synonyms": ["macrophage", "大食細胞"],
+      "category": "免疫学",
+      "questions": ["118-A002"],
+      "htmlFile": "マクロファージ.html"
+    },
+    {
+      "id": "ifn-gamma",
+      "keyword": "IFN-γ",
+      "synonyms": ["INF-γ", "インターフェロンγ", "インターフェロンガンマ"],
+      "category": "免疫学",
+      "questions": ["118-A002"],
+      "htmlFile": "IFN-γ.html"
+    },
+    {
+      "id": "medical-safety-center",
+      "keyword": "医療安全支援センター",
+      "synonyms": [],
+      "category": "医療法規",
+      "questions": ["118-A001"],
+      "htmlFile": "医療安全支援センター.html"
+    },
+    {
+      "id": "skeletal-class3",
+      "keyword": "骨格性下顎前突",
+      "synonyms": ["骨格性III級", "skeletal Class III"],
+      "category": "矯正歯科",
+      "questions": ["116-C050", "118-A003", "118-B059"],
+      "htmlFile": "骨格性下顎前突.html"
+    },
+    {
+      "id": "nutrition-status",
+      "keyword": "栄養状態",
+      "synonyms": ["栄養評価", "栄養アセスメント"],
+      "category": "全身管理",
+      "questions": ["118-A004"],
+      "htmlFile": "栄養状態.html"
+    },
+    {
+      "id": "tdm",
+      "keyword": "治療薬物モニタリング",
+      "synonyms": ["TDM", "Therapeutic Drug Monitoring"],
+      "category": "薬理学",
+      "questions": ["118-A005"],
+      "htmlFile": "治療薬物モニタリング.html"
+    },
+    {
+      "id": "liver-cirrhosis",
+      "keyword": "肝硬変",
+      "synonyms": ["liver cirrhosis"],
+      "category": "内科",
+      "questions": ["117-B059", "117-D025", "118-A006"],
+      "htmlFile": "肝硬変.html"
+    },
+    {
+      "id": "thyroglossal-cyst",
+      "keyword": "甲状舌管嚢胞",
+      "synonyms": ["正中頸嚢胞", "thyroglossal duct cyst"],
+      "category": "口腔外科",
+      "questions": [],
+      "htmlFile": "甲状舌管嚢胞.html"
+    },
+    {
+      "id": "cisplatin",
+      "keyword": "シスプラチン",
+      "synonyms": ["CDDP", "cisplatin"],
+      "category": "薬理学",
+      "questions": ["116-A041", "117-B028", "118-A009"],
+      "htmlFile": "シスプラチン.html"
+    },
+    {
+      "id": "acute-apical-periodontitis",
+      "keyword": "急性化膿性根尖性歯周炎",
+      "synonyms": ["急性根尖性歯周炎", "acute apical periodontitis"],
+      "category": "歯内療法",
+      "questions": ["117-B008", "118-A011"],
+      "htmlFile": "急性化膿性根尖性歯周炎.html"
+    },
+    {
+      "id": "icf",
+      "keyword": "国際生活機能分類",
+      "synonyms": ["ICF", "International Classification of Functioning"],
+      "category": "リハビリテーション",
+      "questions": ["118-A012"],
+      "htmlFile": "国際生活機能分類.html"
+    },
+    {
+      "id": "research-ethics",
+      "keyword": "医学研究の倫理",
+      "synonyms": ["研究倫理", "ヘルシンキ宣言"],
+      "category": "医療倫理",
+      "questions": ["116-A010", "118-A013"],
+      "htmlFile": "医学研究の倫理.html"
+    },
+    {
+      "id": "broca-area",
+      "keyword": "Broca領域",
+      "synonyms": ["ブローカ野", "運動性言語中枢"],
+      "category": "解剖学",
+      "questions": [],
+      "htmlFile": "Broca領域.html"
+    },
+    {
+      "id": "heimlich",
+      "keyword": "Heimlich法",
+      "synonyms": ["ハイムリック法", "腹部突き上げ法"],
+      "category": "救急",
+      "questions": ["118-C064"],
+      "htmlFile": "Heimlich法.html"
+    }
+  ]
+}
