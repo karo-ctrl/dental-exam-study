@@ -1287,25 +1287,37 @@ function renderSummaryCategoriesGrid() {
 
 // キーワードまとめを読み込み
 async function loadKeywordSummaries() {
-  if (state.keywordSummaries) return; // 既に読み込み済み
+  console.log('[DEBUG] loadKeywordSummaries() 開始');
+  if (state.keywordSummaries) {
+    console.log('[DEBUG] 既に読み込み済み');
+    return;
+  }
 
   try {
+    console.log('[DEBUG] keywords.json を fetch 中...');
     const response = await fetch('./data/summaries/keywords.json');
+    console.log('[DEBUG] fetch 結果:', response.status, response.ok);
     if (!response.ok) throw new Error('キーワードまとめデータの読み込みに失敗しました');
     state.keywordSummaries = await response.json();
-    console.log(`キーワードまとめ読み込み完了: ${state.keywordSummaries.keywords.length}件`);
+    console.log(`[DEBUG] キーワードまとめ読み込み完了: ${state.keywordSummaries.keywords.length}件`);
   } catch (error) {
-    console.error('キーワードまとめ読み込みエラー:', error);
+    console.error('[DEBUG] キーワードまとめ読み込みエラー:', error);
     state.keywordSummaries = { keywords: [] };
   }
 }
 
 // キーワードまとめを表示
 function renderKeywordSummaries() {
+  console.log('[DEBUG] renderKeywordSummaries() 開始');
   const container = document.getElementById('keywordSummariesList');
   const countBadge = document.getElementById('keywordCount');
+  console.log('[DEBUG] container:', container);
+  console.log('[DEBUG] state.keywordSummaries:', state.keywordSummaries);
 
-  if (!container || !state.keywordSummaries) return;
+  if (!container || !state.keywordSummaries) {
+    console.log('[DEBUG] container または keywordSummaries がない');
+    return;
+  }
 
   const keywords = state.keywordSummaries.keywords;
 
