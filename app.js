@@ -324,6 +324,7 @@ function initElements() {
   elements.quizCard = document.getElementById('quizCard');
   elements.cardCategory = document.getElementById('cardCategory');
   elements.questionId = document.getElementById('questionId');
+  elements.questionSource = document.getElementById('questionSource');
   elements.cardTitle = document.getElementById('cardTitle');
   elements.imageRef = document.getElementById('imageRef');
   elements.imageRefText = document.getElementById('imageRefText');
@@ -710,6 +711,7 @@ function renderQuestion() {
   if (state.filteredQuestions.length === 0) {
     elements.cardCategory.textContent = '-';
     elements.questionId.textContent = '';
+    if (elements.questionSource) elements.questionSource.textContent = '';
     elements.cardTitle.textContent = '問題がありません';
     elements.choicesContainer.innerHTML = '';
     elements.imageRef.style.display = 'none';
@@ -729,6 +731,13 @@ function renderQuestion() {
 
   elements.cardCategory.textContent = `${question.section}問題`;
   elements.questionId.textContent = question.id;
+
+  // 出典を設定（問題IDから回数を取得）
+  const examNumber = question.id.split('-')[0];
+  if (elements.questionSource) {
+    elements.questionSource.textContent = `出典：第${examNumber}回歯科医師国家試験（厚生労働省）`;
+  }
+
   elements.cardTitle.textContent = question.questionText;
 
   if (question.imageRef) {

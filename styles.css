@@ -669,11 +669,24 @@ body {
 }
 
 /* 問題ID */
+.question-id-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+  margin-bottom: 8px;
+}
+
 .question-id {
   font-size: 0.85rem;
   color: var(--text-muted);
-  margin-bottom: 8px;
   font-family: 'Consolas', 'Monaco', monospace;
+}
+
+.question-source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.8;
 }
 
 /* 画像参照 */
