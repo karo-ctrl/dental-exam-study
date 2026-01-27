@@ -434,7 +434,7 @@ function switchTab(tab, forceHome = false) {
         elements.originalHome.style.display = 'block';
         elements.headerTitle.textContent = 'オリジナル';
         elements.backBtn.style.display = 'none';
-        elements.menuBtn.style.display = 'flex';
+        elements.menuBtn.style.display = 'none';
         // オリジナルホームを初期化
         initOriginalHome();
         break;
@@ -443,7 +443,7 @@ function switchTab(tab, forceHome = false) {
         elements.summaryHome.style.display = 'block';
         elements.headerTitle.textContent = 'まとめ';
         elements.backBtn.style.display = 'none';
-        elements.menuBtn.style.display = 'flex';
+        elements.menuBtn.style.display = 'none';
         // まとめホームを初期化
         console.log('[DEBUG] initSummaryHome() を呼び出し');
         initSummaryHome();
@@ -452,7 +452,7 @@ function switchTab(tab, forceHome = false) {
         elements.statsHome.style.display = 'block';
         elements.headerTitle.textContent = '成績管理';
         elements.backBtn.style.display = 'none';
-        elements.menuBtn.style.display = 'flex';
+        elements.menuBtn.style.display = 'none';
         // 成績管理ホームを初期化
         initStatsHome();
         break;
@@ -691,10 +691,14 @@ function filterQuestions() {
     return;
   }
 
+  // 問題にexamIdを付加
+  const examId = state.currentExam.examId;
   if (state.filter === 'all') {
-    state.filteredQuestions = [...state.currentExam.questions];
+    state.filteredQuestions = state.currentExam.questions.map(q => ({ ...q, examId }));
   } else {
-    state.filteredQuestions = state.currentExam.questions.filter(q => q.section === state.filter);
+    state.filteredQuestions = state.currentExam.questions
+      .filter(q => q.section === state.filter)
+      .map(q => ({ ...q, examId }));
   }
 
   if (state.currentIndex >= state.filteredQuestions.length) {
