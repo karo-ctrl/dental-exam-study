@@ -127,16 +127,10 @@ function initElements() {
   elements.summarySearchResults = document.getElementById('summarySearchResults');
   elements.searchResultsCount = document.getElementById('searchResultsCount');
   elements.searchResultsList = document.getElementById('searchResultsList');
-  elements.summaryCategoriesSection = document.getElementById('summaryCategoriesSection');
-  elements.summaryCategoriesGrid = document.getElementById('summaryCategoriesGrid');
-  elements.summaryRecentSection = document.getElementById('summaryRecentSection');
-  elements.summaryRecentList = document.getElementById('summaryRecentList');
   elements.summaryRankingSection = document.getElementById('summaryRankingSection');
   elements.rankingList = document.getElementById('rankingList');
   elements.summaryFavoritesSection = document.getElementById('summaryFavoritesSection');
   elements.favoritesList = document.getElementById('favoritesList');
-  elements.categoryCount = document.getElementById('categoryCount');
-  elements.recentCount = document.getElementById('recentCount');
   elements.favoritesCount = document.getElementById('favoritesCount');
   elements.summaryCategoryTitle = document.getElementById('summaryCategoryTitle');
   elements.summaryCategoryCount = document.getElementById('summaryCategoryCount');
@@ -1210,19 +1204,9 @@ async function initSummaryHome() {
   console.log('[DEBUG] setupSummaryToggles() 呼び出し');
   setupSummaryToggles();
 
-  // カテゴリグリッドを表示
-  console.log('[DEBUG] renderSummaryCategoriesGrid() 呼び出し');
-  renderSummaryCategoriesGrid();
-
-  // キーワードまとめを読み込み・表示
+  // キーワードまとめを読み込み（検索用）
   console.log('[DEBUG] loadKeywordSummaries() 呼び出し前');
   await loadKeywordSummaries();
-  console.log('[DEBUG] renderKeywordSummaries() 呼び出し前');
-  renderKeywordSummaries();
-
-  // 最近見たまとめを表示
-  loadRecentSummaries();
-  renderRecentSummaries();
 
   // お気に入りを表示
   loadSummaryFavorites();
@@ -1258,19 +1242,10 @@ function setupSummaryToggles() {
       renderRanking();
     });
   });
-
-  // デフォルトでカテゴリを開く
-  elements.summaryCategoriesSection?.classList.add('open');
 }
 
 // バッジを更新
 function updateSummaryBadges() {
-  if (elements.categoryCount && state.summaryIndex) {
-    elements.categoryCount.textContent = state.summaryIndex.categories.length;
-  }
-  if (elements.recentCount) {
-    elements.recentCount.textContent = state.recentSummaries.length;
-  }
   if (elements.favoritesCount) {
     elements.favoritesCount.textContent = state.summaryFavorites.length;
   }
@@ -1828,50 +1803,49 @@ function setupSummarySearch() {
 
 // まとめを検索
 async function searchSummaries(query) {
-  const results = [];
+  const titleMatches = [];  // タイトル一致
+  const contentMatches = []; // 本文一致
   const lowerQuery = query.toLowerCase();
 
-  // 全カテゴリのデータを検索
-  for (const category of state.summaryIndex.categories) {
-    try {
-      // キャッシュがあれば使用
-      let categoryData;
-      if (state.currentCategoryData?.categoryId === category.id) {
-        categoryData = state.currentCategoryData;
-      } else {
-        const response = await fetch(`./data/summaries/${category.id}.json`);
-        if (response.ok) {
-          categoryData = await response.json();
-        }
-      }
+  // キーワードまとめを検索
+  if (state.keywordSummaries?.keywords) {
+    for (const kw of state.keywordSummaries.keywords) {
+      // タイトル（keyword, synonyms）で検索
+      const titleText = [
+        kw.keyword,
+        ...(kw.synonyms || [])
+      ].join(' ').toLowerCase();
 
-      if (categoryData?.topics) {
-        categoryData.topics.forEach(topic => {
-          topic.cards.forEach(card => {
-            // タイトル、コンテンツ、キーポイント、タグで検索
-            const searchText = [
-              card.title,
-              card.content,
-              ...(card.keyPoints || []),
-              ...(card.tags || [])
-            ].join(' ').toLowerCase();
+      const isTitleMatch = titleText.includes(lowerQuery);
 
-            if (searchText.includes(lowerQuery)) {
-              results.push({
-                id: card.id,
-                title: card.title,
-                categoryId: category.id,
-                categoryName: category.name,
-                color: category.color
-              });
-            }
-          });
+      // 本文（content）で検索
+      const contentText = (kw.content || '').toLowerCase();
+      const isContentMatch = contentText.includes(lowerQuery);
+
+      if (isTitleMatch) {
+        titleMatches.push({
+          id: kw.id,
+          title: kw.keyword,
+          categoryName: kw.category,
+          color: '#4CAF50',
+          isKeyword: true,
+          htmlFile: kw.htmlFile
+        });
+      } else if (isContentMatch) {
+        contentMatches.push({
+          id: kw.id,
+          title: kw.keyword,
+          categoryName: kw.category,
+          color: '#4CAF50',
+          isKeyword: true,
+          htmlFile: kw.htmlFile
         });
       }
-    } catch (error) {
-      console.log(`カテゴリ ${category.id} の検索スキップ`);
     }
   }
+
+  // タイトル一致を上位に、本文一致を下位にソートして結合
+  const results = [...titleMatches, ...contentMatches];
 
   // 結果を表示
   showSearchResults(results);
@@ -1882,8 +1856,7 @@ function showSearchResults(results) {
   if (!elements.summarySearchResults) return;
 
   elements.summarySearchResults.style.display = 'block';
-  elements.summaryCategoriesSection.style.display = 'none';
-  elements.summaryRecentSection.style.display = 'none';
+  // ランキングとお気に入りは表示したまま
 
   if (elements.searchResultsCount) {
     elements.searchResultsCount.textContent = `${results.length}件の結果`;
@@ -1894,10 +1867,13 @@ function showSearchResults(results) {
     return;
   }
 
-  elements.searchResultsList.innerHTML = results.slice(0, 20).map(item => `
-    <div class="search-result-item" data-card-id="${item.id}" data-category-id="${item.categoryId}">
+  elements.searchResultsList.innerHTML = results.slice(0, 30).map(item => `
+    <div class="search-result-item" data-item-id="${item.id}" data-is-keyword="${item.isKeyword || false}" data-html-file="${item.htmlFile || ''}">
       <div class="search-result-icon" style="background-color: ${item.color}">
-        ${getCategoryEmoji(state.summaryIndex.categories.find(c => c.id === item.categoryId)?.icon)}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+        </svg>
       </div>
       <div class="search-result-content">
         <div class="search-result-title">${item.title}</div>
@@ -1909,7 +1885,13 @@ function showSearchResults(results) {
   // クリックイベント
   elements.searchResultsList.querySelectorAll('.search-result-item').forEach(item => {
     item.addEventListener('click', () => {
-      openSummaryCard(item.dataset.cardId, item.dataset.categoryId);
+      const isKeyword = item.dataset.isKeyword === 'true';
+      if (isKeyword) {
+        const htmlFile = item.dataset.htmlFile;
+        showKeywordSummaryModal(htmlFile);
+      } else {
+        openSummaryCard(item.dataset.itemId, item.dataset.categoryId);
+      }
     });
   });
 }
@@ -1918,12 +1900,6 @@ function showSearchResults(results) {
 function hideSearchResults() {
   if (elements.summarySearchResults) {
     elements.summarySearchResults.style.display = 'none';
-  }
-  if (elements.summaryCategoriesSection) {
-    elements.summaryCategoriesSection.style.display = 'block';
-  }
-  if (elements.summaryRecentSection) {
-    elements.summaryRecentSection.style.display = 'block';
   }
 }
 
