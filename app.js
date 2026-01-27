@@ -844,13 +844,16 @@ function showAnswer() {
 }
 
 // ===== 画像表示機能 =====
-function parseImageRef(imageRef, examId) {
+function parseImageRef(imageRef, examId, section = 'A') {
   if (!imageRef) return [];
 
   const images = [];
   // 「別冊No.1」「別冊No.4A, 4B」「別冊No.10A, 10B」などをパース
   // カンマで分割して各参照を処理
   const refs = imageRef.replace(/別冊No\./g, '').split(/[,、]/);
+
+  // セクション（A/B/C/D）に応じた画像プレフィックスを使用
+  const prefix = `${section}_No`;
 
   let lastBaseNum = '';
   refs.forEach(ref => {
@@ -862,12 +865,12 @@ function parseImageRef(imageRef, examId) {
     if (match) {
       lastBaseNum = match[1];
       const suffix = match[2] || '';
-      images.push(`images/exam/${examId}/A_No${lastBaseNum}${suffix}.png`);
+      images.push(`images/exam/${examId}/${prefix}${lastBaseNum}${suffix}.png`);
     } else {
       // 「A」「B」など、数字なしの場合は前の数字を使う
       const suffixOnly = ref.match(/^([A-Za-z]+)$/);
       if (suffixOnly && lastBaseNum) {
-        images.push(`images/exam/${examId}/A_No${lastBaseNum}${suffixOnly[1]}.png`);
+        images.push(`images/exam/${examId}/${prefix}${lastBaseNum}${suffixOnly[1]}.png`);
       }
     }
   });
@@ -882,7 +885,9 @@ function renderImageThumbnails(question) {
     return;
   }
 
-  const imagePaths = parseImageRef(question.imageRef, examId);
+  // 問題のセクション（A/B/C/D）を取得
+  const section = question.section || 'A';
+  const imagePaths = parseImageRef(question.imageRef, examId, section);
   state.currentImages = imagePaths;
   state.carouselIndex = 0;
 
@@ -3838,6 +3843,33 @@ function closeSearchModal() {
   document.body.style.overflow = '';
 }
 
+function clearSearchConditions() {
+  // キーワード検索をクリア
+  if (elements.searchKeyword) {
+    elements.searchKeyword.value = '';
+  }
+
+  // 演習状態フィルタ - 全てON
+  document.querySelectorAll('#practiceStatusFilter .filter-btn').forEach(btn => {
+    btn.classList.add('active');
+  });
+
+  // 問題区分フィルタ - 全てON
+  document.querySelectorAll('#questionTypeFilter .filter-btn').forEach(btn => {
+    btn.classList.add('active');
+  });
+
+  // 回数選択フィルタ - 全てON
+  document.querySelectorAll('#examFilter .filter-btn').forEach(btn => {
+    btn.classList.add('active');
+  });
+
+  // 科目選択フィルタ - 全てON
+  document.querySelectorAll('#subjectFilter .filter-btn').forEach(btn => {
+    btn.classList.add('active');
+  });
+}
+
 function toggleSearchDetails() {
   const body = elements.searchDetailsBody;
   const toggle = elements.searchDetailsToggle;
@@ -4075,6 +4107,7 @@ function setupEventListeners() {
   elements.searchDetailsToggle?.addEventListener('click', toggleSearchDetails);
   elements.startFilteredQuizBtn?.addEventListener('click', startFilteredQuiz);
   elements.searchBtn?.addEventListener('click', executeSearch);
+  document.getElementById('clearConditionsBtn')?.addEventListener('click', clearSearchConditions);
 
   // 検索モーダル内のフィルターボタン
   document.querySelectorAll('#searchModal .filter-buttons').forEach(container => {

@@ -374,12 +374,20 @@
             </svg>
             出題設定
           </button>
-          <button class="menu-btn" id="examSelectBtn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          <button class="daily-btn daily-btn-search" id="examSelectBtn">
+            <div class="daily-btn-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <div class="daily-btn-content">
+              <span class="daily-btn-title">科目・回数別</span>
+              <span class="daily-btn-count">検索</span>
+            </div>
+            <svg class="daily-btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
-            科目・回数別
           </button>
         </div>
       </div>
@@ -986,6 +994,7 @@
       </div>
       <div class="search-modal-footer">
         <button class="btn-start-quiz" id="startFilteredQuizBtn">この条件で出題</button>
+        <button class="btn-clear-conditions" id="clearConditionsBtn">条件クリア</button>
       </div>
     </div>
   </div>
