@@ -366,6 +366,17 @@ function initElements() {
   elements.imageModalPrev = document.getElementById('imageModalPrev');
   elements.imageModalNext = document.getElementById('imageModalNext');
   elements.imageModalCounter = document.getElementById('imageModalCounter');
+
+  // 関連まとめ
+  elements.relatedSummaries = document.getElementById('relatedSummaries');
+  elements.relatedSummariesList = document.getElementById('relatedSummariesList');
+
+  // まとめモーダル
+  elements.summaryModal = document.getElementById('summaryModal');
+  elements.summaryModalBackdrop = document.getElementById('summaryModalBackdrop');
+  elements.summaryModalClose = document.getElementById('summaryModalClose');
+  elements.summaryModalTitle = document.getElementById('summaryModalTitle');
+  elements.summaryModalBody = document.getElementById('summaryModalBody');
 }
 
 // ===== 初期化 =====
@@ -752,6 +763,9 @@ function renderQuestion() {
   renderChoices(question);
 
   elements.answerArea.style.display = 'none';
+  if (elements.relatedSummaries) {
+    elements.relatedSummaries.style.display = 'none';
+  }
   elements.showAnswerBtn.style.display = 'block';
   elements.nextQuestionBtn.style.display = 'none';
   if (elements.difficultyBtns) {
@@ -853,7 +867,114 @@ function showAnswer() {
     incrementTodayCount();
   }
 
+  // 関連まとめを表示
+  renderRelatedSummaries(question);
+
   saveState();
+}
+
+// ===== 関連まとめ機能 =====
+function findRelatedKeywords(question) {
+  if (!state.keywordSummaries || !state.keywordSummaries.keywords) {
+    return [];
+  }
+
+  const searchText = question.questionText + ' ' +
+    question.choices.map(c => c.text).join(' ');
+
+  const matches = [];
+
+  for (const kw of state.keywordSummaries.keywords) {
+    // キーワードとその同義語をチェック
+    const searchTerms = [kw.keyword, ...(kw.synonyms || [])];
+
+    for (const term of searchTerms) {
+      if (term && searchText.includes(term)) {
+        matches.push(kw);
+        break; // 同じキーワードを複数回追加しない
+      }
+    }
+  }
+
+  return matches;
+}
+
+function renderRelatedSummaries(question) {
+  if (!elements.relatedSummaries || !elements.relatedSummariesList) {
+    return;
+  }
+
+  const relatedKeywords = findRelatedKeywords(question);
+
+  if (relatedKeywords.length === 0) {
+    elements.relatedSummaries.style.display = 'none';
+    return;
+  }
+
+  elements.relatedSummaries.style.display = 'block';
+  elements.relatedSummariesList.innerHTML = relatedKeywords.map(kw => `
+    <button class="related-summary-link" data-keyword-id="${kw.id}" data-html-file="${kw.htmlFile}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+      </svg>
+      ${kw.keyword}
+    </button>
+  `).join('');
+
+  // クリックイベントを追加
+  elements.relatedSummariesList.querySelectorAll('.related-summary-link').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const keywordId = btn.dataset.keywordId;
+      const htmlFile = btn.dataset.htmlFile;
+      openSummaryModal(keywordId, htmlFile);
+    });
+  });
+}
+
+async function openSummaryModal(keywordId, htmlFile) {
+  if (!elements.summaryModal) return;
+
+  // キーワードデータを取得
+  const keyword = state.keywordSummaries?.keywords?.find(kw => kw.id === keywordId);
+  if (!keyword) return;
+
+  elements.summaryModalTitle.textContent = keyword.keyword;
+  elements.summaryModalBody.innerHTML = '<p style="text-align: center; color: var(--text-muted);">読み込み中...</p>';
+  elements.summaryModal.style.display = 'flex';
+
+  try {
+    // HTMLファイルを読み込む
+    const response = await fetch(`summaries/${htmlFile}`);
+    if (response.ok) {
+      const html = await response.text();
+      elements.summaryModalBody.innerHTML = html;
+    } else {
+      // HTMLファイルがない場合はcontentを表示
+      elements.summaryModalBody.innerHTML = formatSummaryContent(keyword.content);
+    }
+  } catch (error) {
+    // エラー時はcontentを表示
+    elements.summaryModalBody.innerHTML = formatSummaryContent(keyword.content);
+  }
+}
+
+function formatSummaryContent(content) {
+  if (!content) return '<p>まとめ内容がありません。</p>';
+
+  // 簡易的な整形
+  return content
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line)
+    .map(line => `<p>${line}</p>`)
+    .join('');
+}
+
+function closeSummaryModal() {
+  if (elements.summaryModal) {
+    elements.summaryModal.style.display = 'none';
+  }
 }
 
 // ===== 画像表示機能 =====
@@ -4186,6 +4307,10 @@ function setupEventListeners() {
   elements.imageModalBackdrop?.addEventListener('click', closeImageModal);
   elements.imageModalPrev?.addEventListener('click', prevModalImage);
   elements.imageModalNext?.addEventListener('click', nextModalImage);
+
+  // まとめモーダル
+  elements.summaryModalClose?.addEventListener('click', closeSummaryModal);
+  elements.summaryModalBackdrop?.addEventListener('click', closeSummaryModal);
 
   // 画像モーダルのスワイプ操作
   setupImageModalSwipe();
