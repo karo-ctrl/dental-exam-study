@@ -1840,13 +1840,23 @@ body {
 }
 
 .search-section-home {
-  margin-top: 24px;
-  padding-top: 16px;
-  border-top: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.search-section-home.search-section-top {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .search-section-home .section-title {
   margin-bottom: 12px;
+}
+
+.daily-section.daily-section-bottom {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
 }
 
 .daily-btn-search-large {
