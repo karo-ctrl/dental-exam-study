@@ -1960,7 +1960,9 @@
           "text": "スティルマン改良法"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -3799,7 +3801,9 @@
           "text": "Bis-GMA"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -4070,7 +4074,9 @@
           "text": "Ag-Pd-Au"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -4762,7 +4768,9 @@
           "text": "上部構造の撤去しやすさ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.2A, 2B",
       "relatedLinks": null,
       "category": "必修",
@@ -5125,7 +5133,9 @@
           "text": "下顎最前方位"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.13A",
       "relatedLinks": null,
       "category": "必修",
@@ -5358,7 +5368,9 @@
           "text": "床辺縁部の機能的形態再現"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -5786,7 +5798,10 @@
           "text": "ナメルマトリックスタンパク質の応用"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "d"
+      ],
       "imageRef": "別冊No.32A, 32B",
       "relatedLinks": null,
       "category": "臨実",
@@ -6484,7 +6499,9 @@
           "text": "Nance のホールディングアーチ リンガルアーチ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.49",
       "relatedLinks": null,
       "category": "臨実",
@@ -6807,7 +6824,9 @@
           "text": "白血球数"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -7064,7 +7083,9 @@
           "text": " 歳"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -8407,7 +8428,10 @@
           "text": "慢性再発性アフタ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8788,7 +8812,9 @@
           "text": "第一第二鰓弓症候群"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10517,7 +10543,9 @@
           "text": "下顎後縁平面角"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10889,7 +10917,9 @@
       "questionText": "上顎右側第一大臼歯欠損で、第二小臼歯と第二大臼歯を支台歯とするブリッジを 製作することとした。ブリッジ設計の参考となる歯種別の指数を表に示す。    歯 種 指 数      ブリッジ抵抗力rを求めよ。 解答：① ② ① ②          ",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -11820,7 +11850,9 @@
           "text": "歯根膜感覚入力の修正"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.27A, 27B",
       "relatedLinks": null,
       "category": "臨実",
@@ -12661,7 +12693,9 @@
           "text": "5.0"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",

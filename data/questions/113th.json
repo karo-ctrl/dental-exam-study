@@ -1229,7 +1229,9 @@
           "text": "平衡覚"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -1304,7 +1306,9 @@
           "text": "腹部突き上げ法"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -1757,7 +1761,10 @@
           "text": "垂直型のターミナルプレーン 別 冊 No. 8 Ａ、Ｂ、Ｃ、Ｄ、Ｅ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "e"
+      ],
       "imageRef": "別冊No.8A, 8B, 8C, 8D, 8E",
       "relatedLinks": [
         "別冊No.8A",
@@ -2114,7 +2121,9 @@
           "text": "二次齲ôになりにくい。 別 冊 No. 13 Ａ、Ｂ、Ｃ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.13A, 13B, 13C",
       "relatedLinks": [
         "別冊No.13A",
@@ -3186,7 +3195,11 @@
           "text": "遊離エナメル質の保存"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "b",
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -3261,7 +3274,9 @@
           "text": "うなずき嚥下"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -4034,7 +4049,9 @@
           "text": "慢性肉芽性根尖性歯周炎 別 冊 No. 1 Ａ、Ｂ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.1A, 1B",
       "relatedLinks": [
         "別冊No.1A",
@@ -7502,7 +7519,9 @@
           "text": "反復唾液嚥下テスト"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",

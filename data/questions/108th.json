@@ -549,7 +549,9 @@
           "text": "ディスポーザブル手袋"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -2407,7 +2409,9 @@
           "text": "中等度 　　　　 中等度"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -4214,7 +4218,9 @@
           "text": "副腎皮質ステロイド薬投与"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -5251,7 +5257,9 @@
           "text": "左右のトレーは口腔内挿入前に接合する。"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.11A",
       "relatedLinks": null,
       "category": "必修",
@@ -5994,7 +6002,9 @@
           "text": "抜　歯"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.33A, 33B",
       "relatedLinks": null,
       "category": "臨実",
@@ -7052,7 +7062,9 @@
           "text": "W. G. A. Bonwill"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -7531,7 +7543,9 @@
           "text": "Polymerase Chain Reaction〈PCR〉法"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8310,7 +8324,9 @@
           "text": "コラーゲン線維の膨潤"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -9397,7 +9413,10 @@
           "text": "無汗型外胚葉異形成症"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10185,7 +10204,9 @@
           "text": "臼歯部修復では省略できる。"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.19",
       "relatedLinks": null,
       "category": "臨実",
@@ -10650,7 +10671,9 @@
       "questionText": "既製乳歯用金属冠の支台歯の辺縁形態の模式図を示す。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12430,7 +12453,10 @@
           "text": "腔内への食渣の侵入防止"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d",
+        "e"
+      ],
       "imageRef": "別冊No.26A, 26B, 26C",
       "relatedLinks": null,
       "category": "臨実",

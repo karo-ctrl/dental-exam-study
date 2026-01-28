@@ -1154,7 +1154,9 @@
           "text": "Vienna 分類"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -1986,7 +1988,9 @@
           "text": "ルボキシメチルセルロース タバコのやに除去"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -2962,7 +2966,9 @@
           "text": "スプルーとベントの植立"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": "別冊No.28A",
       "relatedLinks": null,
       "category": "臨実",
@@ -3751,7 +3757,9 @@
           "text": "発 声"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -3835,7 +3843,9 @@
           "text": "ヘルシンキ宣言"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -5629,7 +5639,9 @@
           "text": "リンパ管腫"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.16A, 16B, 16C, 16D",
       "relatedLinks": null,
       "category": "臨実",
@@ -7181,7 +7193,10 @@
           "text": "最先端技術開発を目的とする国際活動である。"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10402,7 +10417,9 @@
           "text": "T 細胞によるサイトカインの産生"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12189,7 +12206,9 @@
           "text": "顎関節違和感の軽減"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.23",
       "relatedLinks": null,
       "category": "臨実",
@@ -12516,7 +12535,9 @@
           "text": "ラウンの合着"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.32",
       "relatedLinks": null,
       "category": "臨実",

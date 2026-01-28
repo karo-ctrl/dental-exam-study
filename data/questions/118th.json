@@ -820,7 +820,9 @@
           "text": "Nance のホールディングアーチ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.4A, 4B, 4C",
       "relatedLinks": [
         "別冊No.4A",
@@ -1367,7 +1369,9 @@
           "text": "唾液腺"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -2099,7 +2103,9 @@
           "text": "4 、5 の抜歯による歯列のレベリング"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.14A, 14B, 14C",
       "relatedLinks": [
         "別冊No.14A",
@@ -2230,7 +2236,9 @@
           "text": "顎下リンパ節"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -2670,7 +2678,9 @@
           "text": "コンポジットレジン"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -3188,7 +3198,9 @@
           "text": "メタルプライマーの塗布"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": "別冊No.30A, 30B, 30C",
       "relatedLinks": [
         "別冊No.30A",
@@ -3888,7 +3900,9 @@
           "text": "イオン結合"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -3902,7 +3916,9 @@
       "questionText": "健常者で組織から毛細血管内に水分が移動する圧力を生むのはどれか。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -4011,7 +4027,9 @@
           "text": "脾　臓"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -4592,7 +4610,9 @@
       "questionText": "44歳の女性。下顎右側第二大臼歯の動揺を主訴として来院した。1 か月前から 気付いていたが痛みがないのでそのままにしていたという。初診時の口腔内写真 （別冊No.  8Ａ）とエックス線画像（別冊No.  8Ｂ）を別に示す。初診時の歯周組織検査 結果の一部を表に示す。 舌　側* ⑧ ⑤",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.8A, 8B",
       "relatedLinks": [
         "別冊No.8A",
@@ -6407,7 +6427,11 @@
           "text": "ロキソプロフェンナトリウム水和物"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "d",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8420,7 +8444,9 @@
           "text": "ボンディング材塗布"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.15A, 15B",
       "relatedLinks": [
         "別冊No.15A",
@@ -9064,7 +9090,9 @@
           "text": "骨接合用プレートの試適"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.28B",
       "relatedLinks": [
         "別冊No.28A",
@@ -9591,7 +9619,9 @@
           "text": "上顎口蓋側咬頭内斜面"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10648,7 +10678,9 @@
           "text": "セレクティブエッチング"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.5A, 5B",
       "relatedLinks": [
         "別冊No.5A",
@@ -10836,7 +10868,9 @@
       "questionText": "術前の小児に感染性心内膜炎予防のためアモキシシリン水和物を単回経口投与す ることとした。 体重1 kg あたりの投与量（上限2 g）と投与時期の組合せで正しいのはどれか。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -11347,7 +11381,11 @@
           "text": "嚥下内視鏡検査の準備をする。"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "b",
+        "d"
+      ],
       "imageRef": "別冊No.16",
       "relatedLinks": [
         "別冊No.16"
@@ -11861,7 +11899,9 @@
       "questionText": "ストレート形状と比べたテーパー形状のインプラント体の特徴はどれか。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12407,7 +12447,9 @@
           "text": "スガマデクスナトリウム"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.29",
       "relatedLinks": [
         "別冊No.29"

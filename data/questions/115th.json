@@ -549,7 +549,9 @@
           "text": "未重合層"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.15, 15A, 15B, 15C",
       "relatedLinks": null,
       "category": "必修",
@@ -847,7 +849,9 @@
           "text": "オ 別 冊 No. 2 Ａ、Ｂ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.23",
       "relatedLinks": [
         "別冊No.2A",
@@ -2808,7 +2812,10 @@
           "text": "PECSõPicture Exchange Communication Systemü"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -6305,7 +6312,9 @@
           "text": "セチルピリジニウム塩化物"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8809,7 +8818,9 @@
           "text": "オ 別 冊 No. 15"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.15",
       "relatedLinks": [
         "別冊No.15"
@@ -9243,7 +9254,10 @@
           "text": "Treacher Collins 症候群"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -9560,7 +9574,9 @@
           "text": "弾性エネルギー"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10346,7 +10362,9 @@
       "questionText": "ある地域住民100 名を対象として歯のフッ素症の調査を実施した結果を表に示 す。 Deanの分類 人 数 Normal",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12615,7 +12633,9 @@
           "text": "オ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -13032,7 +13052,9 @@
           "text": "Ｂ ｢歯ぐきの位置が下がっています｣ 別 冊 No. 22 Ａ、Ｂ、Ｃ、Ｄ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.22A, 22C, 22D",
       "relatedLinks": [
         "別冊No.22A",
@@ -13346,7 +13368,9 @@
           "text": "中等度 中等度 別 冊 No. 27"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.27",
       "relatedLinks": [
         "別冊No.27"

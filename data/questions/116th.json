@@ -1264,7 +1264,9 @@
       "questionText": "上顎洞底挙上術に用いる骨移植材料で、挙上した高さが維持できるのはどれか。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.35, 35A, 35B, 35C",
       "relatedLinks": null,
       "category": "一般",
@@ -1942,7 +1944,9 @@
           "text": "標準治療と同じ総線量を要する。"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -2059,7 +2063,9 @@
           "text": "管間象牙質へのモノマー浸透性向上"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.15",
       "relatedLinks": [
         "別冊No.15"
@@ -2531,7 +2537,9 @@
       "questionText": "37歳の男性。食事の際の歯肉の痛みを主訴として来院した。5 年前から下顎右 側第一大臼歯と第二大臼歯の歯間部の食片圧入を自覚していたがそのままにしてい たという。検査の結果、慢性歯周炎と診断し歯周基本治療を行うこととした。初診 時の口腔内写真（別冊No. 24Ａ）とエックス線画像（別冊No. 24Ｂ）を別に示す。歯 周組織検査結果の一部を表に示す。 舌　側＊",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.24A, 24B",
       "relatedLinks": [
         "別冊No.24A",
@@ -3140,7 +3148,12 @@
           "text": "両側Angle I 級の大臼歯関係の確立"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
       "imageRef": "別冊No.35A, 35B, 35C",
       "relatedLinks": [
         "別冊No.35A",
@@ -3782,7 +3795,9 @@
           "text": "患者が健康教育を受ける権利"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": "別冊No.13",
       "relatedLinks": null,
       "category": "必修",
@@ -3891,7 +3906,9 @@
           "text": "10.6 μm"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.16",
       "relatedLinks": null,
       "category": "必修",
@@ -4373,7 +4390,10 @@
           "text": "両側関節突起骨折"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d",
+        "e"
+      ],
       "imageRef": "別冊No.29, 29A, 29B, 29C",
       "relatedLinks": null,
       "category": "一般",
@@ -5161,7 +5181,9 @@
           "text": "プロキシマルハーフクラウン"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -6937,7 +6959,9 @@
           "text": "単層立方上皮"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.10, 10A, 10B, 10C, 10D",
       "relatedLinks": null,
       "category": "必修",
@@ -7991,7 +8015,10 @@
           "text": "オ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d",
+        "e"
+      ],
       "imageRef": "別冊No.12A, 12B, 12C",
       "relatedLinks": [
         "別冊No.12A",
@@ -9372,7 +9399,9 @@
           "text": "そしやく機能障害"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -11029,7 +11058,9 @@
           "text": "スケーリング・ルートプレーニング"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.6A, 6B, 6C",
       "relatedLinks": [
         "別冊No.6A",
@@ -11146,7 +11177,9 @@
           "text": "肉芽増生"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -11499,7 +11532,9 @@
           "text": "形質細胞による抗体産生亢進"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12868,7 +12903,10 @@
           "text": "レーザー蛍光強度測定"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c",
+        "d"
+      ],
       "imageRef": "別冊No.33",
       "relatedLinks": [
         "別冊No.33"

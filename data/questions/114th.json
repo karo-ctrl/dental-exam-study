@@ -364,7 +364,9 @@
           "text": "Blandin-Nuhn 腺"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -2266,7 +2268,10 @@
           "text": "エックス線"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8920,7 +8925,9 @@
           "text": "Treacher Collins 症候群 別 冊 No. 20 Ａ、Ｂ、Ｃ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.20A, 20B, 20C",
       "relatedLinks": [
         "別冊No.20A",
@@ -9078,7 +9085,11 @@
           "text": "歯科矯正用アンカースクリュー 別 冊 No. 23 Ａ、Ｂ、Ｃ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b",
+        "d",
+        "e"
+      ],
       "imageRef": "別冊No.23A, 23B, 23C",
       "relatedLinks": [
         "別冊No.23A",
@@ -9510,7 +9521,10 @@
           "text": "床用レジンと接着する。 別 冊 No. 29"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "c"
+      ],
       "imageRef": "別冊No.29",
       "relatedLinks": [
         "別冊No.29"
@@ -10421,7 +10435,9 @@
           "text": "ビタミンK"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -12318,7 +12334,10 @@
           "text": "PAR Index"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12707,7 +12726,9 @@
           "text": "VBATDT 別 冊 No. 20 Ａ、Ｂ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.20A, 20B",
       "relatedLinks": [
         "別冊No.20A",
@@ -12864,7 +12885,9 @@
           "text": "インプラント体間の平行性を問わない。 別 冊 No. 22 Ａ、Ｂ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.22A",
       "relatedLinks": [
         "別冊No.22A"
@@ -13276,7 +13299,9 @@
           "text": "支台歯間の平行性調整 別 冊 No. 26 Ａ、Ｂ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.26A, 26B",
       "relatedLinks": [
         "別冊No.26A",

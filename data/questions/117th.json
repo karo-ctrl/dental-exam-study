@@ -182,7 +182,9 @@
           "text": "コルチゾール"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -1371,7 +1373,9 @@
           "text": "サブミクロンフィラー"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.12",
       "relatedLinks": [
         "別冊No.12"
@@ -2441,7 +2445,9 @@
       "questionText": "Toll 様受容体〈TLR〉と病原体関連分子パターンの組合せで正しいのはどれか。",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -3193,7 +3199,10 @@
           "text": "グルコース溶出量測定"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -4276,7 +4285,9 @@
           "text": "肺コンプライアンスの増大"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.5A, 5B",
       "relatedLinks": [
         "別冊No.5A",
@@ -4934,7 +4945,9 @@
           "text": "金銀パラジウム合金"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -5677,7 +5690,9 @@
           "text": "オ"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.22",
       "relatedLinks": [
         "別冊No.22"
@@ -6755,7 +6770,9 @@
           "text": "ヒスタミン遊離作用"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -7618,7 +7635,9 @@
           "text": "Langerhans 細胞組織球症"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8238,7 +8257,9 @@
           "text": "コンポジットレジン修復"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.14A, 14B",
       "relatedLinks": [
         "別冊No.14A",
@@ -9120,7 +9141,9 @@
           "text": "McCune-Albright 症候群"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.29A, 29B",
       "relatedLinks": [
         "別冊No.29A",
@@ -9471,7 +9494,9 @@
           "text": "リンパ管腫"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.34A, 34B, 34C",
       "relatedLinks": [
         "別冊No.34A",
@@ -11864,7 +11889,9 @@
           "text": "32 倍"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12807,7 +12834,9 @@
           "text": "口腔カンジダ症"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",

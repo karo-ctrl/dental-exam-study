@@ -5291,7 +5291,9 @@
           "text": "炭酸飲料水の頻回摂取"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.17",
       "relatedLinks": null,
       "category": "必修",
@@ -7074,7 +7076,9 @@
           "text": "唾液分泌量の増加"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -8345,7 +8349,9 @@
           "text": "診療従事歯科医師の診療時間"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -8615,7 +8621,9 @@
           "text": "リッジラップ型"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -10100,7 +10108,10 @@
           "text": "上顎前歯の唇側傾斜"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c",
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12143,7 +12154,9 @@
           "text": "上顎第一小臼歯の抜去"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",

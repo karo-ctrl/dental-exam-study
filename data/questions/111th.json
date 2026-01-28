@@ -4732,7 +4732,9 @@
       "questionText": "矯正用プライヤーの写真別冊No. 3 を別に示す。 角線の屈曲に用いるのはどれか。1つ選べ。 冊",
       "selectCount": 1,
       "choices": [],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "b"
+      ],
       "imageRef": "別冊No.3",
       "relatedLinks": null,
       "category": "臨実",
@@ -6504,7 +6506,9 @@
           "text": "ラクトフェリン"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "必修",
@@ -8593,7 +8597,9 @@
           "text": "安11 mm"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "e"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -9506,7 +9512,9 @@
           "text": "消化管ポリポーシス"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "c"
+      ],
       "imageRef": "別冊No.40A, 40B",
       "relatedLinks": null,
       "category": "臨実",
@@ -11311,7 +11319,9 @@
           "text": "TNF-α7Tumor necrosis factor-α8"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": null,
       "relatedLinks": null,
       "category": "一般",
@@ -12118,7 +12128,9 @@
           "text": "Begg タイプリテーナー"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "d"
+      ],
       "imageRef": "別冊No.17A, 17B, 17C, 17D",
       "relatedLinks": null,
       "category": "臨実",
