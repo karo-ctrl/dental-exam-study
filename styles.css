@@ -1850,27 +1850,49 @@ body {
 }
 
 .daily-btn-search-large {
-  min-height: 100px;
+  min-height: 140px;
+  padding: 24px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.daily-btn-search-large:hover {
+  background-color: #1d4ed8;
+}
+
+[data-theme="dark"] .daily-btn-search-large {
+  background-color: #3b82f6;
+}
+
+[data-theme="dark"] .daily-btn-search-large:hover {
+  background-color: #2563eb;
 }
 
 .daily-btn-search-large .daily-btn-icon {
-  width: 56px;
-  height: 56px;
-  background-color: #dbeafe;
-  color: #2563eb;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .daily-btn-search-large .daily-btn-icon {
-  background-color: #1e3a5f;
-  color: #60a5fa;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .daily-btn-search-large .daily-btn-title {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .daily-btn-search-large .daily-btn-count {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.daily-btn-search-large .daily-btn-arrow {
+  color: #ffffff;
 }
 
 /* 準備中画面 */
