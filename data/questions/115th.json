@@ -12238,23 +12238,29 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
           "label": "b",
-          "text": "   "
+          "text": "（画像参照）"
         },
         {
           "label": "c",
-          "text": "   "
+          "text": "（画像参照）"
         },
         {
           "label": "d",
-          "text": "   "
+          "text": "（画像参照）"
         },
         {
           "label": "e",
-          "text": "    別 冊 No. 13 Ａ、Ｂ、Ｃ"
+          "text": "（画像参照）"
         }
       ],
-      "correctAnswers": [],
+      "correctAnswers": [
+        "a"
+      ],
       "imageRef": "別冊No.13A, 13B, 13C",
       "relatedLinks": [
         "別冊No.13A",

@@ -4989,23 +4989,23 @@
       "choices": [
         {
           "label": "a",
-          "text": " "
+          "text": "（画像参照）"
         },
         {
           "label": "b",
-          "text": " "
+          "text": "（画像参照）"
         },
         {
           "label": "c",
-          "text": " "
+          "text": "（画像参照）"
         },
         {
           "label": "d",
-          "text": " "
+          "text": "（画像参照）"
         },
         {
           "label": "e",
-          "text": " "
+          "text": "（画像参照）"
         }
       ],
       "correctAnswers": [

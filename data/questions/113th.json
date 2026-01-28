@@ -2539,23 +2539,23 @@
       "choices": [
         {
           "label": "a",
-          "text": "  "
+          "text": "（画像参照）"
         },
         {
           "label": "b",
-          "text": "  "
+          "text": "（画像参照）"
         },
         {
           "label": "c",
-          "text": "  "
+          "text": "（画像参照）"
         },
         {
           "label": "d",
-          "text": "   "
+          "text": "（画像参照）"
         },
         {
           "label": "e",
-          "text": "   別 冊 No. 23 Ａ、Ｂ"
+          "text": "（画像参照）"
         }
       ],
       "correctAnswers": [
