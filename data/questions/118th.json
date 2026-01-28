@@ -1,7 +1,7 @@
 {
   "examId": "118",
   "examName": "第118回歯科医師国家試験",
-  "totalQuestions": 360,
+  "totalQuestions": 359,
   "questions": [
     {
       "id": "118-A001",
@@ -2114,41 +2114,6 @@
       ],
       "category": "臨実",
       "subject": "",
-      "field": ""
-    },
-    {
-      "id": "118-A056",
-      "section": "A",
-      "number": 56,
-      "questionText": "小児の歯科治療時の行動分類（Frankl の分類）で2 度はどれか。2つ選べ。",
-      "selectCount": 2,
-      "choices": [
-        {
-          "label": "a",
-          "text": "拒　否"
-        },
-        {
-          "label": "b",
-          "text": "号　泣"
-        },
-        {
-          "label": "c",
-          "text": "慎　重"
-        },
-        {
-          "label": "d",
-          "text": "躊　躇"
-        },
-        {
-          "label": "e",
-          "text": "不協力"
-        }
-      ],
-      "correctAnswers": [],
-      "imageRef": null,
-      "relatedLinks": null,
-      "category": "一般",
-      "subject": "小児歯科",
       "field": ""
     },
     {
