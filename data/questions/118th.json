@@ -2160,7 +2160,28 @@
       "number": 58,
       "questionText": "矯正歯科治療中の口腔内写真（別冊No.  15）を別に示す。 上顎右側犬歯根尖部の歯周組織に生じる生体反応の組合せで正しいのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "近心側 血流の亢進"
+        },
+        {
+          "label": "b",
+          "text": "近心側 破骨細胞の活性化"
+        },
+        {
+          "label": "c",
+          "text": "遠心側 歯根膜の硝子化"
+        },
+        {
+          "label": "d",
+          "text": "遠心側 マクロファージの出現"
+        },
+        {
+          "label": "e",
+          "text": "遠心側 セメント芽細胞の活性化 DKIX-02-AH-40"
+        }
+      ],
       "correctAnswers": [
         "b",
         "e"
@@ -2295,7 +2316,28 @@
       "number": 62,
       "questionText": "閉塞性睡眠時無呼吸症において、睡眠中に舌根が沈下すると生じるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "Ｃ　の抜歯"
+        },
+        {
+          "label": "b",
+          "text": "Ｃ　の抜歯"
+        },
+        {
+          "label": "c",
+          "text": "4 　の抜歯"
+        },
+        {
+          "label": "d",
+          "text": "2 2 　の補綴処置"
+        },
+        {
+          "label": "e",
+          "text": "上顎右側臼歯の遠心移動 DKIX-02-AH-43"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -2351,7 +2393,28 @@
       "number": 64,
       "questionText": "41歳の女性。上顎左側前歯と小臼歯部の審美不良を主訴として来院した。6 か 月前から気付いていたがそのままにしていたという。角化歯肉の幅は上顎左側犬歯 において1 mm 程度である。歯周基本治療後の再評価時の口腔内写真（別冊No.  19 Ａ）とエックス線画像（別冊No.  19Ｂ）を別に示す。歯周組織検査結果の一部を表に 示す。 唇　側*",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "結合組織移植術"
+        },
+        {
+          "label": "b",
+          "text": "歯肉剝離搔爬術"
+        },
+        {
+          "label": "c",
+          "text": "遊離歯肉移植術"
+        },
+        {
+          "label": "d",
+          "text": "両側乳頭弁移動術"
+        },
+        {
+          "label": "e",
+          "text": "歯肉弁根尖側移動術 DKIX-02-AH-44"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -2564,7 +2627,28 @@
       "number": 70,
       "questionText": "歳の男性。下顎部分床義歯の不適合による咀嚼困難を主訴として来院した。診 察の結果、義歯を製作することとした。作業用模型上の頰側歯槽部で検査中の写真 （別冊No.  12Ａ）と検査に使用する器具の写真（別冊No.  12Ｂ）を別に示す。 別　冊 No.  12　Ａ、Ｂ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "CT 病変の位置確認"
+        },
+        {
+          "label": "b",
+          "text": "PET/CT 転移性腫瘍の診断"
+        },
+        {
+          "label": "c",
+          "text": "超音波検査 血流速度の評価"
+        },
+        {
+          "label": "d",
+          "text": "唾液腺造影撮影 唾液腺機能の診断"
+        },
+        {
+          "label": "e",
+          "text": "唾液腺シンチグラフィ 悪性腫瘍の鑑別"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -2850,7 +2934,28 @@
       "number": 78,
       "questionText": "80歳の男性。下顎前歯部の動揺を主訴として来院した。5 か月前から自覚し、",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "咬合調整"
+        },
+        {
+          "label": "b",
+          "text": "暫間固定"
+        },
+        {
+          "label": "c",
+          "text": "口腔清掃指導"
+        },
+        {
+          "label": "d",
+          "text": "オーラルスクリーンの使用"
+        },
+        {
+          "label": "e",
+          "text": "局所薬物配送システム〈LDDS〉 DKIX-02-AH-52"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b",
@@ -3305,7 +3410,28 @@
       "number": 90,
       "questionText": "ある地域において、肺癌の死亡率（10 万人年あたり）が喫煙者で20、非喫煙者で",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "9",
         "0"
@@ -3880,7 +4006,28 @@
       "number": 16,
       "questionText": "健常者で組織から毛細血管内に水分が移動する圧力を生むのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "アルブミン"
+        },
+        {
+          "label": "b",
+          "text": "グルコース"
+        },
+        {
+          "label": "c",
+          "text": "ヒスタミン"
+        },
+        {
+          "label": "d",
+          "text": "フィブリノゲン"
+        },
+        {
+          "label": "e",
+          "text": "ナトリウムイオン"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -4126,7 +4273,28 @@
       "number": 23,
       "questionText": "54歳の女性。下顎左側第二大臼歯の動揺を主訴として来院した。1 か月前から 気付いていたが痛みがないのでそのままにしていたという。初診時の口腔内写真 （別冊No.  3Ａ）とエックス線画像（別冊No.  3Ｂ）を別に示す。再評価時の歯周組織検 査結果の一部を表に示す。 舌　側* ⑥",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "GTR 法"
+        },
+        {
+          "label": "b",
+          "text": "新付着術"
+        },
+        {
+          "label": "c",
+          "text": "FGF-2 製剤の応用"
+        },
+        {
+          "label": "d",
+          "text": "歯周ポケット搔爬術"
+        },
+        {
+          "label": "e",
+          "text": "歯肉弁根尖側移動術 DKIX-0２-BH-22"
+        }
+      ],
       "correctAnswers": [
         "a",
         "c"
@@ -4574,7 +4742,28 @@
       "number": 35,
       "questionText": "44歳の女性。下顎右側第二大臼歯の動揺を主訴として来院した。1 か月前から 気付いていたが痛みがないのでそのままにしていたという。初診時の口腔内写真 （別冊No.  8Ａ）とエックス線画像（別冊No.  8Ｂ）を別に示す。初診時の歯周組織検査 結果の一部を表に示す。 舌　側* ⑧ ⑤",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "切削診"
+        },
+        {
+          "label": "b",
+          "text": "歯髄電気診"
+        },
+        {
+          "label": "c",
+          "text": "咬合接触検査"
+        },
+        {
+          "label": "d",
+          "text": "ボーンサウンディング"
+        },
+        {
+          "label": "e",
+          "text": "歯科用コーンビームCT DKIX-0２-BH-28"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -4750,7 +4939,28 @@
       "number": 40,
       "questionText": "CAD/CAM 用コンポジットレジンでエナメル質より小さいのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "弾性係数"
+        },
+        {
+          "label": "b",
+          "text": "引張強さ"
+        },
+        {
+          "label": "c",
+          "text": "曲げ強さ"
+        },
+        {
+          "label": "d",
+          "text": "熱膨張係数"
+        },
+        {
+          "label": "e",
+          "text": "破壊靱性値"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -5269,7 +5479,28 @@
       "number": 54,
       "questionText": "持続可能な開発目標〈SDGs〉のうちFAO が目標にしているのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "飢餓をゼロに"
+        },
+        {
+          "label": "b",
+          "text": "気候変動に具体的な対策を"
+        },
+        {
+          "label": "c",
+          "text": "すべての人に健康と福祉を"
+        },
+        {
+          "label": "d",
+          "text": "ジェンダー平等を実現しよう"
+        },
+        {
+          "label": "e",
+          "text": "エネルギーをみんなにそしてクリーンに"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -5788,7 +6019,28 @@
       "number": 68,
       "questionText": "65歳の男性。下顎左側第一大臼歯の痛みを主訴として来院した。昨晩、強い痛 みのため眠れなかったという。著しい打診痛があり、歯髄電気診に生活反応を示し た。初診時の口腔内写真（別冊No.  21Ａ）とエックス線画像（別冊No.  21Ｂ）を別に示 す。歯周組織検査結果の一部を表に示す。 舌　側*",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "抜　髄"
+        },
+        {
+          "label": "b",
+          "text": "生活断髄"
+        },
+        {
+          "label": "c",
+          "text": "感染根管治療"
+        },
+        {
+          "label": "d",
+          "text": "ヘミセクション"
+        },
+        {
+          "label": "e",
+          "text": "スケーリング・ルートプレーニング DKIX-0２-BH-44"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -5807,7 +6059,28 @@
       "number": 69,
       "questionText": "神経性調節によって適刺激に対する受容器の感度が変わるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "筋紡錘"
+        },
+        {
+          "label": "b",
+          "text": "Krause 小体"
+        },
+        {
+          "label": "c",
+          "text": "Pacinian 小体"
+        },
+        {
+          "label": "d",
+          "text": "Meissner 小体"
+        },
+        {
+          "label": "e",
+          "text": "Ruffini 神経終末"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -5864,7 +6137,28 @@
       "number": 71,
       "questionText": "40～64歳の特定健康診査結果による特定保健指導の対象の階層化を表に示す。 腹　囲 追加リスク ① 対　象 ⑴血　糖　⑵脂　質　⑶血　圧 ≧85 cm（男　性） ≧90 cm（女　性）",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "貧　血"
+        },
+        {
+          "label": "b",
+          "text": "喫煙歴"
+        },
+        {
+          "label": "c",
+          "text": "飲酒習慣"
+        },
+        {
+          "label": "d",
+          "text": "運動習慣"
+        },
+        {
+          "label": "e",
+          "text": "体重減少 DKIX-0２-BH-46"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -5921,7 +6215,28 @@
       "number": 73,
       "questionText": "58歳の男性。下顎左側第一大臼歯部からの排膿を主訴として来院した。1 年前 から気付いていたがそのままにしていたという。トンネリング後の再評価時の口腔 内写真（別冊No.  24Ａ）とエックス線画像（別冊No.  24Ｂ）を別に示す。再評価時の歯 周組織検査結果の一部を表に示す。 舌　側*",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "洗口剤"
+        },
+        {
+          "label": "b",
+          "text": "歯ブラシ"
+        },
+        {
+          "label": "c",
+          "text": "口腔洗浄器"
+        },
+        {
+          "label": "d",
+          "text": "歯間ブラシ"
+        },
+        {
+          "label": "e",
+          "text": "ラバーチップ DKIX-0２-BH-48"
+        }
+      ],
       "correctAnswers": [
         "b",
         "d"
@@ -6761,7 +7076,28 @@
       "number": 5,
       "questionText": "医療面接における患者の回答で、解釈モデルの理解に役立つのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "「痛い歯を避けて歯みがきをしています」"
+        },
+        {
+          "label": "b",
+          "text": "「熱い食べ物を口にすると痛みが強くなります」"
+        },
+        {
+          "label": "c",
+          "text": "「1 週前から徐々に痛みが強くなってきました」"
+        },
+        {
+          "label": "d",
+          "text": "「多忙で治療を中断したため痛くなったと思います」"
+        },
+        {
+          "label": "e",
+          "text": "「これまでに歯の治療で気分が悪くなったことはありません」 DKIX-02-CH-15"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -7037,7 +7373,28 @@
       "number": 13,
       "questionText": "セファロ分析の距離計測項目のうち、口呼吸によって変化する値はどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "N-S"
+        },
+        {
+          "label": "b",
+          "text": "N-Me"
+        },
+        {
+          "label": "c",
+          "text": "S-Ba"
+        },
+        {
+          "label": "d",
+          "text": "Ar-Gn"
+        },
+        {
+          "label": "e",
+          "text": "ANS-PNS"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -7464,7 +7821,28 @@
       "number": 25,
       "questionText": "54歳の女性。下顎左側小臼歯部の腫脹と動揺を主訴として来院した。1 年前か ら自覚していたがそのままにしていたという。歯周基本治療後の再評価の結果、フ ラップ手術を行うこととした。初診時のエックス線画像（別冊No.  1Ａ）と術中の口 腔内写真（別冊No.  1Ｂ）を別に示す。再評価時の歯周組織検査結果の一部を表に示 す。 舌　側*",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "縫　合"
+        },
+        {
+          "label": "b",
+          "text": "肉芽除去"
+        },
+        {
+          "label": "c",
+          "text": "自家骨移植"
+        },
+        {
+          "label": "d",
+          "text": "オドントプラスティ"
+        },
+        {
+          "label": "e",
+          "text": "スケーリング・ルートプレーニング DKIX-02-CH-23"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -7483,7 +7861,28 @@
       "number": 26,
       "questionText": "2020 年度の我が国における社会保障給付費の内訳の関係で正しいのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "医　療　＞　年　金　＞　福　祉"
+        },
+        {
+          "label": "b",
+          "text": "医　療　＞　福　祉　＞　年　金"
+        },
+        {
+          "label": "c",
+          "text": "年　金　＞　医　療　＞　福　祉"
+        },
+        {
+          "label": "d",
+          "text": "年　金　＞　福　祉　＞　医　療"
+        },
+        {
+          "label": "e",
+          "text": "福　祉　＞　医　療　＞　年　金"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -7618,7 +8017,28 @@
       "number": 30,
       "questionText": "19歳の女性。上顎前歯の突出感を主訴として来院した。アーチレングスディス クレパンシーは上顎　＋1 mm、下顎　＋3 mm である。診断の結果、抜歯を伴うマル チブラケット装置を用いた矯正歯科治療を行うこととした。初診時の顔面写真（別 冊No.  4Ａ）、口腔内写真（別冊No.  4Ｂ）及びエックス線画像（別冊No.  4Ｃ）を別に示 す。セファロ分析の結果を図に示す。 抜歯部位（智歯を除く）と併用する矯正装置の組合せで正しいのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "4 4 チンキャップ"
+        },
+        {
+          "label": "b",
+          "text": "4 4 急速拡大装置"
+        },
+        {
+          "label": "c",
+          "text": "5 5 サービカルヘッドギア"
+        },
+        {
+          "label": "d",
+          "text": "4 4 上顎前方牽引装置"
+        },
+        {
+          "label": "e",
+          "text": "4 4 ハイプルヘッドギア DKIX-02-CH-26"
+        }
+      ],
       "correctAnswers": [
         "e"
       ],
@@ -8464,7 +8884,28 @@
       "number": 52,
       "questionText": "65歳の女性。下顎前歯部の動揺を主訴として来院した。6 か月前から自覚し、 痛みがないのでそのままにしていたが、1 週前から動揺が大きくなってきたとい う。初診時の口腔内写真（別冊No.  16Ａ）とエックス線画像（別冊No.  16Ｂ）を別に示 す。初診時の歯周組織検査結果の一部を表に示す。 舌　側* ⑦④⑥⑧④⑤④③④④",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯肉整形"
+        },
+        {
+          "label": "b",
+          "text": "連結前装冠製作"
+        },
+        {
+          "label": "c",
+          "text": "歯周ポケット搔爬術"
+        },
+        {
+          "label": "d",
+          "text": "局所薬物配送システム〈LDDS〉"
+        },
+        {
+          "label": "e",
+          "text": "スケーリング・ルートプレーニング DKIX-02-CH-38"
+        }
+      ],
       "correctAnswers": [
         "e"
       ],
@@ -8680,7 +9121,28 @@
       "number": 58,
       "questionText": "胸部正面の模式図（別冊No.  20）を別に示す。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -8696,7 +9158,28 @@
       "number": 59,
       "questionText": "全部床義歯製作時の垂直的顎間関係を記録する際に患者に行わせるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "嚥　下"
+        },
+        {
+          "label": "b",
+          "text": "発　音"
+        },
+        {
+          "label": "c",
+          "text": "嚙みしめ"
+        },
+        {
+          "label": "d",
+          "text": "舌の挙上"
+        },
+        {
+          "label": "e",
+          "text": "タッピング DKIX-02-CH-41"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b",
@@ -8957,7 +9440,28 @@
       "number": 66,
       "questionText": "上顎中切歯が早期喪失した8歳児に保隙装置を装着する目的はどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "発声の改善"
+        },
+        {
+          "label": "b",
+          "text": "審美性の改善"
+        },
+        {
+          "label": "c",
+          "text": "口腔外傷の予防"
+        },
+        {
+          "label": "d",
+          "text": "舌突出癖の防止"
+        },
+        {
+          "label": "e",
+          "text": "咀嚼機能障害の防止"
+        }
+      ],
       "correctAnswers": [
         "b",
         "d",
@@ -9016,7 +9520,28 @@
       "number": 68,
       "questionText": "72歳の女性。市が行った介護予防教室でオーラルフレイルを指摘されて来院し た。身長は150 cm、体重は50 kg で6 か月前と比べて体重変化はなく、口腔内に 気になる症状はないという。口腔機能検査の結果を表に示す。 検査項目 低下の該当基準 検査結果 舌苔の付着程度 50％以上 66.7％ 口腔粘膜湿潤度",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "栄養指導"
+        },
+        {
+          "label": "b",
+          "text": "構音訓練"
+        },
+        {
+          "label": "c",
+          "text": "舌抵抗訓練"
+        },
+        {
+          "label": "d",
+          "text": "口腔衛生指導"
+        },
+        {
+          "label": "e",
+          "text": "ミールラウンド DKIX-02-CH-47"
+        }
+      ],
       "correctAnswers": [
         "c",
         "d"
@@ -9311,7 +9836,28 @@
       "number": 76,
       "questionText": "61歳の女性。上顎右側犬歯の歯肉腫脹を主訴として来院した。1 か月前から自 覚していたがそのままにしていたという。初診時の口腔内写真（別冊No.  32Ａ）と エックス線画像（別冊No.  32Ｂ）を別に示す。歯周組織検査結果の一部を表に示す。 唇　側*",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯根破折"
+        },
+        {
+          "label": "b",
+          "text": "根尖性歯周炎"
+        },
+        {
+          "label": "c",
+          "text": "歯肉縁下歯石"
+        },
+        {
+          "label": "d",
+          "text": "頰小帯付着異常"
+        },
+        {
+          "label": "e",
+          "text": "二次性咬合性外傷 DKIX-02-CH-51"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b"
@@ -9638,7 +10184,28 @@
       "number": 85,
       "questionText": "摂食嚥下障害患者が行うバルーン拡張訓練で、改善が期待できるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "喀出力"
+        },
+        {
+          "label": "b",
+          "text": "口唇閉鎖"
+        },
+        {
+          "label": "c",
+          "text": "喉頭挙上"
+        },
+        {
+          "label": "d",
+          "text": "声門閉鎖"
+        },
+        {
+          "label": "e",
+          "text": "食道入口部開大"
+        }
+      ],
       "correctAnswers": [
         "e"
       ],
@@ -9934,7 +10501,28 @@
       "number": 3,
       "questionText": "廃棄物においてバイオハザードマークの色で区別しているのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "性　状"
+        },
+        {
+          "label": "b",
+          "text": "発生場所"
+        },
+        {
+          "label": "c",
+          "text": "保管期間"
+        },
+        {
+          "label": "d",
+          "text": "処理委託先"
+        },
+        {
+          "label": "e",
+          "text": "感染症の種類 DKIX-0２-DH-14"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -9987,7 +10575,28 @@
       "number": 5,
       "questionText": "ステージとグレードによる歯周炎の分類で、グレードの修飾因子はどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "BOP"
+        },
+        {
+          "label": "b",
+          "text": "喫　煙"
+        },
+        {
+          "label": "c",
+          "text": "歯の喪失"
+        },
+        {
+          "label": "d",
+          "text": "歯の動揺度"
+        },
+        {
+          "label": "e",
+          "text": "プロービング深さ DKIX-0２-DH-15"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -10040,7 +10649,28 @@
       "number": 7,
       "questionText": "病院における周術期口腔機能管理のアウトカム評価の対象となるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "口腔機能管理の技術力"
+        },
+        {
+          "label": "b",
+          "text": "入院患者の平均在院期間"
+        },
+        {
+          "label": "c",
+          "text": "周術期口腔機能管理の患者数"
+        },
+        {
+          "label": "d",
+          "text": "周術期口腔機能管理のための予算"
+        },
+        {
+          "label": "e",
+          "text": "医科歯科連携カンファレンスの回数"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -10814,7 +11444,28 @@
       "number": 28,
       "questionText": "ブラケットが装着された上顎中切歯とアーチワイヤーの矢状断面の模式図 （別冊No.  7）を別に示す。 矢印の方向に矯正力を作用させ、傾斜移動するときの回転中心はどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -10832,7 +11483,28 @@
       "number": 29,
       "questionText": "術前の小児に感染性心内膜炎予防のためアモキシシリン水和物を単回経口投与す ることとした。 体重1 kg あたりの投与量（上限2 g）と投与時期の組合せで正しいのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "30 mg/kg 処置1 時間前"
+        },
+        {
+          "label": "b",
+          "text": "30 mg/kg 処置3 時間前"
+        },
+        {
+          "label": "c",
+          "text": "50 mg/kg 処置30 分前"
+        },
+        {
+          "label": "d",
+          "text": "50 mg/kg 処置1 時間前"
+        },
+        {
+          "label": "e",
+          "text": "50 mg/kg 処置3 時間前 DKIX-0２-DH-24"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -11044,7 +11716,28 @@
       "number": 35,
       "questionText": "32歳の男性。下顎右側歯肉の腫脹と排膿を主訴として来院した。2 日前から痛 みが強くなってきたという。初診時の口腔内写真（別冊No.  11Ａ）とエックス線画像 （別冊No.  11Ｂ）を別に示す。歯周組織検査結果の一部を表に示す。 舌　側* ③",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "歯肉切除"
+        },
+        {
+          "label": "b",
+          "text": "歯肉膿瘍切開"
+        },
+        {
+          "label": "c",
+          "text": "歯周ポケット搔爬術"
+        },
+        {
+          "label": "d",
+          "text": "歯周ポケット内洗浄"
+        },
+        {
+          "label": "e",
+          "text": "局所薬物配送システム〈LDDS〉"
+        }
+      ],
       "correctAnswers": [
         "d",
         "e"
@@ -11182,7 +11875,28 @@
       "number": 39,
       "questionText": "44歳の男性。下顎右側第二大臼歯遠心部歯肉の腫脹を主訴として来院した。3 年前に下顎右側智歯を抜去し、1 年前から腫脹を繰り返していたがそのままにして いたという。初診時の口腔内写真（別冊No.  13Ａ、Ｂ）とエックス線画像（別冊 No.  13Ｃ）を別に示す。歯周組織検査結果の一部を表に示す。 舌　側* ⑥ ④ ④ ④",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "軟骨無形成症"
+        },
+        {
+          "label": "b",
+          "text": "鎖骨頭蓋骨異形成症"
+        },
+        {
+          "label": "c",
+          "text": "先天性好中球減少症"
+        },
+        {
+          "label": "d",
+          "text": "低ホスファターゼ症"
+        },
+        {
+          "label": "e",
+          "text": "先天性外胚葉形成不全 DKIX-0２-DH-31"
+        }
+      ],
       "correctAnswers": [
         "c",
         "e"
@@ -11630,7 +12344,28 @@
       "number": 51,
       "questionText": "79歳の男性。下顎前歯の歯間部への食片圧入を主訴として家族とともに来院し た。2 か月前から自覚していたがそのままにしていたという。軽度の認知機能低下 が指摘されている。初診時の口腔内写真（別冊No.  19Ａ）とエックス線画像（別冊 No.  19Ｂ）を別に示す。初診時の歯周組織検査結果の一部とBDR 指標を表に示す。 舌　側* ⑤ ④ ④ ⑤ ⑤ ⑤ ④ ④ ④ ④",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "洗口剤"
+        },
+        {
+          "label": "b",
+          "text": "口腔洗浄器"
+        },
+        {
+          "label": "c",
+          "text": "電動歯ブラシ"
+        },
+        {
+          "label": "d",
+          "text": "デンタルフロス"
+        },
+        {
+          "label": "e",
+          "text": "フッ化物配合歯磨剤 DKIX-0２-DH-36"
+        }
+      ],
       "correctAnswers": [
         "a",
         "c",
@@ -11651,7 +12386,28 @@
       "number": 52,
       "questionText": "周術期管理において、若年者と比較して高齢者に多くみられるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "第一乳臼歯の埋伏"
+        },
+        {
+          "label": "b",
+          "text": "第二乳臼歯の低位"
+        },
+        {
+          "label": "c",
+          "text": "第二小臼歯の形態異常"
+        },
+        {
+          "label": "d",
+          "text": "第二大臼歯の先天欠如"
+        },
+        {
+          "label": "e",
+          "text": "第三大臼歯の位置異常"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b",
@@ -11827,7 +12583,28 @@
       "number": 57,
       "questionText": "78歳の女性。義歯の製作を希望して来院した。8 か月前に右側上顎腫瘍の切除 術が施行され、現在も口腔外科へ通院中であるという。診察の結果、補綴歯科治療 を行うこととした。初診時の上顎欠損の口腔内写真（別冊No.  22Ａ）と補綴装置製作 過程の写真（別冊No.  22Ｂ）を別に示す。 製作する補綴装置で、矢印に示す構造によって改善されるのはどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "構　音"
+        },
+        {
+          "label": "b",
+          "text": "咬　合"
+        },
+        {
+          "label": "c",
+          "text": "開口量"
+        },
+        {
+          "label": "d",
+          "text": "下顎位"
+        },
+        {
+          "label": "e",
+          "text": "鼻漏出"
+        }
+      ],
       "correctAnswers": [
         "a",
         "e"
@@ -11847,7 +12624,24 @@
       "number": 58,
       "questionText": "エアタービンを用いた切削で適切な切削圧はどれか。1つ選べ。 ａ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "b",
+          "text": "50～100 gf"
+        },
+        {
+          "label": "c",
+          "text": "200～300 gf"
+        },
+        {
+          "label": "d",
+          "text": "500～600 gf"
+        },
+        {
+          "label": "e",
+          "text": "800～1,000 gf DKIX-0２-DH-39"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -11863,7 +12657,28 @@
       "number": 59,
       "questionText": "ストレート形状と比べたテーパー形状のインプラント体の特徴はどれか。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "骨接触面積が小さい。"
+        },
+        {
+          "label": "b",
+          "text": "埋入深度を調整しやすい。"
+        },
+        {
+          "label": "c",
+          "text": "インプラント体が破折しやすい。"
+        },
+        {
+          "label": "d",
+          "text": "軟らかい骨質でも初期固定を得やすい。"
+        },
+        {
+          "label": "e",
+          "text": "隣在歯歯根の位置関係による影響を受けにくい。"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -13063,7 +13878,28 @@
       "number": 90,
       "questionText": "30歳の女性。歯並びが悪いことを主訴として来院した。第一大臼歯の咬合関係 は両側AngleⅠ級で、arch length discrepancy は上顎が　‒ 9.0 mm、下顎が　‒ 6.0 mm であった。模型計測の結果、下顎第一小臼歯の歯冠幅径は8.0 mm であった。 Spee 彎曲の左右の深さの平均は0 mm であった。FMIA は52.0 度であった。初診 時の口腔内写真（別冊No.  37Ａ）とエックス線画像（別冊No.  37Ｂ）を別に示す。 Total discrepancy と4 4 の抜歯空隙の差を求めよ。 ただし、FMIA の基準値は57.0 度とする。なお、小数点以下第2 位の数値が得 られた場合は四捨五入すること。 解答：①．②mm ①　　② 0 　　0",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "6",
         "0"

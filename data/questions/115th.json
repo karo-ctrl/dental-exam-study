@@ -2828,7 +2828,28 @@
       "number": 74,
       "questionText": "代表的な種の矯正用線材18-8 ステンレス鋼線、コバルトクロム合金線、ニッ ケルチタン合金線、チタンモリブデン合金線：①〜④のいずれかに該当 の組成を 表に示す。 線 材 組成重量％ ア イ ウ エ オ その他 ①",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -3037,7 +3058,28 @@
       "number": 80,
       "questionText": "―",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "a",
         "d",
@@ -6921,7 +6963,28 @@
       "number": 90,
       "questionText": "21歳の女性。歯並びが悪いことを主訴として来院した。検査の結果、FMA が 33.0 度、IMPA が95.0 度、下顎のrequired arch length は68.0 mm、available arch length は69.0 mm であり、Spee 彎曲の深さは0.0 mm であった。 Total discrepancy を算出せよ。 ただし、FMIA の基準値は57.0 度とする。なお、小数点以下の数値が得られた 場合には、小数点第位を四捨五入すること。 解答：安①．②mm ① ②                  ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "3",
         "0"
@@ -7643,7 +7706,28 @@
       "number": 20,
       "questionText": "歯FDI 歯式 と標準的な根管数の組合せで正しいのはどれか。1つ選べ。 歯 根管数",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -10361,7 +10445,28 @@
       "number": 90,
       "questionText": "ある地域住民100 名を対象として歯のフッ素症の調査を実施した結果を表に示 す。 Deanの分類 人 数 Normal",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -13820,7 +13925,28 @@
       "number": 90,
       "questionText": "ある成人集団に対して歯周病のスクリーニング検査を実施した結果、感度は 0.90 で特異度は0.80 であった。 この検査の尤度比陽性尤度比 を求めよ。 ただし、小数点以下の数値が得られた場合には、小数点以下第位を四捨五入す ること。 解答：①．② ① ②                  ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "4",
         "5"

@@ -49,7 +49,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "タッチメントロス"
+          "text": "歯槽骨の吸収"
         },
         {
           "label": "b",
@@ -58,6 +58,10 @@
         {
           "label": "c",
           "text": "付着歯肉幅の減少"
+        },
+        {
+          "label": "d",
+          "text": "アタッチメントロス"
         },
         {
           "label": "e",
@@ -864,7 +868,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "ルカリホスファターゼ"
+          "text": "ピロリン酸"
         },
         {
           "label": "b",
@@ -877,6 +881,10 @@
         {
           "label": "d",
           "text": "ホスファチジルセリン"
+        },
+        {
+          "label": "e",
+          "text": "アルカリホスファターゼ"
         }
       ],
       "correctAnswers": [
@@ -904,12 +912,16 @@
           "text": "グリシン"
         },
         {
-          "label": "d",
-          "text": "ンケファリン"
+          "label": "c",
+          "text": "コルチゾール"
         },
         {
-          "label": "j",
-          "text": "ルチゾール"
+          "label": "d",
+          "text": "ブラジキニン"
+        },
+        {
+          "label": "e",
+          "text": "エンケファリン"
         }
       ],
       "correctAnswers": [
@@ -1040,7 +1052,28 @@
       "number": 29,
       "questionText": "24歳の男性。CFI の検査結果を表に示す。 上顎 0.5 歯種",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -1434,19 +1467,23 @@
       "choices": [
         {
           "label": "a",
-          "text": "ヨーグルト"
+          "text": "ア ヨーグルト"
         },
         {
           "label": "b",
-          "text": "野菜炒め"
+          "text": "イ 野菜炒め"
         },
         {
           "label": "c",
-          "text": "ーロン茶"
+          "text": "ウ ひじきの煮物"
         },
         {
           "label": "d",
-          "text": "スライスチーズ"
+          "text": "エ スライスチーズ"
+        },
+        {
+          "label": "e",
+          "text": "オ ウーロン茶 別 冊 No. 4"
         }
       ],
       "correctAnswers": [
@@ -1688,7 +1725,28 @@
       "number": 47,
       "questionText": "咬合検査に用いる器具と材料の写真別冊No. 6 を別に示す。 引き抜くことで咬合接触を評価できるのはどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 6"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b"
@@ -1897,11 +1955,15 @@
       "choices": [
         {
           "label": "a",
-          "text": "イスマッサージ"
+          "text": "水分摂取制限"
         },
         {
           "label": "b",
           "text": "プッシング訓練"
+        },
+        {
+          "label": "c",
+          "text": "アイスマッサージ"
         },
         {
           "label": "d",
@@ -2307,7 +2369,28 @@
       "number": 64,
       "questionText": "72歳の男性。歯の動揺を主訴として来院した。イメージングプレートを用いて 口内法エックス線撮影を行った。枚のエックス線画像別冊No. 11Ａ とエックス 線画像配置のマッピングテンプレート別冊No. 11Ｂ を別に示す。 正しく読影できるのはどれか。1つ選べ。 冊 Ａ、Ｂ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 11 Ａ、Ｂ"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -2363,7 +2446,11 @@
       "choices": [
         {
           "label": "a",
-          "text": "ンチフラックスの塗布"
+          "text": "グレージング"
+        },
+        {
+          "label": "b",
+          "text": "エアベントの付与"
         },
         {
           "label": "c",
@@ -2371,11 +2458,11 @@
         },
         {
           "label": "d",
-          "text": "アベントの付与"
+          "text": "アンチフラックスの塗布"
         },
         {
           "label": "e",
-          "text": "金属接着性プライマーの塗布"
+          "text": "金属接着性プライマーの塗布 別 冊 No. 12"
         }
       ],
       "correctAnswers": [
@@ -2846,12 +2933,16 @@
           "text": "歯(腫"
         },
         {
+          "label": "c",
+          "text": "エプーリス"
+        },
+        {
           "label": "d",
           "text": "上顎左側中切歯の位置異常"
         },
         {
           "label": "e",
-          "text": "上顎左側乳中切歯の歯肉膿瘍"
+          "text": "上顎左側乳中切歯の歯肉膿瘍 別 冊 No. 25 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -3018,7 +3109,28 @@
       "number": 84,
       "questionText": "50歳の女性。上顎右側中切歯の審美不良を主訴として来院した。 は20 年前に 硬質レジン前装冠を装着したという。検査の結果、オールセラミッククラウンを製 作することとした。治療過程のある操作の写真別冊No. 30Ａ と器具の写真別冊 この操作の後に使用する器具はどれか。1つ選べ。 冊 Ａ、Ｂ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 30 Ａ、Ｂ"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -3036,8 +3148,16 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "カバースクリュー"
+        },
+        {
           "label": "b",
-          "text": "ンプラントアナログ"
+          "text": "サージカルガイド"
+        },
+        {
+          "label": "c",
+          "text": "インプラントアナログ"
         },
         {
           "label": "d",
@@ -3045,11 +3165,7 @@
         },
         {
           "label": "e",
-          "text": "ヒーリングアバットメント"
-        },
-        {
-          "label": "f",
-          "text": "バースクリュー"
+          "text": "ヒーリングアバットメント 別 冊 No. 31"
         }
       ],
       "correctAnswers": [
@@ -3222,7 +3338,28 @@
       "number": 90,
       "questionText": "歳の女児。下顎左側乳臼歯部の痛を主訴として来院した。検査の結果、下顎 左側第二乳臼歯に生活歯髄切断法を行うこととした。治療過程の一連の口腔内写真 治療過程を実施の順番に並べよ。 解答：①或②或③或④或⑤ 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 35"
+        }
+      ],
       "correctAnswers": [
         "b",
         "c",
@@ -3404,8 +3541,12 @@
           "text": "舌骨舌筋"
         },
         {
+          "label": "d",
+          "text": "オトガイ舌筋"
+        },
+        {
           "label": "e",
-          "text": "トガイ舌骨筋"
+          "text": "オトガイ舌骨筋 別 冊 No. 1 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -3608,7 +3749,28 @@
       "number": 11,
       "questionText": "体位の図別冊No. 2 を別に示す。 Fowlerファウラー 位はどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 2"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -3809,7 +3971,28 @@
       "number": 17,
       "questionText": "覆髄に用いる水酸化カルシウム製剤のpH 値に最も近いのはどれか。1つ選べ。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "e"
       ],
@@ -3828,7 +4011,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "ルマ・アタ宣言"
+          "text": "シドニー宣言"
         },
         {
           "label": "b",
@@ -3841,6 +4024,10 @@
         {
           "label": "d",
           "text": "ヘルシンキ宣言"
+        },
+        {
+          "label": "e",
+          "text": "アルマ・アタ宣言"
         }
       ],
       "correctAnswers": [
@@ -4195,7 +4382,28 @@
       "number": 28,
       "questionText": "撮影時に照射されるエックス線束の模式図別冊No. 3 を別に示す。 パノラマエックス線撮影はどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 3"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -4256,7 +4464,7 @@
         },
         {
           "label": "b",
-          "text": "オンチャネル内蔵型受容体"
+          "text": "酵素共役型受容体"
         },
         {
           "label": "c",
@@ -4265,6 +4473,10 @@
         {
           "label": "d",
           "text": "電位依存性イオンチャネル"
+        },
+        {
+          "label": "e",
+          "text": "イオンチャネル内蔵型受容体"
         }
       ],
       "correctAnswers": [
@@ -4819,6 +5031,18 @@
         {
           "label": "b",
           "text": "安100"
+        },
+        {
+          "label": "c",
+          "text": "0"
+        },
+        {
+          "label": "d",
+          "text": "200"
+        },
+        {
+          "label": "e",
+          "text": "500 別 冊 No. 6 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -4919,15 +5143,19 @@
         },
         {
           "label": "b",
-          "text": "ンスリン"
+          "text": "β 遮断薬"
+        },
+        {
+          "label": "c",
+          "text": "インスリン"
         },
         {
           "label": "d",
           "text": "H2 受容体拮抗薬"
         },
         {
-          "label": "f",
-          "text": "ルシウム拮抗薬"
+          "label": "e",
+          "text": "カルシウム拮抗薬"
         }
       ],
       "correctAnswers": [
@@ -5207,7 +5435,28 @@
       "number": 56,
       "questionText": "矯正治療中の口腔内写真別冊No. 11 を別に示す。 相反固定によって歯を移動できるのはどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 11"
+        }
+      ],
       "correctAnswers": [
         "b",
         "d"
@@ -5488,7 +5737,28 @@
       "number": 64,
       "questionText": "半調節性咬合器の写真別冊No. 12Ａ と調節機構の写真別冊No. 12Ｂ 及び下顎 切歯点部における限界運動路の模式図別冊No. 12Ｃ を別に示す。 矢印で示す調節機構の設定に必要な下顎位が存在するのはどれか。1つ選べ。 冊 Ａ、Ｂ、Ｃ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 12 Ａ、Ｂ、Ｃ"
+        }
+      ],
       "correctAnswers": [
         "b",
         "c"
@@ -5803,7 +6073,28 @@
       "number": 73,
       "questionText": "30歳の女性。左側顎角部の腫脹を主訴として来院した。ヨード系造影剤による ショックの既往がある。検査の結果、下顎蜂窩織炎と診断し、抗菌薬の静脈内投与 を行ったところ、しばらくして搔痒感を訴えた。その時の上腕の皮膚写真別冊No.",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "喘 鳴"
+        },
+        {
+          "label": "b",
+          "text": "意識消失"
+        },
+        {
+          "label": "c",
+          "text": "血圧上昇"
+        },
+        {
+          "label": "d",
+          "text": "体温上昇"
+        },
+        {
+          "label": "e",
+          "text": "動脈血酸素飽和度の低下 別 冊 No. 21"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b",
@@ -5862,7 +6153,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "ンダーカットのブロックアウト"
+          "text": "遁路の付与"
         },
         {
           "label": "b",
@@ -5875,6 +6166,10 @@
         {
           "label": "d",
           "text": "ビーディングの付与"
+        },
+        {
+          "label": "e",
+          "text": "アンダーカットのブロックアウト 別 冊 No. 23 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -5934,7 +6229,11 @@
       "choices": [
         {
           "label": "a",
-          "text": "クチバトール"
+          "text": "チンキャップ"
+        },
+        {
+          "label": "b",
+          "text": "アクチバトール"
         },
         {
           "label": "c",
@@ -5946,7 +6245,7 @@
         },
         {
           "label": "e",
-          "text": "上顎前方牽引装置"
+          "text": "上顎前方牽引装置 別 冊 No. 25 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -6080,7 +6379,11 @@
       "choices": [
         {
           "label": "a",
-          "text": "トロピン硫酸塩水和物の投与"
+          "text": "経過観察"
+        },
+        {
+          "label": "b",
+          "text": "アドレナリンの投与"
         },
         {
           "label": "c",
@@ -6089,6 +6392,10 @@
         {
           "label": "d",
           "text": "ニトログリセリンの投与"
+        },
+        {
+          "label": "e",
+          "text": "アトロピン硫酸塩水和物の投与 別 冊 No. 29"
         }
       ],
       "correctAnswers": [
@@ -6106,7 +6413,28 @@
       "number": 82,
       "questionText": "26歳の女性。下顎の前突と顔のゆがみを主訴として来院した。下顎枝矢状分割 術による外科的矯正治療を行うこととした。初診時の顔面写真別冊No. 30Ａ 、口 腔内写真別冊No. 30Ｂ 及びエックス線画像別冊No. 30Ｃ を別に示す。セファロ 分析の結果と正面頭部エックス線規格写真のトレース図を示す。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -6309,7 +6637,28 @@
       "number": 88,
       "questionText": "上顎左側前歯部の治療に用いるのはどれか。1つ選べ。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -6325,7 +6674,28 @@
       "number": 89,
       "questionText": "45歳の女性。左側の咀嚼困難を主訴として来院した。診察の結果、上顎左側第 一大臼歯を全部金属冠で治療することとした。支台歯形成後、本目の細いコード を残す二重圧排法で印象採得を行った。歯肉圧排用コードの写真別冊No. 36Ａ と 一連の操作過程の写真別冊No. 36Ｂ を別に示す。 操作の過程を実施の順番に並べよ。 解答：①或②或③或④或⑤ 冊 Ａ、Ｂ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 36 Ａ、Ｂ"
+        }
+      ],
       "correctAnswers": [
         "b",
         "a",
@@ -6345,7 +6715,28 @@
       "number": 90,
       "questionText": "1,000 人のある集団における歯周炎の有病率は20％であった。この集団について 敏感度が0.9、特異度が0.9 のスクリーニング検査を行った。検査結果の一部を表 に示す。 この検査で陽性の者が真に歯周炎である確率を求めよ。 ただし、小数点以下の数値が得られた場合には、小数点以下第位を四捨五入す ること。 歯周炎の有無 合計 あり なし スクリーニング 検査結果 陽性袷 陰性安 合計 1,000 解答：① ②％ ① ②                  ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "6",
         "9"
@@ -6477,6 +6868,14 @@
         {
           "label": "a",
           "text": "ホスホホリン"
+        },
+        {
+          "label": "b",
+          "text": "オステオカルシン"
+        },
+        {
+          "label": "c",
+          "text": "オステオポンチン"
         },
         {
           "label": "d",
@@ -6615,6 +7014,14 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "agar"
+        },
+        {
+          "label": "b",
+          "text": "alginate"
+        },
+        {
           "label": "c",
           "text": "polyether"
         },
@@ -6679,7 +7086,28 @@
       "number": 10,
       "questionText": "外頭蓋底の前方部の写真別冊No. 1 を別に示す。 上顎全部床義歯の後縁の位置はどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 1"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -6735,7 +7163,11 @@
       "choices": [
         {
           "label": "a",
-          "text": "ミロイド"
+          "text": "プリオン"
+        },
+        {
+          "label": "b",
+          "text": "アミロイド"
         },
         {
           "label": "c",
@@ -6839,7 +7271,28 @@
       "number": 15,
       "questionText": "ヒト体細胞の常ä相同å染色体数はどれか。1つ選べ。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "22 本"
+        },
+        {
+          "label": "b",
+          "text": "23 本"
+        },
+        {
+          "label": "c",
+          "text": "44 本"
+        },
+        {
+          "label": "d",
+          "text": "46 本"
+        },
+        {
+          "label": "e",
+          "text": "47 本"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -6892,7 +7345,28 @@
       "number": 17,
       "questionText": "血漿中のカリウム濃度mEq/L はどれか。1つ選べ。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -7929,7 +8403,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "イマスクの装着"
+          "text": "膝の屈曲"
         },
         {
           "label": "b",
@@ -7942,6 +8416,10 @@
         {
           "label": "d",
           "text": "頭部の前屈"
+        },
+        {
+          "label": "e",
+          "text": "アイマスクの装着"
         }
       ],
       "correctAnswers": [
@@ -8457,7 +8935,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "ンレー窩洞"
+          "text": "級窩洞"
         },
         {
           "label": "b",
@@ -8470,6 +8948,10 @@
         {
           "label": "d",
           "text": "級単純窩洞"
+        },
+        {
+          "label": "e",
+          "text": "アンレー窩洞"
         }
       ],
       "correctAnswers": [
@@ -8758,19 +9240,23 @@
       "choices": [
         {
           "label": "a",
-          "text": "ペキシフィケーション"
+          "text": "歯面研磨"
         },
         {
           "label": "b",
           "text": "生活歯髄切断"
         },
         {
-          "label": "e",
-          "text": "ポーセレンラミネートベニア修復"
+          "label": "c",
+          "text": "アペキシフィケーション"
         },
         {
-          "label": "j",
-          "text": "ンポジットレジン修復"
+          "label": "d",
+          "text": "コンポジットレジン修復"
+        },
+        {
+          "label": "e",
+          "text": "ポーセレンラミネートベニア修復 別 冊 No. 16 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -8866,7 +9352,28 @@
       "number": 71,
       "questionText": "58歳の男性。下顎右側臼歯部の金属色を気にして来院した。ブリッジは年前 に装着したという。検査の結果、ブリッジを除去することとした。除去中の口腔内 写真別冊No. 19Ａ 、除去したブリッジの写真別冊No. 19Ｂ 及び器具の写真別 冊No. 19Ｃ を別に示す。 19Ａと19Ｂの間に使用した器具はどれか。1つ選べ。 冊 Ａ、Ｂ、Ｃ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 19 Ａ、Ｂ、Ｃ"
+        }
+      ],
       "correctAnswers": [
         "a",
         "c"
@@ -8998,7 +9505,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "モキシシリン水和物"
+          "text": "ビタミンB12"
         },
         {
           "label": "b",
@@ -9009,8 +9516,12 @@
           "text": "ニコチン酸アミド"
         },
         {
+          "label": "d",
+          "text": "アモキシシリン水和物"
+        },
+        {
           "label": "e",
-          "text": "副腎皮質ステロイド薬"
+          "text": "副腎皮質ステロイド薬 別 冊 No. 23 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -9029,7 +9540,28 @@
       "number": 76,
       "questionText": "87歳の男性。孫から言葉が聞き取りにくいと言われたことを主訴として来院し た。現在の上顎部分床義歯はか月前に製作したという。発語明瞭度検査では｢サ｣ 音の｢シャ｣音や｢チャ｣音への発語障害を認める。検査の結果、義歯床研磨面に常温 重合レジンを添加して修正することとした。｢サ｣音のパラトグラムの写真別冊No.",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 24"
+        }
+      ],
       "correctAnswers": [
         "b"
       ],
@@ -9234,7 +9766,28 @@
       "number": 82,
       "questionText": "歳の女児。前歯の咬み合わせが反対になっていることを主訴として来院した。 乳歯列期から気付いていたという。初診時の顔面写真別冊No. 30Ａ と口腔内写真",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "b",
         "d",
@@ -9440,7 +9993,28 @@
       "number": 88,
       "questionText": "近心の骨欠損形態として最も考えられるのはどれか。1つ選べ。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ"
+        }
+      ],
       "correctAnswers": [
         "d"
       ],
@@ -9494,7 +10068,28 @@
       "number": 90,
       "questionText": "ある地域の人口動態統計の結果の一部を表に示す。 出 生 9,960 人 死 亡 9,920 人 死 産 妊娠満22 週以後の死産 早期新生児死亡 乳児死亡 周産期死亡率人口千対 を求めよ。 ただし、小数点以下の数値が得られた場合には、小数点以下第位を四捨五入す ること。 解答：①．② ① ②                  ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "5",
         "0"
@@ -9776,16 +10371,20 @@
           "text": "症例報告"
         },
         {
+          "label": "b",
+          "text": "コホート研究"
+        },
+        {
           "label": "c",
           "text": "メタアナリシス"
         },
         {
           "label": "d",
-          "text": "キスパートオピニオン"
+          "text": "ランダム化比較試験"
         },
         {
-          "label": "j",
-          "text": "ホート研究"
+          "label": "e",
+          "text": "エキスパートオピニオン"
         }
       ],
       "correctAnswers": [
@@ -9851,7 +10450,15 @@
         },
         {
           "label": "c",
-          "text": "中央値"
+          "text": "中央値 25 パーセンタイル値"
+        },
+        {
+          "label": "d",
+          "text": "平均値 標準偏差"
+        },
+        {
+          "label": "e",
+          "text": "平均値 25 パーセンタイル値"
         }
       ],
       "correctAnswers": [
@@ -9946,7 +10553,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "トロピン硫酸塩水和物"
+          "text": "アスピリン"
         },
         {
           "label": "b",
@@ -9959,6 +10566,10 @@
         {
           "label": "d",
           "text": "フェニレフリン塩酸塩"
+        },
+        {
+          "label": "e",
+          "text": "アトロピン硫酸塩水和物"
         }
       ],
       "correctAnswers": [
@@ -10090,7 +10701,7 @@
       "choices": [
         {
           "label": "a",
-          "text": "シッドレッドプロピレングリコール液"
+          "text": "有鉤探針"
         },
         {
           "label": "b",
@@ -10102,7 +10713,11 @@
         },
         {
           "label": "d",
-          "text": "チルクロライドスプレー"
+          "text": "エチルクロライドスプレー"
+        },
+        {
+          "label": "e",
+          "text": "アシッドレッドプロピレングリコール液"
         }
       ],
       "correctAnswers": [
@@ -10197,11 +10812,15 @@
       "choices": [
         {
           "label": "a",
-          "text": "レンドロン酸ナトリウム水和物"
+          "text": "ニフェジピン"
         },
         {
           "label": "b",
           "text": "ピロカルピン塩酸塩"
+        },
+        {
+          "label": "c",
+          "text": "アレンドロン酸ナトリウム水和物"
         },
         {
           "label": "d",
@@ -10344,11 +10963,19 @@
       "choices": [
         {
           "label": "a",
-          "text": "スペルギルス症"
+          "text": "マラリア"
+        },
+        {
+          "label": "b",
+          "text": "アメーバ赤痢"
         },
         {
           "label": "c",
           "text": "ツツガムシ病"
+        },
+        {
+          "label": "d",
+          "text": "アスペルギルス症"
         },
         {
           "label": "e",
@@ -10372,12 +10999,24 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "歳児でう歯のない者の割合"
+        },
+        {
+          "label": "b",
+          "text": "〜14 歳でフッ化物塗布経験者の割合"
+        },
+        {
+          "label": "c",
+          "text": "20〜24 歳でう歯のない者の割合"
+        },
+        {
           "label": "d",
-          "text": "平均値 標準偏差"
+          "text": "45〜54 歳で\tmm 以上の歯周ポケットを有する者の割合"
         },
         {
           "label": "e",
-          "text": "平均値"
+          "text": "80 歳で20 本以上の歯を有する者の割合"
         }
       ],
       "correctAnswers": [
@@ -10587,7 +11226,11 @@
       "choices": [
         {
           "label": "a",
-          "text": "マルガム"
+          "text": "アマルガム"
+        },
+        {
+          "label": "b",
+          "text": "エアタービン"
         },
         {
           "label": "c",
@@ -10782,7 +11425,11 @@
         },
         {
           "label": "d",
-          "text": "ックス線フィルム現像廃液"
+          "text": "未使用の検査試薬液"
+        },
+        {
+          "label": "e",
+          "text": "エックス線フィルム現像廃液"
         }
       ],
       "correctAnswers": [
@@ -11027,6 +11674,10 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "インスリン"
+        },
+        {
           "label": "b",
           "text": "グルカゴン"
         },
@@ -11039,8 +11690,8 @@
           "text": "メラトニン"
         },
         {
-          "label": "j",
-          "text": "ルチゾール"
+          "label": "e",
+          "text": "コルチゾール"
         }
       ],
       "correctAnswers": [
@@ -11074,6 +11725,10 @@
         {
           "label": "d",
           "text": "AED を手配する。"
+        },
+        {
+          "label": "e",
+          "text": "119 番に通報する。"
         }
       ],
       "correctAnswers": [
@@ -11092,7 +11747,28 @@
       "number": 45,
       "questionText": "70歳の男性。咀嚼困難を主訴として来院した。上顎左側臼歯部欠損による咀嚼 障害と診断し、義歯を新製することとした。義歯製作中のある過程の写真別冊No.",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "咬合検査"
+        },
+        {
+          "label": "b",
+          "text": "適合検査"
+        },
+        {
+          "label": "c",
+          "text": "発音検査"
+        },
+        {
+          "label": "d",
+          "text": "咬合力検査"
+        },
+        {
+          "label": "e",
+          "text": "咀嚼機能検査 別 冊 No. 3"
+        }
+      ],
       "correctAnswers": [
         "a",
         "b",
@@ -11603,19 +12279,23 @@
       "choices": [
         {
           "label": "a",
-          "text": "ブフラクション"
+          "text": "齲"
         },
         {
           "label": "b",
           "text": "嘔 吐"
         },
         {
+          "label": "c",
+          "text": "アブフラクション"
+        },
+        {
           "label": "d",
-          "text": "ナメル質形成不全"
+          "text": "エナメル質形成不全"
         },
         {
           "label": "e",
-          "text": "フッ化物の過剰摂取"
+          "text": "フッ化物の過剰摂取 別 冊 No. 10"
         }
       ],
       "correctAnswers": [
@@ -11861,11 +12541,15 @@
       "choices": [
         {
           "label": "a",
-          "text": "ペキソゲネーシス"
+          "text": "経過観察"
         },
         {
           "label": "b",
           "text": "直接覆髄法"
+        },
+        {
+          "label": "c",
+          "text": "アペキソゲネーシス"
         },
         {
           "label": "d",
@@ -11873,7 +12557,7 @@
         },
         {
           "label": "e",
-          "text": "根尖搔爬法"
+          "text": "根尖搔爬法 別 冊 No. 13 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -11893,6 +12577,10 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "ウェッジ挿入"
+        },
+        {
           "label": "b",
           "text": "マトリックス装着"
         },
@@ -11906,7 +12594,7 @@
         },
         {
           "label": "e",
-          "text": "シランカップリング剤塗布"
+          "text": "シランカップリング剤塗布 別 冊 No. 14 Ａ、Ｂ"
         }
       ],
       "correctAnswers": [
@@ -11961,7 +12649,28 @@
       "number": 69,
       "questionText": "77歳の女性。上下顎全部床義歯の不適合による咀嚼困難を主訴として来院した。 最近になって食事の際に義歯が動くようになったという。左側方運動時に上顎義歯 の動揺を認める。側方運動時赤 とタッピング時青 の咬合接触を印記した義歯の 写真別冊No. 16 を別に示す。 咬合調整を行う部位はどれか。1つ選べ。 冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "ア"
+        },
+        {
+          "label": "b",
+          "text": "イ"
+        },
+        {
+          "label": "c",
+          "text": "ウ"
+        },
+        {
+          "label": "d",
+          "text": "エ"
+        },
+        {
+          "label": "e",
+          "text": "オ 別 冊 No. 16"
+        }
+      ],
       "correctAnswers": [
         "c",
         "d"
@@ -12092,7 +12801,28 @@
       "number": 73,
       "questionText": "60歳の男性。上顎左側第一大臼歯の修復物表面の粗造感を主訴として来院した。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "修復物の研磨"
+        },
+        {
+          "label": "b",
+          "text": "メタルインレー修復"
+        },
+        {
+          "label": "c",
+          "text": "レジンコーティング"
+        },
+        {
+          "label": "d",
+          "text": "コンポジットレジン修復"
+        },
+        {
+          "label": "e",
+          "text": "フッ化ジアンミン銀塗布 別 冊 No. 20"
+        }
+      ],
       "correctAnswers": [
         "a"
       ],
@@ -12275,7 +13005,11 @@
         },
         {
           "label": "d",
-          "text": "ナメル上皮腫"
+          "text": "悪性リンパ腫"
+        },
+        {
+          "label": "e",
+          "text": "エナメル上皮腫 別 冊 No. 25 Ａ、Ｂ、Ｃ、Ｄ"
         }
       ],
       "correctAnswers": [
@@ -12523,16 +13257,20 @@
           "text": "咬合採得"
         },
         {
+          "label": "b",
+          "text": "クラウンの合着"
+        },
+        {
           "label": "c",
           "text": "ピックアップ印象"
         },
         {
-          "label": "e",
-          "text": "フレームワークの試適"
+          "label": "d",
+          "text": "オルタードキャスト法"
         },
         {
-          "label": "h",
-          "text": "ラウンの合着"
+          "label": "e",
+          "text": "フレームワークの試適 別 冊 No. 32"
         }
       ],
       "correctAnswers": [
@@ -12705,7 +13443,28 @@
       "number": 90,
       "questionText": "歳の女児。下顎前歯部の歯並びの精査を希望して来院した。下顎永久\t切歯の 歯冠幅径の総和から下顎永久側方歯群の歯冠幅径の総和を23.6 mm と予測した。 研究用模型別冊No. 36 を別に示す。 下顎の萌出余地の予測値を求めよ。 解答：安①．② ① ②                   冊",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "3",
         "4"

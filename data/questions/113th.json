@@ -3411,7 +3411,28 @@
       "number": 89,
       "questionText": "FMIA が49.5 度の場合のヘッドプレートコレクションの値を求めよ。 ただし、FMIA の基準値は57 度とする。なお、小数点以下の数値が得られた場 合には、小数点以下第位を四捨五入すること。 解答：安①．②mm ① ②                  ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "6",
         "0"
@@ -6882,7 +6903,28 @@
       "number": 89,
       "questionText": "20歳の女性。歯並びが悪いことを主訴として来院した。模型分析とセファロ分 析を行ったところ、IMPA は99 度、FMA は29 度、下顎のavailable arch length は65.5 mm、required arch length は70.0 mm であった。 Total discrepancy を求めよ。 ただし、FMIA の基準値は57 度とする。なお、小数点以下の数値が得られた場 合には、小数点以下第位を四捨五入すること。 解答：安①．②mm ① ②                ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "8",
         "5"
@@ -8410,7 +8452,28 @@
       "number": 40,
       "questionText": "歳の男児。前歯部の空隙を主訴として来院した。永久歯の抜歯経験はない。初 診時の口腔内写真別冊No. 5Ａ とエックス線画像別冊No. 5Ｂ を別に示す。 欠如している永久歯数本 はどれか。1つ選べ。 ただし、智歯は数に含めない。",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "c"
       ],
@@ -10325,7 +10388,28 @@
       "number": 89,
       "questionText": "歯周炎の認められない集団を10 年間追跡調査し、得られた結果を喫煙者と非喫 煙者に分けて表に示す。 観察数人 歯周炎発症数人 喫煙者 100",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "2",
         "2"
@@ -13794,7 +13878,28 @@
       "number": 89,
       "questionText": "ある小学校で集団フッ化物洗口を実施するため、％NaF 溶液を希釈して600 mL のフッ化物洗口液F 濃度：225 ppm を作製することとした。 ％NaF 溶液の必要量を求めよ。 ただし、小数点以下の数値が得られた場合には、小数点以下第位を四捨五入す ること。 解答：① ②mL ① ②                ",
       "selectCount": 1,
-      "choices": [],
+      "choices": [
+        {
+          "label": "a",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "b",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "c",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "d",
+          "text": "（画像参照）"
+        },
+        {
+          "label": "e",
+          "text": "（画像参照）"
+        }
+      ],
       "correctAnswers": [
         "1",
         "5"
