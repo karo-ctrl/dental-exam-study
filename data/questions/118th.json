@@ -12626,6 +12626,10 @@
       "selectCount": 1,
       "choices": [
         {
+          "label": "a",
+          "text": "10～30 gf"
+        },
+        {
           "label": "b",
           "text": "50～100 gf"
         },
