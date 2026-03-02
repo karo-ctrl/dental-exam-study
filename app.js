@@ -751,9 +751,9 @@ function renderQuestion() {
 
   elements.cardTitle.textContent = question.questionText;
 
-  if (question.imageRef) {
+  if (question.imageRef || (question.figureRefs && question.figureRefs.length > 0)) {
     elements.imageRef.style.display = 'flex';
-    elements.imageRefText.textContent = question.imageRef;
+    elements.imageRefText.textContent = question.imageRef || '本文中図表';
     renderImageThumbnails(question);
   } else {
     elements.imageRef.style.display = 'none';
@@ -978,50 +978,29 @@ function closeSummaryModal() {
 }
 
 // ===== 画像表示機能 =====
-function parseImageRef(imageRef, examId, section = 'A') {
+function parseImageRef(imageRef, examId) {
   if (!imageRef) return [];
 
-  const images = [];
-  // 「別冊No.1」「別冊No.4A, 4B」「別冊No.10A, 10B」などをパース
-  // カンマで分割して各参照を処理
-  const refs = imageRef.replace(/別冊No\./g, '').split(/[,、]/);
-
-  // セクション（A/B/C/D）に応じた画像プレフィックスを使用
-  const prefix = `${section}_No`;
-
-  let lastBaseNum = '';
-  refs.forEach(ref => {
-    ref = ref.trim();
-    if (!ref) return;
-
-    // 「4A」「10B」などの形式、または「4」「10」などの形式
-    const match = ref.match(/^(\d+)([A-Za-z]*)$/);
-    if (match) {
-      lastBaseNum = match[1];
-      const suffix = match[2] || '';
-      images.push(`images/exam/${examId}/${prefix}${lastBaseNum}${suffix}.png`);
-    } else {
-      // 「A」「B」など、数字なしの場合は前の数字を使う
-      const suffixOnly = ref.match(/^([A-Za-z]+)$/);
-      if (suffixOnly && lastBaseNum) {
-        images.push(`images/exam/${examId}/${prefix}${lastBaseNum}${suffixOnly[1]}.png`);
-      }
-    }
-  });
-
-  return images;
+  // 新形式: "118A-7" または "118A-21A, 118A-21B, ..." → images/exam/118/118A-7.png
+  const refs = imageRef.split(/[,、]\s*/);
+  return refs
+    .map(ref => ref.trim())
+    .filter(ref => ref.length > 0)
+    .map(ref => `images/exam/${examId}/${ref}.png`);
 }
 
 function renderImageThumbnails(question) {
   const examId = state.currentExam?.examId || question.examId;
-  if (!examId || !question.imageRef) {
-    elements.imageThumbnails.innerHTML = '';
-    return;
+
+  // 別冊写真 + 本文中図表を統合
+  let imagePaths = [];
+  if (question.imageRef) {
+    imagePaths = imagePaths.concat(parseImageRef(question.imageRef, examId));
+  }
+  if (question.figureRefs && question.figureRefs.length > 0) {
+    imagePaths = imagePaths.concat(question.figureRefs);
   }
 
-  // 問題のセクション（A/B/C/D）を取得
-  const section = question.section || 'A';
-  const imagePaths = parseImageRef(question.imageRef, examId, section);
   state.currentImages = imagePaths;
   state.carouselIndex = 0;
 
