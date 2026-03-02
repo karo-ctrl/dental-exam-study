@@ -23,3 +23,14 @@ images/textbook/
 # 不要ファイル
 PLAN.md
 data.js
+
+# 大容量ファイル
+pdf_files/
+extracted_images/
+source_data/*.xlsx
+source_data/*.pdf
+
+# 一時ファイル
+*.tmp
+*_review.xlsx
+*_review.txt

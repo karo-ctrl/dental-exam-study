@@ -675,6 +675,11 @@ function renderExamList() {
       closeSidebar();
     });
   });
+
+  // デスクトップでは試験リスト表示時にサイドバーを開く
+  if (window.innerWidth >= 1024) {
+    openSidebar();
+  }
 }
 
 function selectExam(examId) {
@@ -4132,11 +4137,13 @@ function executeSearch() {
 function openSidebar() {
   elements.sidebar.classList.add('open');
   elements.sidebarOverlay.classList.add('open');
+  document.querySelector('.main')?.classList.add('sidebar-open');
 }
 
 function closeSidebar() {
   elements.sidebar.classList.remove('open');
   elements.sidebarOverlay.classList.remove('open');
+  document.querySelector('.main')?.classList.remove('sidebar-open');
 }
 
 function openSettings() {
