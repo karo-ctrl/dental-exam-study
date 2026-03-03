@@ -336,6 +336,9 @@ function initElements() {
   elements.nextQuestionBtn = document.getElementById('nextQuestionBtn');
   elements.difficultyBtns = document.getElementById('difficultyBtns');
   elements.quizFavoriteBtn = document.getElementById('quizFavoriteBtn');
+  elements.explanationArea = document.getElementById('explanationArea');
+  elements.explanationToggleBtn = document.getElementById('explanationToggleBtn');
+  elements.explanationContent = document.getElementById('explanationContent');
 
   // まとめカード
   elements.summaryCard = document.getElementById('summaryCard');
@@ -768,6 +771,16 @@ function renderQuestion() {
   renderChoices(question);
 
   elements.answerArea.style.display = 'none';
+  if (elements.explanationArea) {
+    elements.explanationArea.style.display = 'none';
+    elements.explanationContent.innerHTML = '';
+    elements.explanationContent.style.display = 'none';
+    elements.explanationToggleBtn.classList.remove('open');
+    const chevron = elements.explanationToggleBtn.querySelector('.explanation-chevron');
+    if (chevron) chevron.style.transform = '';
+    const label = elements.explanationToggleBtn.querySelector('span');
+    if (label) label.textContent = '解説を見る';
+  }
   if (elements.relatedSummaries) {
     elements.relatedSummaries.style.display = 'none';
   }
@@ -872,10 +885,44 @@ function showAnswer() {
     incrementTodayCount();
   }
 
+  // 解説を表示（解説がある場合）
+  if (question.explanation && elements.explanationArea) {
+    elements.explanationArea.style.display = 'block';
+  }
+
   // 関連まとめを表示
   renderRelatedSummaries(question);
 
   saveState();
+}
+
+// ===== 解説表示機能 =====
+function toggleExplanation() {
+  const question = state.filteredQuestions[state.currentIndex];
+  if (!question || !question.explanation) return;
+
+  const content = elements.explanationContent;
+  const btn = elements.explanationToggleBtn;
+  const chevron = btn.querySelector('.explanation-chevron');
+  const label = btn.querySelector('span');
+  const isOpen = content.style.display === 'block';
+
+  if (isOpen) {
+    content.style.display = 'none';
+    btn.classList.remove('open');
+    if (chevron) chevron.style.transform = '';
+    if (label) label.textContent = '解説を見る';
+  } else {
+    if (!content.innerHTML) {
+      content.innerHTML = typeof marked !== 'undefined' && marked.parse
+        ? marked.parse(question.explanation)
+        : question.explanation.replace(/\n/g, '<br>');
+    }
+    content.style.display = 'block';
+    btn.classList.add('open');
+    if (chevron) chevron.style.transform = 'rotate(180deg)';
+    if (label) label.textContent = '解説を閉じる';
+  }
 }
 
 // ===== 関連まとめ機能 =====
@@ -4282,6 +4329,9 @@ function setupEventListeners() {
   // 解答表示（演習モード）
   elements.showAnswerBtn?.addEventListener('click', showAnswer);
   elements.nextQuestionBtn?.addEventListener('click', goToNext);
+
+  // 解説トグル
+  elements.explanationToggleBtn?.addEventListener('click', toggleExplanation);
 
   // 難易度選択ボタン
   elements.difficultyBtns?.querySelectorAll('.difficulty-btn').forEach(btn => {
